@@ -94,3 +94,239 @@ permalink: /search
 | **실험 재현성 문제**     | 코드/데이터 버전 상이         | Git, DVC, MLflow, W\&B                                |
 | **환경 종속성 문제**     | Dev ↔ Prod 환경 차이     | 컨테이너화(Docker)                                         |
 
+---
+
+# 🔍 AI 학습/연구용 검색 키워드 맵
+
+## 1. AI 데이터 처리 (Data Processing)
+
+* **데이터 정제 (Data Cleaning)**
+
+  * 결측치 처리: dropna, imputation (평균, 중앙값, k-NN, 회귀)
+  * 이상치 탐지: Z-score, IQR, Boxplot, Isolation Forest, DBSCAN
+  * 중복 제거: drop\_duplicates
+  * 데이터 타입 변환: astype, round
+  * 텍스트 정제: 정규표현식, 토큰화
+* **데이터 변환 (Data Transformation)**
+
+  * 특징 스케일링: 표준화 vs 정규화
+  * 범주형 인코딩: 원-핫, 레이블, 타깃 인코딩
+  * 텍스트 벡터화: BoW, TF-IDF, Word2Vec, GloVe, BERT
+  * 연속형 → 구간화: Binning
+  * 특징 공학 (Feature Engineering)
+* **특수 데이터 전략**
+
+  * 불균형 데이터: SMOTE, ADASYN, Focal Loss
+  * 데이터 증강: 이미지(CutMix, Mixup), 텍스트(Back Translation), 오디오(Noise), 그래프(Augmentation)
+  * 데이터 편향 완화: 리샘플링, 가이드라인 기반 레이블링
+  * 데이터 누수 방지 (Data Leakage Prevention)
+
+---
+
+## 2. AI 모델 개발 (Model Development)
+
+* **학습 패러다임**
+
+  * 지도학습 (Regression, Classification)
+  * 비지도학습 (Clustering, 차원축소)
+  * 앙상블 (Bagging, Boosting, Stacking)
+* **주요 아키텍처**
+
+  * CNN: VGG, ResNet, Inception, U-Net
+  * RNN: LSTM, GRU
+  * Transformer: BERT, GPT, ELECTRA, ViT
+  * 생성 모델: GAN, Autoencoder, VAE, Diffusion
+  * 그래프 신경망: GNN
+* **학습 및 평가**
+
+  * 활성화 함수: ReLU, Leaky ReLU, Softmax
+  * 손실 함수: MSE, Cross-Entropy, Focal Loss
+  * 옵티마이저: SGD, Adam, RMSprop
+  * 정규화: BatchNorm, LayerNorm
+  * 성능 지표: Accuracy, Precision, Recall, F1, ROC-AUC, MAE, RMSE
+* **튜닝 및 최적화**
+
+  * 규제: L1/L2, Dropout, Early Stopping
+  * 하이퍼파라미터 탐색: Grid, Random, Bayesian
+  * 모델 경량화: Pruning, Quantization, Distillation
+  * PEFT: LoRA, Adapter, Prompt Tuning
+  * NAS: DARTS, EfficientNet
+
+---
+
+## 3. 시스템 구축 및 운영 (MLOps)
+
+* **MLOps 파이프라인**
+
+  * 데이터 수집 → 전처리 → 학습 → 평가 → 패키징(Docker) → 배포 → 모니터링
+* **배포 전략**
+
+  * Canary, Blue-Green, A/B 테스트
+  * Online vs Batch vs Edge Serving
+* **운영 관리**
+
+  * 데이터/개념 드리프트 감지
+  * DVC (데이터 버전 관리)
+  * Feature Store, Model Registry
+* **자동화**
+
+  * CI (Continuous Integration)
+  * CD (Continuous Deployment)
+  * CT (Continuous Training)
+
+---
+
+## 4. 주요 AI 기술 및 트렌드 (Trends)
+
+* **설명가능 AI (XAI)**
+
+  * LIME, SHAP, CAM, Grad-CAM, Surrogate Model
+* **자기지도 학습 (SSL)**
+
+  * Contrastive (SimCLR), Non-Contrastive (BYOL), Masked Autoencoding (MAE)
+* **강화학습 (RL)**
+
+  * Q-Learning, Policy Gradient, Actor-Critic
+* **LLM 심화**
+
+  * In-context Learning, Chain-of-Thought (CoT)
+  * RAG (Retrieval-Augmented Generation)
+  * RLHF (Reinforcement Learning from Human Feedback)
+  * MoE (Mixture of Experts)
+  * 이슈: Hallucination
+* **기타**
+
+  * 연합 학습 (Federated Learning)
+  * 멀티모달 모델
+  * 제로샷/퓨샷 학습
+  * AI 윤리 (Bias, Fairness)
+
+---
+
+# 📑 비교/대조 핵심 개념 정리 (검색 전략용)
+
+---
+
+## 1. 기본 개념 및 학습 패러다임
+
+| 개념 A                       | 개념 B                          | 핵심 차이점                                     |                          |
+| -------------------------- | ----------------------------- | ------------------------------------------ | ------------------------ |
+| **분류 (Classification)**    | **회귀 (Regression)**           | 예측 대상: 이산적 클래스 vs 연속적 숫자 값                 |                          |
+| **지도 학습 (Supervised)**     | **비지도 학습 (Unsupervised)**     | 데이터: 레이블 있음 vs 없음                          |                          |
+| **모수적 모델 (Parametric)**    | **비모수적 모델 (Non-parametric)**  | 파라미터 수 고정 vs 데이터 양에 따라 변동                  |                          |
+| **편향 (Bias)**              | **분산 (Variance)**             | 원인: 단순 모델(과소적합) vs 복잡 모델(과대적합)             |                          |
+| **과소적합 (Underfitting)**    | **과대적합 (Overfitting)**        | 손실 그래프: Train/Val 손실 모두 높음 vs Train↓, Val↑ |                          |
+| **파라미터 (Parameter)**       | **하이퍼파라미터 (Hyperparameter)**  | 학습으로 결정 vs 사람이 직접 설정                       |                          |
+| **판별 모델 (Discriminative)** | **생성 모델 (Generative)**        | 조건부 확률 \$P(Y                               | X)\$ vs 결합 확률 \$P(X,Y)\$ |
+| **Model-based Learning**   | **Instance-based Learning**   | 모델 구축 후 데이터 폐기 vs 데이터 저장 후 예측에 활용          |                          |
+| **처음부터 학습 (From Scratch)** | **전이 학습 (Transfer Learning)** | 사전 지식 사용 안 함 vs 사전학습 모델 활용                 |                          |
+| **지도 미세조정 (SFT)**          | **RLHF**                      | 정답 레이블 활용 vs 인간 선호도 기반 보상 모델               |                          |
+| **Zero-shot Learning**     | **Few-shot Learning**         | 클래스 데이터 없음 vs 소량(1\~10개) 데이터 활용            |                          |
+| **대조 학습 (Contrastive)**    | **비대조 학습 (Non-contrastive)**  | Negative pairs 필요 vs 불필요 (SimCLR vs BYOL)  |                          |
+| **블랙박스 모델**                | **화이트박스 모델**                  | 해석 불가 (DNN, LLM) vs 해석 용이 (선형 회귀, 트리)      |                          |
+| **기울기 소실 (Vanishing)**     | **기울기 폭주 (Exploding)**        | Gradient가 0에 수렴 vs 비정상적으로 커짐               |                          |
+
+---
+
+## 2. 모델 아키텍처 및 알고리즘
+
+| 개념 A                | 개념 B                         | 핵심 차이점                         |
+| ------------------- | ---------------------------- | ------------------------------ |
+| **라쏘 회귀 (L1)**      | **릿지 회귀 (L2)**               | 일부 가중치를 0 vs 가중치를 0에 가깝게       |
+| **라쏘/릿지**           | **엘라스틱넷**                    | L1/L2 단독 vs L1+L2 혼합           |
+| **로지스틱 회귀**         | **SVM**                      | 확률 모델링 vs 마진 최대화               |
+| **K-평균**            | **DBSCAN**                   | K 사전 설정 필요 vs 불필요, 노이즈 처리 가능   |
+| **PCA**             | **LDA**                      | 비지도, 분산 최대화 vs 지도, 클래스 분리 최대화  |
+| **RNN**             | **Transformer**              | 순차 처리 vs 병렬 처리, Self-Attention |
+| **오토인코더 (AE)**      | **VAE**                      | 점 벡터 잠재 공간 vs 확률 분포 잠재 공간      |
+| **GAN**             | **Diffusion Model**          | 생성자-판별자 경쟁 vs 노이즈 제거 기반        |
+| **배치 정규화 (BN)**     | **계층 정규화 (LN)**              | 미니배치 단위 vs 데이터 샘플 단위           |
+| **Transformer 인코더** | **Transformer 디코더**          | 의미/문맥 인코딩 vs 출력 생성             |
+| **Dense 모델**        | **MoE (Mixture of Experts)** | 모든 파라미터 활성화 vs 일부 전문가만 활성화     |
+| **GNN**             | **MLP**                      | 그래프 데이터 vs 벡터 데이터              |
+| **초기 NAS**          | **DARTS**                    | 이산적 탐색 vs 연속적 탐색 (Gradient 활용) |
+
+---
+
+## 3. 활성화 함수 및 최적화
+
+| 개념 A                   | 개념 B                      | 핵심 차이점                     |
+| ---------------------- | ------------------------- | -------------------------- |
+| **Sigmoid**            | **Softmax**               | 독립적 확률 vs 전체 합 1인 확률 분포    |
+| **ReLU**               | **Leaky ReLU**            | 음수 입력 0 처리 vs 작은 기울기 부여    |
+| **SGD**                | **Adam**                  | 동일 학습률 vs 적응적 학습률          |
+| **배치 GD**              | **SGD**                   | 전체 데이터 단위 vs 개별 샘플 단위 업데이트 |
+| **Grid/Random Search** | **Bayesian Optimization** | 무작위/전수 탐색 vs 확률 기반 효율적 탐색  |
+
+---
+
+## 4. 앙상블 및 규제
+
+| 개념 A                       | 개념 B                    | 핵심 차이점                         |
+| -------------------------- | ----------------------- | ------------------------------ |
+| **배깅 (Bagging)**           | **부스팅 (Boosting)**      | 병렬 독립 학습 vs 순차 의존 학습           |
+| **보팅 (Voting)**            | **스태킹 (Stacking)**      | 단순 투표/평균 vs 메타 모델 학습           |
+| **GBM**                    | **XGBoost**             | 규제 없음 vs L1/L2 규제 포함, 병렬 처리 지원 |
+| **L1/L2 규제**               | **Dropout**             | 가중치 페널티 vs 뉴런 랜덤 비활성화          |
+| **조기 종료 (Early Stopping)** | **규제 (Regularization)** | 학습 중단 vs 수학적 페널티               |
+
+---
+
+## 5. 자연어 처리 (NLP)
+
+| 개념 A         | 개념 B                       | 핵심 차이점                   |
+| ------------ | -------------------------- | ------------------------ |
+| **BERT**     | **GPT**                    | 인코더 기반 vs 디코더 기반         |
+| **Stemming** | **Lemmatization**          | 규칙 기반 접사 제거 vs 사전 기반 복원  |
+| **단어 토큰화**   | **서브워드 토큰화**               | 공백 단위 vs 부분 문자열 단위       |
+| **CBOW**     | **Skip-gram**              | 주변 → 중심 vs 중심 → 주변       |
+| **Word2Vec** | **GloVe**                  | 지역적 문맥 기반 vs 전역적 행렬 기반   |
+| **동의어 대체**   | **역번역 (Back Translation)** | 단순 단어 치환 vs 번역 기반 다양성 확보 |
+| **일반 프롬프트**  | **사고의 연쇄 (CoT)**           | 직접 답변 vs 단계별 추론 포함       |
+
+---
+
+## 6. 데이터 전처리 및 평가
+
+| 개념 A                | 개념 B             | 핵심 차이점                    |
+| ------------------- | ---------------- | ------------------------- |
+| **표준화**             | **정규화**          | 평균=0, 표준편차=1 vs \[0,1] 범위 |
+| **레이블 인코딩**         | **원-핫 인코딩**      | 정수 변환 vs 이진 벡터            |
+| **정밀도 (Precision)** | **재현율 (Recall)** | FP 줄이기 vs FN 줄이기          |
+| **정확도 (Accuracy)**  | **F1-Score**     | 불균형 데이터에 취약 vs 정밀도+재현율 조화 |
+| **ROC Curve**       | **PR Curve**     | FPR vs TPR / 재현율 vs 정밀도   |
+| **MAE**             | **RMSE**         | 이상치 덜 민감 vs 이상치 더 민감      |
+| **결측치 삭제**          | **결측치 대체**       | 정보 손실 vs 분포 왜곡 가능         |
+| **단순 오버샘플링**        | **SMOTE**        | 데이터 복제 vs 보간 기반 합성        |
+| **Cross-Entropy**   | **Focal Loss**   | 모든 샘플 균등 vs 어려운 샘플 집중     |
+| **Cutout/Erasing**  | **Mixup/CutMix** | 이미지 일부 가림 vs 이미지 혼합       |
+
+---
+
+## 7. 모델 최적화 및 운영 (Fine-tuning & MLOps)
+
+| 개념 A                       | 개념 B                | 핵심 차이점                    |
+| -------------------------- | ------------------- | ------------------------- |
+| **Full Fine-tuning**       | **PEFT (LoRA 등)**   | 모든 파라미터 업데이트 vs 일부 작은 모듈만 |
+| **Fine-tuning**            | **RAG**             | 파라미터 내재화 vs 외부 지식 검색 활용   |
+| **Knowledge Distillation** | **Pruning**         | 교사-학생 모델 vs 불필요 가중치 제거    |
+| **Pruning**                | **Quantization**    | 파라미터 제거 vs 정밀도 축소         |
+| **Online Inference**       | **Batch Inference** | 실시간 처리 vs 일괄 처리           |
+| **데이터 드리프트**               | **개념 드리프트**         | 입력 분포 변화 vs 입력-출력 관계 변화   |
+| **CI**                     | **CD**              | 코드 통합 vs 운영 배포            |
+| **CI/CD**                  | **CT**              | 코드/배포 자동화 vs 모델 재학습 자동화   |
+| **Git**                    | **DVC**             | 코드 관리 vs 데이터/모델 관리        |
+| **Training**               | **Packaging**       | 파라미터 학습 vs 배포 준비 컨테이너화    |
+
+---
+
+## 8. 설명가능 인공지능 (XAI)
+
+| 개념 A                  | 개념 B                   | 핵심 차이점                         |
+| --------------------- | ---------------------- | ------------------------------ |
+| **LIME**              | **SHAP**               | 지역적 선형 근사 vs 게임 이론 기반 (일관성 보장) |
+| **Local Explanation** | **Global Explanation** | 개별 예측 설명 vs 모델 전체 설명           |
+| **CAM**               | **Grad-CAM**           | GAP 계층 필요 vs 그래디언트 활용 (범용성 높음) |
+| **블랙박스 직접 해석**        | **Surrogate Model**    | 불가능/어려움 vs 대리 모델로 간접 해석        |
+
+---

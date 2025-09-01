@@ -1,0 +1,25 @@
+title: 리몬늘보 블로그
+description: Blog
+baseurl: ""
+url: "https://lemonsloth.github.io"
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+
+# Site settings
+lang: ko
+author: lemon
+
+# Navigation
+header_pages:
+  - 2025kice.md
+
+# Exclude from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor 

@@ -1497,8 +1497,8 @@ ML Test Score는 구글의 머신러닝 프로젝트 경험에서 발전된 엄�
    1. 실시간 반응이 중요한 경우(예: 모바일, IoT), 모델을 사용자가 가까운 위치(엣지)로 옮깁니다.
 
 **1 - Build a Prototype To Interact With![ref2]**<br>
-|<p>항목</p><p></p>|<p>요점</p><p></p>|
-| :- | :- |
+|항목|요점|
+|--|--|
 |UI 도구|Gradio, Streamlit 추천 – 빠르고 쉽다|
 |배포 방식|URL로 배포해서 공유 가능하게 하기 |
 |프로토타입 철학|하루 안에 만들고 실험할 것. 완벽함보다 속도!|
@@ -1510,8 +1510,8 @@ ML Test Score는 구글의 머신러닝 프로젝트 경험에서 발전된 엄�
 1. model-in-service
 1. model-as-service 
 1. model-on-edge
-|<p>항목</p><p></p>|<p>**Model-in-Service**</p><p></p>|<p>**Model-as-a-Service**</p><p></p>|<p>**Model-on-Edge**</p><p></p>|
-| :-: | :- | :- | :- |
+|항목|Model-in-Service|Model-as-a-Service|Model-on-Edge|
+|--|--|--|--|
 |**구조**|모델이 웹 서버에 **직접 포함**됨|모델이 **별도의 독립 서버/API**로 운영됨|모델이 **디바이스(엣지)에 내장**됨|
 |**예시**|FastAPI에 모델 포함|REST API로 모델 호출 (e.g. SageMaker Endpoint)|모바일 앱, 자율주행차, IoT 디바이스|
 |**장점**|구현 간단, 인프라 재사용|유연한 확장, 버전 관리 쉬움|초저지연, 네트워크 불필요|

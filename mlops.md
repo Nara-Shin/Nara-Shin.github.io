@@ -245,6 +245,7 @@ C --> D[CT: 운영 중 지속 학습 & 재배포]
 
 데이터 버전 관리: 어떤 데이터셋으로 학습했는지 추적 (DVC, LakeFS)
 
+
 2. 모델 관련 개념
 
 모델 드리프트(Model Drift): 시간이 지남에 따라 모델 성능이 떨어지는 현상
@@ -252,6 +253,7 @@ C --> D[CT: 운영 중 지속 학습 & 재배포]
 모델 버전 관리: 어떤 모델이 어떤 데이터/코드로 학습되었는지 추적 (MLflow 등)
 
 모델 서빙(Model Serving): REST API, gRPC, 배치 등으로 모델 제공 방식
+
 
 3. MLOps 핵심 구성요소
 
@@ -261,6 +263,7 @@ Feature Store: 재사용 가능한 피처 저장소, 일관된 학습/서빙 환
 
 Monitoring: 예측 결과 품질, 데이터 이상 탐지
 
+
 4. CI/CD/CT 심화
 
 CI: 코드/데이터 품질 보장, 테스트 자동화
@@ -268,6 +271,7 @@ CI: 코드/데이터 품질 보장, 테스트 자동화
 CD: 안정적인 배포, Canary 배포·Blue-Green 배포 같은 전략까지 언급 가능
 
 CT: 자동 재학습, Active Learning·Online Learning 언급하면 가점
+
 
 5. 운영/품질 관련 개념
 
@@ -277,17 +281,6 @@ CT: 자동 재학습, Active Learning·Online Learning 언급하면 가점
 
 Explainability (XAI): 모델 예측을 설명 가능하게 만드는 방법 (LIME, SHAP 등)
 
-🎯 정리: 시험에 서술형으로 나올 확률 높은 포인트
-
-데이터/모델 드리프트 → CT 필요성
-
-DevOps vs MLOps 차이점 (데이터, 모델, CT 포함)
-
-MLOps 파이프라인 단계 설명
-
-재현성·자동화·모니터링의 중요성
-
-XAI(설명가능성)와 운영에서의 필요성
 
 
 ---

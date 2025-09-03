@@ -29,9 +29,9 @@ permalink: /2025
 📌 10. Fine Tuning Vision Transformer (ViT) for Indian Foods Classification<br>
 📌 11. Fine Tuning LLM on Custom Dataset<br>
 
-**===============================**<br>
+
 **[FSDL\_2021]**<br>
-**📌 Lecture 1: DL Fundamentals**
+### 📌 Lecture 1: DL Fundamentals**
 <https://youtu.be/fGxWfEuUu0w>
 <https://fullstackdeeplearning.com/spring2021/lecture-1/>
 |<br>**[핵심키워드]<br>- 뉴런(Neuron):** 생물학적 뉴런에서 착안한 계산 모델. 입력값, 가중치, 바이어스, 활성화 함수를 통해 출력 결정<br>**- 퍼셉트론(Perceptron):** 입력 × 가중치 + 편향 → 활성화 함수 → 출력<br>**-
@@ -227,8 +227,8 @@ GANs([	2) Generative Adversarial Networks (GANs)](https://wikidocs.net/146217))
 - **GPU + CUDA(NVIDIA)**:
   - 행렬 연산 최적화(딥러닝 모델의 대부분의 연산은 행렬 곱셈)
   - 병렬 연산 수행에 효율적
-**===============================**<br>
-**📌 Lecture 12: Research Directions**
+
+### 📌 Lecture 12: Research Directions**
 <https://fullstackdeeplearning.com/spring2021/lecture-12/>
 **[Unsupervised Learning]**<br>
 🧭 비지도 학습의 기본 문제의식
@@ -541,7 +541,7 @@ Head 2 (Supervised): 소량 라벨 데이터로 학습 (예: 감성 분석 등)
 - 🔁 **Unsupervised Learning과 RL의 통합** 사례
 - 💡 Representation learning이 실제로도 **성능과 속도에 큰 영향**을 미침
 
-**📌 용어 정리**
+### 📌 용어 정리**
 |**용어**|**정의**|
 | :-: | :-: |
 |Actor|현재 상태에서 어떤 행동을 할지 결정하는 함수|
@@ -822,7 +822,7 @@ MDP는 다음의 다섯 요소로 구성됩니다:
 - 모든 학습은 **시뮬레이터 이미지에서만 수행**
 - 테스트는 **실제 카메라 이미지**
 - 🟢 결과: **정확도 향상**, 에러율 감소
-**📌 중요한 요소: 텍스처 다양성**
+### 📌 중요한 요소: 텍스처 다양성**
 - 시뮬레이터에서의 물체 표면 텍스처가 **풍부해야** 일반화 성공
 
 **✅ (3) Grasping (물체 집기)**
@@ -967,9 +967,9 @@ MDP는 다음의 다섯 요소로 구성됩니다:
 |⚠ 과제|검증 어려움, 데이터 부족, 해석력 부족|
 |🌍 기대 효과|실험 비용 절감, 디자인 혁신, 과학적 통찰 확보|
 
-**===============================**<br>
+
 **[FSDL\_2022]**<br>
-**📌 Lecture 3: Troubleshooting & Testing**
+### 📌 Lecture 3: Troubleshooting & Testing**
 **1 Testing software**
 키 포인트
 - 테스트를 하면 더 빨리, 더 적은 버그로 배포할 수 있다\
@@ -1263,8 +1263,8 @@ ML Test Score는 구글의 머신러닝 프로젝트 경험에서 발전된 엄�
 
 지금까지의 조언은 모델 종류나 태스크에 종속되지 않는 범용 가이드입니다. 그 이후의 세부 조정은 태스크·아키텍처에 특화돼야 합니다.
 - HuggingFace 등에서 이미 잘 작동하는 아키텍처·하이퍼파라미터를 참고
-**===============================**<br>
-**📌 Lecture 4: Data Management**
+
+### 📌 Lecture 4: Data Management**
 [ 관련 자료 링크 ]
 <https://fullstackdeeplearning.com/course/2022/lecture-4-data-management/>
 [**https://daeun-computer-uneasy.tistory.com/37**](https://daeun-computer-uneasy.tistory.com/37)
@@ -1487,8 +1487,8 @@ df = df.dropna(axis=1)            #### 결측치가 하나라도 있는 열 삭�
 - 다양한 저장소와 도구를 적절히 활용하여 데이터의 품질과 버전 관리를 철저히 할 것.
 - 자동화와 자동 라벨링, 프라이버시 보호 기술도 중요한 연구 분야임.
 
-**===============================**<br>
-**📌 Lecture 5: Deployment**
+
+### 📌 Lecture 5: Deployment**
 <https://fullstackdeeplearning.com/course/2022/lecture-5-deployment/>
 **Introduction!**<br>
 ![image-20250725-002701.png]
@@ -1734,8 +1734,8 @@ Picking the right framework to do edge deployment depends both on how you train 
 - 모델은 종종 예상치 못한 방식으로 망가짐.
 - 엣지에서는 장애 시 원격 복구도 어렵기 때문에, 모델이 실패할 경우를 대비한 대안 경로(fallback) 반드시 필요.
 ![ref3]
-**===============================**<br>
-**📌 Lecture 6: Continual Learning**
+
+### 📌 Lecture 6: Continual Learning**
 <https://fullstackdeeplearning.com/course/2022/lecture-6-continual-learning/>
 <https://fullstackdeeplearning.com/course/2022/lecture-6-continual-learning/>
 <https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning?hl=ko>
@@ -2285,8 +2285,8 @@ Picking the right framework to do edge deployment depends both on how you train 
 - ML 엔지니어로서, 모니터링을 적극 활용해서 전략적으로 모델을 개선할 것을 권장함
 - 항상 단순한 접근에서 시작해서, 점진적으로 발전시켜 나갈 것
 
-**===============================**<br>
-**📌 Lecture 7: Foundation Models**
+
+### 📌 Lecture 7: Foundation Models**
 ![ref4][](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2HCopU1f0_9iQ6qGs-8Vyosg2rzHejMgaenwZVjWvtzfwgYVcDNqwlafa2mDlsNbqR8SlsQLvYgjN27EYg4dRtwpJMZf3Pw-7eAjtETIz44n0IUykTIIoeZ78zdM-59-hPoaxiWXZ6e8jc35UcpCF0sEih5LxPdKL0oU31CkIeEOyYycTwFMv22B8GbW5/s1091/11.png)
 <https://fullstackdeeplearning.com/course/2022/lecture-7-foundation-models/>
 - Fine-tuning
@@ -3163,9 +3163,9 @@ noise = torch.randn(1, 3, 512, 512) *#### 고해상도 노이즈 이미지* **fo
 
 
 
-**===============================**<br>
+
 **[Udemy]**<br>
-**📌 3. Transformers Architectures and Basic LLM Concepts**
+### 📌 3. Transformers Architectures and Basic LLM Concepts**
 
 <https://ktspace.atlassian.net/wiki/spaces/AITechLab/pages/402401965>
 
@@ -3387,8 +3387,8 @@ FNN은 트랜스포머의 각 인코더·디코더 블록에서 **어텐션 뒤*
    1. 각 토큰별로 독립 계산 → GPU에서 매우 빠르게 병렬 처리 가능.
 
 
-**===============================**<br>
-**📌 4. BERT Architecture Theory**
+
+### 📌 4. BERT Architecture Theory**
 
 **⭐️ BERT 핵심 키워드 ⭐️**
 1. **양방향(Bidirectional) 학습:** 문장 내 특정 단어의 의미를 파악할 때, 단어의 앞과 뒤에 있는 모든 단어의 정보를 동시에 고려합니다.
@@ -3756,7 +3756,7 @@ BERT 모델은 미세 조정 후 성능을 평가하기 위해 다양한 **벤�
 - GLUE, SQuAD, SWAG 등 주요 NLP 벤치마크에서 당시 최고 성능 달성.
 - "사전학습 + 파인튜닝" 접근법을 **사실상 NLP 표준**으로 만듦.
 
-**📌 정리**
+### 📌 정리**
 - **Transformer**: Attention 기반 일반 아키텍처 (Encoder + Decoder) 제안.
 - **BERT**: 그중 **Encoder만 활용**, **MLM + NSP 학습 목표** 추가, **대규모 Pre-training → Fine-tuning 패러다임** 정립.
 - 결과적으로 \*\*NLP 이해(Task-specific 모델 학습을 대체)\*\*하는 **범용 언어 표현 모델**로 자리잡음.
@@ -3795,7 +3795,7 @@ BERT 모델은 미세 조정 후 성능을 평가하기 위해 다양한 **벤�
 BERT 이후 등장한 대표적인 변형 모델들을 시간순으로 정리하면, 각 모델이 **BERT의 한계**를 어떻게 극복했는지가 잘 드러납니다.
 
 
-**📌 시간순 정리: BERT 후속 모델들의 컨트리뷰션**
+### 📌 시간순 정리: BERT 후속 모델들의 컨트리뷰션**
 **1. SpanBERT (2019)**
 - **한계 해결 대상**: BERT의 [MASK] 토큰 예측이 개별 단어 단위로만 이루어짐 → 구, 구문 단위(span-level) 의미 파악이 부족.
 - **기여(Contribution)**: 
@@ -3837,8 +3837,8 @@ BERT 이후 등장한 대표적인 변형 모델들을 시간순으로 정리하
 
 ![ref3]
 
-**===============================**<br>
-**📌 6. Knowledge Distillation for BERT - DistilBERT, MobileBERT and TinyBERT**
+
+### 📌 6. Knowledge Distillation for BERT - DistilBERT, MobileBERT and TinyBERT**
 
 [ 관련 자료 링크 ]
 - DistillBERT
@@ -4139,8 +4139,8 @@ Hidden State Loss는 내부 feature alignment, Attention Loss는 token dependenc
 - 이들 모델은 **속도, 크기, 성능의 균형**을 맞추기 위해 다양한 구조와 학습 방법을 사용하며, 자원이 제한된 환경에서도 활용 가능하게 설계됨.
 - **지식 증류는** 이들 모델의 핵심 기술로, 다양한 레이어와 표현을 모방하는 손실 함수를 통해 학습됨.
 
-**===============================**<br>
-**📌 10. Fine Tuning Vision Transformer (ViT) for Indian Foods Classification**
+
+### 📌 10. Fine Tuning Vision Transformer (ViT) for Indian Foods Classification**
 
 **ViT란?**
 트랜스포머 인코더 블록으로만 구성된 구조
@@ -4217,8 +4217,8 @@ CNN은 커널이 국소 정보만 추출하기 때문에, 멀리 떨어진 두 �
 
 하지만 국소적으로 집중하는 CNN과 다르게 ViT는 self-attention을 통해 하나의 레이어에서도 멀리 있는 픽셀에 attention 가능
 ![](Aspose.Words.e45a31d5-45a9-4228-a7e7-3034abe31d6d.171.png)[](https://blogger.googleusercontent.com/img/a/AVvXsEgq0bARM9_VPoGBUC950LDY8L_pDPg_SxWWzxm327DwD9VbY2PTJoowsci8_jTXEGNxIn9BlohspoW5evSJN6M_YXCrz-jYBClyYGfmg0LJBMLxQWUc-Gs9ixlqzMshoVW56STWeWcrVmxu7DlrfZhXJ5WcPfBZJUu-FOPTtUbXlqhRRztmceqqgDYLVLl-)
-**===============================**<br>
-**📌 11. Fine Tuning LLM on Custom Dataset**
+
+### 📌 11. Fine Tuning LLM on Custom Dataset**
 Phi-2 & Phi-3
 - **Phi**: the Microsoft family of small language models (SLM)
   - Phi-2 이전 모델들

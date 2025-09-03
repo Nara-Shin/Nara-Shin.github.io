@@ -3,8 +3,7 @@ layout: page
 title: 2025
 permalink: /2025
 ---
-#### <a name="230142984664126080"></a>**2025 정리** 
-#### **정리**
+#### **링크**
 -----
 - [트렌드 사이트](https://www.deeplearning.ai/search/)
 - [FSDL 사이트](https://fullstackdeeplearning.com/spring2021/lecture-1/)
@@ -17,7 +16,7 @@ permalink: /2025
 
 
 
-#### <a name="more"></a>**목차**
+#### **목차**
 [FSDL\_2021]\
 📌 Lecture 1: DL Fundamentals\
 📌 Lecture 12: Research Directions\
@@ -28,13 +27,9 @@ permalink: /2025
 📌 Lecture 7: Foundation Models\
 [Udemy]\
 📌 3. Transformers Architectures and Basic LLM Concepts 
-
 📌 4. BERT Architecture Theory 
-
 📌 6. Knowledge Distillation for BERT - DistilBERT, MobileBERT and TinyBERT 
-
 📌 10. Fine Tuning Vision Transformer (ViT) for Indian Foods Classification 
-
 📌 11. Fine Tuning LLM on Custom Dataset
 
 

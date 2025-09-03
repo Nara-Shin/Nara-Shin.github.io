@@ -15,19 +15,19 @@ permalink: /2025
 
 **목차**
 **[FSDL\_2021]**
-📌 Lecture 1: DL Fundamentals\
-📌 Lecture 12: Research Directions\
+📌 Lecture 1: DL Fundamentals<br>
+📌 Lecture 12: Research Directions<br>
 **[FSDL\_2022]**
-📌 Lecture 4: Data Management\
-📌 Lecture 5: Deployment\
-📌 Lecture 6: Continual Learning\
-📌 Lecture 7: Foundation Models\
+📌 Lecture 4: Data Management<br>
+📌 Lecture 5: Deployment<br>
+📌 Lecture 6: Continual Learning<br>
+📌 Lecture 7: Foundation Models<br>
 **[Udemy]**
-📌 3. Transformers Architectures and Basic LLM Concepts\
-📌 4. BERT Architecture Theory\
-📌 6. Knowledge Distillation for BERT - DistilBERT, MobileBERT and TinyBERT\
-📌 10. Fine Tuning Vision Transformer (ViT) for Indian Foods Classification\
-📌 11. Fine Tuning LLM on Custom Dataset\
+📌 3. Transformers Architectures and Basic LLM Concepts<br>
+📌 4. BERT Architecture Theory<br>
+📌 6. Knowledge Distillation for BERT - DistilBERT, MobileBERT and TinyBERT<br>
+📌 10. Fine Tuning Vision Transformer (ViT) for Indian Foods Classification<br>
+📌 11. Fine Tuning LLM on Custom Dataset<br>
 
 **===============================**
 **[FSDL\_2021]**

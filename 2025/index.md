@@ -14,22 +14,22 @@ permalink: /2025
 - [인프라2](https://yeong-dong-ra.tistory.com/4)
 
 **목차**
-**[FSDL\_2021]**
+**[FSDL\_2021]**<br>
 📌 Lecture 1: DL Fundamentals<br>
 📌 Lecture 12: Research Directions<br>
-**[FSDL\_2022]**
+**[FSDL\_2022]**<br>
 📌 Lecture 4: Data Management<br>
 📌 Lecture 5: Deployment<br>
 📌 Lecture 6: Continual Learning<br>
 📌 Lecture 7: Foundation Models<br>
-**[Udemy]**
+**[Udemy]**<br>
 📌 3. Transformers Architectures and Basic LLM Concepts<br>
 📌 4. BERT Architecture Theory<br>
 📌 6. Knowledge Distillation for BERT - DistilBERT, MobileBERT and TinyBERT<br>
 📌 10. Fine Tuning Vision Transformer (ViT) for Indian Foods Classification<br>
 📌 11. Fine Tuning LLM on Custom Dataset<br>
 
-**===============================**
+**===============================**<br>
 **[FSDL\_2021]**
 **📌 Lecture 1: DL Fundamentals**
 <https://youtu.be/fGxWfEuUu0w>
@@ -227,7 +227,7 @@ GANs([	2) Generative Adversarial Networks (GANs)](https://wikidocs.net/146217))
 - **GPU + CUDA(NVIDIA)**:
   - 행렬 연산 최적화(딥러닝 모델의 대부분의 연산은 행렬 곱셈)
   - 병렬 연산 수행에 효율적
-**===============================**
+**===============================**<br>
 **📌 Lecture 12: Research Directions**
 <https://fullstackdeeplearning.com/spring2021/lecture-12/>
 **[Unsupervised Learning]**
@@ -970,7 +970,7 @@ MDP는 다음의 다섯 요소로 구성됩니다:
 |⚠ 과제|검증 어려움, 데이터 부족, 해석력 부족|
 |🌍 기대 효과|실험 비용 절감, 디자인 혁신, 과학적 통찰 확보|
 
-**===============================**
+**===============================**<br>
 **[FSDL\_2022]**
 **📌 Lecture 3: Troubleshooting & Testing**
 **1 Testing software**
@@ -1266,7 +1266,7 @@ ML Test Score는 구글의 머신러닝 프로젝트 경험에서 발전된 엄�
 
 지금까지의 조언은 모델 종류나 태스크에 종속되지 않는 범용 가이드입니다. 그 이후의 세부 조정은 태스크·아키텍처에 특화돼야 합니다.
 - HuggingFace 등에서 이미 잘 작동하는 아키텍처·하이퍼파라미터를 참고
-**===============================**
+**===============================**<br>
 **📌 Lecture 4: Data Management**
 [ 관련 자료 링크 ]
 <https://fullstackdeeplearning.com/course/2022/lecture-4-data-management/>
@@ -1474,7 +1474,7 @@ ML Test Score는 구글의 머신러닝 프로젝트 경험에서 발전된 엄�
 - **다양한 저장소와 도구를 적절히 활용하여 데이터의 품질과 버전 관리를 철저히 할 것.**
 - **자동화와 자동 라벨링, 프라이버시 보호 기술도 중요한 연구 분야임.**
 
-**===============================**
+**===============================**<br>
 **📌 Lecture 5: Deployment**
 <https://fullstackdeeplearning.com/course/2022/lecture-5-deployment/>
 **Introduction![ref2]**
@@ -1709,7 +1709,7 @@ Picking the right framework to do edge deployment depends both on how you train 
 - 모델은 종종 예상치 못한 방식으로 망가짐.
 - 엣지에서는 장애 시 원격 복구도 어렵기 때문에, 모델이 실패할 경우를 대비한 대안 경로(fallback) 반드시 필요.
 ![ref3]
-**===============================**
+**===============================**<br>
 **📌 Lecture 6: Continual Learning**
 <https://fullstackdeeplearning.com/course/2022/lecture-6-continual-learning/>
 <https://fullstackdeeplearning.com/course/2022/lecture-6-continual-learning/>
@@ -2260,7 +2260,7 @@ Picking the right framework to do edge deployment depends both on how you train 
 - ML 엔지니어로서, 모니터링을 적극 활용해서 전략적으로 모델을 개선할 것을 권장함
 - 항상 단순한 접근에서 시작해서, 점진적으로 발전시켜 나갈 것
 
-**===============================**
+**===============================**<br>
 **📌 Lecture 7: Foundation Models**
 ![ref4][](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2HCopU1f0_9iQ6qGs-8Vyosg2rzHejMgaenwZVjWvtzfwgYVcDNqwlafa2mDlsNbqR8SlsQLvYgjN27EYg4dRtwpJMZf3Pw-7eAjtETIz44n0IUykTIIoeZ78zdM-59-hPoaxiWXZ6e8jc35UcpCF0sEih5LxPdKL0oU31CkIeEOyYycTwFMv22B8GbW5/s1091/11.png)
 <https://fullstackdeeplearning.com/course/2022/lecture-7-foundation-models/>
@@ -3131,7 +3131,7 @@ noise = torch.randn(1, 3, 512, 512) *#### 고해상도 노이즈 이미지* **fo
 
 
 
-**===============================**
+**===============================**<br>
 **[Udemy]**
 **📌 3. Transformers Architectures and Basic LLM Concepts**
 
@@ -3355,7 +3355,7 @@ FNN은 트랜스포머의 각 인코더·디코더 블록에서 **어텐션 뒤*
    1. 각 토큰별로 독립 계산 → GPU에서 매우 빠르게 병렬 처리 가능.
 
 
-**===============================**
+**===============================**<br>
 **📌 4. BERT Architecture Theory**
 
 **⭐️ BERT 핵심 키워드 ⭐️**
@@ -3805,7 +3805,7 @@ BERT 이후 등장한 대표적인 변형 모델들을 시간순으로 정리하
 
 ![ref3]
 
-**===============================**
+**===============================**<br>
 **📌 6. Knowledge Distillation for BERT - DistilBERT, MobileBERT and TinyBERT**
 
 [ 관련 자료 링크 ]
@@ -4107,7 +4107,7 @@ Hidden State Loss는 내부 feature alignment, Attention Loss는 token dependenc
 - 이들 모델은 **속도, 크기, 성능의 균형**을 맞추기 위해 다양한 구조와 학습 방법을 사용하며, 자원이 제한된 환경에서도 활용 가능하게 설계됨.
 - **지식 증류는** 이들 모델의 핵심 기술로, 다양한 레이어와 표현을 모방하는 손실 함수를 통해 학습됨.
 
-**===============================**
+**===============================**<br>
 **📌 10. Fine Tuning Vision Transformer (ViT) for Indian Foods Classification**
 
 **ViT란?**
@@ -4185,7 +4185,7 @@ CNN은 커널이 국소 정보만 추출하기 때문에, 멀리 떨어진 두 �
 
 하지만 국소적으로 집중하는 CNN과 다르게 ViT는 self-attention을 통해 하나의 레이어에서도 멀리 있는 픽셀에 attention 가능
 ![](Aspose.Words.e45a31d5-45a9-4228-a7e7-3034abe31d6d.171.png)[](https://blogger.googleusercontent.com/img/a/AVvXsEgq0bARM9_VPoGBUC950LDY8L_pDPg_SxWWzxm327DwD9VbY2PTJoowsci8_jTXEGNxIn9BlohspoW5evSJN6M_YXCrz-jYBClyYGfmg0LJBMLxQWUc-Gs9ixlqzMshoVW56STWeWcrVmxu7DlrfZhXJ5WcPfBZJUu-FOPTtUbXlqhRRztmceqqgDYLVLl-)
-**===============================**
+**===============================**<br>
 **📌 11. Fine Tuning LLM on Custom Dataset**
 Phi-2 & Phi-3
 - **Phi**: the Microsoft family of small language models (SLM)

@@ -1,7 +1,7 @@
 ---
 layout: page
-title: matrix.md
-permalink: /matrix.md
+title: matrix
+permalink: /matrix
 ---
 
 

@@ -5126,16 +5126,6 @@ QLoRA는 원래 모델 weight를 4bit 양자화(FP32 → 4bit) 해서 GPU 메모
   - 중간 규모 모델 (7B ~ 13B) + 빠른 학습 → LoRA
   - 초거대 모델 (33B 이상) + 제한된 GPU 자원 → QLoRA
 
-![ref1]
-
-- ![ref1] 공유 링크 만들기 
-- ![ref1] Facebook 
-- ![ref1] X 
-- ![ref1] Pinterest 
-- ![ref1] 이메일 
-- ![ref1] 기타 앱 
-
-[ref1]: Aspose.Words.e45a31d5-45a9-4228-a7e7-3034abe31d6d.001.png
 [ref2]: Aspose.Words.e45a31d5-45a9-4228-a7e7-3034abe31d6d.002.png
 [image-20250725-002701.png]: Aspose.Words.e45a31d5-45a9-4228-a7e7-3034abe31d6d.003.png
 [image-20250725-030248.png]: Aspose.Words.e45a31d5-45a9-4228-a7e7-3034abe31d6d.011.png

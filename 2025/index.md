@@ -3,10 +3,10 @@ layout: page
 title: 2025
 permalink: /2025
 ---
- 
 
 **링크**
------
+
+
 - [트렌드 사이트](https://www.deeplearning.ai/search/)
 - [FSDL 사이트](https://fullstackdeeplearning.com/spring2021/lecture-1/)
 - [면접준비](https://velog.io/@jpseo99/AI-Research-%EC%A7%81%EA%B5%B0-%EB%A9%B4%EC%A0%91-%EC%A4%80%EB%B9%84-1)
@@ -15,10 +15,6 @@ permalink: /2025
 - [인프라1](https://yeong-dong-ra.tistory.com/3)
 - [인프라2](https://yeong-dong-ra.tistory.com/4)
 
-
-
-
- 
 
 **목차**
 **[FSDL\_2021]**
@@ -30,27 +26,42 @@ permalink: /2025
 📌 Lecture 6: Continual Learning\
 📌 Lecture 7: Foundation Models\
 **[Udemy]**
-📌 3. Transformers Architectures and Basic LLM Concepts 
+📌 3. Transformers Architectures and Basic LLM Concepts
+
+
 📌 4. BERT Architecture Theory
 📌 6. Knowledge Distillation for BERT - DistilBERT, MobileBERT and TinyBERT
 📌 10. Fine Tuning Vision Transformer (ViT) for Indian Foods Classification
 📌 11. Fine Tuning LLM on Custom Dataset
 
 
- 
 
 **===============================**
- 
 
 **[FSDL\_2021]**
- 
 
 **📌 Lecture 1: DL Fundamentals**
 <https://youtu.be/fGxWfEuUu0w>
 
 <https://fullstackdeeplearning.com/spring2021/lecture-1/>
 
-|<br>**[핵심키워드]<br>- 뉴런(Neuron):** 생물학적 뉴런에서 착안한 계산 모델. 입력값, 가중치, 바이어스, 활성화 함수를 통해 출력 결정<br>**- 퍼셉트론(Perceptron):** 입력 × 가중치 + 편향 → 활성화 함수 → 출력<br>**- 활성화 함수(Activation Function):** 뉴런 발화 여부 결정. [Sigmoid](https://www.google.com/search?ved=1t:260882&q=sigmoid+activation+function&bbid=6610095277986266443&bpid=230142984664126080), Tanh, [ReLU](https://www.google.com/search?ved=1t:260882&q=ReLU+activation+function&bbid=6610095277986266443&bpid=230142984664126080) 등 사용<br>**- Sigmoid:** 출력 0~1 압축<br>**- ReLU:** 입력 > 0 → 그대로, ≤ 0 → 0, 학습 효율·성능 우수<br>**- 신경망 구조:** 입력층 → 은닉층 → 출력층. 가중치 설정에 따라 모델 표현력 결정<br>**- 보편 근사 정리(Universal Approximation Theorem):** 2개 은닉층만 있어도 충분한 뉴런 수가 있으면 임의 연속 함수 근사 가능<br>**- 학습 유형**<br>**-** 📘 [Supervised](https://www.google.com/search?ved=1t:260882&q=define+supervised+learning&bbid=6610095277986266443&bpid=230142984664126080): 입력(X)-레이블(Y) 기반 학습 (예: 이미지 분류)<br>**-** 📗 [Unsupervised](https://www.google.com/search?ved=1t:260882&q=define+unsupervised+learning&bbid=6610095277986266443&bpid=230142984664126080): 레이블 없이 데이터 구조 학습 (예: VAE, GAN, Word2Vec)<br>**-** 📕 [Reinforcement](https://www.google.com/search?ved=1t:260882&q=define+reinforcement+learning&bbid=6610095277986266443&bpid=230142984664126080): 보상을 기반으로 최적 행동 학습 (예: 게임, 로봇 제어)<br>**- 손실 함수(Loss):** 회귀는 MSE, Huber / 분류는 교차 엔트로피 손실(Cross-Entropy)<br>**- 경사 하강법(Gradient Descent):** 손실 최소화를 위한 반복적 최적화. 기울기(gradient)를 따라 가중치 갱신<br>**- SGD (Stochastic Gradient Descent):** 전체 데이터 대신 미니배치로 기울기 계산 → 효율적 학습<br>**- [**Adam**](https://www.google.com/search?ved=1t:260882&q=Adam+optimizer&bbid=6610095277986266443&bpid=230142984664126080):** Momentum + Adagrad 장점 결합 → 가장 널리 사용되는 옵티마이저<br>**- 역전파(Backpropagation):** 순전파에서 값 저장 → 역전파에서 연쇄법칙으로 기울기 계산 (자동 미분 활용)<br>**- 아키텍처 고려:** Fully connected는 일반적 구조, ConvNet은 시각 정보 처리 강점, RNN은 시퀀스 데이터 처리 적합<br>**- [**GPU**](https://www.google.com/search?ved=1t:260882&q=GPU+%EB%94%A5%EB%9F%AC%EB%8B%9D&bbid=6610095277986266443&bpid=230142984664126080)와 딥러닝 붐:** 2013년 이후 CUDA·GPU 병렬처리 덕분에 급성장. 대부분 연산은 행렬 곱셈 기반|
+|<br>**[핵심키워드]<br>- 뉴런(Neuron):** 생물학적 뉴런에서 착안한 계산 모델. 입력값, 가중치, 바이어스, 활성화 함수를 통해 출력 결정<br>**- 퍼셉트론(Perceptron):** 입력 × 가중치 + 편향 → 활성화 함수 → 출력<br>**-
+활성화 함수(Activation Function):** 뉴런 발화 여부 결정. [Sigmoid](https://www.google.com/search?ved=1t:260882&q=sigmoid+activation+function&bbid=6610095277986266443&bpid=230142984664126080), Tanh, [ReLU](https://www.google.com/search?ved=1t:260882&q=ReLU+activation+function&bbid=6610095277986266443&bpid=230142984664126080) 등 사용<br>**-
+Sigmoid:** 출력 0~1 압축<br>**-
+ReLU:** 입력 > 0 → 그대로, ≤ 0 → 0, 학습 효율·성능 우수<br>**-
+신경망 구조:** 입력층 → 은닉층 → 출력층. 가중치 설정에 따라 모델 표현력 결정<br>**-
+보편 근사 정리(Universal Approximation Theorem):** 2개 은닉층만 있어도 충분한 뉴런 수가 있으면 임의 연속 함수 근사 가능<br>**-
+학습 유형**<br>**-**
+📘 [Supervised](https://www.google.com/search?ved=1t:260882&q=define+supervised+learning&bbid=6610095277986266443&bpid=230142984664126080): 입력(X)-레이블(Y) 기반 학습 (예: 이미지 분류)<br>**-**
+📗 [Unsupervised](https://www.google.com/search?ved=1t:260882&q=define+unsupervised+learning&bbid=6610095277986266443&bpid=230142984664126080): 레이블 없이 데이터 구조 학습 (예: VAE, GAN, Word2Vec)<br>**-**
+📕 [Reinforcement](https://www.google.com/search?ved=1t:260882&q=define+reinforcement+learning&bbid=6610095277986266443&bpid=230142984664126080): 보상을 기반으로 최적 행동 학습 (예: 게임, 로봇 제어)<br>**-
+손실 함수(Loss):** 회귀는 MSE, Huber / 분류는 교차 엔트로피 손실(Cross-Entropy)<br>**-
+경사 하강법(Gradient Descent):** 손실 최소화를 위한 반복적 최적화. 기울기(gradient)를 따라 가중치 갱신<br>**-
+SGD (Stochastic Gradient Descent):** 전체 데이터 대신 미니배치로 기울기 계산 → 효율적 학습<br>**-
+[**Adam**](https://www.google.com/search?ved=1t:260882&q=Adam+optimizer&bbid=6610095277986266443&bpid=230142984664126080):** Momentum + Adagrad 장점 결합 → 가장 널리 사용되는 옵티마이저<br>**-
+역전파(Backpropagation):** 순전파에서 값 저장 → 역전파에서 연쇄법칙으로 기울기 계산 (자동 미분 활용)<br>**-
+아키텍처 고려:** Fully connected는 일반적 구조, ConvNet은 시각 정보 처리 강점, RNN은 시퀀스 데이터 처리 적합<br>**-
+[**GPU**](https://www.google.com/search?ved=1t:260882&q=GPU+%EB%94%A5%EB%9F%AC%EB%8B%9D&bbid=6610095277986266443&bpid=230142984664126080)와 딥러닝 붐:** 2013년 이후 CUDA·GPU 병렬처리 덕분에 급성장. 대부분 연산은 행렬 곱셈 기반|
 | :- |
 |<br>**[딥러닝 기본 개요]<br>인공신경망(Neural Networks)**|
 
@@ -64,7 +75,6 @@ permalink: /2025
   - [**MLP**](https://www.google.com/search?ved=1t:260882&q=define+MLP&bbid=6610095277986266443&bpid=230142984664126080)(multi-layer perceptron,다층 퍼셉트론): 입력층 → 은닉층 → 출력층
     - 단층 퍼셉트론으로는 XOR을 구현할 수 없지만, 다층 퍼셉트론으로 XOR 게이트를 구현할 수 있음
     - <https://m.blog.naver.com/samsjang/221030487369>
- 
 
 **[신경망 수학적 구조]**
 - **활성화 함수 <https://wikidocs.net/272399>**
@@ -78,7 +88,6 @@ permalink: /2025
     - 시그모이드(Sigmoid): 0~1, 주로 이진분류
     - 하이퍼볼릭 탄젠트(hyperbolic tangent, Tanh): -1~1, 0 중심으로 대칭적인 활성화 함수
     - **ReLU(Rectified Linear Unit)**: 입력값이 0보다 크면 입력값을 그대로 출력하고, 0보다 작으면 0을 출력, f(x) = max(0, x) → 가장 널리 사용됨
- 
 
 **[신경망 구성]**
 - **신경망 구성**
@@ -88,7 +97,6 @@ permalink: /2025
   - 학습은 이러한 **가중치와 편향을 조정**하는 과정
   - 이 계층적 구조를 통해 복잡한 **비선형 함수를 효과적으로 근사**
   - 신경망은 머신러닝에서 **지도 학습, 비지도 학습, 강화 학습** 등 다양한 문제에 활용
- 
 
 **[보편 근사 정리]**
 - **보편 근사 정리(Universal Approximation Theorem)**:
@@ -97,7 +105,6 @@ permalink: /2025
 - **실제 적용**
   - 실제로는 데이터의 양과 네트워크 구조, 학습 알고리즘 등이 성능에 큰 영향을 미침
   - → 이론적인 보편성이 항상 실제 성능으로 이어지지는 않음
- 
 
 **[머신러닝 학습 유형]**
 - **지도학습 (Supervised)**: 입력(x) + 정답(y) → f(x) ≈ y
@@ -107,11 +114,11 @@ permalink: /2025
 - **비지도학습 (Unsupervised)**: 레이블이 없는 입력(x)만 존재, 패턴 추출
   - 레이블되지 않은 데이터에서 숨겨진 패턴이나 구조를 학습, 새로운 데이터 생성
   - 차원 축소, 군집화, 이상 탐지 등에 사용
-    - 예: 오토인코더, Word2Vec, VAE(<https://wikidocs.net/152474>), [GANs](https://www.google.com/search?ved=1t:260882&q=GANs+generative+adversarial+networks&bbid=6610095277986266443&bpid=230142984664126080)(<https://wikidocs.net/146217>), GANs([	2) Generative Adversarial Networks (GANs)](https://wikidocs.net/146217))
+    - 예: 오토인코더, Word2Vec, VAE(<https://wikidocs.net/152474>), [GANs](https://www.google.com/search?ved=1t:260882&q=GANs+generative+adversarial+networks&bbid=6610095277986266443&bpid=230142984664126080)(<https://wikidocs.net/146217>),
+GANs([	2) Generative Adversarial Networks (GANs)](https://wikidocs.net/146217))
 - **강화학습 (Reinforcement)**: 환경과 상호작용, 보상 최대화, x\_t → a\_t, x\_{t+1} →a\_{t+1}, …
 - 에이전트가 환경과 상호작용하며 보상을 최대화하는 방법을 학습
   - 예: 게임 플레이(바둑, …), 로봇 제어, 자율주행 등
- 
 
 **[학습 방법론: 손실 최소화]**
 - **ERM (경험적 위험 최소화, *Empirical Risk Minimization*)**
@@ -183,7 +190,6 @@ permalink: /2025
     - 데이터 샘플 하나씩 또는 일부(batch)만 뽑아 업데이트
     - ➕ 훨씬 빠름, 계산 효율적
     - ➖ 각 스텝이 noisy하여 불안정할 수 있음
- 
 
 **[역전파 (Backpropagation)]**
 <https://jdcyber.tistory.com/100>
@@ -206,7 +212,6 @@ permalink: /2025
     - 이전 층의 출력과 국소 미분값을 활용해 자신의 기울기(내가 손실에 얼마나 영향을 주는지) 계산
     - 복잡한 신경망의 기울기를 계산하는 과정을 단순화(체인 룰을 반복적으로 적용하므로, 수식이 복잡한 신경망도 기계적으로 미분)
     - 계산그래프: 신경망의 연산을 그래프 자료구조로 표현해 중간값을 저장, 역전파 계산을 효율화
- 
 
 **[신경망 아키텍처 설계]**
 **Fully connected layers(완전 연결층, 또는 Dense layer)**
@@ -244,26 +249,21 @@ permalink: /2025
   - 모델 계산량과 파라미터 수를 줄이면서도 성능 유지 또는 향상시키는 구조적인 아이디어들
     - Factorized Convolutions: 큰 연산을 여러 개의 작은 연산으로 분해해 효율 향상 (예: depthwise separable conv 등)
     - Strided Convolutions: 다운샘플링 기능도 겸한 합성곱 → 연산량 감소 + 특징 추출
- 
 
 **[딥러닝 기술 발전의 배경]**
 - **GPU**: 병렬 연산에 특화된 하드웨어로, 딥러닝 모델 학습에 필수적
 - **GPU + CUDA(NVIDIA)**:
   - 행렬 연산 최적화(딥러닝 모델의 대부분의 연산은 행렬 곱셈)
   - 병렬 연산 수행에 효율적
- 
 
 **===============================**
- 
 
 **📌 Lecture 12: Research Directions**
 <https://fullstackdeeplearning.com/spring2021/lecture-12/>
 
 **[Unsupervised Learning]**
- 
 
 🧭 비지도 학습의 기본 문제의식
- 
 
 **❓ 기존 딥러닝의 한계**
 - **Supervised Learning**은 대규모 라벨링 데이터 필요
@@ -273,22 +273,19 @@ permalink: /2025
 
 📌 **비지도 학습은 “라벨 없이도 학습할 수 있는가?”에 대한 해답**
 
------
- 
+
+
 
 **2. 🪜 Semi-supervised vs. Unsupervised**
- 
 
 **✅ Semi-supervised Learning (반지도 학습)**
 - 일부 라벨만 있고 나머지는 없음
 - 아이디어: **라벨 정보를 주변 데이터로 전파**
- 
 
 **🧠 예시 (Banana-shaped toy dataset)**
 - 두 개의 반달 모양 데이터
 - 5개씩만 라벨 → 가까운 이웃에 라벨을 **전파**
 - **연속성 가정**: 가까운 점은 같은 라벨일 가능성이 높다
- 
 
 **🛠 대표 기법: Noisy Student**
 1. 라벨 데이터로 **Teacher 모델** 학습
@@ -298,14 +295,12 @@ permalink: /2025
 
 ✔️ 실제 ImageNet 실험에서 fully supervised보다 높은 정확도 달성 (EfficientNet + [Noisy Student](https://www.google.com/search?ved=1t:260882&q=Noisy+Student+learning+algorithm&bbid=6610095277986266443&bpid=230142984664126080))
 
------
- 
+
+
 
 **3. 🧠 진짜 비지도 학습 (Unsupervised Learning)**
- 
 
 **Semi-supervised learning의 한계**
- 
 
 **⚠ 전제 조건의 문제**
 - Semi-supervised learning (예: Noisy Student)은 다음을 **가정**합니다:
@@ -318,23 +313,30 @@ permalink: /2025
   - → 이 경우 pseudo-label을 붙여도 **의미 없는 학습이 될 위험** 존재
 
 💡 이 문제를 해결하려면 **분포를 맞추지 않고도 배울 수 있어야** 함
- 
 
 **🧠 모델 구조: Multi-task Head (두 개의 출력)**
-`    `- Shared Trunk: 대다수 파라미터가 있는 공통 표현 학습 부분
+`
+ 
+ `-
+Shared Trunk: 대다수 파라미터가 있는 공통 표현 학습 부분
 
-`    `- Head 1 (Unsupervised): 라벨 없는 데이터로 학습 (예: 다음 단어 예측)
+`
+ 
+ `-
+Head 1 (Unsupervised): 라벨 없는 데이터로 학습 (예: 다음 단어 예측)
 
-`    `- Head 2 (Supervised): 소량 라벨 데이터로 학습 (예: 감성 분석 등)
+`
+ 
+ `-
+Head 2 (Supervised): 소량 라벨 데이터로 학습 (예: 감성 분석 등)
 
 🔄 이 방식은 "Representation learning"을 \*\*사전학습(pretraining)\*\*으로 먼저 수행
- 
 
 **🔑 핵심 전제**
 - "만약 모델이 다음 프레임/단어/색을 예측할 수 있다면, 그건 이 데이터의 구조를 **이해했다는 증거**"
 - → 그 **shared trunk**는 다른 태스크에도 잘 작동함
------
- 
+
+
 
 **🧪 Unsupervised Task의 실제 예시들**
 
@@ -352,7 +354,6 @@ permalink: /2025
 \- 시각적 구조 이해 필요
 
 ✅ **공통점**: 사람이 라벨링하지 않아도 정답을 쉽게 정의할 수 있음 → **라벨 없는 데이터만으로 학습 가능**
- 
 
 **🎯 핵심 전제: Representation은 전이 가능하다**
 - 만약 네트워크가:
@@ -362,11 +363,10 @@ permalink: /2025
 
 - → 해당 네트워크는 **데이터 구조와 의미를 잘 이해하고 있는 것**
 - → **감성 분석, QA, 요약 등** 다양한 task에서 재사용 가능
------
- 
+
+
 
 **4. 💬 자연어 처리에서의 혁신**
- 
 
 **✅ GPT-2: 다음 단어 예측 (Next Token Prediction)**
 - 순수 **비지도 학습**으로 사전학습
@@ -376,48 +376,42 @@ permalink: /2025
   - “Recycling is good. No! It's bad...” → 주어진 프롬프트에 맞는 현실적인 문장 생성
 
 🧠 GPT-2는 **처음으로 "범용 사전학습 → 특화 fine-tuning"의 성공을 입증**
- 
 
 **✅ 성능:**
 - 다양한 벤치마크에서 **기존 지도학습 전용 모델을 능가**
 - 모델 크기 증가 → 성능 선형 증가
   - (그래서 [OpenAI](https://www.google.com/search?ved=1t:260882&q=OpenAI&bbid=6610095277986266443&bpid=230142984664126080)가 GPT-3 개발 위해 **10억 달러 펀딩**)
------
- 
+
+
 
 **5. 🧠 BERT: 마스킹 기반 학습 (Masked Language Model)**
 - 입력 텍스트 중간 단어 마스킹 → 예측
 - 문장 전체를 고려하는 **양방향(context-aware) 학습**
 - 이후 NSP(Next Sentence Prediction) 등도 학습
 - 모든 NLP 모델이 **BERT 계열 또는 변형**으로 대체됨 (T5, ERNIE, etc.)
------
- 
+
+
 
 **6. 👁️ 비전(Computer Vision)에서의 확장**
- 
 
 **⚠️ 문제: 이미지 패치 복원은 난이도가 훨씬 높음**
 - 예: 16x16x3 픽셀 → 786차원, 값의 경우의 수는 256^786
 - 단어 예측은 3~5만개 중 1개 선택 → 훨씬 간단
- 
 
 **✅ 대안적 접근**
- 
 
 **(1) Jigsaw Puzzle Task**
 - 이미지를 3x3 그리드로 자르고 섞음 → 원래 위치로 재배열
 - spatial reasoning 학습에 효과적
- 
 
 **(2) Rotation Prediction**
 - 이미지를 0, 90, 180, 270도 중 하나로 회전
 - 회전 각도를 예측하는 간단한 태스크
 - Surprisingly effective!
------
- 
+
+
 
 **7. 🧲 Contrastive Learning: 대표적 자기지도학습 기법**
- 
 
 **✅ 대표 기법: SimCLR / MoCo**
 🖼 Augmentation: 이미지 하나 → 두 개의 변형본 만들기 (crop, blur, gray 등)
@@ -425,18 +419,16 @@ permalink: /2025
 🧲 Positive Pair: 같은 이미지에서 나온 두 변형본 → 가까운 벡터로 매핑
 
 🚫 Negative Pair: 다른 이미지 → 멀리 매핑
- 
 
 **학습 전략:**
 - 비지도로 표현 학습
 - 이후 **linear classifier만 추가**해도 ImageNet 등에서 **fully supervised 모델과 비슷한 성능**
- 
 
 **✅ 특징**
 - 라벨 없이도 **정교한 시각 표현 학습**
 - 모델 크기 ↑ → 성능 선형 증가 (supervised보다 더 명확함)
------
- 
+
+
 
 **8. 📈 왜 빠르게 실용화되었는가?**
 📦 데이터 활용 극대화: 라벨 없는 웹 데이터도 학습에 사용 가능
@@ -447,34 +439,46 @@ permalink: /2025
 
 🏭 적용사례 폭발: Google 검색, Chatbot, OCR, 음성 인식 등 모두 pretraining 기반
 
------
- 
+
+
 
 **✅ 마무리 요약**
 
-|`    `🎯 목표|**라벨 없이 학습**할 수 있는 표현(Representation) 학습|
+|`
+
+ 
+`🎯 목표|**라벨 없이 학습**할 수 있는 표현(Representation) 학습|
 | :- | :- |
-|`    `🔍 주요 기법|Noisy Student, GPT, BERT, [SimCLR](https://www.google.com/search?ved=1t:260882&q=SimCLR&bbid=6610095277986266443&bpid=230142984664126080), [MoCo](https://www.google.com/search?ved=1t:260882&q=MoCo&bbid=6610095277986266443&bpid=230142984664126080) 등|
-|`    `⚡ 패러다임 전환|“Supervised가 전부다” → “Unsupervised에서 출발, fine-tuning으로 완성”|
-|`    `📊 실용화|NLP는 완전히 전환 완료, Vision은 확산 중|
-|`    `📌 학습 방식|예측, 재구성, 대조적 학습, 회전 등 다양한 과제 활용|
- 
+|`
+
+ 
+`🔍 주요 기법|Noisy Student, GPT, BERT, [SimCLR](https://www.google.com/search?ved=1t:260882&q=SimCLR&bbid=6610095277986266443&bpid=230142984664126080), [MoCo](https://www.google.com/search?ved=1t:260882&q=MoCo&bbid=6610095277986266443&bpid=230142984664126080) 등|
+|`
+
+ 
+`⚡ 패러다임 전환|“Supervised가 전부다” → “Unsupervised에서 출발, fine-tuning으로 완성”|
+|`
+
+ 
+`📊 실용화|NLP는 완전히 전환 완료, Vision은 확산 중|
+|`
+
+ 
+`📌 학습 방식|예측, 재구성, 대조적 학습, 회전 등 다양한 과제 활용|
 
 
- 
 
 **[Reinforcement Learning]**
------
- 
+
+
 
 **🤖 Reinforcement Learning (강화학습) 정리**
------
- 
+
+
 
 **1. 🧭 개요: RL은 무엇인가?**
 - 일반적인 딥러닝은 **패턴 인식기**(pattern recognizer)로 작동
 - 하지만 \*\*강화학습(RL)\*\*은 \*\*에이전트(agent)\*\*가 되어 **세계를 변화시키고**, 그 변화로부터 다시 학습하는 **순환 구조**
- 
 
 **핵심 구성요소**
 
@@ -485,34 +489,34 @@ permalink: /2025
 |State|현재 환경 상태|
 |Reward|행동 결과에 따라 주어지는 점수 (피드백)|
 
- 
 
 **예시**
 - 로봇이 파이를 굽고 → 사람이 맛을 보고 → "맛있다" (높은 reward)를 주는 구조
------
- 
+
+
 
 **2. 🎯 RL이 어려운 이유**
- 
 
 **❗ 주요 도전 과제**
 
-|🧾 **Credit Assignment Problem**|결과가 좋거나 나빴을 때, 그 원인이 어떤 행동 때문이었는지 파악 어려움 (ex. 파이가 맛없을 때 무엇이 잘못됐는지?)|
+|🧾
+**Credit Assignment Problem**|결과가 좋거나 나빴을 때, 그 원인이 어떤 행동 때문이었는지 파악 어려움 (ex. 파이가 맛없을 때 무엇이 잘못됐는지?)|
 | :- | :- |
-|🌀 **학습 불안정성(Stability)**|시행착오(trial and error) 기반이므로 **성능이 오히려 나빠지는 경우도 있음**|
-|🔍 **탐험(Exploration)**|**새로운 행동을 시도**해야 더 나은 결과를 찾을 수 있지만, 항상 위험을 동반|
+|🌀
+**학습 불안정성(Stability)**|시행착오(trial and error) 기반이므로
+**성능이 오히려 나빠지는 경우도 있음**|
+|🔍
+**탐험(Exploration)**|**새로운 행동을 시도**해야 더 나은 결과를 찾을 수 있지만, 항상 위험을 동반|
 
------
- 
+
+
 
 **3. 📈 대표 연구 및 성공 사례**
- 
 
 **✅ (1) Atari 게임 학습 (DQN, 2013~)**
 - [**DeepMind**](https://www.google.com/search?ved=1t:260882&q=DeepMind&bbid=6610095277986266443&bpid=230142984664126080)의 딥 Q-Network (DQN): \*\*이미지 입력(픽셀)\*\*만 보고 조이스틱 조작 학습
 - 점수(score)가 보상 역할 → RL 기반의 비디오 게임 마스터링 입증
 - **CV에서 쓰이던 CNN 구조 그대로** 사용 (출력 softmax만 조정)
- 
 
 **✅ (2) AlphaGo, AlphaGo Zero, AlphaZero (2016~)**
 - [**AlphaGo**](https://www.google.com/search?ved=1t:260882&q=AlphaGo+DeepMind&bbid=6610095277986266443&bpid=230142984664126080): 인간 기보 + supervised pre-training → 강화학습으로 fine-tune
@@ -521,37 +525,32 @@ permalink: /2025
 
 🎯 자기강화(self-play)로 **완전한 자율성** 입증
 
------
- 
+
+
 
 **4. 🤖 실제 로봇 제어와 RL**
- 
 
 **✅ (1) 로봇 달리기 (Sim2Real)**
 - Berkeley의 4족 보행 로봇 → 처음에는 넘어지지만 **시간이 지남에 따라 달리기 성공**
 - Atari와 동일한 알고리즘 사용 → **범용성 입증**
- 
 
 **✅ (2) DeepMimic (Berkeley)**
 - 인간의 움직임을 모방하여 **카트휠, 점프, 달리기 등** 자연스럽게 재현
 - 비인간 캐릭터(예: 사자)도 가능 → **게임/애니메이션 제작 혁신**
- 
 
 **✅ (3) Brett 로봇 (블록 맞추기)**
 - 비전+제어를 하나의 neural network로 학습
 - 1시간 내 학습 가능 → **학습 효율성 강조**
- 
 
 **✅ (4) NASA 탄성 로봇 학습(NASA Super Ball)**
 - **Tensegrity 구조**: 봉과 줄로 이루어진 특이한 구조 (탄성 + 경량 + 휴대성)
 - RL을 통해 비직관적인 제어도 성공 → **전통적 제어 설계의 한계 극복**
- 
 
 **✅ (5) Rubik’s Cube Manipulation (OpenAI)**
 - 로봇 손이 실제 큐브를 회전해 맞춤
 - 고차원 물리 제어 + 고정밀 손 조작 → **탐색 전략 + RL 기반 제어 성공**
------
- 
+
+
 
 **5. 🏭 실용화 사례: [**http://Covariant.ai**](http://Covariant.ai)** 
 - RL 연구 경험을 실세계로 확장 → **창고 자동화**
@@ -560,8 +559,8 @@ permalink: /2025
 
 🧑‍🔬 연구실 기술이 실제 산업 적용으로 **이행되고 있음**
 
------
- 
+
+
 
 **6. 🧬 발전 배경 요약**
 
@@ -569,41 +568,42 @@ permalink: /2025
 | :-: | :-: | :-: |
 |1950s|강화이론 (Skinner)|보상 기반 학습 개념 등장 (동물 실험에서 시작)|
 |1980s|MDP + Q-learning|수학적 기반 확립 (Sutton & Barto)|
-|2013|DQN (DeepMind)|딥러닝과 RL의 결합으로 **고차원 시각 입력** 처리 가능|
-|2016~|AlphaGo|자가 학습 기반으로 **전문가 능력 초월**|
+|2013|DQN (DeepMind)|딥러닝과 RL의 결합으로
+**고차원 시각 입력**
+처리 가능|
+|2016~|AlphaGo|자가 학습 기반으로
+**전문가 능력 초월**|
 |2018~|Robotics, [Sim2Real](https://www.google.com/search?ved=1t:260882&q=Sim2Real+domain+adaptation&bbid=6610095277986266443&bpid=230142984664126080)|**시뮬 + RL로 실제 로봇 학습 가능**성 확대|
 |현재|RL + LLM/RLHF|인지/대화형 AI에도 강화학습 도입|
 
------
- 
+
+
 
 **7. 📌 요약**
 
 |**항목**|**내용**|
 | :-: | :-: |
 |🎯 목표|스스로 행동하고 보상 기반으로 학습하는 AI|
-|🧠 차이점|입력 → 출력이 아니라, **행동 → 결과 → 보상 → 학습**의 루프|
+|🧠 차이점|입력 → 출력이 아니라,
+**행동 → 결과 → 보상 → 학습**의 루프|
 |❗ 과제|신호 지연, 보상 희소성, 안정성, 탐험 문제 등|
 |✅ 성과|게임, 로봇, 산업 자동화 등에서 현실 적용 시작|
 |🧭 미래|범용 AI(AGI)로 가기 위한 필수 기술 중 하나로 부각|
 
- 
 
 **[Unsupervised RL]**
------
- 
+
+
 
 **🧠 강화학습에서의 학습 속도 문제와 표현 학습 기반 해결법**
------
- 
+
+
 
 **1. ❓ 문제 제기: “성능은 좋지만 느리다”**
- 
 
 **▶️ 강화학습의 기존 강점**
 - 게임, 로봇 등 **복잡한 문제 해결 능력** 입증
 - **성능 자체는 인간 이상**도 가능
- 
 
 **⏳ 문제점: 학습 속도 차이**
 - 인간은 **15분** 만에 마스터 가능한 Atari 게임
@@ -611,8 +611,8 @@ permalink: /2025
 
 🔥 **학습 효율성**은 RL의 가장 큰 한계 중 하나
 
------
- 
+
+
 
 **2. 🔍 원인 분석: 이미지 입력 vs 상태 입력**
 
@@ -624,12 +624,11 @@ permalink: /2025
 
 - 이미지에는 정보가 "묻혀 있으나", **추출하기 어렵다**
 - 이 차이가 **100배 수준의 학습 속도 차이**를 만든다
------
- 
+
+
 
 **3. 💡 해결 아이디어: Unsupervised Representation Learning + RL**
 🎯 이미지 → **추상 표현(latent representation)** → RL
- 
 
 **🔧 기법: Contrastive Unsupervised Learning (SimCLR, CPC) 응용**
 - 기존: Replay buffer → Encoder → Actor/Critic
@@ -638,55 +637,57 @@ permalink: /2025
     - Query / Key Pairs
     - Similarity measure
     - architecture
- 
 
 **✨ 핵심 아이디어**
 
 |**요소**|**설명**|
 | :-: | :-: |
 |🖼 Augmented views|하나의 이미지에서 여러 변형본 생성 (ex. crop, recolor 등)|
-|🧲 Positive pair|같은 이미지에서 만든 두 변형본은 **가깝게 인코딩**|
-|🚫 Negative pair|다른 이미지에서 만든 변형본은 **멀리 인코딩**|
+|🧲 Positive pair|같은 이미지에서 만든 두 변형본은
+**가깝게 인코딩**|
+|🚫 Negative pair|다른 이미지에서 만든 변형본은
+**멀리 인코딩**|
 |🧠 Goal|유사한 상태는 가까이, 다른 상태는 멀리 → 더 나은 표현 학습|
 
------
- 
+
+
 
 **4. ⚙️ 세부 구현 사항**
- 
 
 **🔧 기술 스택**
 
 |**구성 요소**|**선택 이유**|
 | :-: | :-: |
-|📦 Augmentation|가장 효과적인 건 **random crop**|
-|🔁 Similarity|**Bilinear similarity** (W^T q k) > Cosine similarity|
-|🧠 Encoder 구성|Momentum encoder(MoCo)로 **representation 안정화**|
+|📦 Augmentation|가장 효과적인 건
+**random crop**|
+|🔁 Similarity|**Bilinear similarity**
+(W^T q k) > Cosine similarity|
+|🧠 Encoder 구성|Momentum encoder(MoCo)로
+**representation 안정화**|
 |🎯 최종 목적|**representation이 state를 대체**할 수 있게 학습|
 
------
- 
+
+
 
 **5. 📊 실험 결과 및 학습 곡선**
- 
 
 **🟥 Contrastive + RL vs. 기존 방법**
 
 |**비교 대상**|**결과 요약**|
 | :-: | :-: |
 |기존 pixel 기반 RL|학습 느림, 성능 불안정|
-|**제안 방법 (Contrastive + RL)**|거의 항상 **state 기반 RL 성능과 비슷하거나 더 좋음**|
+|**제안 방법 (Contrastive + RL)**|거의 항상
+**state 기반 RL 성능과 비슷하거나 더 좋음**|
 
 - **학습 속도 개선**
 - **성능 향상**
 - **범용성 확보** (Atari, MuJoCo 등 다양한 환경에서 적용)
------
- 
+
+
 
 **6. ❗ 실패한 경우 분석**
 - 특정 환경에서 state 기반 성능을 **넘지 못함**
 - 이유는?
- 
 
 **🧪 진단 실험: "이미지로 상태(state)를 복원 가능한가?"**
 - **이미지 → 상태** 예측 supervised task로 측정
@@ -697,8 +698,8 @@ permalink: /2025
 💡 즉, **이미지 자체에 부족한 정보가 있었던 것**\
 (ex. **접촉력, 속도 벡터 등**은 픽셀에 명시적으로 드러나지 않음)
 
------
- 
+
+
 
 **7. 🧠 핵심 정리: Representation is the Key**
 
@@ -709,15 +710,15 @@ permalink: /2025
 |✅ 성과|state 기반과 거의 동등한 성능 + 학습 시간 개선|
 |🚫 한계|일부 환경에서는 이미지에 정보 자체가 부족할 수 있음|
 
------
- 
+
+
 
 **🧭 이 연구의 의의**
 - 🤖 **픽셀 기반 RL의 실용화 가능성 확보**
 - 🔁 **Unsupervised Learning과 RL의 통합** 사례
 - 💡 Representation learning이 실제로도 **성능과 속도에 큰 영향**을 미침
------
- 
+
+
 
 **📌 용어 정리**
 
@@ -729,44 +730,46 @@ permalink: /2025
 |Replay Buffer|과거 경험을 저장하고 샘플링하는 구조 (Off-policy)|
 |Bilinear Similarity|쿼리와 키 간의 내적에 가중치 행렬을 곱한 유사도 계산 방식|
 
- 
 
 **[Meta-Reinforcement Learning]**
------
+
+
 **🧠 Meta Reinforcement Learning (메타 강화학습)**
------
+
+
 **1. 🧭 개요: 왜 Meta-RL이 필요한가?**
 **✅ 배경 문제**
 - 기존의 강화학습 알고리즘들 (TRPO, DQN, PPO, A3C, Rainbow 등)은 **어떤 환경이든 적용 가능한 범용 알고리즘**
 - 그러나 실제 사용되는 환경은 **수학적으로 가능한 모든 환경의 극히 일부에 불과**
 - → 너무 범용적인 알고리즘은 **학습 속도가 느리고 비효율적**
- 
 
 **🎯 핵심 질문**
 **"자주 등장하는 환경에 특화된 RL 알고리즘을 스스로 학습할 수 없을까?"**\
 → 이것이 [Meta-RL](https://www.google.com/search?ved=1t:260882&q=define+meta+reinforcement+learning&bbid=6610095277986266443&bpid=230142984664126080)의 목표
 
------
- 
+
+
 
 **2. 💡 핵심 아이디어: 학습을 학습하는 에이전트**
 
 |**일반 RL**|**Meta-RL**|
 | :-: | :-: |
 |고정된 알고리즘|알고리즘 자체를 학습|
-|한 환경마다 새로 학습|과거 환경의 경험을 바탕으로 새로운 환경에 **빠르게 적응**|
-|설계자 중심|에이전트 스스로 **학습 전략**을 내면화|
+|한 환경마다 새로 학습|과거 환경의 경험을 바탕으로 새로운 환경에
+**빠르게 적응**|
+|설계자 중심|에이전트 스스로
+**학습 전략**을 내면화|
 
------
+
+
 (참고) 
 
 Meta Reinforcement Learning(메타 강화학습)에서 **MDP**는 \*\*Markov Decision Process (마르코프 결정 과정)\*\*의 약자입니다. 이는 강화학습의 **기본 수학적 모델**이며, 에이전트가 환경과 상호작용하면서 학습하는 과정을 **형식적으로 정의**합니다.
 
------
- 
+
+
 
 **🧠 MDP란 무엇인가?**
- 
 
 **📦 구성 요소**
 MDP는 다음의 다섯 요소로 구성됩니다:
@@ -776,11 +779,13 @@ MDP는 다음의 다섯 요소로 구성됩니다:
 |**S**|상태 공간 (States) – 에이전트가 처해 있는 현재 환경 상태|
 |**A**|행동 공간 (Actions) – 에이전트가 취할 수 있는 행동|
 |\*\*P(s'|s,a)\*\*|
-|**R(s,a)** 또는 **R(s,a,s')**|보상 함수 (Reward) – 특정 상태 또는 상태-행동 쌍에 대해 주어지는 수치 보상|
+|**R(s,a)**
+또는
+**R(s,a,s')**|보상 함수 (Reward) – 특정 상태 또는 상태-행동 쌍에 대해 주어지는 수치 보상|
 |**γ (gamma)**|할인율 (Discount factor) – 미래 보상의 중요도 조절 (0~1 사이의 값)|
 
------
- 
+
+
 
 **🔄 MDP의 학습 루프**
 1. 현재 상태 s(t)에서
@@ -788,33 +793,33 @@ MDP는 다음의 다섯 요소로 구성됩니다:
 1. 환경은 새로운 상태 s(t+1)​로 전이되고
 1. 보상 r(t)을 반환
 1. 에이전트는 이 경험을 바탕으로 정책(policy)을 업데이트
- 
 
 **3. 🧱 구조 이해: Inner vs. Outer Loop**
 
 |**요소**|**설명**|
 | :-: | :-: |
 |**Outer loop**|여러 환경(MDP)에서 에이전트 학습 (**학습 알고리즘을 학습**) → learning to learn|
-|**Inner loop**|새로운 환경에서 policy를 **빠르게 적응** (즉시 강화학습 수행, 보상 받고, 학습 하고 …)|
-|**학습 결과물**|일반적인 정책이 아닌, **강화학습 알고리즘 자체**|
+|**Inner loop**|새로운 환경에서 policy를
+**빠르게 적응**
+(즉시 강화학습 수행, 보상 받고, 학습 하고 …)|
+|**학습 결과물**|일반적인 정책이 아닌,
+**강화학습 알고리즘 자체**|
 
- 
 
 **모델 구성:**
 - \*\*RNN (Recurrent Neural Network)\*\*을 이용해 상태를 기억
 - 다른 RNN weight → 다른 **RL 알고리즘**
 - RNN activation → 현재의 **정책 상태(policy state)**
------
- 
+
+
 
 **4. 🧪 대표 실험 사례**
- 
 
 **(1) 🎰 Multi-Armed Bandit 문제**
 - 새로운 슬롯머신 환경이 주어질 때 빠르게 최적 행동을 찾아야 함
 - 학습된 메타-RL 에이전트가 Gittins index, UCB, Thompson Sampling 등 **수학적으로 최적 이론**을 **능가**함
------
- 
+
+
 
 **(2) 🧭 미로 탐색 (Maze Navigation)**
 - **훈련 단계**: 다양한 미로에서 목표(red target) 위치를 찾아가는 경험 학습
@@ -822,16 +827,14 @@ MDP는 다음의 다섯 요소로 구성됩니다:
 
 🧠 과거의 미로 구조 학습 → **탐색 전략 자체를 내면화**
 
------
- 
+
+
 
 **5. 🧠 학습 구조 요약**
- 
 
 **학습 목표 (Objective):**
 - 다양한 MDP들에서의 경험을 기반으로, **새로운 MDP에서 더 빠른 보상 수렴** 달성
 - 즉, 새로운 환경을 샘플링했을 때도 **더 빠르게 보상 최대화**
- 
 
 **사용된 메타 학습 프레임워크:**
 
@@ -841,28 +844,25 @@ MDP는 다음의 다섯 요소로 구성됩니다:
 |🧠 에이전트 표현|RNN 기반 구조로 상태 기억|
 |📦 경험 데이터|episode 단위의 rollout trajectory 활용|
 
------
- 
+
+
 
 **6. 📉 한계점 및 향후 방향**
- 
 
 **❗ 한계**
 - **Outer loop 자체도 RL 기반** → 학습 안정성 낮고, 수렴이 느릴 수 있음
 - 전체 구조가 **고비용(high compute)**
- 
 
 **🤖 실패 사례**
 - 대규모 환경 (예: 수백 개의 밴딧, 복잡한 3D 환경)에서는 학습 실패 가능
 - **표현력 부족** or **환경 다양성 부족** → 과적합
- 
 
 **🔮 미래 가능성**
 - 대규모 환경, 멀티모달 환경에서의 Meta-RL
 - LLM과 결합 → 자연어 기반 탐색 학습
 - Foundation policy 학습으로 AGI 기반 기술 발전
------
- 
+
+
 
 **🧩 기존 알고리즘과 비교 요약**
 
@@ -874,8 +874,8 @@ MDP는 다음의 다섯 요소로 구성됩니다:
 |성능 일반화|낮음|높음|
 |학습 비용|낮음|높음 (outer loop 존재)|
 
------
- 
+
+
 
 **📚 대표 연구 및 논문 (강의 언급 기준)**
 - **RL² (RL-Squared)**: [Duan et al., 2016]
@@ -884,52 +884,52 @@ MDP는 다음의 다섯 요소로 구성됩니다:
 
 - **LEAP, MAML-RL**: 메타러닝(MAML) 기반 강화학습 확장
 - **Meta-World**: 다양한 물리 기반 태스크를 포함한 **메타-RL 벤치마크**
------
- 
+
+
 
 **✅ 요약**
 
 |**항목**|**내용**|
 | :-: | :-: |
-|🎯 목표|새로운 환경에서 **빠르게 적응 가능한 에이전트** 만들기|
-|💡 방법|다양한 환경에서 학습 → **강화학습 전략을 내면화**|
+|🎯 목표|새로운 환경에서
+**빠르게 적응 가능한 에이전트**
+만들기|
+|💡 방법|다양한 환경에서 학습 →
+**강화학습 전략을 내면화**|
 |🧠 기술|RNN 기반 메타러너, Outer loop RL 최적화|
 |📈 성과|Multi-armed bandit, Maze 등에서 일반 방법 능가|
 |⚠ 한계|안정성, 고비용, 일반화된 표현 부족|
 
- 
 
 **[Few-Shot Imitation]**
------
- 
+
+
 
 **🤖 Few-shot / One-shot Imitation Learning 정리**
------
- 
+
+
 
 **1. 🧭 개요: Imitation Learning이란?**
- 
 
 **✅ 정의**
 - **전통적인 RL**은 행동 후 보상 피드백으로 학습
 - **Imitation Learning**은 사람(또는 전문가)의 **시연(Demonstration)** 데이터를 보고, 그걸 **모방**하는 방식 (Meta-RL 의 연장선)
- 
 
 **✅ 특징**
 
 |**항목**|**설명**|
 | :-: | :-: |
-|🎯 학습 목적|"이 상황에선 어떻게 행동하는 게 좋은가?"를 **지도 학습 방식**으로 학습|
+|🎯 학습 목적|"이 상황에선 어떻게 행동하는 게 좋은가?"를
+**지도 학습 방식**으로 학습|
 |📦 입력|시각 정보, 상태 정보, 시연 영상 등|
 |🎮 출력|행동(action) → 예: 방향, 이동, 잡기, 회전 등|
 
 📌 일반적인 supervised learning의 label이 "정답"인 것처럼, 여기서의 label은 "올바른 행동"입니다.
 
------
- 
+
+
 
 **2. 🎯 장점과 한계**
- 
 
 **✅ 장점**
 
@@ -938,35 +938,32 @@ MDP는 다음의 다섯 요소로 구성됩니다:
 |📈 학습 효율 ↑|보상 함수를 직접 설계하지 않아도 됨|
 |⏱ 빠른 학습 가능|단 몇 개의 예시로도 유의미한 행동 가능|
 |🤖 실제 로봇 적용 쉬움|비전 기반 task에서도 자연스럽게 적용 가능|
- 
 
 **❌ 한계**
 
 |**항목**|**설명**|
 | :-: | :-: |
 |💰 시연 수집 비용 ↑|고품질 시연 확보가 어려움|
-|🧠 일반화 ↓|<p>새로운 task에선 시연을 **다시 수집**해야 함</p><p></p>|
------
- 
+|🧠 일반화 ↓|<p>새로운 task에선 시연을
+**다시 수집**해야 함</p><p></p>|
+
+
 
 **3. 💡 해결 방향: Meta-Imitation Learning (One-Shot)**
- 
 
 **핵심 질문**
 "모든 태스크에 대해 시연을 다 수집해야 한다면 비효율적이니, **다양한 태스크에서 공통 전략을 학습**해서 \*\*새로운 태스크는 한 번의 시연으로 학습할 수 없을까?"\
 → **One-shot Imitation Learning**의 등장
 
------
- 
+
+
 
 **4. 🧪 아키텍처 구성**
- 
 
 **🧠 입력**
 - **Demo 1**: 전체 영상 (시연 전체)
 - **Demo 2**: 단일 프레임 (현재 상태)
 - **출력**: Demo 2에서 다음 행동 예측
- 
 
 **📦 구조 흐름**
 [Demo 1 전체 영상] ──▶ Frame Encoder (CNN or Vision Transformer) ─┐
@@ -974,7 +971,6 @@ MDP는 다음의 다섯 요소로 구성됩니다:
 `                                                           `──▶ Temporal Encoder (Transformer)
 
 [Demo 2 현재 프레임] ─▶ Frame Encoder ─▶ Attention ─▶ Aggregation ─▶ Policy Head → Action 출력
- 
 
 **🔧 주요 컴포넌트**
 
@@ -982,11 +978,12 @@ MDP는 다음의 다섯 요소로 구성됩니다:
 | :-: | :-: |
 |🖼 Per-frame encoder|개별 이미지 처리 (ResNet, Vision Transformer 등)|
 |🕰 Temporal module|시연의 시간적 흐름 파악 (Transformer, RNN)|
-|🎯 Cross Attention|현재 프레임(Demo2)을 기준으로, \*\*시연 영상(Demo1)\*\*에서 관련된 시점과 **블록 위치**에 주의|
+|🎯 Cross Attention|현재 프레임(Demo2)을 기준으로, \*\*시연 영상(Demo1)\*\*에서 관련된 시점과
+**블록 위치**에 주의|
 |🎮 Policy Head|행동(action) 예측 모듈 (예: 이동 방향, 회전 등)|
 
------
- 
+
+
 
 **5. 📊 실험 예시: Block Stacking**
 - 각 stacking 목표는 **다른 태스크**로 간주
@@ -997,18 +994,19 @@ MDP는 다음의 다섯 요소로 구성됩니다:
 
 📌 블록의 색상/위치/쌓인 구조를 파악해 **동일한 행동 전략** 복제 가능
 
------
- 
+
+
 
 **6. 🔍 시각화 이해**
 
 |**시각화 영역**|**의미**|
 | :-: | :-: |
 |⏱ Attention over Time (Demo 1)|어떤 시점의 행동을 현재와 비교해 재현할지|
-|🧱 Attention over Objects|블록 간 관계 reasoning을 위한 **시각적 주의 분산**|
+|🧱 Attention over Objects|블록 간 관계 reasoning을 위한
+**시각적 주의 분산**|
 
------
- 
+
+
 
 **7. 🎯 연구적 의의 및 장점 요약**
 
@@ -1017,10 +1015,11 @@ MDP는 다음의 다섯 요소로 구성됩니다:
 |🚀 학습 효율성|단 1회 시연으로도 빠른 적응|
 |🤖 표현 학습|Vision + Relational Reasoning 결합|
 |📦 구조 일반화|다양한 물체, 위치, 시연 길이에도 유연함|
-|🔁 재사용성|다양한 태스크 간 공통 패턴을 학습하여 **범용성 확보**|
+|🔁 재사용성|다양한 태스크 간 공통 패턴을 학습하여
+**범용성 확보**|
 
------
- 
+
+
 
 **8. 📌 전체 요약**
 
@@ -1031,21 +1030,18 @@ MDP는 다음의 다섯 요소로 구성됩니다:
 |💡 핵심 기술|Vision encoder, Temporal encoder, Cross attention, Relational reasoning|
 |✅ 성능|블록 스택, 시각 로봇 조작 등에서 높은 성능 입증|
 |⚠ 과제|시연 품질, 모델 규모, 시각 노이즈에 취약할 수 있음|
- 
 
 
- 
 
 **[Domain Randomization]**
------
- 
+
+
 
 **🧠 Simulation to Reality (Sim2Real) in Robotics & RL**
------
- 
+
+
 
 **1. 🧭 시뮬레이션이 중요한 이유**
- 
 
 **✅ 장점 요약**
 
@@ -1053,40 +1049,38 @@ MDP는 다음의 다섯 요소로 구성됩니다:
 | :-: | :-: |
 |💰 저비용|실제 하드웨어나 인력을 쓰지 않음|
 |⚡ 빠름|병렬 처리 및 가속 가능|
-|📦 라벨 자동 생성|시뮬레이터는 **ground truth state**를 알고 있음|
+|📦 라벨 자동 생성|시뮬레이터는
+**ground truth state**를 알고 있음|
 |🛡 안전|로봇이나 사람에게 물리적 위험 없음|
 
 즉, **대규모 학습 데이터 생성 및 학습 실험**에 최적
 
------
- 
+
+
 
 **2. ❌ 전통적 접근: 현실에 가까운 시뮬레이터 제작**
 - 예: Gazebo, MuJoCo, IsaacSim 등
 - **문제점**:
   - 완전한 현실 모사는 **어렵고 느림**
   - 물리 정확성을 높일수록 → 시뮬레이터가 **느려지고 복잡해짐**
------
- 
+
+
 
 **3. 🔄 대안 1: Domain Adaptation / Domain Confusion**
- 
 
 **🧠 개요**
 - **Sim + Real 데이터를 함께 학습**
 - 중간 레이어에 **Discriminator**를 둠
   - Sim vs Real 데이터 구분을 시도
 - **Discriminator를 속이면** → 중간 표현은 Sim/Real 구분이 안 됨
- 
 
 **✅ 효과**
 - 중간 representation이 **Sim/Real 공통적 특성만 반영**
 - 이후 레이어는 **Sim으로만 학습해도 Real에 전이 가능**
------
- 
+
+
 
 **4. 🧨 대안 2: Domain Randomization (도메인 랜덤화)**
- 
 
 **🎯 핵심 아이디어**
 “현실을 복제하려 하지 말고, **극단적으로 다양하게 만들어라**”
@@ -1096,41 +1090,36 @@ MDP는 다음의 다섯 요소로 구성됩니다:
 |배경 색|분홍 / 초록 / 회색 등 무작위|
 |조명, 물리|밝기 / 마찰 / 반사계수 무작위|
 |물체 속성|크기, 질감, 질량 등 무작위|
- 
 
 **✅ 효과**
 - **특정한 시뮬 환경에 과적합 방지**
 - 현실은 **랜덤 도메인의 평균적인 분포**로 간주
 - 다양한 가짜를 학습 → **진짜도 잘 작동**
------
- 
+
+
 
 **5. 🧪 실험 사례 소개**
- 
 
 **✅ (1) 드론 비행 (Berkeley)**
 - 다양한 가상 건물 구조물에서 비행 연습
 - 실제 환경에서도 **충돌 없이 비행 가능**
------
- 
+
+
 
 **✅ (2) 물체 위치 추정 (Object Localization)**
 - 모든 학습은 **시뮬레이터 이미지에서만 수행**
 - 테스트는 **실제 카메라 이미지**
 - 🟢 결과: **정확도 향상**, 에러율 감소
- 
 
 **📌 중요한 요소: 텍스처 다양성**
 - 시뮬레이터에서의 물체 표면 텍스처가 **풍부해야** 일반화 성공
------
- 
+
+
 
 **✅ (3) Grasping (물체 집기)**
- 
 
 **문제:**
 - 시뮬레이터에 존재하는 mesh 개수는 제한적 (수백 ~ 수천 개)
- 
 
 **해결:**
 - **Mesh 조각을 랜덤하게 조합** → 수천만 개의 가상 물체 생성
@@ -1138,23 +1127,23 @@ MDP는 다음의 다섯 요소로 구성됩니다:
 
 🎯 “현실적인 mesh가 아니라, **다양한 조합**이 중요하다!”
 
------
- 
+
+
 
 **✅ (4) Rubik’s Cube Manipulation (OpenAI)**
 - **로봇 손**이 큐브를 회전시켜 해결
 - **수천 가지 시뮬레이터 손/큐브 구성 변화**로 학습
 - 물리적 마찰, 접촉, 관절 비선형성 등 고려
 - 단 한 번도 실제 손으로 학습하지 않았지만 **실제 세계에서 동작 성공**
------
- 
+
+
 
 **6. 📊 실험 결과: Pre-training vs Simulation-only**
 - ✅ 이미지넷으로 선학습한 모델과 비교
 - 시뮬레이션만으로 학습한 모델이 **동등한 성능 도달**
 - → **Pretraining이 없어도 시뮬+랜덤화로 충분히 대응 가능**
------
- 
+
+
 
 **7. 🧠 핵심 요약**
 
@@ -1166,8 +1155,8 @@ MDP는 다음의 다섯 요소로 구성됩니다:
 |📦 전략|다양성이 현실성을 이긴다 (Diversity > Realism)|
 |🔍 성능 향상 요소|다양한 texture, 다양한 geometry, 물리 모델 변화|
 
------
- 
+
+
 
 **🧭 정리: Sim2Real 전략 비교**
 
@@ -1176,21 +1165,18 @@ MDP는 다음의 다섯 요소로 구성됩니다:
 |🤖 Reality-Centric|실제와 비슷한 시뮬|정확도 높음|비용, 느림|
 |🌀 Domain Adaptation|Sim + Real → 적응|정교한 조정 가능|복잡한 GAN류 아키텍처|
 |🎨 Domain Randomization|Sim 다양화 → 일반화|빠르고 강건함|현실성과는 멀어질 수 있음|
- 
 
 
- 
 
 **[DL for Science and Engineering]**
------
- 
+
+
 
 **🧠 Deep Learning for Science and Engineering**
------
- 
+
+
 
 **1. 🧭 개요: 왜 특별한 주제인가?**
- 
 
 **✅ 기존 AI 영역 vs. 과학/공학**
 
@@ -1201,28 +1187,24 @@ MDP는 다음의 다섯 요소로 구성됩니다:
 
 🎯 이 분야의 AI는 **"인간처럼 하기"를 넘어서, "인간이 못하는 것"을 가능하게 할 수 있음**
 
------
- 
+
+
 
 **2. 🌟 대표 사례: AlphaFold 1 & 2 (DeepMind)**
- 
 
 **🧬 문제 배경**
 - **단백질 접힘(folding)** 구조 예측: 생물학/의약학에서 핵심 과제
 - 실험 기반 구조 결정 (X-ray, NMR 등)은 **시간과 비용이 매우 큼**
- 
 
 **✅ AlphaFold의 기여**
 - **입력**: 아미노산 서열 (Sequence)
 - **출력**: 접힘 후 3D 구조
 - **비교 기준**: CASP(세계 단백질 접힘 예측 대회)
- 
 
 **📈 성능 향상 (CASP score, higher is better)**
 - 2006~2016: 거의 진보 없음
 - 2018: [**AlphaFold**](https://www.google.com/search?ved=1t:260882&q=AlphaFold+protein+folding&bbid=6610095277986266443&bpid=230142984664126080) **1** → 최초로 기존 알고리즘들을 능가
 - 2020: **AlphaFold 2** → "사실상 문제 해결" 수준 도달
- 
 
 **📦 모델 구성 요약**
 1. **MSA (Multiple Sequence Alignment)**: 진화적으로 유사한 서열 찾기
@@ -1232,31 +1214,28 @@ MDP는 다음의 다섯 요소로 구성됩니다:
 
 🤖 **지도 학습** 기반, 실제 구조 데이터를 라벨로 사용
 
------
- 
+
+
 
 **3. ⚙️ 추가 적용 분야**
- 
 
 **✅ (1) 시뮬레이터 대체**
 - 문제: 과학/공학 시뮬레이터는 매우 느림 (예: 유체역학, 회로 시뮬레이터)
 - 해결: 딥러닝 모델로 **시뮬레이터를 근사**
   - 예: 회로 성능 예측, 로켓 노즐 형상 시뮬레이션 등
   - 이후 **진화 알고리즘과 조합** → 설계 자동화
- 
 
 **✅ (2) Data Augmentation with Generative Models**
 - 시뮬레이션 데이터 부족 문제 해결을 위해
   - GAN, Diffusion 등으로 **과학 데이터 생성**
   - 예: 유체 시뮬레이션, 분자동역학 데이터, 나노소재 생성
- 
 
 **✅ (3) Symbolic Mathematics**
 - 적분, 미분방정식 해석을 **Transformer 기반 모델**로 수행
 - 예: Meta의 [Saxton et al., 2019] – 수학 문제 해결에서 강력한 성능
 - 📚 "Mathematical Transformer" 류의 연구 급증
------
- 
+
+
 
 **4. 🧠 중요한 특징**
 
@@ -1267,8 +1246,8 @@ MDP는 다음의 다섯 요소로 구성됩니다:
 |🧠 모델 특성|Physics-informed Neural Networks, Graph Neural Networks, Transformers 등|
 |🧭 추론 방식|수치 근사 + 표현 학습 + 진화 최적화 조합 가능|
 
------
- 
+
+
 
 **5. 📌 핵심 도전 과제**
 
@@ -1278,8 +1257,8 @@ MDP는 다음의 다섯 요소로 구성됩니다:
 |❓ 설명 가능성|과학적 해석이 어려운 경우 있음|
 |⚖ 정확도 vs 속도|현실적 계산 속도와 정확도 간의 균형 문제|
 |🧪 현실 적용 검증|<p>모델 예측의 실제 유효성 검증 필요</p><p></p>|
------
- 
+
+
 
 **6. 🔮 미래 전망**
 
@@ -1292,42 +1271,41 @@ MDP는 다음의 다섯 요소로 구성됩니다:
 |🧠 수학 자동화|수치 해석, 수학 증명 보조|
 |🌍 기후 과학|고해상도 예측, 기후 모델 가속화|
 
------
- 
+
+
 
 **📘 주요 관련 키워드**
 
 |**키워드**|**설명**|
 | :-: | :-: |
-|[**PINN**](https://www.google.com/search?ved=1t:260882&q=define+PINN+machine+learning&bbid=6610095277986266443&bpid=230142984664126080) (Physics-Informed Neural Network)|물리 법칙을 손실 함수에 내재화|
-|[**GNN**](https://www.google.com/search?ved=1t:260882&q=define+GNN+machine+learning&bbid=6610095277986266443&bpid=230142984664126080) (Graph Neural Networks)|분자, 메쉬, 회로 등 그래프 표현 처리에 적합|
+|[**PINN**](https://www.google.com/search?ved=1t:260882&q=define+PINN+machine+learning&bbid=6610095277986266443&bpid=230142984664126080)
+(Physics-Informed Neural Network)|물리 법칙을 손실 함수에 내재화|
+|[**GNN**](https://www.google.com/search?ved=1t:260882&q=define+GNN+machine+learning&bbid=6610095277986266443&bpid=230142984664126080)
+(Graph Neural Networks)|분자, 메쉬, 회로 등 그래프 표현 처리에 적합|
 |[**Diffusion Model**](https://www.google.com/search?ved=1t:260882&q=diffusion+model+machine+learning&bbid=6610095277986266443&bpid=230142984664126080)|과학적 구조(예: 단백질, 물질 등) 생성|
 |**Symbolic Integration / Solving**|수학 식 자체를 Transformer로 처리|
 
------
- 
+
+
 
 **✅ 요약**
 
 |**항목**|**내용**|
 | :-: | :-: |
-|🎯 핵심 목표|인간 수준을 넘는 **과학/공학 문제 해결**|
+|🎯 핵심 목표|인간 수준을 넘는
+**과학/공학 문제 해결**|
 |🤖 대표 사례|AlphaFold, 회로 설계 최적화, 물리 시뮬레이터 대체 등|
 |📦 핵심 기술|지도학습, 생성모델, GNN, Transformer, PINN|
 |⚠ 과제|검증 어려움, 데이터 부족, 해석력 부족|
 |🌍 기대 효과|실험 비용 절감, 디자인 혁신, 과학적 통찰 확보|
 
 
- 
 
 **===============================**
- 
 
 **[FSDL\_2022]**
- 
 
 **📌 Lecture 3: Troubleshooting & Testing**
- 
 
 **1 Testing software**
 키 포인트
@@ -1337,51 +1315,60 @@ MDP는 다음의 다섯 요소로 구성됩니다:
 - 그래서 우리는 테스트 도구를 쓰지만, 100 % 커버리지를 억지로 달성하려고 하지는 않는다.
 - 마찬가지로 린트(lint) 도구로 코드 스타일을 체크하되, 필요하면 규칙을 열어 두어 개발자가 숨 좀 돌릴 수 있게 한다.
 - 마지막으로, 이런 작업 흐름을 자동화해 주는 도구들도 살펴본다.
------
- 
+
+
 
 **1.1 테스트는 개발 속도를 높여 준다 - 하지만 모든 버그를 잡지는 못한다**
 - 테스트는 “다른 코드에 버그가 있을 때 알아보기 쉽게 실패(=에러)하도록 만든 코드”다.
------
+
+
 - 테스트는 메인 브랜치에 머지되기 전에 일부 버그를 걸러 주지만, 완벽한 증명은 아니다.
 - 어떤 형식 언어에서는 테스트가 코드의 정확성을 보증하기도 하지만, Python처럼 느슨한 언어에서는 그게 불가능하다.
------
+
+
 - 테스트 스위트(test suite)는 일종의 분류기(classifier)
   - 문제: “이 커밋에 버그가 있는가, 없는가?”
   - 예측: 테스트가 통과하면 “버그 없음”, 실패하면 “버그 있음”
------
+
+
 - 분류기를 설계할 때처럼 우리는 진짜 버그 탐지율과 거짓 경보(오류 없는 데 실패하는 것) 사이에서 균형을 잡아야 한다.
   - 테스트가 ‘실패’했는데, 실제로는 코드를 고치는 대신 테스트 코드만 고쳐서 통과시키는 일이 생기면 그것이 바로 거짓 경보다.
------
+
+
 - 테스트를 추가하기 전에 두 가지를 자문해 보자.
   - 이 테스트가 잡아낼 실제 버그는 무엇인가?
   - 이 테스트가 낼 헛된 경보는 무엇인가?\
     2번 사례가 1번보다 더 많이 떠오른다면, 그 테스트는 굳이 안 써도 된다.
------
+
+
 - 단, 정확성이 생명인 분야(의료 진단·처치, 자율주행, 금융 등)는 얘기가 다르다.
   - 사람의 생명·생활이 걸린 고위험(high-impact) 영역은 훨씬 엄격한 검증이 필요하다.
------
- 
+
+
 
 **1.2 테스트 도구는 쓰되, “커버리지 100 %”에 집착하지 말자**
 - Pytest: 파이썬 표준 테스트 프레임워크.
   - 테스트 모음(suite) 분리, 자원 공유, 파라미터화 등 기능이 강력하다.
------
+
+
 - doctest: 문서에 들어 있는 코드 블록이 실제로 잘 동작하는지 자동으로 확인
------
+
+
 - Jupyter 노트북: 그래프·이미지와 코드 실행을 한데 묶어 보여 준다.
   - 간단히** assert** 넣고** nbformat으로 실행시켜 테스트할 수 있다.
------
+
+
 - 여러 종류의 테스트가 늘어나고 코드베이스가 커지면, 커버리지 도구가 필요하다.
   - 대표적으로 Codecov는 어느 줄이 테스트됐는지 시각화해 주고, 빠르게 문제 영역을 찾아가게 해 준다.
   - “테스트 실패 + 커버리지 하락”일 때 머지를 막도록 파이프라인에 넣을 수도 있다.
------
+
+
 - 하지만 커버리지 목표치를 강제하길 권장하지는 않는다.
   - 경험적으로, 가치의 대부분은 소수의 핵심 테스트에서 나온다.
   - 숫자를 맞추려다 보면 “품질 낮은 테스트”를 마구 쓰게 되고, 관리 부담이 커진다.
   - 한정된 엔지니어링 자원은 중요한 테스트를 정말 탄탄하게 만드는 데 쓰는 편이 낫다.
------
- 
+
+
 
 **1.3 – 린팅(Linting) 도구를 활용하되, ‘비상구(Escape Valve)’를 마련하라**
 
@@ -1390,63 +1377,67 @@ MDP는 다음의 다섯 요소로 구성됩니다:
 - 균일한 스타일을 지키면, 풀 리퀘스트(PR)나 코드 리뷰 과정에서 스타일 논쟁으로 개발 시간을 낭비하지 않아도 된다.
 - 또한 버전 관리 시스템(VCS)의 diff (변경 내역)에서 불필요한 노이즈를 줄이고 diff 크기를 작게 만들어, 사람이 시각적으로 변경점을 파악하기 쉬워지고 자동화 도구를 얹기에도 수월해진다.
 - 표준화된 스타일은 오픈 소스 저장소라면 외부 기여자를, 비공개 저장소라면 새 팀원을 더 빠르게 수용·온보딩할 수 있게 해 준다.
------
+
+
 일관된 스타일의 핵심 ― 코드 포매팅
 
 - Python에서는 Black 포매터가 사실상 표준 도구다.
   - 매우 의견이 뚜렷한(opinionated) 도구이며, 스타일 범위가 좁다.
   - 100 % 자동화할 수 있는 부분에 집중하므로, 에디터·자동화 워크플로우에 손쉽게 통합된다.
------
+
+
 자동화가 어려운 스타일 검사
 
 - 자동화만으로 해결하기 힘든 부분(예: 누락된 독스트링)을 위해 Flake8을 권장한다.
   - 독스트링 완전성, 타입 힌트, 보안, 흔한 버그 등을 확인하는 각종 확장·플러그인이 풍부하다.
------
+
+
 셸 스크립트 린팅
 
 - 머신러닝(ML) 코드베이스에는 Python뿐 아니라 셸 스크립트도 자주 포함된다.
 - 셸 스크립트는 강력하지만 허점이 많다.
 - [shellcheck](https://www.google.com/search?ved=1t:260882&q=shellcheck&bbid=6610095277986266443&bpid=230142984664126080)는 bash의 동작을 빠짐없이 알고 있어, 한눈에 드러나지 않는 오류를 잡아낸다.
   - 경고·오류를 발생시키는 이유까지 설명해 주며, 속도가 빨라 에디터 통합도 간단하다.
------
- 
+
+
 
 **주의점 - 과도한 강제는 피하라**
 1. 목표(표준 유지, 논쟁 방지, VCS 이력 청결 등)를 충족하는 최소한의 규칙만 선택해 적용한다.
 1. 규칙은 ‘옵트인(opt-in)’ 방식으로 점진적으로 확대한다.
    1. 기존 코드베이스엔 수천 줄의 코드가 존재할 수 있으므로, 한 번에 모두 고치는 건 어려움
------
+
+
 **1.4 – 항상 자동화를 염두에 두라**
 
 테스트·린팅을 최대한 활용하려면 자동화하고 이를 클라우드 VCS와 연결해야 한다.
 
 - VCS 상태에 직접 연결하면 오류를 재현·파악하는 과정의 마찰을 줄인다.
 - 개발 환경 밖에서 실행되므로, 다른 개발 작업과 병렬로 테스트를 자동 수행할 수 있다.
------
- 
+
+
 
 **자동화 모범 사례는 오픈 소스에서 배운다**
 - 인기 있는 오픈 소스 저장소는 자동화 베스트 프랙티스를 보여 준다.
 - 예를 들어 **PyTorch** GitHub 저장소에는
   - **모든 push·pull** 시 자동으로 실행되는 수많은 워크플로우가 탑재돼 있다.
------
- 
+
+
 
 **추천 도구: GitHub Actions**
 - PyTorch가 사용하며, 여기서도 권장하는 도구가 [GitHub Actions](https://www.google.com/search?ved=1t:260882&q=GitHub+Actions+CI/CD&bbid=6610095277986266443&bpid=230142984664126080)이다.
   - VCS와 자동화를 직접 묶어 주며 강력·유연·고성능·사용이 쉽다.
   - YAML 파일로 설정할 수 있고, 문서화도 훌륭하며 오픈 소스 커뮤니티가 적극 수용했다.
   - <http://pre-commit.ci> , CircleCI, Jenkins 등 다른 옵션도 있지만, 최근 몇 년간 GitHub Actions가 대세가 되었다.
------
- 
+
+
 
 **커밋 전 로컬 검증**
 - VCS 이력을 최대한 깨끗하게 유지하려면 커밋 전에 로컬에서 테스트·린터를 돌릴 수 있어야 한다.
 - 이를 위해 pre-commit을 추천한다.
   - 포매팅·린팅 등을 모든 커밋마다 실행하되, 몇 초 내로 끝나도록 구성할 수 있다.
   - 로컬 실행이 간편하고 GitHub Actions와의 연동도 쉽다.
------
- 
+
+
 
 **자동화의 가치**
 - 소프트웨어 품질·무결성을 보장하는 자동화는 생산성 증폭기다.
@@ -1455,8 +1446,8 @@ MDP는 다음의 다섯 요소로 구성됩니다:
     - 문제를 조기에 노출하며,
     - 소규모 팀의 힘을 배가시켜 주고,
     - 기본적으로 문서화도 잘 된다.
------
- 
+
+
 
 **주의 사항 – 도구를 ‘정말’ 이해해야 한다**
 - Docker를 ‘사용할 줄 아는 것’과 ‘자동화할 줄 아는 것’은 다르다.
@@ -1465,20 +1456,21 @@ MDP는 다음의 다섯 요소로 구성됩니다:
   - 해당 도구에 깊이 있는 지식을 갖추고,
   - 코드에 대한 책임감이 있으며,
   - 자동화 관련 의사 결정을 내릴 수 있는 시니어 엔지니어가 맡는 것이 좋다.
------
+
+
 - GitHub Actions로 작업을 자동화해 개발 과정의 마찰을 최소화하세요.
 - 프로젝트의 테스트와 정리를 위해 표준 Python 툴킷을 활용하세요.
 - 80/20 원칙, 출시 속도, 사용성·개발자 경험을 고려해 테스트 및 린팅 방식을 선택하세요.
------
- 
+
+
 
 **2 — 머신러닝(ML) 시스템 테스트**
 머신러닝을 테스트하는 일은 **어렵지만 불가능하지 않다.**
 
 - 먼저 \*\*낮은 난이도의 과제(low-hanging fruit)\*\*부터 해결하라.
 - 프로덕션 환경에서 코드를 테스트하되, 허술한 코드를 배포해서는 안 된다.
------
- 
+
+
 
 **2.1 — ML 테스트는 어렵지만 불가능하지 않다**
 소프트웨어 공학은 수많은 테스트 기법이 탄생한 분야다.
@@ -1494,12 +1486,13 @@ MDP는 다음의 다섯 요소로 구성됩니다:
 |**학습 과정(Training)**|복잡도가 높고 명세가 불분명하다.|
 |**모델**|컴파일된 프로그램보다 **디버깅·점검 도구**가 빈약하다.|
 
------
+
+
 이 절에서는 주로 **“스모크(smoke)” 테스트**에 집중한다.\
 스모크 테스트는 구현이 쉽고 효과가 높아, **20 %의 노력으로 80 %의 가치를 얻는** 검사법이다.
 
------
- 
+
+
 
 **2.2 — 데이터에는 ‘Expectation Testing(기대값 테스트)’을 적용하라**
 데이터 테스트는 **기본 속성**을 체크하는 방식으로 이뤄진다.
@@ -1511,13 +1504,15 @@ Expectation Testing을 시작할 때는
 1. 소수의 속성 검사로 시작,
 1. 경고·알림을 정말 가치 있는 항목에만 설정하며,
 1. 점진적으로 범위를 넓힌다.
------
+
+
 **추천 도구 : [**Great Expectations**](https://www.google.com/search?ved=1t:260882&q=Great+Expectations+data+testing&bbid=6610095277986266443&bpid=230142984664126080)**
 
 - 문서·품질 리포트를 자동 생성하고,
 - 로깅·알림 기능이 내장돼 있다.
 - 시작 가이드로 MadeWithML 블로그의 튜토리얼을 참고하라.
------
+
+
 데이터에 더 가까이 다가가기 위한 실천 방법
 
 1. 벤치마크 데이터셋 + 주석(annotaion)
@@ -1529,15 +1524,16 @@ Expectation Testing을 시작할 때는
 1. 베스트 프랙티스 (Shreya Shankar 제안)
    1. 온콜 로테이션을 돌려 개발자가 최신 데이터를 직접 주석한다.
    1. 팀 전원이 데이터에 대한 직관·전문성을 지속적으로 쌓을 수 있다.
------
- 
+
+
 
 **2.3 — 학습 과정에는 ‘메모리제이션(Memorization) 테스트’를 적용하라**
 메모리제이션은 학습의 가장 단순한 형태다.\
 딥러닝 모델은 소량 데이터 암기(memorize)에 매우 능하므로,\
 전체 데이터의 아주 일부분이라도 완벽히 외울 수 있는지 확인하는 것은 훌륭한 스모크 테스트다.
 
------
+
+
 암기에 실패한다면 학습 파이프라인에 심각한 문제가 있다는 뜻이다.
 
 - 예) 그래디언트 계산 오류, 수치적 불안정, 레이블 셔플 등.
@@ -1546,7 +1542,8 @@ Expectation Testing을 시작할 때는
 
 - 기대 성능에 도달하는 에폭 수가 갑자기 늘면 학습 버그를 의심해 볼 수 있다.
 - PyTorch Lightning의 overfit\_batches 옵션이 유용하다.
------
+
+
 테스트는 10 분 이내로 끝나야함.\
 속도를 높이는 아이디어:
 
@@ -1555,34 +1552,39 @@ Expectation Testing을 시작할 때는
 - 정규화 끄기 (Dropout 등)
 - 모델 규모 축소
 - 부담 요소들 제거 (혼합 정밀도 등)
------
+
+
 더 강력하지만 비용이 큰 테스트 방법
 
 - 구버전 코드로 학습한 모델을 신규 코드로 재학습해 비교한다.
   - GPU 비용이 많이 들고, CircleCI·GitHub Actions 같은 CI 플랫폼에서 실행하기 어렵다.
------
+
+
 최선은 프로덕션에서 유입되는 신규 데이터로 주기적 학습을 돌리는 것.
 
 - 값비싸지만 모델 개선과 직결된다.
 - 이를 위해서는 데이터 플라이휠 기반 인프라가 필요하다.
   - 데이터를 활용해 점점 더 나은 제품이나 서비스를 만들고, 그 결과로 더 많은 데이터를 확보하게 되어 다시 개선이 이루어지는 선순환 구조
------
- 
+
+
 
 **2.4 — 모델에는 ‘회귀 테스트(Regression Testing)’를 변형해 적용하라**
 모델도 결국 함수다. 입력 → 출력이 있으니 함수 테스트를 할 수 있다.
 
 - 특정 입력에 대해 항상 같은 결과가 나오는지 확인한다.
 - 분류기 등 단순 모델에 가장 적합하다.
------
+
+
 더 복잡한 모델의 경우
 
 - 손실(loss)·성능 지표를 활용해 테스트 스위트를 만든다.
 - 이는 테스트 주도 개발(TDD)과 유사하다.
------
+
+
 - 손실 값은 “코드가 달성해야 할 목표와 현재 상태의 차이”를 의미한다.
 - 경사하강법은 ML 버전의 TDD라고 볼 수 있다.
------
+
+
 다만 손실만 본다고 원인을 알 수 있는 것은 아니다.\
 이를 보완하려면:
 
@@ -1590,36 +1592,41 @@ Expectation Testing을 시작할 때는
 1. 실패 유형을 모아 이름 붙은 하나의 모음을 만든다.
    1. 예) 자율주행: 야간(night-time), 반사(reflection) 모음
 1. 이렇게 만든 모음을 회귀 테스트처럼 지속적으로 돌려 재발 방지에 쓴다.
------
+
+
 자동화 팁
 
 - Domino(에러 탐색에 foundation model 사용)
------
+
+
 - [CheckList](https://www.google.com/search?ved=1t:260882&q=CheckList+NLP+testing&bbid=6610095277986266443&bpid=230142984664126080)(NLP 전용)와 같은 기법도 활용하라.
------
- 
+
+
 
 **2.5 — 프로덕션에서 테스트하되, ‘YOLO’(허술한 배포)는 금지**
 실제 프로덕션 환경에서 테스트하는 것은 필수다.
 
 - 프로덕션과 개발 환경은 데이터 측면에서 다를 가능성이 크다.
 - 차이를 해결하는 궁극적 방법은 프로덕션 테스트다.
------
+
+
 그러나 단순한 프로덕션 테스트만으로는 충분하지 않다.
 
 - 모니터링·신속 복구를 위한 도구와 인프라가 뒷받침돼야 한다.
 - 다른 종류의 테스트 부담을 낮춰 주지만 대체하진 못한다.
------
+
+
 지금까지 우리는 머신러닝(ML)을 위한 “스모크(smoke)” 테스트—데이터에 대한 Expectation Test, 학습 과정에 대한 Memorization Test, 모델에 대한 Regression Test—를 살펴보았습니다.
 
------
- 
+
+
 
 **2.6 — ML 테스트 스코어(ML Test Score)**
 코드베이스와 팀의 규모가 커지고 성숙해지면, ML Test Score 논문에서 제시한 보다 포괄적이며 정교한 ML 시스템 테스트 방식을 채택하는 것이 좋습니다.\
 ML Test Score는 구글의 머신러닝 프로젝트 경험에서 발전된 엄격한 평가 기준으로, 다음 영역을 모두 아우릅니다.
 
------
+
+
 - 데이터 품질
 - 모델 자체
 - 학습(Training) 파이프라인
@@ -1628,15 +1635,17 @@ ML Test Score는 구글의 머신러닝 프로젝트 경험에서 발전된 엄�
 
 우리 앞에서 제안한 방법들과 겹치는 부분도 있지만, 범위와 요구 수준이 훨씬 더 넓고 까다롭습니다.
 
------
+
+
 이 평가는 비용이 많이 들지만, 높은 위험도·중요도를 지닌 서비스라면 그만한 가치가 있습니다.\
 정말로 매우 엄격하다는 점을 명확히 해두고 싶습니다. 지금까지 설계한 Text Recognizer 시스템조차도 일부 항목을 충족하지 못합니다.
 
------
+
+
 결국 ML Test Score를 그대로 적용하기보다는, 이를 영감으로 삼아 팀의 자원과 필요에 맞는 적절한 테스트 전략을 구축하시길 권장합니다.
 
------
- 
+
+
 
 **3 — 모델 문제 해결(Troubleshooting Models)**
 테스트는 ‘무엇인가 잘못되었다’는 사실을 알려주지만, 실제로 고장 난 ML 시스템을 고치기 위해서는 트러블슈팅이 필요합니다. 그 가운데서도 모델은 가장 많은 문제 해결 노력을 요구하는 부분입니다. 이 절에서는 세 단계 접근법으로 모델을 트러블슈팅하는 방법을 다룹니다.
@@ -1644,8 +1653,8 @@ ML Test Score는 구글의 머신러닝 프로젝트 경험에서 발전된 엄�
 1. “돌아가게 만들기(Make it run)” — 흔한 오류를 피해서 모델이 일단 실행되도록 한다.
 1. “빠르게 만들기(Make it fast)” — 프로파일링으로 병목을 찾아 제거한다.
 1. “올바르게 만들기(Make it right)” — 모델·데이터를 확장하고 검증된 아키텍처를 사용해 성능을 다진다.
------
- 
+
+
 
 **3.1 — Make It Run**
 이 단계는 비교적 쉽습니다. 실제로 모델 실행 자체를 막는 버그는 그리 많지 않기 때문입니다. 미리 이런 버그를 조심하면 ‘돌지 않는 모델’ 때문에 고생할 일을 줄일 수 있습니다.
@@ -1653,14 +1662,16 @@ ML Test Score는 구글의 머신러닝 프로젝트 경험에서 발전된 엄�
 - 모양 오류
 - 메모리 부족 오류
 - 수치 오류
------
+
+
 1. 모양(shape) 오류
    1. 연산 대상 텐서들의 차원이 맞지 않으면 학습도, 추론도 불가능합니다.
    1. 예방책
       1. 각 텐서의 예상 크기를 메모해 두고,
       1. 코드에 주석으로 사이즈를 표시하며,
       1. 디버거로 단계별 실행을 하며 텐서 크기를 확인한다.
------
+
+
 2. 메모리 부족(OOM) 오류
    1. GPU에 담기엔 너무 큰 텐서를 올릴 때 발생합니다.
    1. PyTorch Lightning에는 이를 방지하는 기능이 갖춰져 있습니다
@@ -1668,14 +1679,15 @@ ML Test Score는 구글의 머신러닝 프로젝트 경험에서 발전된 엄�
       1. 학습이 허용하는 한 가장 낮은 정밀도(예: 16-bit)를 사용한다.
       1. 배치 크기나 입력 데이터를 줄인다. Lightning의 자동 배치 스케일링 기능을 활용하고, 너무 작아지면 그래디언트 누적을 쓴다.
       1. 그래도 부족하면 텐서 병렬화나 그래디언트 체크포인팅 같은 수작업 기법을 고려한다.
------
+
+
 3. 수치 오류
    1. 텐서에 NaN이나 Infinity가 발생해 파이프라인 전체로 번집니다.
    1. 대개 그래디언트에서 먼저 나타나므로, Lightning의 그래디언트 노름 추적·로깅 기능으로 감시하세요.
    1. 정밀도 문제인지 확인하려면 float64로 바꿔 실행해 보는 것도 한 방법입니다.
    1. 특히 정규화 계층에서 자주 생기므로, 정규화 로직을 잘 챙기세요.
------
- 
+
+
 
 **3.2 — Make It Fast**
 모델이 돌아가기만 하면 이제 빠르게 돌도록 최적화해야 합니다. DNN 학습 성능은 직관과 어긋나는 경우가 많습니다.
@@ -1683,30 +1695,31 @@ ML Test Score는 구글의 머신러닝 프로젝트 경험에서 발전된 엄�
 - 예컨대 트랜스포머는 어텐션보다 MLP 층에서 시간이 더 많이 들기도 하고,
 - “사소해 보이는” 데이터 로딩이 전체 성능을 잡아먹기도 합니다.
 - Adam Optimizer는 1차 2차 모멘트 계산을 위해 GPU 메모리 부하
------
+
+
 해결책은 결국 프로파일링입니다. 직접 병목을 찾고, 파이썬 코드 몇 줄만 바꿔도 큰 성과를 얻을 수 있습니다.
 
------
- 
+
+
 
 **3.3 — Make It Right**
 모델이 빠르게 돌게 되었으면, 이제 올바르게 만들어야 합니다.\
 전통적 소프트웨어와 달리 ML 모델은 완벽할 수 없습니다. 프로덕션 성능도 마찬가지입니다. 그러니 “완벽하게”보다는 \*\*“필요한 만큼 충분히”\*\*가 더 현실적인 목표입니다.
 
------
+
+
 실행 가능하고 빠른 모델을 얻게 되면, 그다음은 스케일을 적용해 성능을 끌어올리는 것이 효과적입니다.
 
 - 모델의 파라미터 수, 데이터셋 크기, 연산 자원을 키우는 길은 실질적이고 달성 가능하며,
 - 트랜스포머는 스케일 법칙이 정량적으로 입증되고 있습니다. (사실 요새는 데이터 셋과 학습)
 - 스케일링이 힘들다면 대규모로 학습된 사전 훈련 모델을 파인튜닝해 보세요.
------
+
+
 지금까지의 조언은 모델 종류나 태스크에 종속되지 않는 범용 가이드입니다. 그 이후의 세부 조정은 태스크·아키텍처에 특화돼야 합니다.
 
 - HuggingFace 등에서 이미 잘 작동하는 아키텍처·하이퍼파라미터를 참고
- 
 
 **===============================**
- 
 
 **📌 Lecture 4: Data Management**
 [ 관련 자료 링크 ]
@@ -1722,13 +1735,11 @@ ML Test Score는 구글의 머신러닝 프로젝트 경험에서 발전된 엄�
 [**https://kyujinpy.tistory.com/44**](https://kyujinpy.tistory.com/44)
 
 **[ 추가 자료 - Pandas 데이터 전처리 ]**
- 
 
 **(1) 데이터 불러오기**
 **import pandas as pd**
 
 **df = pd.read\_csv('data.csv')  #### CSV 파일 읽기** 
- 
 
 **(2) 데이터 확인하기**
 **print(df.head())        #### 상위 5개 행 보기** 
@@ -1736,7 +1747,6 @@ ML Test Score는 구글의 머신러닝 프로젝트 경험에서 발전된 엄�
 **print(df.info())        #### 데이터 타입 및 결측치 정보** 
 
 **print(df.describe())    #### 기초 통계 정보** 
- 
 
 **(3) 결측치 처리**
 **df.isnull().sum()       #### 컬럼별 결측치 개수 확인** 
@@ -1744,35 +1754,29 @@ ML Test Score는 구글의 머신러닝 프로젝트 경험에서 발전된 엄�
 **df = df.dropna()        #### 결측치 있는 행 제거**
 
 **df['column'] = df['column'].fillna(df['column'].mean())  #### 결측치를 평균값으로 채우기** 
- 
 
 **(4) 중복 데이터 처리**
 **df = df.drop\_duplicates()  #### 중복 행 제거** 
- 
 
 **(5) 데이터 타입 변환**
 **df['date'] = pd.to\_datetime(df['date'])  #### 문자열을 날짜 타입으로 변환** 
 
 **df['category'] = df['category'].astype('category')  #### 범주형 데이터로 변환** 
- 
 
 **(6) 조건에 따른 필터링**
 **filtered\_df = df[df['age'] > 30]  #### age가 30 이상인 행만 선택** 
- 
 
 **(7) 새로운 컬럼 생성**
 **df['bmi'] = df['weight'] / (df['height']/100)\*\*2  #### BMI 계산해서 새로운 컬럼 생성** 
- 
 
 **(8) 데이터 그룹화 및 집계**
 **grouped = df.groupby('category')['sales'].sum()  #### 카테고리별 판매 합계** 
- 
 
 **(9) 데이터 정렬**
 **df\_sorted = df.sort\_values(by='date', ascending=False)  #### 날짜 기준 내림차순 정렬**
 
------
- 
+
+
 
 **1. 이상치(Outlier) 처리**
 - **이상치 탐지: 값이 너무 크거나 작아 정상 범위를 벗어난 데이터**
@@ -1787,8 +1791,8 @@ ML Test Score는 구글의 머신러닝 프로젝트 경험에서 발전된 엄�
 **outliers = df[(df['column'] < Q1 - 1.5 \* IQR) | (df['column'] > Q3 + 1.5 \* IQR)]** 
 
 - **이상치 제거 또는 수정 가능**
------
- 
+
+
 
 **2. 문자열 데이터 처리**
 - **텍스트 소문자 변환, 공백 제거, 특정 패턴 추출 등**
@@ -1799,8 +1803,8 @@ ML Test Score는 구글의 머신러닝 프로젝트 경험에서 발전된 엄�
 
 **df['email\_domain'] = df['email'].str.split('@').str[1]  #### 이메일 도메인 추출** 
 
------
- 
+
+
 
 **3. 날짜 및 시간 처리**
 - **날짜 형식 변환, 요일/월/연도 추출, 시간 차 계산 등**
@@ -1815,8 +1819,8 @@ ML Test Score는 구글의 머신러닝 프로젝트 경험에서 발전된 엄�
 
 **df['days\_diff'] = (df['end\_date'] - df['start\_date']).dt.days** 
 
------
- 
+
+
 
 **4. 범주형 데이터 인코딩**
 - **머신러닝 모델에 사용하기 위해 범주형 데이터를 숫자로 변환**
@@ -1829,8 +1833,8 @@ ML Test Score는 구글의 머신러닝 프로젝트 경험에서 발전된 엄�
 
 **df\_onehot = pd.get\_dummies(df, columns=['category'])** 
 
------
- 
+
+
 
 **5. 데이터 병합 (Merge, Join)**
 - **여러 데이터셋을 기준 컬럼으로 합치기**
@@ -1839,38 +1843,36 @@ ML Test Score는 구글의 머신러닝 프로젝트 경험에서 발전된 엄�
 
 **merged\_df = pd.merge(df1, df2, on='id', how='left')   #### 왼쪽 조인** 
 
------
- 
+
+
 
 **6. 피벗 테이블 생성**
 - **데이터를 요약해서 재구성**
 
 **pivot = df.pivot\_table(index='category', columns='year', values='sales', aggfunc='sum')** 
 
------
- 
+
+
 
 **7. 샘플링**
 - **데이터 일부만 랜덤 추출**
 
 **sample\_df = df.sample(frac=0.1, random\_state=42)  #### 10% 샘플링** 
 
------
- 
+
+
 
 **8. 중복값 특정 컬럼 기준 제거**
 **df = df.drop\_duplicates(subset=['user\_id', 'date'])** 
 
------
- 
+
+
 
 **9. 결측치 행/열 삭제**
 **df = df.dropna(axis=0, thresh=5)  #### 5개 이상 데이터 없는 행 삭제** 
 
 **df = df.dropna(axis=1)            #### 결측치가 하나라도 있는 열 삭제**
 
-
------
 
 - **머신러닝 프로젝트에서 데이터 관리의 중요성을 강조**
 - **데이터 탐색에 많은 시간을 할애하고 모델 성능 향상을 위해 데이터셋을 개선하는 것이 핵심**
@@ -2022,14 +2024,11 @@ ML Test Score는 구글의 머신러닝 프로젝트 경험에서 발전된 엄�
 - **다양한 저장소와 도구를 적절히 활용하여 데이터의 품질과 버전 관리를 철저히 할 것.**
 - **자동화와 자동 라벨링, 프라이버시 보호 기술도 중요한 연구 분야임.**
 
- 
 
 **===============================**
- 
 
 **📌 Lecture 5: Deployment**
 <https://fullstackdeeplearning.com/course/2022/lecture-5-deployment/>
- 
 
 **Introduction![ref2]**
 ![image-20250725-002701.png]
@@ -2058,7 +2057,6 @@ ML Test Score는 구글의 머신러닝 프로젝트 경험에서 발전된 엄�
    1. 실시간 반응이 중요한 경우(예: 모바일, IoT), 모델을 사용자가 가까운 위치(엣지)로 옮깁니다.
 
 
- 
 
 **1 - Build a Prototype To Interact With![ref2]**
 
@@ -2089,7 +2087,6 @@ ML Test Score는 구글의 머신러닝 프로젝트 경험에서 발전된 엄�
 |**단점**|확장성/성능 제한, 서버 과부하 위험|초기 설정 복잡, 별도 인프라 필요|디바이스 사양 제한, 배포 어려움|
 |**적합한 상황**|소규모 서비스, 프로토타입|대규모 서비스, 다중 사용자 대응|오프라인 환경, 실시간 반응 필요 시|
 
- 
 
 **1.1 Model-in-service![ref2]**
 애플리케이션 구조는 머신러닝 모델을 어떤 방식으로 포함하느냐에 따라 여러 방식이 존재합니다.\
@@ -2102,10 +2099,8 @@ ML Test Score는 구글의 머신러닝 프로젝트 경험에서 발전된 엄�
 | :- | :- |
 |<p>1. **복잡한 애플리케이션에서도 기존 인프라를 그대로 재사용**할 수 있습니다.</p><p>2. 모델 개발자는 새로운 시스템을 처음부터 따로 세팅할 필요 없이,<br>   기존 웹 서버 환경에서 모델을 쉽게 테스트할 수 있습니다.</p><p>3. "model-in-service"는 **복잡한 구조 없이 빠르게 통합하고 실험할 수 있는 실용적인 방식**</p>|<p>1. **웹 서버와 모델 언어가 다를 수 있음**</p><p>&emsp;o 예: 웹 서버는 Node.js인데, 모델은 Python으로 되어 있다면 통합이 까다롭습니다.</p><p>2. **모델이 서버 코드보다 더 자주 바뀜**</p><p>&emsp;o 모델 개발 초기에 특히 그러하며,</p><p>&emsp;o 매번 모델을 업데이트할 때마다 전체 애플리케이션을 **재배포해야 하는 부담**이 생깁니다.</p><p>3. **모델이 커질수록 서버 자원을 많이 사용**</p><p>&emsp;o 대용량 모델을 웹 서버에 탑재하면,</p><p>&emsp;o 그 모델이 **웹 서버의 CPU, RAM을 잠식**하여<br>&emsp;  모델과 무관한 사용자에게도 **느린 응답**을 유발할 수 있습니다.</p><p>4. **웹 서버는 ML 작업에 최적화되어 있지 않음**</p><p>&emsp;o 대부분의 웹 서버는 **GPU가 없고**,</p><p>&emsp;o ML 추론에 필요한 **병렬 처리나 메모리 처리 능력이 부족**합니다.</p><p>5. **모델과 애플리케이션의 확장(스케일링) 특성이 다름**</p><p>&emsp;o 애플리케이션은 하루 10만 건, 모델은 1만 건 등의 차이가 있을 수 있음</p><p>&emsp;o 그런데 같이 묶여 있으면 **개별적으로 확장하거나 줄일 수 없음**</p>|
 
- 
 
 **2 - Separate Your Model From Your UI![ref2]**
- 
 
 **2.1 - Batch Prediction![ref2]**
 - **Batch Prediction(배치예측)**은, 여러 입력 데이터를 **한 번에 묶어서** 처리하는 방식
@@ -2116,16 +2111,12 @@ ML Test Score는 구글의 머신러닝 프로젝트 경험에서 발전된 엄�
 **모델에 들어올 수 있는 입력의 수가 많지 않은 경우**, 매시간, 매일, 매주 등 **모델을 주기적으로 재실행**을 할수 있는 경우
 
 **초기 단계의 추천 시스템 개발**이나 **마케팅 자동화와 같은 내부용 도구(**internal-facing tools**)**들이 있습니다.
-
-
-
 **“데이터 처리 및 워크플로우 도구들을 활용”**
 
 데이터를 다시 처리하고, 모델을 로딩하고, 예측을 수행한 뒤, **그 결과를 데이터베이스에 저장 함**
 
 → DAG(Directed Acyclic Graph, 유향 비순환 그래프) 기반의 데이터 작업 워크플로우임.\
 -> **Dagster**, **Airflow**, **Prefect** 같은 도구들이 이 문제를 해결하기 위해 설계
- 
 
 #### **DAG (Directed Acyclic Graph)란?![ref2]**
 - 작업(Task) 간의 **의존 관계를 방향성 있는 그래프로 표현**하는 구조
@@ -2135,7 +2126,6 @@ ML Test Score는 구글의 머신러닝 프로젝트 경험에서 발전된 엄�
 |<p>**장점**</p><p></p>|<p>**단점**</p><p></p>|
 | :- | :- |
 |<p>1. **구현이 간단**<br>   이미 모델 학습 시 사용하는 \*\*배치 처리 도구(batch processing tools)\*\*를 재사용할 수 있기 때문입니다.</p><p>2. **확장성(스케일링)이 뛰어남**<br>   데이터베이스는 수십 년간 이런 목적(대규모 데이터 처리)을 위해 설계되어 왔기 때문에,<br>   **큰 규모의 예측 작업에도 문제 없이 확장**할 수 있습니다.</p><p>3. **검증된 패턴**<br>   겉보기에는 단순한 방식처럼 보일 수 있지만,<br>   **대규모 서비스에서도 실제로 오랫동안 사용된 안정적인 방식**입니다.<br>   믿고 사용할 수 있는 **검증된(= tried-and-true)** 예측 방식입니다.</p><p>4. **예측 결과 조회가 빠름**<br>   예측값은 **애플리케이션이 바로 접근할 수 있도록** 데이터베이스에 저장되어 있기 때문에,<br>   빠르게 조회할 수 있습니다.</p>|<p>1. **배치 예측은 복잡한 입력 형태에는 부적합함**<br>   예를 들어, 입력값의 조합이 너무 다양해서 **모든 경우를 미리 예측하여 저장할 수 없는 경우**,<br>   이 방식은 적합하지 않습니다.</p><p>2. **사용자는 최신 예측 결과(**up-to-date predictions**)를 확인 할수 없음**<br>   모델에 들어가는 입력값이 실시간으로 변화 한 다면 **하루에 한 번만 실행되는 배채 작업은** <br>   사용자에게 보여지는 예측 결과는 이미 구식(=stale)일 수 있습니다.</p><p>3. **모델 자체도 stale(오래됨, 낡음)될수 있음**<br>   배치 작업이 **실패하거나 누락되었을 때**, 그 사실을 **즉시 파악하기 어려워**, 사용자는 오래된 결과를 계속 보게 될 수도 있습니다.</p>|
- 
 
 **2.2 - Model-as-Service![](Aspose.Words.e45a31d5-45a9-4228-a7e7-3034abe31d6d.008.png)**
 **모델을 온라인에서 독립된 서비스 형태로 실행하고 백엔드나 클라이언트와 통신**함
@@ -2148,7 +2138,6 @@ ML Test Score는 구글의 머신러닝 프로젝트 경험에서 발전된 엄�
 | :- | :- |
 |<p>1. **신뢰성 (Dependability)**<br>   모델에 버그가 있어도 **웹 애플리케이션 전체가 크래시될 가능성이 낮습니다.**</p><p>2. **확장성 (Scalability)**<br>   모델에 **적합한 하드웨어를 선택해서 따로 확장**할 수 있습니다.</p><p>3. **유연성 (Flexibility)**<br>   **하나의 모델을 여러 애플리케이션에서 재사용**하기가 쉽습니다.</p>|<p>1. **네트워크 지연 (Latency)**<br>   서버나 클라이언트가 모델과 통신할 때 **네트워크 호출이 추가**되어,<br>   애플리케이션에 **지연 시간이 생길 수 있습니다.**</p><p>2. **인프라 복잡성 (Infrastructure complexity)**<br>   **별도의 모델 서비스를 직접 호스팅 및 운영**해야 하므로,**인프라 관리 부담이 증가**합니다.</p>|
 
- 
 
 **2.2.1 Model-as-service를 구축하기 위한 핵심 구성 요소![ref2]**
 이러한 단점들이 있음에도 불구하고, Model-as-a-Service 패턴은 대부분의 ML 기반 제품에 가장 적절한 선택지(sweet spot)입니다.\
@@ -2160,7 +2149,6 @@ ML Test Score는 구글의 머신러닝 프로젝트 경험에서 발전된 엄�
 - 수평 확장 (horizontal scaling)
 - 롤아웃 전략 (rollout)
 - 관리형 배포 옵션들 (managed options)
- 
 
 **2.2.2 REST APIs![ref2]**
 **REST API**는 표준 형식으로 구성된 HTTP 요청(canonically-formatted HTTP requests)에 대한 \*\*예측 결과(response)\*\*를 반환하는 방식으로 작동합니다.
@@ -2177,7 +2165,6 @@ ML Test Score는 구글의 머신러닝 프로젝트 경험에서 발전된 엄�
 |Google Cloud|"instances" 리스트|TensorFlow Serving 등에서 사용|
 |Azure|"data" 리스트|모델에 따라 구조 유동적|
 |AWS Sagemaker|"instances"지만 구조 다름|자체 JSON 포맷 필요|
- 
 
 **2.2.3 Dependency Management![ref2]**
 - 모델 구성 요소 : 코드 + 가중치 + 라이브러리 의존성
@@ -2198,7 +2185,6 @@ ML Test Score는 구글의 머신러닝 프로젝트 경험에서 발전된 엄�
 
 **두번째 전체 추론 프로그램(inference program)을 컨테이너로 감싸서 제한하는 방법**\
 → Docker와 같은 컨테이너 기술을 사용하면, 코드, 모델, 패키지 버전, OS 환경까지 모두 고정된 상태로 배포 가능해짐
- 
 
 **2.2.4 Performance Optimization(성능 최적화)![ref2]**
 모델 추론(inference)을 **더 빠르고 효율적으로 만들기 위해**는 다음과 같은 최적화 기법들을 고려 해야 합
@@ -2239,7 +2225,6 @@ ML Test Score는 구글의 머신러닝 프로젝트 경험에서 발전된 엄�
       1. **TensorRT**
       1. **Ray Serve**
       1. **NVIDIA Triton**
- 
 
 **2.2.5 Horizontal Scaling![ref2]**
 - 수천 ~ 수백만 사용자 요청에 대응할 때, 고가용성(HA)이 필요할 때
@@ -2253,10 +2238,8 @@ ML Test Score는 구글의 머신러닝 프로젝트 경험에서 발전된 엄�
   → 수직 확장(더 좋은 서버로 교체)은 물리적 한계가 있음
 
   → 수평 확장은 더 일반적이고 클라우드에 적합한 방식
- 
 
 ![ref2]
- 
 
 **2.2.5 Model Rollouts![ref2]**
 Rollouts 이란?
@@ -2275,7 +2258,6 @@ Rollouts 이란?
    전체 모델이 아니라, 모델 전처리–예측–후처리 등의 파이프라인 흐름 전체를 배포하고 싶을 수 있습니다.
 
 이러한 기능을 갖추는 것은 상당한 인프라스트럭처 역량이 필요한 도전 과제이며, 이 과정은 이 강좌의 범위를 넘어섭니다.
- 
 
 **2.2.6 Managed Options![ref2]**
 모든 주요 클라우드 제공업체들은 모델 배포를 위한 매니지드 서비스 옵션을 제공 하고 있고, BentoML이나 Banana 같은 여러 스타트업들도 솔루션을 제공하고 있습니다.
@@ -2290,10 +2272,8 @@ Rollouts 이란?
 
 
 ![image-20250725-030248.png]**3 - Move to the Edge?**
- 
 
 ![ref2]
- 
 
 **3 - Move to the Edge?**
 웹 서비스 대신 모델을 엣지(Edge) 또는 디바이스 내에 직접 배포해야 할 경우
@@ -2317,7 +2297,6 @@ Rollouts 이란?
 |<p>1. **지연 시간(latency) 최소화**<br>   → 네트워크를 거치지 않고 **로컬 디바이스에서 직접 추론(inference)** 하므로 훨씬 빠릅니다.</p><p>2. **무료로 확장되는 효과 (Scales "for free")**<br>   → 사용자의 디바이스에서 추론하므로, 서버를 늘릴 필요 없이 **사용자 수가 늘어나도 별도의 인프라 부담이 없습니다.**</p><p>3. **웹 서비스를 운영하지 않아도 됨**<br>   → 서버 관리, 배포, 보안 같은 **백엔드 복잡도**를 걱정할 필요가 없습니다.</p>|<p>1. **하드웨어·소프트웨어 자원이 제한적**<br>   → 엣지 디바이스(예: 스마트폰, 차량, IoT 기기)는 **GPU 부족, 낮은 메모리/연산력** 등으로 인해 복잡한 모델 실행이 어렵습니다.</p><p>2. **모델 업데이트가 어렵다**<br>   → 모델이 사용자의 디바이스에 배포되므로, **개발자가 직접 업데이트를 강제할 수 없고, 유저가 수동으로 해야 하는 경우도 많습니다.**</p>|
 
 
- 
 
 **3.1 Frameworks![ref2]**
 Picking the right framework to do edge deployment depends both on how you train your model and what the target device you want to deploy it on is.
@@ -2333,14 +2312,12 @@ Picking the right framework to do edge deployment depends both on how you train 
 |Apache TVM|디바이스/프레임워크 무관 범용 최적화 도구|다양한 환경에 배포 가능. TVM은 컴파일러 스택 형태|
 
 
- 
 
 **3.2 Efficiency![ref2]**
 - 모델의 크기가 크면 엣지 디바이스에 배포해도 실행할 수 없음
 - 따라서 엣지 배포를 위해서는 모델 효율성이 매우 중요함
 - 이전에 모델 효율성을 높이는 방법으로 양자화(Quantization)와 지식 증류(Distillation)을 언급합.
 - 추가 적으로 엣지 환경에서 더 잘 작동하도록 특별히 설계된 신경망 구조(Network Architecture)\*\*도 존재함, 대표 적인 예가  MobileNets, DistillBERT 라고 언급
- 
 
 **3.3 Mindset![ref2]**
 엣지(Edge) 배포를 고려할 때 가져야 할 핵심적인 마인드셋
@@ -2366,20 +2343,9 @@ Picking the right framework to do edge deployment depends both on how you train 
 - 모델은 종종 예상치 못한 방식으로 망가짐.
 - 엣지에서는 장애 시 원격 복구도 어렵기 때문에, 모델이 실패할 경우를 대비한 대안 경로(fallback) 반드시 필요.
 
-
-
-
-
-
-
 ![ref3]
 
-
-
- 
-
 **===============================**
- 
 
 **📌 Lecture 6: Continual Learning**
 <https://fullstackdeeplearning.com/course/2022/lecture-6-continual-learning/>
@@ -2388,37 +2354,58 @@ Picking the right framework to do edge deployment depends both on how you train 
 
 <https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning?hl=ko>
 
- 
 
 **0. 강의 목표**
 - **지속 학습 (Continual Learning)에 대한 구조화된 체계 (framework) 제시**
   - 실제 환경에서는 데이터 분포가 고정되어 있지 않으므로 단발성, 정적인 모델 개발이 아니라\
-    지속적으로 데이터에 적응하고 성능을 개선해나갈 수 있는 시스템을 설계해야 함
+    지속적으로 데이터에 적응하고 성능을 개선해나갈 수 있는 시스템을 설계해야
+함
 - **학습 루프의 각 단계별로 무엇을 어떻게 배워야 하는지 방향 및 가이드 제시**
-  - 지속 학습을 위한 전체 학습 루프를 다음과 같이 구성함:\
-    로깅 → 데이터 큐레이션 → 재학습 트리거 설정 → 데이터셋 구성 → 학습 → 오프라인 테스트 → 배포 / 온라인 테스트
+  - 지속 학습을 위한
+전체 학습 루프를 다음과 같이 구성함:\
+    로깅
+→
+데이터 큐레이션
+→
+재학습 트리거 설정
+→
+데이터셋 구성
+→
+학습
+→
+오프라인 테스트
+→
+배포
+/
+온라인 테스트
 - **현실적으로 도입 가능한 점진적 전략을 제안**
-  - 모든 것을 한 번에 자동화하지 말고, 작은 단위부터 단계적으로 구축하는 전략을 제안함\
+  - 모든 것을 한 번에 자동화하지 말고,
+작은 단위부터 단계적으로 구축하는 전략을 제안함\
     ex. (초기) 단순 예측/실행 결과 로깅만 수행 → 주기적으로 데이터 수집 및 수동 리트레이닝 → 트리거 자동화, 평가 자동화, 배포 자동화
------
- 
+
+
 
 **1. 지속 학습 필요성**
 - 최소 실행가능한 모델 구축 (**based on our evaluations**)![](Aspose.Words.e45a31d5-45a9-4228-a7e7-3034abe31d6d.015.png)[](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxMpurico62b1I9YNui2g3GK-j1F8nproRJiJWkt1pPfiQK0x-jP4aJlHk6u4y2NRdKbhGCSClZldG2mpqzDnoAjSZNZdBJsNWw99ujGCEZZRYwDsCssu29qTQBrV3Ye8a-pAqpcp1_LclEBpc71gu_vqwkR46OPWo3FOLwWjETenLRYjhrvsd2LkbCm5N/s1024/1.png)
 - **문제는 모델 배포 이후에 시작됨**
   - 실제 프로덕션 환경에서 우리 모델이 얼마나 잘 동작할지 정확히 측정할 방법이 없음
   - 대부분은 일부 예측 결과를 눈으로 확인하며, 기대한 대로 동작하는지 살펴보는 방식![](Aspose.Words.e45a31d5-45a9-4228-a7e7-3034abe31d6d.016.png)[](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjqHxRwqNmfGBT2J_EgN_Hga26ktDHZoM98yhrF2qd9dvBjQBM8cBIgeTblqCpWmyZd98NPsoGDuLIuUA16f4aw2ZYrecTlNvyLKOJVk-qNSyRrR2zYXmynTPMJlOpNS-YAcglLhe3iQ0oowaFVrpzlHHHVo3QpAFsUstWSKXS_EUgajgBVYO4zOB9ha3QM/s1024/2.png)
-  - 그리고, 대개 ML 엔지니어가 발견하는 것이 아니라, **사용자의 불만 지표로부터 조사가 시작**됨 → **유지 비용 증가**
+  - 그리고, 대개 ML 엔지니어가 발견하는 것이 아니라,
+**사용자의 불만 지표로부터 조사가 시작**됨 →
+**유지 비용 증가**
   - ![](Aspose.Words.e45a31d5-45a9-4228-a7e7-3034abe31d6d.017.png)[](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQt9d16f_7QtgrxhWDHW3i_kznph18WQRed2FXU5Yb7Qu5aUQTF0Yq7m6oXVMkna69iiWiNicaPJb3I9WJABf-PvBy4k0cU64DfQkvIbtIWBDwHHhmT4zBLjLk2iX-_RE1rhLULACL7QWSrNVfaJP6MyFijJlvuKPM8O8evGu3ih8CdXHE9S5Gpb0mI0m4/s1024/3.png)
-- 그 이후부터는 엔지니어가 관리하는 모델의 문제점을 찾기 위해 **ad-hoc analysis**를 수행
+- 그 이후부터는 엔지니어가 관리하는 모델의 문제점을 찾기 위해
+**ad-hoc analysis**를 수행
   - ad-hoc 분석: 사전에 정해진 분석 프로세스나 대시보드 없이, 특정 문제를 해결하거나 궁금증을 풀기 위해 즉석에서 수행하는 분석
   - 즉, 문제 발생 시, 일시적/즉흥적으로 데이터를 조회하고 가설을 세워가며 분석 (SQL, Jupyter notebook)
-- 문제를 추적하여 해결 한 후, 모델을 다시 배포한다고 하더라도 **다시 원점으로 돌아오게 됨** (초기 배포 상태와 같이, 해당 모델이 실제 프로덕션 환경에서 얼마나 잘 동작할지 알 수 없는 상태)
+- 문제를 추적하여 해결 한 후, 모델을 다시 배포한다고 하더라도
+**다시 원점으로 돌아오게 됨**
+(초기 배포 상태와 같이, 해당 모델이 실제 프로덕션 환경에서 얼마나 잘 동작할지 알 수 없는 상태)
 
 ![](Aspose.Words.e45a31d5-45a9-4228-a7e7-3034abe31d6d.018.png)[](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZ6K565MXN5NZlZEqDUtKZmGDaHGw2I5pPzPu4mCD1YO3tY3RoCDgu4e6rtYJjR3Hfyn8b5__LO6O9zNwqQYmPuzOcd5eM2Z0LSa38RLzGhmeolWu6VgPIKVjnqntn7UmIhilkNl1EdC9RwvrNT2U44lCTAp3tuzVF4Co-E8u3uyKwYnl6xmCQugKq8lMV/s1024/4.png)
 
------
- 
+
+
 
 **2. 지속 학습을 어떻게 이해할 것인가?**
 - **지속 학습**
@@ -2438,7 +2425,21 @@ Picking the right framework to do edge deployment depends both on how you train 
 
 - **지속 학습 루프 (Continual Learning Loop)**
 
-  로깅 → 데이터 선별 → 재학습 트리거 설정 → 데이터셋 구성 → 오프라인 테스트 → 학습 → 배포 / 온라인 테스트
+  로깅
+→
+데이터 선별
+→
+재학습 트리거 설정
+→
+데이터셋 구성
+→
+오프라인 테스트
+→
+학습
+→
+배포
+/
+온라인 테스트
 
   - 로깅 (logging)\
     **: 어떤 데이터를 저장할 것인가?**
@@ -2450,8 +2451,12 @@ Picking the right framework to do edge deployment depends both on how you train 
     - 레이블링이 된 학습에 사용할 준비가 완료된 후보 데이터 저장소(reservoir)를 확보
   - 재학습 트리거 (retraining trigger)\
     **: 언제 모델을 재학습 할 것인가?**
-    - 모델을 다시 훈련시킬 시점을 결정하는 단계 
-    - 재학습 작업 시작 신호(signal) 확보 (ex. 모델 성능 저하, 특정 시간 간격, 데이터 분포 변화) 
+    - 모델을 다시 훈련시킬 시점을 결정하는 단계
+
+
+    - 재학습 작업 시작 신호(signal) 확보 (ex. 모델 성능 저하, 특정 시간 간격, 데이터 분포 변화)
+
+
   - 데이터셋 구성 (dataset formation)\
     **: 재학습에 사용할 데이터셋은?**
     - 전체 후보 데이터셋 중에서, 이번 학습에 사용할 정확한 데이터 서브셋을 구성하는 단계
@@ -2473,33 +2478,46 @@ Picking the right framework to do edge deployment depends both on how you train 
 
 ![](Aspose.Words.e45a31d5-45a9-4228-a7e7-3034abe31d6d.024.png)[](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgFU3LW1lmlHEfyBHzf6uSSY3ONGx6yMcyesXu-Sn65-S_LXouJWSfzfGCoePhUhXzTs9TCGXsgonG75l-PACYfKyDs8_fcc65BhG3IW8-TpnyYEIHY2lHoYAtqvwTtQ20e9CFJr8VHIon6nQpJBWRcmaj7_Myf6buqYGw5ZcS-vFDRqRJdGRbpBLr_vt-Q/s807/10.png)
 
------
- 
+
+
 
 **3. 지속 학습 전략 3가지 BASELINE 제안**
 ![ref4][](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgyl-nIWCiAX9oaz3HeNknQD7FSVUBgSWDoKBwF0d2S7FdBnNirkAS5vS1l0UBPNYs7398_ObWsZcW9OCCrZoknWbHDZ0CWVaDpgMIZ3KssS2hooZ3Ah_4BjC_mW5xK3fjS6jm6qdUf5p4CBRbsNj4QvhOjMpRuZ_WcoI4HJkKvuOwmfOYFixobwL7MOX8u/s1091/11.png)
 
- 
 
 **A. 주기적 재학습 (periodic retraining)**
 **정해진 주기로 재학습하여 자동화, 가장 단순한 방식의 전략**
 
-1. 로깅 단계에서는, 필터링 없이 단순하게 운영 환경에서 발생하는 **데이터 전부 저장**
-1. 큐레이션 시, **무작위 균등 샘플링 (Uniform Random Sampling)**
-   1. 최대 처리 가능한 수만큼 샘플링 후, 도구를 이용해 레이블링
-1. 재학습 트리거 **고정 주기**로 재학습 실행 (ex. 매주 1회, 등)
-1. 데이터셋 구성 이전 한달 치 데이터를 통해 학습
-1. 오프라인 테스팅 : 테스트셋 정확도를 기준으로 threshold 확인, 일부 예측값 spot-check (일부만 뽑아서) 등 manual 검토
-1. 배포 : 배포 후 일부 예측값에 대한 spot evaluation 수행 
+1. 로깅
+단계에서는, 필터링 없이 단순하게 운영 환경에서 발생하는
+**데이터 전부 저장**
+1. 큐레이션
+시,
+**무작위 균등 샘플링 (Uniform Random Sampling)**
+   1. 최대 처리 가능한
+수만큼 샘플링 후, 도구를 이용해 레이블링
+1. 재학습 트리거
+**고정 주기**로 재학습 실행 (ex. 매주 1회, 등)
+1. 데이터셋 구성
+이전 한달 치 데이터를 통해 학습
+1. 오프라인 테스팅
+: 테스트셋 정확도를 기준으로 threshold 확인, 일부 예측값 spot-check (일부만 뽑아서) 등 manual 검토
+1. 배포
+: 배포 후 일부 예측값에 대한 spot evaluation 수행
+
+
 - **주기적 재학습 전략이 실패하는 유형 (failure modes)**
   - **데이터 과잉 (High volume)**
     - 저장하거나 라벨링할 수 있는 양보다 데이터가 훨씬 많음
     - 모든 데이터를 로깅하거나 학습에 사용하는 것이 불가능하거나 비효율적인 경우
   - **롱테일 분포 (Long-tail Data)**
-    - 균등 샘플링 방식을 통해서는 *신호가 강한 데이터(high signal, edge cases)*를 놓치기 쉬움
+    - 균등 샘플링 방식을 통해서는
+*신호가 강한 데이터(high signal, edge cases)*를 놓치기 쉬움
     - 모델이 반드시 잘해야 할 희귀한 상황을 학습하지 못함
   - **사람이 라벨링해야 하는 경우 (Human-in-the-Loop)**
-    - 라벨링 비용이 매우 비쌈 (ex. 의료, 법률, 자율주행차) 
+    - 라벨링 비용이 매우 비쌈 (ex. 의료, 법률, 자율주행차)
+
+
     - 커스텀 규칙 기반 라벨링이 필요하거나 (ex. medicine), 라벨링 자체가 제품의 일부인 경우 (ex. content moderation, 컨텐츠 검열)
   - **재학습 비용 부담 (High cost of Retraining)**
     - 매번 전체 데이터를 다시 학습하는 것이 리소스 낭비
@@ -2517,7 +2535,6 @@ Picking the right framework to do edge deployment depends both on how you train 
     → 훈련 주기를 늘리거나, 부분 재학습 및 증분 학습(incremental learning) 고려
 
     → 모델 배포 전 훨씬 정밀한 평가, 검증 절차 필요
- 
 
 **B. 전략 반복 개선 (iterating on your retraining strategy) - “모니터링 기반 전략 개선 포인트 파악”**
 **TL;DR**
@@ -2538,13 +2555,13 @@ Picking the right framework to do edge deployment depends both on how you train 
 ![](Aspose.Words.e45a31d5-45a9-4228-a7e7-3034abe31d6d.027.png)[](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0k83Sa0YORu2QDTiSwjY5HfNZcb0dUZneEHxLEeaGcL6-8cvrV5xez9AblDbKNK5RWK5y0GEviDWbl9lSFLznUyNyLUy6WQH1rOZGenBS1btbqLNFp6EX_CgRMo1U9Ll6tNfwzKMhxJR3ZM-pQ0wvbQCIauPsPK0QukVitqQdTw1gQMTswsRJ80Z3rRmW/s807/13.png)
 
 - **모니터링 원칙**
-  - **실제로 중요한 것**, **실제로 자주 망가지는 것에 집중**할 것
+  - **실제로 중요한 것**,
+**실제로 자주 망가지는 것에 집중**할 것
   - 그 외의 신호들도 계산하되, 관측 및 디버깅 용도로만 활용할 것
 - **모니터링 시 고민할 부분**
   1. **어떤 메트릭을 모니터링해야 하는가?**
   1. **그 메트릭이 나쁘다는 건 어떻게 판단하는가?**
   1. **모니터링 도구는?**
- 
 
 **a. 어떤 메트릭을 모니터링해야 하는 가?**
 ![](Aspose.Words.e45a31d5-45a9-4228-a7e7-3034abe31d6d.028.png)[](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhTzsK1oVQ9udkuqf6D3Sk9X_4LoI3-yvmf0DlgOTXKFLCnI_-EZSr-HjSauq8Zvvhi5mtXZwom3sb55guspffksXFfNfcSbgiramK019Zzy3_TZdwjfLUOgjh2V5KJp7bgkhYP3C5UkVZX1uBXJdroZmLQMdtlQx-buo8NDoL3u_JdH2h6rm7D__SQIMx1/s1246/14.png)
@@ -2553,7 +2570,8 @@ Picking the right framework to do edge deployment depends both on how you train 
 
 
 - **사용자 결과 및 피드백 (Outcomes and Feedback from Users)**
-  - 실제 사용자의 행동, 평가, 수정 등에서 수집된 신호로, 가장 가치 있는 시그널
+  - 실제 사용자의 행동, 평가, 수정 등에서 수집된 신호로,
+가장 가치 있는 시그널
   - 예시: 추천 클릭, 이탈, thumbs-up, 잘못된 분류 수정, 자율주행 개입 등
   - 장점: 실제 사용자 입장에서 본 모델 품질을 반영함
   - 단점: 제품마다 수집 방식이 달라 일관되지 않음 → 제품 설계에서 자연스럽게 수집되도록 고려해야함
@@ -2579,7 +2597,8 @@ Picking the right framework to do edge deployment depends both on how you train 
     - 입력 데이터의 분포 비교 (통계적 테스트 또는 거리 기반 측정)
     - feature별 히스토그램, KL-divergence, PSI(Population Stability Index) 등 사용
   - 장점: 문제 징후를 사전 경고로 포착할 수 있음
-  - Drift ≠ 항상 문제 → **드리프트 발생이 성능 저하를 의미하는 건 아님**, 하지만 디버깅 신호로 유용
+  - Drift ≠ 항상 문제 →
+**드리프트 발생이 성능 저하를 의미하는 건 아님**, 하지만 디버깅 신호로 유용
 - **시스템 메트릭 (System Metrics)**
   - 시스템 자원 사용 지표
   - 예시: CPU, GPU, 메모리 사용량, 처리 시간, 대기 시간 등
@@ -2587,9 +2606,13 @@ Picking the right framework to do edge deployment depends both on how you train 
   - 단점: 모델 품질과 직접적 관계는 없음
 - **Practical Recommendations**
   - 1. 데이터 품질 검사는 반드시 해야 한다. (zero-regret)
-  - 2. 다양한 시그널들이 **실제로 얼마나 측정하기 쉬운가(feasibility)를 함께 고려해야** 한다.
+  - 2. 다양한 시그널들이
+**실제로 얼마나 측정하기 쉬운가(feasibility)를 함께 고려해야**
+한다.
   - 3. 라벨이 따로 없더라도 피드백 or 프록시 지표는 어떻게든 측정하고 수집한다.
-  - 4. 모델 출력값이 저차원이라면 분포 변화(모델 확률 값)를 모니터링하는 것이 효과적이다. 
+  - 4. 모델 출력값이 저차원이라면 분포 변화(모델 확률 값)를 모니터링하는 것이 효과적이다.
+
+
   - 5. 시스템이 진화할수록 관측 지향적 사고 (observability mindset)을 가져야 한다.
     - 지표만 저장하지 말고, 원시 데이터나 맥락(context)도 보존할 것
     - 다양한 지표를 정의하고 측정해도 OK, 알람은 최소화할 것 (알림 피로도 주의, 특히 drift)
@@ -2643,30 +2666,41 @@ Picking the right framework to do edge deployment depends both on how you train 
 
 - **분포 드리프트 측정 지표 선택 가이드**
   - **저차원 데이터의 경우**
-    - ❌ 흔히 추천되지만 **좋지 않은 지표**
+    - ❌ 흔히 추천되지만
+**좋지 않은 지표**
       - **KL Divergence (Kullback-Leibler)**: 민감하고 비대칭적이며, 분포에 zero가 있으면 무한대가 나올 수 있음
       - **KS Test (Kolmogorov–Smirnov)**: 통계적 검정이긴 하나, 실제로는 민감하지 않거나 거짓 경고 발생 가능성 있음
-    - ✅ 상대적으로 **더 나은 지표**
+    - ✅ 상대적으로
+**더 나은 지표**
       - **∞-Norm 또는 1-Norm**: 각 범주별 확률의 차이를 비교
-        - 예: ||P\_ref - P\_prod||₁
+        - 예:
+||P\_ref - P\_prod||₁
       - **Earth-Mover’s Distance (Wasserstein Distance)**:
         - 두 분포 간의 '모양' 차이를 통계적으로 잘 반영
   - 고차원 데이터의 경우
-    - 1. **모든 피처에 대해 개별적으로 측정**
+    - 1.
+**모든 피처에 대해 개별적으로 측정**
       - 각 피처별로 드리프트를 개별 측정
       - ⚠️ 문제: 다중 가설 검정(multiple hypothesis testing)으로 인해 오류 발생 가능성 증가
       - ⚠️ 교차 상관관계(cross-feature correlation)는 놓침
-    - 2. **중요 피처만 측정하거나 출력값 중심으로 확인**
+    - 2.
+**중요 피처만 측정하거나 출력값 중심으로 확인**
       - 중요 피처(feature importance 기준)를 선정해 우선 측정
-      - 또는 모델의 **출력값**에 대한 분포 변화를 측정하는 것이 더 실용적일 수 있음
-    - 3. **고차원 분포 간 거리를 직접 측정하는 지표 활용**
+      - 또는 모델의
+**출력값**에 대한 분포 변화를 측정하는 것이 더 실용적일 수 있음
+    - 3.
+**고차원 분포 간 거리를 직접 측정하는 지표 활용**
       - Maximum Mean Discrepancy (MMD)
         - 임의의 두 분포가 같은지 검정하는 커널 기반 방법
       - Approximate Earth-Mover’s Distance
         - Wasserstein Distance를 고차원에 확장한 버전
       - ⚠️ 단점: 이 지표들은 해석이 어렵고 직관적이지 않음
-    - **4. 프로젝션** (projection) **기반 접근**
-      - 고차원 데이터를 저차원으로 투영 
+    - **4. 프로젝션**
+(projection)
+**기반 접근**
+      - 고차원 데이터를 저차원으로 투영
+
+
         - 1. 고차원 입력 데이터를 함수에 통과
         - 2. 입력 데이터의 차원 축소 (고차원 → 저차원 압축)
         - 3. 각 데이터 포인트에 대해 태깅 (tagging)
@@ -2695,7 +2729,6 @@ Picking the right framework to do edge deployment depends both on how you train 
   - p-value 기반 접근은 데이터가 많을수록 사소한 차이도 유의미하다고 판단
   - 하지만 모델은 작은 분포 변화에는 충분히 견고하므로, 실제 문제인지 아닌지 판단이 어려움
   - ![](Aspose.Words.e45a31d5-45a9-4228-a7e7-3034abe31d6d.035.png)[](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDMboGVj0LHjccJq4wK6ZQdR5PEfPCKH_WsG2j9RMVduQuMoA5I1RfoPebAtuZb6d-XIE0-OGFo2KTHJZUnYaeGBWCnpqss5CT6bENkjWXMuimpnk6k5-o1Hi2R-FWsUGiAPAYWYUw4ZmN5u8b4RqeBj3tmqlujKxotPf1Zld2cV001zhcpGwrBTwhA3mE/s904/21.png)
- 
 
 **c. 모니터링 도구는?**
 - **시스템 모니터링 도구**
@@ -2708,8 +2741,12 @@ Picking the right framework to do edge deployment depends both on how you train 
   - 입력 데이터 샘플을 넣으면 자동으로 분포 변화, 품질 문제, 이상 지점에 대한 리포트를 생성, 요약
   - 한계: 데이터 수집 및 인프라 구성은 사용자가 직접 해야 함, 대규모 운영 환경에서는 별도 스케일링 전략 필요
 - **SaaS 기반 ML 모니터링 솔루션 (상용 서비스)**
-  - 예시: Gantry, Aporia, Superwise, Arize AI, Fiddler AI, Arthur AI 
-  - 장점: 
+  - 예시: Gantry, Aporia, Superwise, Arize AI, Fiddler AI, Arthur AI
+
+
+  - 장점:
+
+
     - ML 전용으로 설계되어 모델 성능, 피드백, 데이터 품질, 드리프트 등을 통합 모니터링 가능
     - 일부 자동 알림, 대시보드, 서브그룹 편향 모니터링, 라벨 수집까지 지원
     - 다양한 기능을 out-of-the-box(별도 설정없이, 설치하자마자 바로 쓸 수 있음)로 제공, 실제 운영에 바로 도입 가능, slack/email 알림, 팁 협업 기능
@@ -2723,21 +2760,24 @@ Picking the right framework to do edge deployment depends both on how you train 
 |**SaaS 솔루션**|상용 ML Observability 플랫폼|다양한 기능 통합 제공|비용 발생, 도입 고려 필요|
 
 ![](Aspose.Words.e45a31d5-45a9-4228-a7e7-3034abe31d6d.036.png)[](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjt2_rwjZFHGbPVElR6zeh-4f8OpO6b7THqba1IVnIlreAovoDxD30gbQBMWKyl8wkjxSRlXWaBb9txDTRsQcb9fSxeGhIH_HNkwAKdtXCmHuTpbZhPwImDp9KDJjCcyhgISZqfQSrIaZOpiG7-2jxaZkq9M6dK05Pt4znqWlSpzVA8_tnEJIxAipFYpW-A/s1081/22.png)
- 
 
-**C. 단계별 상세 전략 설계 (retraining strategy) - “실제 구현 시, 전략 설계”** 
- 
+**C. 단계별 상세 전략 설계 (retraining strategy) - “실제 구현 시, 전략 설계”**
+
+
 
 **a. 로깅단계**
 - 로깅 목적: 모델의 실행 데이터를 분석할 수 있도록 저장
 - **전략**
   - **가능하다면 전체 데이터를 로깅하라**
     - 분석, 오류 추적, 재학습 샘플링에 유리
-  - **비용 문제나 프라이버시 문제 등으로 전체 데이터를 로깅할 수 없는 경우,** 2가지 방식:
+  - **비용 문제나 프라이버시 문제 등으로 전체 데이터를 로깅할 수 없는 경우,**
+2가지 방식:
     - **Profiling 방식**
       - 엣지에서 데이터의 통계적 특성만 요약해서 전송
       - ex. 평균, 분산, 히스토그램, 카운트 등
-      - 장점: 데이터 보안 강화, 저장 공간 절약, 이상치 
+      - 장점: 데이터 보안 강화, 저장 공간 절약, 이상치
+
+
     - **Sampling 방식**
       - 전체 데이터를 저장하지 않고, 일부 데이터 포인트만 선택해서 전송
       - ex. 1%, 5% 등 무작위 또는 조건 기반 샘플 추출
@@ -2748,7 +2788,6 @@ Picking the right framework to do edge deployment depends both on how you train 
 ![](Aspose.Words.e45a31d5-45a9-4228-a7e7-3034abe31d6d.038.png)[](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhdwkSn9qZw-uegjxlg7kUZ_TKAdD87peSyyzE1jKpzJRV-GD4p6BT1aMr490RQeUv4_20Cj65Ek3-x2gOGR7WyJ5wms-XSV96GGKKzMi7L4AwSPTnzIjIQJ6UEu5KojrqdEgFNBB9t7ZeYRE3eAQTgwBaRpaF6GCef2L4FQHaP5MTKyHyizvvxKuuBCJgF/s1600/23.png)
 
 
- 
 
 **b. 큐레이션 단계**
 - 큐레이션 목적: 운영 환경에서 생성되는 무한한 (대부분 라벨이 없는) 스트리밍 데이터를 모델 학습에 적합한 유의미한 소규모 데이터셋으로 가공하여 저장
@@ -2794,10 +2833,10 @@ Picking the right framework to do edge deployment depends both on how you train 
   - KNN, consine similarity
 - 특정 오류를 분류하는 함수를 학습하여, 그와 유사한 데이터를 추출
   - 분류기 학습 (linear classifier, neural net 등)
- 
 
 **c. 재학습 트리거 단계**
-- 목적: 운영 중인 모델의 성능이 시간이 지나며 저하될 수 있기 때문에, **언제 어떤 기준으로 모델을 다시 학습시킬지 결정**
+- 목적: 운영 중인 모델의 성능이 시간이 지나며 저하될 수 있기 때문에,
+**언제 어떤 기준으로 모델을 다시 학습시킬지 결정**
 - \* 자동 재학습이 필수는 아님, 하지만 자동화 시 성능이 일관되게 재현될 수 있어야 함
 - **재학습 트리거 전략**
   - **정기적 (Periodic Retraining)**
@@ -2805,8 +2844,12 @@ Picking the right framework to do edge deployment depends both on how you train 
   - **성능 기반**
     - 예상치 못한 변화에 빠르게 대응 가능, 성능 추적 시스템이 잘 구축되어 있어야 가능, 구현 난이도와 운영 복잡도 높음
   - 그 외
-    - **온라인 학습(Online Learning):** 새로운 데이터가 들어올 때마다, 모델 즉시 업데이트, 이론적으로 좋지만 현실에서는 힘듬
-    - **온라인 적응(Online Adpatation):** 전체 모델을 재학습하진 않고, 출력값을 사용자에게 보여주는 방식만 조정
+    - **온라인 학습(Online Learning):**
+새로운 데이터가 들어올 때마다, 모델
+즉시 업데이트, 이론적으로 좋지만 현실에서는 힘듬
+    - **온라인 적응(Online Adpatation):**
+전체 모델을 재학습하진 않고,
+출력값을 사용자에게 보여주는 방식만 조정
       - ex. 모델이 어떤 점수를 내면, 그걸 어떻게 해석해서 사용자에게 보여줄지 조정, Multi-Armed Bandits 같은 탐색 알고리즘으로 이 정책 계속 튜닝
       - 데이터가 자주 바뀌는 환경에 적합
 - 재학습 시기 결정
@@ -2825,7 +2868,6 @@ Picking the right framework to do edge deployment depends both on how you train 
   - y축) 한달 기준으로 누적된 성능 손실 (기회 비용
   - **성능 향상 효과 vs 재학습에 드는 비용**
   - => 너무 느리게 재학습하면 좋은 성능을 유지 못하고 그만큼 손해
- 
 
 **d. 데이터셋 구성**
 - 목적: 재학습을 시작할 때, 어떤 데이터셋을 선택해 학습시킬지 결정
@@ -2864,12 +2906,15 @@ Picking the right framework to do edge deployment depends both on how you train 
     - \*stateful: 이전 학습 상태를 계속 이어감
     - 훨씬 비용 효율적이나, 기존 성능 유지 주의 필요
     - ![](Aspose.Words.e45a31d5-45a9-4228-a7e7-3034abe31d6d.045.png)[](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJV1H61wUpjxbbY17BAKtVNZiQDqTyhB915o9nnn3v5SycFVbqc_LZz8I1-3Xkc9mCE0O8AgzqLe0MRxklFRZXU64HFqK4Y4qQwdvd3d0rVZ1U1XZuVyGm_V6REzhJIz7d7UBeVf83KYXnUA-SPvF6j80OIOxaJ42tmLZ8VWLubYml3wWXxwppBvg99kbb/s782/31.png)
- 
 
 **e. Offline Testing**
 - 목적
-  - 모델 배포 전 품질 검증 및 평가, **모델을 실제로 써도 괜찮은지에 대해 객관적인 보고서 형태로** 답변할 수 있도록 하는 것
-- 이전 버전과 현재 버전을 성능 지표와 중요한 데이터 하위 검증셋/자주 발생하는 에러 측면 비교 → 그 결과를 테스트 보고서로 정리
+  - 모델 배포 전 품질 검증 및 평가,
+**모델을 실제로 써도 괜찮은지에 대해 객관적인 보고서 형태로**
+답변할 수 있도록 하는 것
+- 이전 버전과 현재 버전을 성능 지표와
+중요한 데이터 하위 검증셋/자주 발생하는 에러
+측면 비교 → 그 결과를 테스트 보고서로 정리
 - **강조점: 훈련 데이터만 계속 바꾸지 말고 평가 데이터도 지속적으로 갱신하고 정교화해야 한다.**
   - Evaluation set도 끊임없이 업데이트하라
     - 새로운 데이터 큐레이션 시, 그 일부는 평가셋에 추가
@@ -2893,7 +2938,6 @@ Picking the right framework to do edge deployment depends both on how you train 
 ![](Aspose.Words.e45a31d5-45a9-4228-a7e7-3034abe31d6d.048.png)[](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhygy6OZDSgSOm1Sw8wvM8-x5HvkE4w2HEH20DVbvaqKFladnSjgLEgHkLNjm0cHQaux-p9VZBXrkPpsDvEYYQlD_-jnihjPmnjacabmqg2UP3OmQY0iXkbM4WgXpQpUdYifvSKk1I3LPOGLucZc9qT3byV6jriq2s2Vyz14Al4GtcibNGsDoXYDB-k75Qd/s640/32.png)
 
 
- 
 
 **f. Online Testing**
 - 목적: 실제 사용자 환경에서 새 모델의 성능과 안정성을 검증하는 것
@@ -2902,14 +2946,14 @@ Picking the right framework to do edge deployment depends both on how you train 
   - A/B 테스트: 유저를 두 그룹으로 나누고, 한 그룹에는 기존 모델, 다른 그룹에는 새 모델을 적용하여 직접 비교
   - 점진적 롤아웃: 일부 유저부터 적용 범위 점차 확대, 문제가 발생할 경우 빠르게 대응 가능
   - 롤백: 새 모델에서 문제가 발견되면 즉시 이전 모델로 되돌림, 배포 자동화/감시 체계 필요
- 
 
 **지속 학습 워크플로우**
 
 - ![](Aspose.Words.e45a31d5-45a9-4228-a7e7-3034abe31d6d.049.png)[](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj1pB72q0bfH-eXBFJEOAEoo7UzrHdHmqlk1oIVoiaRIsoSXQ68369wYHYda9FAH2uANkdCl4EZqjIWzc72EXsSsRX0hkBjyN5Aq5EYSM0tZ7xzIMgJ_3Yx7vaQvN87YKPBOwu_ysv1YTjEkvSoKjMcQUVjmXf-0cc89cdcqLctbfpUEuWtUH3UA5_hY4pB/s1024/35.png)
 
 \
-  **모델의 성능 저하나 문제를 모니터링**하고, 그 신호를 바탕으로 **재학습 전략을 자동/반복적으로 개선하는 지속적 개선 루프를 구축**하는 것
+  **모델의 성능 저하나 문제를 모니터링**하고, 그 신호를 바탕으로
+**재학습 전략을 자동/반복적으로 개선하는 지속적 개선 루프를 구축**하는 것
 
 - 지속 학습 전략의 구성 요소
   - 입력 + 모델 예측 + 사용자 피드백 + 레이블
@@ -2924,13 +2968,14 @@ Picking the right framework to do edge deployment depends both on how you train 
 - ML 시스템에서 지속 학습 루프 예시
   - 시스템 모니터링 중 성능 저하/문제 감지 (사용자 지표 하락)
   - 관측 가능성 조사 (피드백 하락이 신규 사용자에게 집중되어 있음 발견)
-  - 에러 원인 분석 (신규 사용자들이 이모지 포함 텍스트 입력, 모델이 이를 잘 처리하지 못함) 
+  - 에러 원인 분석 (신규 사용자들이 이모지 포함 텍스트 입력, 모델이 이를 잘 처리하지 못함)
+
+
   - 새로운 관측 지표(이모지가 포함된 텍스트 탐지) 정의, 모니터링 지표 업데이트
   - 과거 데이터 검색 (재학습을 위한 학습 샘플 수집)
   - 큐레이션 및 재학습
   - 모델 비교 평가, 비교 보고서 작성
   - 배포
- 
 
 **정리**
 - 지속학습은 아직 초기 단계이며, 완전히 이해되지 않은 분야임, 하지만 앞으로 계속 주만할 만한 가치가 있는 주제
@@ -2940,12 +2985,7 @@ Picking the right framework to do edge deployment depends both on how you train 
 
 
 
-
-
- 
-
 **===============================**
- 
 
 **📌 Lecture 7: Foundation Models**
 ![ref4][](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2HCopU1f0_9iQ6qGs-8Vyosg2rzHejMgaenwZVjWvtzfwgYVcDNqwlafa2mDlsNbqR8SlsQLvYgjN27EYg4dRtwpJMZf3Pw-7eAjtETIz44n0IUykTIIoeZ78zdM-59-hPoaxiWXZ6e8jc35UcpCF0sEih5LxPdKL0oU31CkIeEOyYycTwFMv22B8GbW5/s1091/11.png)
@@ -2955,7 +2995,6 @@ Picking the right framework to do edge deployment depends both on how you train 
 - Fine-tuning
 - Transformers
 - Large Language Models
- 
 
 **Transfer Learning vs. Fine-tuning vs. Full Training**
 딥러닝 모델 학습에는 크게 세 가지 전략이 있습니다:
@@ -2963,8 +3002,8 @@ Picking the right framework to do edge deployment depends both on how you train 
 - **Full Training**
 - **Transfer Learning**
 - **Fine-tuning**
------
- 
+
+
 
 **1. Full Training**
 **정의**\
@@ -2981,8 +3020,8 @@ Picking the right framework to do edge deployment depends both on how you train 
 **예시**
 
 - **ResNet-50**을 ImageNet 데이터셋(1,280만 장)으로 처음부터 학습해, 완전히 새로운 가중치를 얻는 경우.
------
- 
+
+
 
 **2. Transfer Learning**
 사전 학습된 모델(**Pre-trained Model**)의 지식을 재사용해, 신규 과제에 빠르게 적응하는 전략입니다.
@@ -2993,7 +3032,6 @@ Picking the right framework to do edge deployment depends both on how you train 
 **예시**
 
 - 의료 영상 분류에서, ImageNet으로 학습된 ResNet-50의 마지막 fully-connected 레이어(fc)를 교체하고 100장 내외의 의료 이미지만으로 학습.
- 
 
 **3. Fine-tuning**
 사전 학습된 모델의 대부분 레이어를 **미세 조정(unfreeze & adapt)** 하여, 모델 전체 성능을 극대화합니다.
@@ -3009,8 +3047,8 @@ Picking the right framework to do edge deployment depends both on how you train 
 **예시**
 
 - BERT-base를 가져와 금융 뉴스 분류에 맞춰 전체 레이어(Transformer encoder 포함)를 소량 학습.
------
- 
+
+
 
 **3. 세 방식 비교**
 
@@ -3023,12 +3061,11 @@ Picking the right framework to do edge deployment depends both on how you train 
 |**커스터마이징 자유도**|최대|제한적|높음|
 |**대표 사용 사례**|신규 아키텍처 실험|빠른 프로토타이핑|성능 최적화|
 
------
- 
+
+
 
 **단어를 숫자로 바꾸는 기술, 임베딩 (Embedding)** 
 컴퓨터는 '사과'나 '사랑' 같은 단어의 의미를 직접 이해하지 못합니다. 오직 숫자만 처리할 수 있죠. 그렇다면 어떻게 단어의 의미를 컴퓨터에 알려줄 수 있을까요? 이 문제를 해결하는 핵심 기술이 바로 **임베딩**입니다.
- 
 
 **1. 시작: 원핫 인코딩의 한계**
 가장 단순한 방법은 **원핫 인코딩(One-Hot Encoding)**입니다. 단어 사전에 3만 개의 단어가 있다면, 3만 개의 자리 중 표현하고 싶은 단어의 위치만 1로, 나머지는 모두 0으로 채우는 방식입니다.
@@ -3041,7 +3078,6 @@ Picking the right framework to do edge deployment depends both on how you train 
 
 - **의미 표현 불가:** '왕(king)'과 '여왕(queen)'은 '사과(apple)'보다 의미적으로 가깝지만, 위 숫자들로는 그 관계를 전혀 알 수 없습니다.
 - **차원의 낭비:** 단어 하나를 표현하기 위해 수만 차원의 벡터가 필요하고, 대부분의 값이 0이라 매우 비효율적입니다.
- 
 
 **2. 개념 잡기: 임베딩이란? MBTI로 이해하기 💡**
 이런 한계를 극복하기 위해 등장한 것이 바로 **임베딩**입니다. 임베딩은 데이터가 가진 고유한 의미를 다차원 공간의 한 점, 즉 \*\*벡터(숫자의 배열)\*\*로 표현하는 기술입니다.
@@ -3055,7 +3091,9 @@ MBTI는 복잡한 사람의 성격을 **E/I, S/N, T/F, J/P**라는 4가지 척�
 **사람 A와 사람 B의 유사도:** 약 **0.920** (매우 유사함)\
 **사람 A와 사람 C의 유사도:** 약 **0.71\
 사람 B와 사람 C의 유사도:** 약 **0.546**\
-이 결과는 이미지에 표시된 것처럼 사람 A와 B는 서로 가깝고(유사하고), C는 A, B와 상대적으로 멀다(다르다)는 것을 수치적으로 보여줍니다.이를 계산하기 위해서는 코사인 유사도를 사용했습니다. (공식은 시험에 나올 확률 거의 1%입니다. 외우지 마세요.) 코사인 유사도 외에 자주 사용되는 데이터 유사도(또는 거리) 측정 방법들의 차이점을 비교한 표입니다.유사도는 값이 클수록, 거리는 값이 작을수록 서로 관련성이 높다는 의미입니다. \
+이 결과는 이미지에 표시된 것처럼 사람 A와 B는 서로 가깝고(유사하고), C는 A, B와 상대적으로 멀다(다르다)는 것을 수치적으로 보여줍니다.이를 계산하기 위해서는 코사인 유사도를 사용했습니다. (공식은 시험에 나올 확률 거의 1%입니다. 외우지 마세요.)
+코사인 유사도 외에 자주 사용되는 데이터 유사도(또는 거리) 측정 방법들의 차이점을 비교한 표입니다.유사도는 값이 클수록, 거리는 값이 작을수록 서로 관련성이 높다는 의미입니다.
+\
 **주요 유사도 & 거리 측정 방법 비교**
 
 |구분|코사인 유사도 (Cosine Similarity)|유클리드 거리 (Euclidean Distance)|맨해튼 거리 (Manhattan Distance)|자카드 유사도 (Jaccard Similarity)|피어슨 상관계수 (Pearson Correlation)|
@@ -3065,7 +3103,6 @@ MBTI는 복잡한 사람의 성격을 **E/I, S/N, T/F, J/P**라는 4가지 척�
 |**민감도**|벡터의 크기(절대값)에 **둔감**|벡터의 크기(절대값)에 **민감**|각 차원의 절대적 차이에 **민감**|값의 크기 없이 \*\*존재 유무(0/1)\*\*에만 민감|데이터의 **평균값(중심)을 기준**으로 한 변화에 민감|
 |**값의 범위**|0 ~ 1 (주로 사용)<br><sup>(엄밀히는 -1 ~ 1)</sup>|0 ~ ∞|0 ~ ∞|0 ~ 1|-1 ~ 1|
 |**결과 해석**|**1에 가까울수록** 유사|**0에 가까울수록** 유사 (거리)|**0에 가까울수록** 유사 (거리)|**1에 가까울수록** 유사|**1**은 강한 양의 상관, **-1**은 강한 음의 상관, **0**은 관계없음|
- 
 
 **3. 방법: 단어 임베딩은 어떻게 만들까? (Word2Vec)**
 사람은 MBTI 검사로 임베딩을 만들 수 있지만, 단어는 어떻게 숫자로 된 벡터(임베딩)로 바꿀 수 있을까요?
@@ -3075,7 +3112,6 @@ MBTI는 복잡한 사람의 성격을 **E/I, S/N, T/F, J/P**라는 4가지 척�
 1. **단어 사전 구축:** 먼저, 학습시킬 텍스트(예: 위키피디아 전체)에서 고유한 단어들만 모아 \*\*'**단어 사전(Vocabulary)'**\*\*을 만듭니다. 여기에 등록된 단어들에게만 임베딩이 부여됩니다.
 1. **주변 단어로 학습:** 그 후 "고양이는 정말 \_\_\_\_" 와 같은 문장을 학습합니다. 주변 단어('고양이', '정말')를 보고 중심 단어('귀엽다')를 예측하거나, 중심 단어로 주변 단어를 예측하는 과제를 반복적으로 수행합니다.
 1. **룩업 테이블(Lookup Table) 완성:** 이 과정에서, 함께 자주 등장하는 단어들의 벡터가 벡터 공간에서 서로 가까워지도록 계속해서 값을 조정합니다. 학습이 완료되면, '단어 사전'의 모든 단어와 그에 해당하는 고유한 벡터값이 짝을 이룬 \*\*'임베딩 룩업 테이블'\*\*이 최종적으로 만들어집니다.
- 
 
 **Word2Vec의 명확한 한계: OOV 문제**
 Word2Vec의 가장 큰 한계는 **학습 당시 단어 사전에 없던 단어(Out-of-Vocabulary, OOV)**는 임베딩을 생성할 수 없다는 점입니다.
@@ -3083,7 +3119,6 @@ Word2Vec의 가장 큰 한계는 **학습 당시 단어 사전에 없던 단어(
 예를 들어, 학습 데이터에 '알파카'라는 단어가 없었다면, 나중에 '알파카'라는 단어를 입력해도 Word2Vec은 그 의미를 알지 못해 벡터를 반환할 수 없습니다.
 
 이러한 OOV 문제를 해결하기 위해, 단어를 더 작은 단위(subword)로 쪼개는 **FastText**나, 문맥 자체를 보고 실시간으로 단어의 의미를 파악하는 **BERT**와 같은 최신 언어 모델들이 등장했습니다.
- 
 
 **4. 결과: 의미를 학습한 벡터 공간 👑**
 이렇게 학습된 임베딩 벡터는 놀라운 특징을 가집니다. 바로 **벡터 간의 연산이 단어의 의미 관계를 반영**한다는 것입니다.
@@ -3101,7 +3136,6 @@ King−Man+Woman≈Queen
 |**차원의 의미**|사람이 설계 (외향성, 감정 등)|**해석 불가** (모델이 스스로 학습한 추상적 특징)|
 
 MBTI의 각 차원은 '외향성'처럼 의미가 명확하지만, Word2Vec 임베딩의 200번째 차원이 정확히 어떤 의미인지는 알 수 없습니다. 하지만 그 숫자 조합 전체가 해당 단어의 의미를 온전히 담고 있다는 점이 중요합니다.
- 
 
 **5. 핵심 원리: 벡터 연산의 힘 🧠**
 1. **정보를 나타내는 텐서**
@@ -3118,12 +3152,11 @@ MBTI의 각 차원은 '외향성'처럼 의미가 명확하지만, Word2Vec 임�
 
 - **정보의 압축과 혼합:** King - Man + Woman 같은 연산은 각 단어 벡터가 가진 정보(왕위, 남성성, 여성성 등)를 빼거나 더하여 새로운 의미 정보를 가진 벡터를 만들어냅니다.
 - **유사도 측정:** 두 벡터가 얼마나 비슷한 방향을 가리키는지는 \*\*내적(Dot Product)\*\*으로 계산할 수 있습니다. 위 연산의 결과 벡터가 'Queen' 벡터와 얼마나 유사한지(방향이 비슷한지) 측정하여 가장 가까운 단어를 찾아내는 것입니다.
------
- 
+
+
 
 **RNN에서 트랜스포머로: 순차적 처리의 한계와 병렬 처리의 혁신**
 트랜스포머(Transformer) 아키텍처가 등장하기 전, 자연어 처리(NLP) 분야에서는 주로 \*\*순환 신경망(Recurrent Neural Network, RNN)\*\*과 이를 개선한 \*\*LSTM(Long Short-Term Memory)\*\*이 사용되었습니다. 이 모델들은 트랜스포머의 등장을 이끈 중요한 토대이자, 동시에 명확한 한계를 가지고 있었습니다.
- 
 
 **1. 트랜스포머 이전의 시대: 순환 신경망 (RNN & LSTM)**
 **A. 발전: 문맥을 이해하는 단어 표현 (Contextualized Embedding)**
@@ -3135,7 +3168,6 @@ RNN과 LSTM은 단어를 순차적으로 처리하는 구조 덕분에 문장 �
 - **2018년, LSTM의 전성기:** **ELMo**, **ULMFiT**과 같은 LSTM 기반의 사전 학습 모델들이 등장했습니다. 이 모델들은 문맥에 따라 단어의 벡터 표현을 다르게 생성하여, 당시 대부분의 NLP 과제에서 최고 성능(SOTA, State-of-the-art)을 기록하며 RNN 계열 모델의 전성기를 이끌었습니다.
 
 LSTM(Long Short-Term Memory)은 RNN(순환 신경망)의 단점인 장기 의존성 문제를 해결하기 위해 **장기 기억 능력**이 추가 되었습니다.
- 
 
 **1. 메모리 구조의 차이: 단기 기억 vs. 장단기 기억**
 - RNN (Recurrent Neural Network)
@@ -3153,10 +3185,8 @@ LSTM(Long Short-Term Memory)은 RNN(순환 신경망)의 단점인 장기 의존
 이러한 게이트 구조 덕분에 LSTM은 중요한 정보를 오랫동안 보존하고 불필요한 정보는 잊어버리면서 **장단기 기억**을 모두 효과적으로 관리할 수 있습니다.
 
 보다 깊게 LSTM을 이해 하고 싶으시다면 아래 링크를 확인해주세요
- 
 
 [**https://wikidocs.net/152773**](https://wikidocs.net/152773)
- 
 
 **2. 정보의 흐름과 학습 안정성**
 - RNN
@@ -3186,7 +3216,6 @@ LSTM(Long Short-Term Memory)은 RNN(순환 신경망)의 단점인 장기 의존
 1. **병렬 처리의 부재와 느린 학습 속도** 가장 치명적인 단점은 **병렬 연산이 불가능하다**는 것입니다. t 시점의 계산은 t-1 시점의 계산 결과가 반드시 필요하므로, 모든 단어를 하나씩 순서대로 처리해야만 합니다. 이는 GPU의 병렬 연산 능력을 전혀 활용하지 못하게 만들어 모델의 학습 속도를 매우 느리게 만드는 주된 원인이었습니다.
 1. **장기 의존성 문제 (Long-Range Dependency Problem)** 문장이 길어질수록, 문장 맨 앞에 등장한 단어의 정보가 뒤로 갈수록 점차 희석되거나 소실되는 문제가 발생합니다. LSTM이 이 문제를 완화했지만, 완벽하게 해결하지는 못했습니다.
 1. **불안정한 학습 (Gradient Vanishing/Exploding)** 성능을 높이기 위해 RNN의 층을 깊게 쌓을 경우, 기울기(gradient)가 지나치게 작아지거나(소실) 커지는(증폭) 문제가 발생하여 학습이 불안정해지는 경향이 있었습니다.
- 
 
 **새로운 패러다임: 트랜스포머의 등장**
 2017년, "Attention Is All You Need" 논문을 통해 등장한 **트랜스포머**는 위와 같은 RNN의 문제를 해결하기 위해 **'순차 처리' 방식을 과감히 버렸습니다.** 대신 문장 전체를 한 번에 통째로 입력받아 처리하는 새로운 패러다임을 제시했습니다.
@@ -3217,14 +3246,13 @@ LSTM(Long Short-Term Memory)은 RNN(순환 신경망)의 단점인 장기 의존
 - **레이어 정규화 (Layer Normalization)**:
   - 신경망의 각 레이어를 통과하면서 데이터의 분포(평균, 표준편차)가 불안정해지는 것을 막기 위해, 레이어마다 출력을 강제로 정규화하는 기술입니다. 이는 모델의 학습을 안정적으로 만듭니다.
 - **의의**: 이 세 가지 핵심 요소를 수십 개씩 쌓아 올려 만든 것이 바로 오늘날의 거대 언어 모델입니다.
------
- 
+
+
 
 **트랜스포머의 심장: 셀프 어텐션 (Self-Attention) 이해하기**
 트랜스포머 아키텍처의 가장 핵심적인 혁신은 "Attention is All you need"라는 논문 제목처럼 바로 **어텐션(Attention)**, 그중에서도 \*\*셀프 어텐션(Self-Attention)\*\*입니다.
 
 이는 문장 안의 단어들이 서로에게 얼마나 '주의(Attention)'를 기울여야 하는지, 즉 **어떤 단어가 다른 단어와 얼마나 관련이 깊은지를 수치적으로 계산**하여 문맥을 파악하는 메커니즘입니다.
- 
 
 **1. 왜 어텐션이 필요한가? : 문맥을 통한 의미의 재해석**
 먼저, 사람이 글을 이해하는 방식을 통해 어텐션의 필요성을 알아보겠습니다. 다음 문장에서 '파리'는 어떤 의미일까요?
@@ -3234,7 +3262,6 @@ LSTM(Long Short-Term Memory)은 RNN(순환 신경망)의 단점인 장기 의존
 우리는 '여행', '다녀왔다'라는 주변 단어들을 통해 '파리'가 곤충이 아닌 프랑스의 수도임을 즉시 알 수 있습니다. 즉, 단어 하나만 보는 것이 아니라, **주변 단어와의 관계(문맥)를 파악하여 단어의 의미를 재해석**하는 것입니다.
 
 셀프 어텐션은 이 과정을 모방합니다. '파리'라는 단어가 자신의 의미를 명확히 하기 위해, 문장 내의 다른 모든 단어들에게 "나와 얼마나 관련이 있니?"라고 묻고, 관련성이 높은 단어의 정보를 더 많이 참고하는 방식입니다.
- 
 
 **2. 어텐션의 세 가지 요소: 쿼리(Q), 키(K), 밸류(V)**
 트랜스포머는 이 과정을 구현하기 위해 정보 검색 분야에서 사용하는 **쿼리(Query), 키(Key), 밸류(Value)**라는 개념을 도입했습니다.
@@ -3247,7 +3274,6 @@ LSTM(Long Short-Term Memory)은 RNN(순환 신경망)의 단점인 장기 의존
   - *예시: 각 단어의 고유한 의미를 담은 벡터입니다.*
 
 **중요한 점:** 실제 트랜스포머에서는 각 단어의 초기 임베딩 벡터를 그대로 Q, K, V로 사용하는 것이 아닙니다. 대신, 각각을 위한 별도의 **가중치 행렬(WQ,WK,WV)**을 도입합니다. 각 단어의 임베딩에 이 행렬들을 곱하여, 하나의 단어로부터 **세 가지 다른 역할(쿼리, 키, 밸류)을 수행하는 벡터들을 생성**합니다. 이 가중치들은 모델 학습 과정에서 최적화됩니다.
- 
 
 **3. 셀프 어텐션의 계산 과정**
 셀프 어텐션은 다음 3단계의 명확한 과정으로 계산됩니다.
@@ -3274,7 +3300,6 @@ LSTM(Long Short-Term Memory)은 RNN(순환 신경망)의 단점인 장기 의존
 이렇게 얻어진 최종 결과 벡터는 더 이상 '파리'의 원래 의미만 담고 있는 것이 아닙니다. 문장 내에서 관련성이 높았던 '여행을', '다녀왔다' 등의 정보가 대폭 반영된, **문맥이 풍부해진 새로운 '파리'의 벡터**가 되는 것입니다.
 
 이 과정을 문장 내 모든 단어에 대해 동시에(병렬적으로) 수행함으로써, 트랜스포머는 각 단어가 문맥 속에서 가지는 진짜 의미를 효과적으로 파악할 수 있습니다.
- 
 
 **4. Multi-Head Attention**
 마치 한 명의 전문가가 모든 것을 판단하는 것보다, **여러 분야의 전문가들이 각자의 시각으로 의견을 낸 뒤 종합**하는 것이 더 나은 결정을 내릴 수 있는 것과 같습니다.
@@ -3284,25 +3309,22 @@ LSTM(Long Short-Term Memory)은 RNN(순환 신경망)의 단점인 장기 의존
 - 또 다른 헤드는 멀리 떨어진 단어 간의 **의존 관계**를 파악할 수 있습니다.
 
 이렇게 여러 헤드가 포착한 **다양한 정보 조각**들을 합침으로써, 모델은 입력 데이터의 복잡하고 다층적인 특징을 훨씬 효과적으로 학습할 수 있게 됩니다.
- 
 
 **처리 과정 요약**
 1. **분할 (Split):** 쿼리(Q), 키(K), 밸류(V)를 정해진 헤드 수만큼 차원을 나누어 여러 개의 작은 Q, K, V 세트를 만듭니다.
 1. **병렬 어텐션 (Parallel Attention):** 나누어진 각 세트(헤드)별로 독립적으로 어텐션 계산을 수행합니다.
 1. **결합 (Concatenate & Project):** 각 헤드에서 나온 결과들을 하나로 합친 후, 최종적으로 선형 변환(Linear Projection)을 거쳐 최종 결과값을 만들어냅니다.
------
- 
+
+
 
 **트랜스포머의 순서 감각: 포지셔널 인코딩 (Positional Encoding)**
 트랜스포머가 RNN을 뛰어넘는 핵심적인 이유는 '병렬 처리'에 있지만, 이로 인해 포기해야 했던 한 가지가 바로 **'순서 정보'**입니다.
- 
 
 **1. 문제 제기: 순서 정보를 잃어버린 트랜스포머**
 - **RNN의 방식:** 단어를 하나씩 순차적으로 입력받기 때문에, 모델은 자연스럽게 단어의 순서(첫 번째 단어, 두 번째 단어 등)를 인지합니다.
 - **트랜스포머의 방식:** 문장 내 모든 단어를 한 번에 동시에 처리합니다. 이 방식은 매우 효율적이지만, "나는 집에 간다"와 "집에 나는 간다"라는 문장을 구별하지 못하는 심각한 문제를 야기합니다. 모델에게는 그저 '나', '집', '간다'라는 단어들의 집합으로만 보일 뿐입니다.
 
 언어에서 순서는 의미를 결정하는 매우 중요한 요소이므로, 트랜스포머는 이 사라진 순서 정보를 인위적으로 다시 주입해 주어야 합니다.
- 
 
 **2. 해결책: 위치 정보를 벡터에 더하다**
 포지셔널 인코딩(Positional Encoding)은 이 문제를 해결하기 위한 독창적인 방법입니다. 각 단어의 위치(첫 번째, 두 번째, ...)에 대한 고유한 벡터 값을 만들어, 이를 원래의 **단어 임베딩 벡터에 더해주는 것**입니다.
@@ -3310,16 +3332,13 @@ LSTM(Long Short-Term Memory)은 RNN(순환 신경망)의 단점인 장기 의존
 **최종 입력 임베딩 = 토큰 임베딩 (단어의 의미) + 포지셔널 인코딩 (단어의 위치)**
 
 이렇게 함으로써, 최종적으로 모델에 입력되는 벡터는 각 단어의 **의미 정보**와 **위치 정보**를 모두 담게 됩니다. 이제 모델은 같은 단어라도 문장의 다른 위치에 나타나면 서로 다른 벡터로 인식하여 순서를 구별할 수 있게 됩니다.
- 
 
 **4. 한계와 발전: 절대적 위치와 상대적 위치**
 해당 방식은 모두 각 위치에 고정된 값을 부여하는 절대적 위치 인코딩(Absolute Positional Encoding)입니다. 이 방식은 구현이 간단하지만, 다음과 같은 한계가 있습니다.
 
 훈련 데이터의 최대 길이보다 훨씬 긴 문장이 들어올 경우 성능이 저하될 수 있습니다. 이러한 문제를 해결하기 위해 최근에는 단어 간의 상대적인 거리를 어텐션 계산에 직접 반영하는 **상대적 위치 인코딩(Relative Positional Encoding)** 방식도 활발히 연구 및 활용되고 있습니다.
- 
 
 **Positional Encoding 종류**
- 
 
 **1. 절대 위치 임베딩 (Absolute Positional Embeddings)**
 가장 직관적인 방식입니다. 단어 임베딩처럼, 각 위치(0, 1, 2, ...)에 해당하는 임베딩 벡터를 만들고 이 벡터 자체를 학습시킵니다.
@@ -3328,7 +3347,6 @@ LSTM(Long Short-Term Memory)은 RNN(순환 신경망)의 단점인 장기 의존
 - **학습 여부**: **학습 대상 (O)**
 - **주요 사용 모델**: **BERT, GPT-2, GPT-3** 등 초중기 LLM의 표준이었습니다.
 - **단점**: 훈련 시 사용된 '최대 시퀀스 길이'보다 긴 문장이 들어오면 위치 정보를 표현할 수 없어 성능이 급격히 저하됩니다.
- 
 
 **2. 회전식 위치 임베딩 (RoPE: Rotary Positional Embedding) 🧠**
 **현재 가장 인기 있고 널리 사용되는 방식**입니다. 위치 정보를 벡터에 '더하는' 것이 아니라 '회전시키는' 독특한 아이디어를 사용합니다.
@@ -3336,7 +3354,6 @@ LSTM(Long Short-Term Memory)은 RNN(순환 신경망)의 단점인 장기 의존
 - **핵심 아이디어**: 단어의 절대 위치(m)에 따라 **쿼리(Query)와 키(Key) 벡터를 특정 각도로 회전**시킵니다. 이렇게 하면 두 벡터의 내적(어텐션 스코어)이 두 단어의 \*\*상대적인 거리(m−n)\*\*에만 의존하게 되는 놀라운 수학적 특성이 나타납니다. 즉, 절대 위치를 이용해 상대 위치 관계를 효율적으로 어텐션 스코어에 녹여냅니다.
 - **학습 여부**: **학습 대상 아님 (X)**. 회전각은 미리 정해진 규칙에 따릅니다. 하지만 그 결과가 어텐션 연산에 직접 동적으로 영향을 주므로 매우 효과적입니다.
 - **주요 사용 모델**: **LLaMA (모든 버전), PaLM, Claude 3, GPT-NeoX** 등 현재 대부분의 SOTA(최고 성능) 모델들이 채택하고 있습니다. 긴 문맥 이해 능력이 뛰어나고 성능이 매우 우수합니다.
- 
 
 **3. ALiBi (Attention with Linear Biases)**
 별도의 위치 임베딩 없이, 어텐션 스코어에 간단한 '페널티'를 주는 매우 독창적인 방식입니다.
@@ -3344,8 +3361,8 @@ LSTM(Long Short-Term Memory)은 RNN(순환 신경망)의 단점인 장기 의존
 - **핵심 아이디어**: 어텐션 스코어를 계산할 때, 두 단어의 거리가 멀수록 선형적으로 증가하는 페널티(음수 편향 값)를 그냥 더해줍니다. "멀리 있는 단어는 덜 중요할 거야"라는 직관적인 가정을 아주 단순하게 구현한 것입니다.
 - **학습 여부**: **학습 대상 아님 (X)**. 페널티 값은 미리 정해진 상수(기울기)입니다.
 - **주요 사용 모델**: **BLOOM, MPT** 등에서 사용되었습니다. 이 방식의 최대 장점은 훈련 때보다 훨씬 긴 길이의 문장이 들어와도 성능 저하가 거의 없이 안정적으로 처리(extrapolation)한다는 점입니다.
------
- 
+
+
 
 **트랜스포머의 안정적인 학습 비결: Add & Norm**
 트랜스포머의 인코더와 디코더 내부를 자세히 보면, 멀티 헤드 어텐션(Multi-Head Attention)과 피드 포워드 신경망(Feed-Forward Network)이라는 두 개의 핵심 서브층(sub-layer)마다 **Add & Norm**이라는 동일한 작업이 반복됩니다.
@@ -3356,7 +3373,6 @@ LSTM(Long Short-Term Memory)은 RNN(순환 신경망)의 단점인 장기 의존
 
 - **x**: 서브층에 들어온 초기 입력
 - **Sublayer(x)**: 서브층(어텐션 또는 FFNN)을 통과한 후의 출력
- 
 
 **1. 첫 번째 단계: Add (잔차 연결, Residual Connection)**
 **잔차 연결**은 서브층을 통과한 후의 출력에, **서브층에 들어왔던 초기 입력** x**를 다시 더해주는 것**을 의미합니다.
@@ -3367,7 +3383,6 @@ LSTM(Long Short-Term Memory)은 RNN(순환 신경망)의 단점인 장기 의존
   이 구조의 가장 큰 장점은 모델이 아무리 깊어져도 기울기 소실(Vanishing Gradient) 문제를 효과적으로 방지한다는 것입니다. 역전파 시, 기울기가 잔차 연결이라는 지름길을 통해 초기 레이어까지 손실 없이 전달될 수 있기 때문입니다. 이는 수십 개의 층을 쌓는 거대한 트랜스포머 모델의 안정적인 학습을 가능하게 하는 핵심 비결입니다.
 
 - **기원:** 이 아이디어는 비전 분야의 **ResNet** 논문에서 제안되어 딥러닝 모델의 깊이를 획기적으로 늘린 핵심 기술입니다.
- 
 
 **2. 두 번째 단계: Norm (계층 정규화, Layer Normalization)**
 **계층 정규화**는 잔차 연결을 통해 더해진 결과값의 데이터 분포를 안정적으로 만들어주는 '저울의 영점 조절'과 같은 역할을 합니다.
@@ -3376,7 +3391,6 @@ LSTM(Long Short-Term Memory)은 RNN(순환 신경망)의 단점인 장기 의존
 - 주요 효과: 안정적이고 빠른 학습
 
   각 층을 통과할 때마다 값들이 너무 커지거나 작아지는 것을 방지하고, 데이터의 분포를 일정하게 유지시켜 줍니다. 이는 다음 층이 안정적인 입력을 받게 하여, 전체적인 학습 과정을 더 빠르고 안정적으로 만듭니다.
- 
 
 **결론: Add & Norm의 시너지**
 Add (잔차 연결)와 Norm (계층 정규화)은 각각 독립적으로도 훌륭하지만, 함께 사용될 때 강력한 시너지를 발휘합니다.
@@ -3385,7 +3399,6 @@ Add (잔차 연결)와 Norm (계층 정규화)은 각각 독립적으로도 훌�
 - **Norm**은 각 단계의 데이터 스케일을 안정시켜 **학습을 빠르고 신뢰성 있게 만듭니다.**
 
 이 단순하면서도 강력한 Add & Norm 블록은 트랜스포머의 핵심적인 '안정 장치'로서, 거대한 모델이 효과적으로 학습될 수 있도록 든든하게 뒷받침합니다.
- 
 
 **대규모 언어 모델 (Large Language Models, LLMs)**
 LLM은 수십, 수백억 개의 파라미터를 가진 거대한 트랜스포머 모델을 의미합니다.
@@ -3402,8 +3415,8 @@ LLM은 수십, 수백억 개의 파라미터를 가진 거대한 트랜스포머
   - **제공 업체**: OpenAI, <http://Cohere.ai> , AI21 등
   - **오픈소스**: EleutherAI(GPT-J), BigScience(BLOOM), Meta(OPT) 등
 - **학습 데이터**: LLM은 주로 웹페이지, 책, 학술자료(arXiv), 코드(GitHub) 등 방대한 양의 텍스트 데이터를 기반으로 학습됩니다.
------
- 
+
+
 
 **1. 파인튜닝 (Fine-tuning)**
 - **개념**
@@ -3419,8 +3432,8 @@ LLM은 수십, 수백억 개의 파라미터를 가진 거대한 트랜스포머
 - **효과**
   - 적은 데이터로도 빠르게 높은 성능 달성
   - 예: 사전학습된 GPT-2 모델에 감정분류 layer를 붙여, 1천 건 댓글로도 F1-score 0.85 달성
------
- 
+
+
 
 **2. 트랜스포머 (Transformer)**
 - **기원**
@@ -3444,12 +3457,11 @@ LLM은 수십, 수백억 개의 파라미터를 가진 거대한 트랜스포머
   - 장문 의존성(long-range dependency) 학습에 강함
 - **간단 예시**
   - 번역: “Je t’aime” → Transformer decoder만 사용해 영어 “I love you” 생성
------
- 
+
+
 
 **3. 대규모 언어 모델 (Large Language Models, LLM)**
 대규모 언어 모델(LLM)은 수천억 개 이상의 파라미터를 가진 거대한 트랜스포머 기반의 모델을 의미합니다. 단순히 모델의 크기만 키운 것을 넘어, 그 거대함으로 인해 이전 모델에서는 볼 수 없었던 새로운 능력이 발현되면서 AI 분야의 패러다임을 바꾸었습니다.
- 
 
 **LLM의 핵심 아키텍처 유형**
 LLM은 트랜스포머의 구조를 어떻게 활용하는지에 따라 크게 세 가지 유형으로 나뉩니다. 각 구조는 고유한 학습 방식과 강점을 가집니다.
@@ -3466,8 +3478,8 @@ LLM은 트랜스포머의 구조를 어떻게 활용하는지에 따라 크게 �
   - **학습 방식:** 텍스트-투-텍스트 (Text-to-Text). 모든 NLP 문제를 '하나의 텍스트'를 '다른 텍스트'로 변환하는 문제로 통일합니다. 예를 들어, "영어로 번역: 안녕하세요" 라는 입력을 받으면 "Translate English: Hello" 라는 출력 텍스트를 생성하도록 학습합니다.
   - **핵심 특징:** 인코더가 입력의 의미를 완전히 이해하고, 디코더가 그 의미를 바탕으로 새로운 형태의 텍스트를 생성하는 구조입니다. **번역, 요약** 등 입력과 출력의 형태가 명확히 다른 변환 작업에 매우 효과적입니다.
   - **대표 모델:** **T5, BART**
------
- 
+
+
 
 **스케일링의 마법: 거대함이 낳은 새로운 능력**
 LLM 연구의 핵심적인 발견은 \*\*"모델의 크기(파라미터 수)와 데이터의 양을 늘릴수록 성능이 예측 가능하게 향상된다"\*\*는 \*\*스케일링 법칙(Scaling Laws)\*\*입니다.
@@ -3490,8 +3502,8 @@ LLM 연구의 핵심적인 발견은 \*\*"모델의 크기(파라미터 수)와 
     3) Good morning →      #### 모델이 이어서 생성
 
     - 모델은 이 예시들을 보고 패턴을 파악하여 Guten Morgen을 정확하게 생성합니다. 이는 모델의 가중치를 업데이트하는 \*\*'학습'이 아닌, 주어진 문맥 내에서 '추론'\*\*하는 것입니다.
------
- 
+
+
 
 **최신 LLM 연구 동향: 더 똑똑하고, 더 정확하게**
 단순히 모델을 키우는 것을 넘어, LLM을 더 유용하고 안전하게 만들기 위한 다양한 연구가 진행되고 있습니다.
@@ -3514,8 +3526,8 @@ LLM 연구의 핵심적인 발견은 \*\*"모델의 크기(파라미터 수)와 
   DeepMind의 Chinchilla 연구는 무조건 파라미터만 키우는 것이 능사가 아니라는 점을 밝혔습니다. 최적의 성능을 위해서는 모델 크기와 학습 데이터 양 사이에 일정한 비율이 존재한다는 것을 발견했습니다.
 
   - **결과:** GPT-3와 같은 이전 모델들이 크기에 비해 '데이터 학습이 부족(undertrained)'했음을 보여주었습니다. 이는 더 작지만 더 많은 데이터로 학습한 모델이 더 큰 모델을 능가할 수 있음을 의미하며, 고품질 데이터 확보의 중요성을 다시 한번 강조했습니다.
------
- 
+
+
 
 **LLM 생태계: 주요 벤더 및 오픈소스 모델**
 - **상용 API 벤더:**
@@ -3530,9 +3542,6 @@ LLM 연구의 핵심적인 발견은 \*\*"모델의 크기(파라미터 수)와 
 
 
 
-
-
-
 (뒷 부분)
 
 
@@ -3543,7 +3552,6 @@ LLM 연구의 핵심적인 발견은 \*\*"모델의 크기(파라미터 수)와 
 |CLIP & Image Gen|CLIP, [DALL·E](https://www.google.com/search?ved=1t:260882&q=DALL%C2%B7E+image+generation&bbid=6610095277986266443&bpid=230142984664126080), Diffusion|이미지-텍스트 정렬 및 생성|
 
 
- 
 
 **4. Prompt Engineering (프롬프트 설계)![ref2]**
 AI 모델의 약한 부분을 더 잘 이해하고 쓰기 위한 방법이 프롬프트 엔지니어링
@@ -3562,38 +3570,32 @@ AS-IS: 문자열 거꾸로 쓰기 실패
 TO-BE: 문자열 거꾸로 쓰기 성공
 
 
-
------
 - **핵심 키워드**: Tokenization, Zero-shot, Few-shot, Chain-of-Thought, “Let’s think step by step”, Scratchpad, Prompt Injection, Format trick
 - **설명**:\
       1. 프롬프트 설계 방식에 따라 출력 정확도가 변동됨.\
   “Chain-of-thought”와 “Scratchpad” 방식은 수학·추론 문제 정확도 크게 향상 (예: 수학 문제 accuracy 17% → 78%).\
   2. 긴 지시문 구성, CSV 생성, 코드 작성 요령 등 format trick도 소개됨.\
   3. Prompt injection 공격 위험성도 경고됨.
------
- 
+
+
 
 **4.1 Tokenization (토크나이제이션)![ref2]**
 - 텍스트를 모델이 이해할 수 있는 단위인 토큰(token)으로 나누는 과정\
   GPT-3는 글자를 직접 보지 않고, **Byte Pair Encoding (BPE)** 방식을 사용하여 토큰 단위로 텍스트를 처리.
 - 예: "unbelievable" → ["un", "bel", "iev", "able"]
- 
 
 **주요 문제점![ref2]**
 - **문자 단위 작업에 약함** \
   예: "apple"을 거꾸로 출력하라고 해도 글자 단위로 처리하지 못해 실패 가능성이 높음
 - **띄어쓰기 적고 조사 많은 언어에 취약 (ex. 한국어)** \
   예: "갔어요" 같은 단어가 하나의 토큰으로 처리되어 내부 분해나 조작이 어려움
- 
 
 **4.2 Scratch-pad (스크래치패드)![ref2]**
 GPT가 **논리적 추론 과정을 따라가도록 유도하는 프롬프트 전략**, 중간 계산 과정이나 사고 흐름을 프롬프트에 직접 명시함으로써 **정답률을 크게 향상**.
- 
 
 **왜 사용하는가?![ref2]**
 - GPT는 복잡한 추론이나 계산 문제에 약함
 - 사람이 푸는 방식처럼 **"생각의 흐름(CoT, Chain-of-Thought)"을 유도하면** 더 나은 결과를 도출함
- 
 
 **예시![ref2]**
 Q: What is 23 × 17?\
@@ -3602,17 +3604,14 @@ Step 1: 20 × 17 = 340\
 Step 2: 3 × 17 = 51\
 Step 3: 340 + 51 = 391\
 Answer: 391
- 
 
 **효과![ref2]**
 - 단순히 Answer: 391이라고만 지시하는 경우보다 정확도가 훨씬 높아짐
 - 대표적인 **Chain-of-Thought Prompting** 기법의 예시로 활용됨
 
 
- 
 
 **4.3 프롬프트 엔지니어링의 주요 전략![ref2]**
- 
 
 **4.3.1. “Let’s think step by step” – Chain-of-Thought 유도![ref2]**
 가장 대표적인 프롬프트 설계 기법,\
@@ -3632,7 +3631,6 @@ Answer: 391
 
 \
 
- 
 
 **4.3.2. 긴 지시문(Long Instructions)이 효과적![ref2]**
 GPT 계열 모델은 긴 문맥(Context Window)에 강점을 가지며, 매우 구체적이고 긴 지시문일수록 더 정확하고 의도에 부합하는 응답을 생성합니다.
@@ -3652,12 +3650,8 @@ GPT 계열 모델은 긴 문맥(Context Window)에 강점을 가지며, 매우 �
 "Use the following format..." → 출력 구조 유도
 
 입력/출력 모두 명확히 정의해줌으로써, 모델이 **의도대로 코드를 작성하고 데이터까지 생성**함.
-
-
-
 ![](Aspose.Words.e45a31d5-45a9-4228-a7e7-3034abe31d6d.057.png)[](https://blogger.googleusercontent.com/img/a/AVvXsEgBKP6p7SnASvZnvEJvKLWf8Wh7aQxbzvjFZ1jQRmHycU59Ca0QDIeC3xfqaOI30Y_O-RFwkM-ZsnM3FJ7TLMPqKfc70zwgTAddaKhnuopARB0Ik5An9-WRWQsTB5JfNTOmnQ6DofGpJpsYFoWbCJZ3KHGMjEBf461EOEU4AWpunC9GQ5GhcJdOaa6v6FK1)
 
- 
 
 **4.3.3. Formatting Trick – 형식 구조 유도![ref2]**
 모델은 패턴을 학습하기 때문에, 출력 형식을 의도적으로 제시하면 그 포맷에 맞는 출력을 반복하려는 경향이 있습니다. 이를 이용하여 CSV, JSON, 코드, 리스트 등의 포맷을 강제로 유도할 수 있습니다.
@@ -3675,7 +3669,6 @@ Input: Dog, Brown → Output: Animal
 
 \
 
- 
 
 **4.3.4. Possession & Pwnage – 프롬프트 공격 위험![ref2]**
 GPT 모델은 매우 순종적인 구조이기 때문에, 사용자가 입력에 **악의적인 명령**이나 **지시 무력화** 문장을 포함하면 시스템 프롬프트를 덮어쓸 수 있습니다.
@@ -3698,7 +3691,6 @@ GPT 모델은 매우 순종적인 구조이기 때문에, 사용자가 입력에
 
 \
 
- 
 
 **4.3.5. Prompt 설계 도구들 (다만 GPT-3에는 제한적)![ref2]**
 일부 오픈소스 도구들이 다양한 태스크별로 프롬프트 템플릿을 구성할 수 있게 해줌. 대표적인 예로 다음 두 가지가 있음.
@@ -3713,22 +3705,21 @@ GPT 모델은 매우 순종적인 구조이기 때문에, 사용자가 입력에
 다만 이들 도구는 **학습자나 연구자** 중심의 툴이며, GPT-3나 GPT-4 API를 호출하는 일반적인 상황에서는 직접 프롬프트를 설계하는 것이 여전히 더 효과적이라 이야기함.
 
 
- 
 
 **5. Other Applications (기타 응용)![ref2]**
 파운데이션 모델은 Code , Semantic Search, Going Cross-Modal 등 다양한 분야에 응용 될 수 있음.
 
------
+
+
 - **핵심 키워드**: Code Generation, [AlphaCode](https://www.google.com/search?ved=1t:260882&q=AlphaCode+AI&bbid=6610095277986266443&bpid=230142984664126080), Codex, [GitHub Copilot](https://www.google.com/search?ved=1t:260882&q=GitHub+Copilot&bbid=6610095277986266443&bpid=230142984664126080), Semantic Search, Toolformer, ReAct, Retrieval-Augmented Models, Cross-Modal
 - **설명**:
   - **코드 생성**: Alphacode, Codex를 통한 자동 코드 생성 및 검증 프로세스.
   - **의미 검색**: 문장/문서 벡터 변환 후 유사도 기반 검색 구현 (FAISS 등).
   - **툴 사용**: 모델이 계산기, API, DB 호출 등 도구를 사용하는 ReAct, Toolformer 방식.
------
- 
+
+
 
 **5.1 Code![ref2]**
- 
 
 **5.1.1. AlphaCode (DeepMind) – 대규모 트랜스포머 기반 코드 생성![ref2]**
 - 매개변수 400억 개(40B)의 **Transformer 모델**을 사용
@@ -3745,7 +3736,6 @@ GPT 모델은 매우 순종적인 구조이기 때문에, 사용자가 입력에
 **\
 \
 
- 
 
 **5.1.1.1. Filtering generated outputs (출력 필터링)![ref2]**
 - 모델 출력이 항상 정확하지 않기 때문에, **검증 및 필터링 절차**가 중요
@@ -3754,11 +3744,9 @@ GPT 모델은 매우 순종적인 구조이기 때문에, 사용자가 입력에
   - **실행 기반 검증** 또는 rule-based validation
 - 이를 통해 최종 정확도(precision)를 **현저히 향상**시킬 수 있음
 
-![image-20250729-082631.png][image-20250729-061630.png] 
-
+![image-20250729-082631.png][image-20250729-061630.png]
 ![](Aspose.Words.e45a31d5-45a9-4228-a7e7-3034abe31d6d.063.png)[](https://blogger.googleusercontent.com/img/a/AVvXsEjUDOr3Siar8byPVOtmzhlwyZXwxoPOUwOdq4WViuWHbP5XN3WpSr8uWiBU6uZi7FkSY11W6FxpVHuKJu1lXnAw_YrvkTz3JcU0WF_Zt3TAVOiaZh4q73ktORt6sqPIEs1FpAa24RTKNseumolxugcOl8LDeLdUEUROBgmTy5_Bq-mr_1lxSJJyjTa34skl)
 
- 
 
 **5.1.1.2. Self-Supervised Fine-Tuning 사례: 스스로 문제 만들기![ref2]**
 - 최근 논문에서는:
@@ -3773,7 +3761,6 @@ GPT 모델은 매우 순종적인 구조이기 때문에, 사용자가 입력에
 **\
 \
 
- 
 
 **5.1.1.3 실제 제품화 사례![ref2]**
 - **GitHub Copilot**
@@ -3782,11 +3769,9 @@ GPT 모델은 매우 순종적인 구조이기 때문에, 사용자가 입력에
   - 비슷한 기능을 웹 기반 IDE에서도 구현
 
 
- 
 
 **5.2 Semantic Search![ref2]**
 사용자 쿼리(Query)와 문서(Document)를 같은 임베딩 공간(embedding space)에 매핑한 후, **의미적 유사도**를 비교하여 관련 정보를 검색하는 방법
- 
 
 **5.2.1. Semantic Search 의 구현![ref2]**
 기존의 문제점: 고차원 벡터 연산의 확장성 한계
@@ -3795,7 +3780,6 @@ GPT 모델은 매우 순종적인 구조이기 때문에, 사용자가 입력에
 - 이러한 벡터를 수만~수백만 개 저장하고, 매번 실시간으로 코사인 유사도(cos(θ) | 1= 유사, -1= 다름, 0= 관련없음) 계산을 하면\
   → 계산량(computation)과 메모리 사용량(memory)이 급증
 - 일반적 탐색 방법으론 속도와 비용이 비효율적
- 
 
 **전용 벡터 검색 라이브러리 활용![ref2]**
 - **FAISS (Facebook AI Similarity Search)**
@@ -3808,7 +3792,21 @@ GPT 모델은 매우 순종적인 구조이기 때문에, 사용자가 입력에
 
 \- Google에서 개발한 대규모 유사도 탐색 라이브러리로 효율적인 거리 계산, 압축 기법 등을 사용해 성능 최적화 + 정확도 유지
 
-------------------------------- **ScaNN 에 대한 설명** ---------------------------------
+
+
+
+
+
+
+-
+**ScaNN 에 대한 설명**
+
+
+
+
+
+
+---
 
 [Announcing ScaNN: Efficient Vector Similarity Search](https://research.google/blog/announcing-scann-efficient-vector-similarity-search/?hl=ko)
 
@@ -3820,9 +3818,6 @@ GPT 모델은 매우 순종적인 구조이기 때문에, 사용자가 입력에
 ![](Aspose.Words.e45a31d5-45a9-4228-a7e7-3034abe31d6d.066.gif)[](https://1.bp.blogspot.com/-Rsymb9XvPOE/Xx8rfRnmTHI/AAAAAAAAGRQ/U2n_bBNXS4IBstYrx2IalrFXufLUvmn2gCLcBGAsYHQ/s512/ScaNN%2Btom%2Bexport.gif)
 
 쿼리(Query)와 데이터(Item)를 각기 다른 두 개의 신경망 타워(Tower)를 통해 임베딩 공간에 매핑한 후, 벡터 간 유사도로 검색하거나 매칭하는 방식
-
-
-
 - **Quantization in Vector Search and Ranking Distortion**
 
 ![image-20250730-041802.png]
@@ -3848,7 +3843,24 @@ GPT 모델은 매우 순종적인 구조이기 때문에, 사용자가 입력에
   - 목표: **<q, x̃₁> < <q, x̃₂>** 가 **<q, x₁> < <q, x₂>** 를 유지하게 만들기
   - **결과**: 원래 벡터 간의 유사도 순위를 **정확히 반영하는 양자화** 달성
 
-\--------------------------------------------------------------------------------------
+\
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-
 
 **기타:**
 
@@ -3894,10 +3906,8 @@ Milvus, Qdrant, Weaviate, Pinecone 등도 벡터 검색 엔진으로 활용 가�
 - 전체적으로 보면 평균 경로 길이가 log log N으로 **아주 효율적**이 된다.
 
 
- 
 
 **5.3 Going cross-modal![ref2]**
- 
 
 **5.3.1 Flamingo![ref2]**
 Flamingo는 이미지와 텍스트를 동시에 이해하는 모델이고, Perceiver Resampler는 이미지라는 그림을 문장처럼 읽을 수 있게 바꿔주는 번역기.
@@ -3918,7 +3928,6 @@ Flamingo는 이미지와 텍스트를 동시에 이해하는 모델이고, Perce
 
 \
 
- 
 
 **5.3.2 Socratic Models![ref2]**
 여러 개의 대형 모델을 언어 프롬프트로 조합하여 새로운 작업을 수행하도록함.
@@ -3929,7 +3938,6 @@ Flamingo는 이미지와 텍스트를 동시에 이해하는 모델이고, Perce
 **\
 \
 
- 
 
 **5.3.3 Foundation Models![ref2]**
 ![image-20250729-102212.png]
@@ -3938,17 +3946,17 @@ Flamingo는 이미지와 텍스트를 동시에 이해하는 모델이고, Perce
 
 \
 LLM은 언어에 국한되지 않고 이미지, 코드, 분자까지 다룬다. 그래서 Stanford는 “Foundation Model”이란 더 포괄적인 이름을 사용한다고 함. 단순하게는 “Large Neural Networks”라고 부를 수도 있지만, 이는 범위가 너무 넓어 실제 사용엔 불편하다고 함.
- 
 
 **6. CLIP and Image Generation (멀티모달 & 이미지 생성)![ref2]**
------
+
+
 - **핵심 키워드**: CLIP, Contrastive Learning, Zero-shot Classification, Image Captioning, DALL·E, Stable Diffusion, Flamingo, Text-to-Image, Diffusion Models
 - **설명**:
   - **CLIP**: 이미지와 텍스트를 같은 임베딩 공간에 정렬해 텍스트 기반 이미지 검색이나 이미지 분류 가능.
   - **이미지 생성 모델**: DALL·E, Stable Diffusion 등의 확산모델 기반으로 텍스트 입력 → 이미지 생성.
   - **Flamingo**: vision + language 결합한 멀티모달 QA 시스템.
------
- 
+
+
 
 **6.1 CLIP![ref2]**
 **텍스트로 이미지 검색**
@@ -3962,7 +3970,6 @@ LLM은 언어에 국한되지 않고 이미지, 코드, 분자까지 다룬다. 
 **Zero-shot 분류**
 
 카테고리 이름(예: "개", "고양이")만 제공하면, 분류기가 없어도 해당 카테고리에 맞는 이미지를 분류할 수 있음.
- 
 
 **6.1.1 CLIP 모델 개요 (OpenAI, 2021)![ref2]**
 - **CLIP (Contrastive Language–Image Pretraining)** 은 텍스트와 이미지를 **같은 임베딩 공간**에 매핑하는 모델
@@ -3975,7 +3982,6 @@ LLM은 언어에 국한되지 않고 이미지, 코드, 분자까지 다룬다. 
 
 
 ![image-20250730-064416.png][image-20250729-061630.png]
- 
 
 **6.1.2 CLIP Training![ref2]**
 - **데이터**: 인터넷에서 수집한 **4억 개의 이미지-텍스트 쌍** 사용
@@ -3991,7 +3997,6 @@ LLM은 언어에 국한되지 않고 이미지, 코드, 분자까지 다룬다. 
   - 이 이미지 임베딩과 텍스트 임베딩을 **서로 가깝게**
 - negative pair
   - "a photo of a cat" 같은 텍스트는 강아지 이미지와 **멀게**
- 
 
 **6.1.2 CLIP Inference![ref2]**
 CLIP은 학습 시점에 특정 task(예: 개/고양이 분류)를 몰라도, **다양한 작업에 일반적으로 쓸 수 있는 임베딩**을 만들어냄.
@@ -4007,9 +4012,6 @@ CLIP은 학습 시점에 특정 task(예: 개/고양이 분류)를 몰라도, **
 예: 개/고양이 이미지 분류 데이터셋이 새로 주어졌다면\
 → CLIP으로 이미지를 임베딩한 뒤\
 → 그 임베딩들을 입력으로 Logistic Regression 학습
-
-
-
 - **Zero-shot 방식**
   - **"텍스트 라벨만 주고, 가장 유사한 이미지를 찾음"**
     - CLIP은 텍스트도 임베딩 가능하므로:
@@ -4019,7 +4021,6 @@ CLIP은 학습 시점에 특정 task(예: 개/고양이 분류)를 몰라도, **
       → 가장 유사한 라벨을 선택
 
 
- 
 
 **6.1.3 CLIP Open-source![ref2]**
 CLIP은 이미지 → 임베딩, 텍스트 → 임베딩 구조입니다. 즉, 직접적으로 텍스트 → 이미지 또는 이미지 → 텍스트 변환을 하지 않습니다.
@@ -4033,7 +4034,6 @@ CLIP은 이미지 → 임베딩, 텍스트 → 임베딩 구조입니다. 즉, �
   - 커뮤니티에서 CLIP을 다시 학습(re-train)한 버전입니다.
   - **LAION 데이터셋**(거대 이미지-텍스트 페어 데이터)으로 재학습해서 더 크고 성능이 좋은 모델을 배포함.
   - 일부 OpenCLIP 모델은 오리지널 CLIP보다 성능이 더 좋음.
- 
 
 **6.1.4 Cross-modal search![ref2]**
 ![image-20250730-080915.png][image-20250729-061630.png]
@@ -4042,7 +4042,6 @@ CLIP은 이미지 → 임베딩, 텍스트 → 임베딩 구조입니다. 즉, �
 
 CLIP은 이미지와 텍스트를 공통 임베딩 공간(shared embedding space)에 매핑하기 때문에,\
 텍스트로 이미지를 검색하거나, 이미지로 텍스트를 검색할 수 있다.
- 
 
 **6.1.5 CLIP Image Captioning (image → text)![ref2]**
 - ClipCap: CLIP Prefix for Image Captioning 논문에서 설명:
@@ -4056,7 +4055,6 @@ CLIP은 이미지와 텍스트를 공통 임베딩 공간(shared embedding space
 
 
 ![image-20250730-064811.png][image-20250729-061630.png]
- 
 
 **6.1.6 CLIP Image Generation (text → image)![ref2]**
 - Hierarchical Text-Conditional Image Generation with CLIP Latents 논문에서의 설명:
@@ -4082,7 +4080,6 @@ CLIP은 이미지와 텍스트를 공통 임베딩 공간(shared embedding space
   - DALL·E 2에서 사용된 정확한 **학습 데이터셋은 비공개**, 따라서 "Unclear training data"라고 명시됨.
 
 
- 
 
 **6.2 Diffusion models![ref2]**
 ![image-20250730-051522.png]
@@ -4092,16 +4089,12 @@ CLIP은 이미지와 텍스트를 공통 임베딩 공간(shared embedding space
 Diffusion Model
 
 ![image-20250730-094625.png][image-20250729-061253.png]
-
-
-
 ![](Aspose.Words.e45a31d5-45a9-4228-a7e7-3034abe31d6d.084.png)[](https://blogger.googleusercontent.com/img/a/AVvXsEgmFi7C08iPmU2NH_pVdBR2ihYF7rQJh-FMoeXwPaA5TGAza2C5LDgRW2bu9fdqv_zUqzQhQIlr7qwlm2cLKxDpfTqTV7_7u5C3PG2NYUo4VCztBBibqCyBLkpcaH-aWDRzeug4e2VxbgQckOjI1CORNDjaK46nJcHwJtlaUsSn3Qz_FKBOTXgwNQK2RFzS)
 
 - F**o**rward Diffusion - N**o**ising
 - R**e**verse Diffusion - D**e**noising
 
 DALL·E 2는 **텍스트로부터 이미지를 생성**하는 모델인데, 그 과정에서 **CLIP 임베딩 공간**과 **디퓨전 모델**을 연결하는 **prior 모델**이 중요한 역할을 합니다.
- 
 
 **작동 순서![ref2]**
 1. **텍스트 입력 → CLIP 텍스트 임베딩**
@@ -4157,17 +4150,15 @@ Application: unCLIP of images
 ![](Aspose.Words.e45a31d5-45a9-4228-a7e7-3034abe31d6d.092.png)[](https://blogger.googleusercontent.com/img/a/AVvXsEg00w-RkHqKsEbpD50V7QUBrkjuZEIEUCKQY2jtHf3e7L0evk0wULJgKRk_sD2gUyb5gckgeJPSYJv1KlYgvNlyqLwWwB95ByV9Nu2owbbSAHzUcYRyQrChogfVvRHZTLOheQy03Y3kFJ9Q2ITlNbPHWaULfXKuW7Clt01E4D5hc4U-_SSuIPfo3xBIU-zx)
 
 Application: unCLIP both text and images
- 
 
 **6.2.1 Imagen and Parti![ref2]**
 
-
------
 → **구글은 DALL·E 2 이후 곧바로 Imagen과 Parti라는 모델을 발표했습니다.**
 
 - **Imagen**: 텍스트 → 이미지 생성 모델로, 높은 이미지 품질로 주목받음.
 - **Parti**: 또 다른 텍스트 기반 이미지 생성 모델이지만 **디퓨전 대신 다른 방식([**VQGAN**](https://www.google.com/search?ved=1t:260882&q=define+VQGAN&bbid=6610095277986266443&bpid=230142984664126080))** 사용.
------
+
+
 - **Parti uses VQGAN instead of diffusion (image is represented as a sequence of high-dimensional tokens)**\
   → **Parti는 디퓨전 방식 대신 VQGAN을 사용하며, 이미지를 고차원 토큰 시퀀스로 표현합니다.**
 - **VQGAN (Vector Quantized GAN)**:\
@@ -4179,7 +4170,6 @@ Application: unCLIP both text and images
 ![](Aspose.Words.e45a31d5-45a9-4228-a7e7-3034abe31d6d.094.png)[](https://blogger.googleusercontent.com/img/a/AVvXsEjWdbCgNw6mLDG73fPNdVOF1VpCkzwRz0ZVAVMLLbJ-f_675jgoDeUo6pd6RjFDC9bUw3zvzX-bZMUHQlgiE6_Zb4TwYFpmsy2J1DxHOlVHC8_KSJc6qlcEUuZnWGRh1dYvRv_qAnz66YaTzwS5dxyLndyrYq3a6fZgPEhFw9gU1OZTJJyqU5W2B1t6f4aE)
 
 **Parti 구조**
- 
 
 **6.2.2 StableDiffusion (추가설명) - Latent Diffusion 이 public open됨**
 ![](Aspose.Words.e45a31d5-45a9-4228-a7e7-3034abe31d6d.095.png)[](https://blogger.googleusercontent.com/img/a/AVvXsEj-Qj8FqjSl4-bPKl0_Rdge8EIXQ1ArOtN5pc8WcOodHi2Nk4NacZGQhAfBjMLJoruaaGlO-XyNzCqF7NCDr7iMTGqXUkPvEFRedqza-ShZNoBdWpus3HTJDUTDilHvM2f9FIs2OFEjwA_NYlLfij_2Q0rNNUA4kBs37ToqdVg9uJM-UpdBstycIBGKulm0)
@@ -4197,16 +4187,24 @@ Application: unCLIP both text and images
 **입력 데이터를 확률적인 잠재 공간(latent space)에 매핑하여 새로운 데이터를 생성할 수 있게 만든 모델**
 
 - 마지막에 다시 **디코더로 픽셀 공간 이미지**로 복원함.
------
+
+
 **Frozen CLIP ViT-L/14, trained 860M UNet, 123M text encoder**\
 → **CLIP의 ViT-L/14 백본은 고정(frozen)되어 사용되고, 8.6억 파라미터의 UNet과 1.23억 파라미터의 텍스트 인코더가 훈련되었습니다.**
 
------
+
+
 **Trained on LAION-5B on 256 A100s for 24 days ($600K)**\
 → **LAION-5B 데이터셋에서 256개의 A100 GPU로 24일간 훈련되었으며, 총 비용은 약 $60만 달러였습니다.**
 
 
------------------ 참고: GAN vs. Diffusion Model -----------------
+
+
+
+-- 참고: GAN vs. Diffusion Model 
+
+
+--
 
 |<p>항목</p><p></p>|<p>**GAN**(Generative Adversarial Network)</p><p></p>|<p>**Diffusion Model**</p><p></p>|
 | :- | :- | :- |
@@ -4250,24 +4248,38 @@ Diffusion 예시 (Stable Diffusion 기준):
 
 noise = torch.randn(1, 3, 512, 512) *#### 고해상도 노이즈 이미지* **for** t **in** reversed(range(T)): noise = denoising\_step(noise, t, text\_embedding) generated\_image = decode(noise)
 
-` `-------------------------------------------------------------------------------------
+`
+`
 
 
 
 
- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 **===============================**
- 
 
 **[Udemy]**
- 
 
-**📌 3. Transformers Architectures and Basic LLM Concepts** 
+**📌 3. Transformers Architectures and Basic LLM Concepts**
+
+
 <https://ktspace.atlassian.net/wiki/spaces/AITechLab/pages/402401965>
 
------
- 
+
+
 
 **1. Seq2Seq Model Introduction**
 - <https://wikidocs.net/24996>
@@ -4281,15 +4293,26 @@ noise = torch.randn(1, 3, 512, 512) *#### 고해상도 노이즈 이미지* **fo
 
 \- Encoder
 
-`    `- Input: 문장
+`
+ 
+ `- Input: 문장
 
-`    `- Output: context vector(은닉상태)
+`
+ 
+ `- Output:
+context vector(은닉상태)
 
 \- Decoder
 
-`    `- Input: context vector(은닉상태)
+`
+ 
+ `- Input:
+context vector(은닉상태)
 
-`    `- Output: 결과 (번역된 문장)
+`
+ 
+ `- Output:
+결과 (번역된 문장)
 
 ![](Aspose.Words.e45a31d5-45a9-4228-a7e7-3034abe31d6d.100.png)[](https://blogger.googleusercontent.com/img/a/AVvXsEh0sj9hVFPxpY-_X-xw-_kk7MVmPr-Qe6wkASfc4T-_dW8U-0QFYkAzpgwN0UK-yquFUAQiEMIMkpxnrj4V_rGlxAO-ivR7glfSCEAbaJJ5OcQgDrAmPPvXKm2h1syIPvdHovpPO77zUkUZysdFt0lkgYcA7PGayEqtk1nxHf_vcTbaQ7NBU6nDecbPKD5d)
 
@@ -4297,7 +4320,6 @@ noise = torch.randn(1, 3, 512, 512) *#### 고해상도 노이즈 이미지* **fo
 
 \
 
- 
 
 **🔸 구성 요소**
 1. **인코더 (Encoder)**
@@ -4320,7 +4342,6 @@ noise = torch.randn(1, 3, 512, 512) *#### 고해상도 노이즈 이미지* **fo
 - 인코더 마지막 은닉 상태
 - 입력 시퀀스 전체 정보를 요약
 - 디코더 초기 은닉 상태로 사용
- 
 
 `	`**문제점**
 - 하나의 Context vector로 압축하다보니, 정보 손실 발생 → Input seq의 길이가 늘어날수록 성능 저하
@@ -4328,16 +4349,16 @@ noise = torch.randn(1, 3, 512, 512) *#### 고해상도 노이즈 이미지* **fo
 
 ![](Aspose.Words.e45a31d5-45a9-4228-a7e7-3034abe31d6d.102.png)[](https://blogger.googleusercontent.com/img/a/AVvXsEjhUdDmkCOd54ybBYgv3Ue5PwQofVfkwqMEkFZlNY8lSZM3EB4b0cT958GGAFjeWnRNmFSMhA8KOsX6CvVAxpWpVwnGRxZvqZnMgZBnUXwpNnb0kV7gA7-MZC5FqkXhzgdU-zJTebjhzBCsc_JIIlrwdLhOz5L4Ml1Nx2uFa2B7lOHMGHuDCl7ttP1PYg_S)
 
------
- 
+
+
 
 **2. Seq2Seq Model with Attention**
 <https://glee1228.tistory.com/3>
 
 ![](Aspose.Words.e45a31d5-45a9-4228-a7e7-3034abe31d6d.103.png)[](https://blogger.googleusercontent.com/img/a/AVvXsEge_OUIk_kJ9crtKjVx9s64dG3H2ATTcr_jEf1eRFIVD2f4v1qjL3iJ3v21FE1ZFztM1o7XoVHwQW_6h7NMugl1V0OQ4NhHL_vtTIqu2HkS6ok2voBJIQlETHnJMI8NO9k7un0dRl7K7l1naKPZO3l-jYSdoit2iHue0FwP2rLCQD_YoYbOq7K5eD3eTtpG)
- 
 
-**1. Attention Score 계산**
+**1.
+Attention Score 계산**
 ![](Aspose.Words.e45a31d5-45a9-4228-a7e7-3034abe31d6d.104.png)[](https://blogger.googleusercontent.com/img/a/AVvXsEjEv-uwvtusZghHxno5cxJMRygFnDiiWCDPxdvtBH0cySSfJ3JGiwQsMUULjzjUQVQIZ3l8z9iyaag6indz9jT_PKD-QXp7Niz274bA0j59GPDUfm2x9m5xOH6y8N3LF28R0MuBG8aMiXwQUu6HwzfexEcxZ-Vwxr2MagrdYjxAMIcLItkr7gOmotnJi3J0)
 
 - t에서 출력 단어를 예측하기 위해서 디코더의 셀은 두 개의 입력값을 필요(바로 이전 시점인 t-1의 은닉 상태, 이전 시점 t-1에 나온 출력 단어)
@@ -4353,9 +4374,9 @@ noise = torch.randn(1, 3, 512, 512) *#### 고해상도 노이즈 이미지* **fo
 
 \
 
- 
 
-**2. Attention Distribution (가중치) 구하기**
+**2.
+Attention Distribution (가중치) 구하기**
 - **방법**: Score 벡터에 softmax 적용 → 합이 1.
 - ![](Aspose.Words.e45a31d5-45a9-4228-a7e7-3034abe31d6d.107.png)[](https://blogger.googleusercontent.com/img/a/AVvXsEgL3DpLBcFPCJrPGteZaSawTj5ze8DEgBsAjVqYVT7-XBinFmgLcu3D2y_XMs1Wy6Xt4_tpbY2qvb5w8TqWgn0LeTKnNI92UZFETXCy6Cs2T5M_5evhzSPwDL0uqBQ7L_aAkxWYT34BCYMPNuZvtILEXhjXqT0pO_MoEKyOVLQRsHET55k2fknRlfyKKtMr)
 
@@ -4364,9 +4385,9 @@ noise = torch.randn(1, 3, 512, 512) *#### 고해상도 노이즈 이미지* **fo
 
 \
 
- 
 
-**3. Attention Value(컨텍스트 벡터) 만들기**
+**3.
+Attention Value(컨텍스트 벡터) 만들기**
 - **방법**: 인코더 hidden state들의 가중합
 - ![](Aspose.Words.e45a31d5-45a9-4228-a7e7-3034abe31d6d.109.png)[](https://blogger.googleusercontent.com/img/a/AVvXsEjZY6O6h6NngkDV2les5l7beABlcwIalTY9X7aNeAE_qxmbAZzWeKngoO4RRcrnwjmsJN9Oim-1BizpMbdgNF_7Nm3XFiicj9UFuauiyz0krFREpODh9A82IGrom6tFIaZEvlOa8nEC6JrCeuaR_cK0av7aTo2HRrMW9xTEwv_w89hhnd_l3vu-o53zZH-0)
 
@@ -4375,9 +4396,9 @@ noise = torch.randn(1, 3, 512, 512) *#### 고해상도 노이즈 이미지* **fo
 
   - 어텐션의 최종 결과값을 얻기 위해서 각 인코더의 은닉 상태와 어텐션 가중치값들을 곱하고, 최종적으로 모두 더합니다. 
   - 요약하면 가중합(Weighted Sum)을 진행합니다.
- 
 
-**4. 디코더 입력 만들기**
+**4.
+디코더 입력 만들기**
 
 - ![](Aspose.Words.e45a31d5-45a9-4228-a7e7-3034abe31d6d.110.png)[](https://blogger.googleusercontent.com/img/a/AVvXsEhZyOrWHKEDUVBwYdnYyf-ryMn9_0DLCTbzoVH5TLHqLFS7ne0yvvLbZOwoiOjIZenmVW_hGMcKdTEdLGDR6WZLzUe_MNLnsGm5P5BfY3nOeqYmIiR_o5-dsqXsy8a-rkfBDwW-osxlTXUVTUjMlDSJTaXqK7FqTLhSSPQ7XOGrwQ4ZtdB93y19GKWv1Kez)
 
@@ -4385,9 +4406,9 @@ noise = torch.randn(1, 3, 512, 512) *#### 고해상도 노이즈 이미지* **fo
 
 
 - t시점의 hidden value와 attention value를 이어붙인 v\_t생성
- 
 
-**5. 출력층 예측**
+**5.
+출력층 예측**
 - ![](Aspose.Words.e45a31d5-45a9-4228-a7e7-3034abe31d6d.111.png)[](https://blogger.googleusercontent.com/img/a/AVvXsEgBEFUdFcMzelrZFL8euQSl1ENtjz4Eh4f3S4culIL3L0zuT7yIRJuKmtMTiiMzYpKSDDr_F_weeVbdpWjvyihzYk9G36VWlcPw-0N7NmfFJDFHXRKo0tAJbEnDVdrbd7paZpN7gi2gNglDtzwMeSA1jnIMz43CB9LG__9a_vAqIgRkF3LtuFNM01ALAQ-_)
 
 \
@@ -4395,7 +4416,8 @@ noise = torch.randn(1, 3, 512, 512) *#### 고해상도 노이즈 이미지* **fo
 
 - 가중치 행렬과 곱한 후에 하이퍼볼릭탄젠트 함수를 지나도록 하여 출력층 연산을 위한 새로운 벡터인 s~t를 얻습니다. 
 - 어텐션 메커니즘을 사용하지 않는 seq2seq에서는 출력층의 입력이 t시점의 은닉 상태인 st였던 반면, 어텐션 메커니즘에서는 출력층의 입력이 s~t가 되는 셈입니다.
------
+
+
 <https://www.youtube.com/watch?v=_Z3rXeJahMs>
 
 \
@@ -4446,9 +4468,6 @@ noise = torch.randn(1, 3, 512, 512) *#### 고해상도 노이즈 이미지* **fo
 \
 
 
------
- 
-
 **3. 마스킹**
 ![](Aspose.Words.e45a31d5-45a9-4228-a7e7-3034abe31d6d.117.png)[](https://blogger.googleusercontent.com/img/a/AVvXsEjzWetIuNM_JGgzsxBGWJCp8NpXewlvtyFFIxCEySakcdob5AunwsxIbyUUd67QYBOR_lBhk7Qb_iCYvXVUeADp8kpWTkrCgpgGLVpvccrUzFOX6uZnD7z6nscj6knPjuroix09d8MuSAn_mdoDlQPrD7sdORU_U-2ew6vXW-pkLIWOsDKbbzhBfJhsw1iX)
 
@@ -4477,15 +4496,14 @@ noise = torch.randn(1, 3, 512, 512) *#### 고해상도 노이즈 이미지* **fo
 1. **순서 정보 무시 문제**:
    1. 쿼리와 키를 내적하여 가중치를 구할 때, 키 정보들을 개별적으로 계산하므로 단어의 순서를 고려하지 못한다. 
    1. 예를 들어, '인도 음식점에 가던 중 주행 금지 표지판을 보았다'와 같이 단어 순서가 바뀌어도 어텐션 결과인 가중치 합은 동일하게 나온다.
------
- 
+
+
 
 **3. 트랜스포머**
 ![](Aspose.Words.e45a31d5-45a9-4228-a7e7-3034abe31d6d.119.png)[](https://blogger.googleusercontent.com/img/a/AVvXsEhvixrPgHk81Z8J9olcMBkJljq9-2cADQr3ZgwaLrl6Gj0v40XfojGkmrsTGTBOvFrNL1n9EvVQ8UHDK2rkl2UsvgZ7CoSImQckbTM6Ti3Ts-I16tFNYjU4_vMv7ohhvM8v3RFG8OfeqqY-sBaByzmLc2E8UrgoZcFEeaZDxIzGqCW2NCKnuILCdH6eKKry)
 
 \
 
- 
 
 **🔹 1. 인코더 (Encoder)**
 **입력 시퀀스를 토큰 벡터로 변환하고, 토큰 간 관계를 반영한 은닉표현을 생성**하는 단계.
@@ -4504,7 +4522,6 @@ noise = torch.randn(1, 3, 512, 512) *#### 고해상도 노이즈 이미지* **fo
    1. 각 토큰 벡터를 독립적으로 비선형 변환
 1. **Add & LayerNorm**
    1. 또 한 번 잔차 연결 + 정규화
- 
 
 **🔹 2. 디코더 (Decoder)**
 **출력 시퀀스를 생성하는 단계**
@@ -4527,7 +4544,8 @@ noise = torch.randn(1, 3, 512, 512) *#### 고해상도 노이즈 이미지* **fo
 1. **출력층(Linear + Softmax)**
    1. 어휘집 크기만큼 차원을 확장
    1. Softmax로 다음 단어 확률 분포 계산
------
+
+
 - **마스크드 셀프 어텐션**:
 
   디코더가 “자기 자신이 지금까지 생성한 시퀀스 내부에서” 어떤 토큰이 중요한지 먼저 정리.
@@ -4539,12 +4557,11 @@ noise = torch.randn(1, 3, 512, 512) *#### 고해상도 노이즈 이미지* **fo
   정리된 디코더 상태(쿼리)로 인코더 출력(Key/Value)에서 필요한 정보를 찾아옴.
 
   → 입력 시퀀스와 연결하는 단계.
- 
 
 **1. FNN이란?**
 - FNN은 **Feed-Forward Network**의 약자, 우리말로는 **전방향 신경망**.
-- FNN(Feedforward Neural Network)란, 입력값이 출력까지 한 방향으로 전달되는 구조를 가진 [인공 신경망](https://wikidocs.net/120153)이다. 이 구조 때문에 'feedforward'라는 이름이 붙었으며, 데이터가 신경망의 입력층에서 출력층까지 단방향으로 이동하므로 순환 또는 피드백이 없다.
- 
+- FNN(Feedforward Neural Network)란, 입력값이 출력까지 한 방향으로 전달되는 구조를 가진
+[인공 신경망](https://wikidocs.net/120153)이다. 이 구조 때문에 'feedforward'라는 이름이 붙었으며, 데이터가 신경망의 입력층에서 출력층까지 단방향으로 이동하므로 순환 또는 피드백이 없다.
 
 **2. 트랜스포머에서 왜 쓰는가**
 FNN은 트랜스포머의 각 인코더·디코더 블록에서 **어텐션 뒤**에 항상 등장하는데, 이유는:
@@ -4563,15 +4580,11 @@ FNN은 트랜스포머의 각 인코더·디코더 블록에서 **어텐션 뒤*
 
 
 
-
-
- 
-
 **===============================**
- 
 
-**📌 4. BERT Architecture Theory** 
- 
+**📌 4. BERT Architecture Theory**
+
+
 
 **⭐️ BERT 핵심 키워드 ⭐️**
 1. **양방향(Bidirectional) 학습:** 문장 내 특정 단어의 의미를 파악할 때, 단어의 앞과 뒤에 있는 모든 단어의 정보를 동시에 고려합니다.
@@ -4591,23 +4604,18 @@ FNN은 트랜스포머의 각 인코더·디코더 블록에서 **어텐션 뒤*
    1. **모델 구조**:
       1. **BERT Base**: 12개의 인코더, 1.1억 개의 매개변수.
       1. **BERT Large**: 24개의 인코더, 3.4억 개의 매개변수. 더 크고 복잡한 모델로, 더 뛰어난 성능을 보입니다.
- 
 
 
- 
 
 **1. BERT 소개** 
- 
 
 ![ref2]
- 
 
 **BERT (Bidirectional Encoder Representations from Transformers)란?![ref2]**
 **BERT**는 2018년 구글 AI 팀이 발표한 **양방향(다중directional) Transformer 인코더 기반 Pre-training 언어 모델** 입니다.\
 가장 큰 특징은 **문맥 전체를 동시에 바라보며** 토큰 표현을 학습한다는 점이며, 이를 통해 자연어 이해(NLU) 전반에 뛰어난 성능을 보입니다.
 
 
- 
 
 **1) BERT의 핵심 개념과 등장 배경![ref2]**
 - **양방향 트랜스포머 인코더**: BERT는 **트랜스포머(Transformer)의 인코더 부분만을 사용**하여 만들어진 모델입니다. 가장 큰 특징은 양방향(Bidirectional)으로 문맥을 학습한다는 점입니다. 이는 문장 내 특정 단어의 의미를 파악할 때, 그 단어의 앞과 뒤에 있는 모든 단어의 정보를 동시에 고려한다는 것을 의미합니다.
@@ -4616,7 +4624,6 @@ FNN은 트랜스포머의 각 인코더·디코더 블록에서 **어텐션 뒤*
   - **GPT**: 왼쪽에서 오른쪽으로만 학습하는 '단방향' 모델이었습니다. BERT는 이러한 한계를 극복하고 진정한 양방향 학습을 구현함으로써 더 정확한 언어 이해가 가능해졌습니다.
 
 
- 
 
 **2) BERT의 두 가지 Pre-training 작업![ref2]**
 BERT는 일반적인 언어 이해 능력을 습득하기 위해 두 가지 핵심적인 pre-training 작업을 수행합니다.
@@ -4627,7 +4634,6 @@ BERT는 일반적인 언어 이해 능력을 습득하기 위해 두 가지 핵�
   - **예시**: "나는 밥을 먹었다. 그는 잠을 잤다"라는 두 문장이 이어지지 않는다는 것을 모델이 학습합니다.
 
 
- 
 
 **3) 언어 모델의 역할![ref2]**
 - **확률 모델**: 다음 단어가 무엇일지 예측하는 확률 모델입니다.
@@ -4636,9 +4642,6 @@ BERT는 일반적인 언어 이해 능력을 습득하기 위해 두 가지 핵�
 
 
 
------
-
- 
 
 **2. 문맥(Context)의 중요성** 
 
@@ -4662,7 +4665,6 @@ BERT는 일반적인 언어 이해 능력을 습득하기 위해 두 가지 핵�
     - 여기서 'right'는 **도덕적 옳고 그름**을 의미합니다. 'history'라는 단어가 '옳은'이라는 추상적인 개념을 형성하는 데 영향을 줍니다.
 
 
- 
 
 **1) 트랜스포머의 인코더와 디코더**
 ![](Aspose.Words.e45a31d5-45a9-4228-a7e7-3034abe31d6d.123.png)[](https://blogger.googleusercontent.com/img/a/AVvXsEioIqAm_xKVZ4t9S4jZe_0UibKTjzxo34_tpdmln2M3_DLco8i6fzmHrM4HdZie-c71ln6fD6zjC0GUqwutawIduorw8wVqRidgqUeCzko5Xb6Cytm4XKVUzhyqS1a1rKI-Z4q_bJrpoQ_XWD4IUGr4FmXK4Jr64ckO4HVwbcHUTfnL0pM1cYkT7VZwexnp)
@@ -4678,13 +4680,11 @@ BERT는 일반적인 언어 이해 능력을 습득하기 위해 두 가지 핵�
   - **GPT**는 텍스트를 생성하는 데 초점을 맞춰 **디코더 부분만** 사용합니다.
 
 
- 
 
 **2) BERT의 두 가지 pre-training 작업![ref2]**
 BERT는 일반적인 언어 이해 능력을 습득하기 위해 두 가지 핵심적인 pre-training 작업인 **MLM**과 **NSP**를 사용합니다.
 
 ![image-20250807-070202.png]
- 
 
 **대규모 훈련 데이터**
 BookCorpus(8억 단어)와 위키피디아(25억 단어)는 바로 위에서 설명한 MLM과 NSP 작업을 수행하는 데 사용된 **대규모 훈련 데이터**입니다.
@@ -4693,23 +4693,13 @@ BookCorpus(8억 단어)와 위키피디아(25억 단어)는 바로 위에서 설
 **\
 \
 
- 
 
 
- 
 
-
- 
-
-
- 
 
 **- MLM (Masked Language Modeling)![ref2]**
 - **목적**: 문장 내 단어의 문맥을 이해하는 것입니다.
 - **작동 방식**: 문장의 일부 단어를 [MASK] 토큰으로 가린 후, 모델이 가려진 단어를 예측하도록 훈련합니다. 이 과정에서 BERT는 단어의 양방향 문맥을 모두 고려하여 정답을 찾습니다.
-
-
-
 ![image-20250807-070410.png]
 
 ![image-20250807-070233.png][image-20250807-070410.png]
@@ -4723,28 +4713,16 @@ BookCorpus(8억 단어)와 위키피디아(25억 단어)는 바로 위에서 설
 **\
 \
 
- 
 
-
- 
-
-
- 
 
 **- NSP (Next Sentence Prediction)![ref2]**
 - **목적**: 두 문장 간의 관계를 파악하는 것입니다.
 - **작동 방식**: 두 문장을 주고 이들이 논리적으로 이어지는 관계인지("참") 아닌지("거짓")를 예측하도록 모델을 훈련합니다. 이 작업을 통해 BERT는 문장 단위의 문맥 이해 능력을 기르게 됩니다.
   - **예시**: "국회의원들은 자신들이 역사의 옳은 편에 서 있다고 믿었다. 그래서 그들은 법을 바꿨다." 이 두 문장은 논리적으로 이어지므로 모델은 "참"으로 예측합니다. 반면, "토끼가 당근을 먹은 거예요." 같은 문장은 앞 문장과 관련이 없으므로 "거짓"으로 예측합니다.
-
-
-
 BERT는 **MLM**과 **NSP**라는 두 가지 pre-training 작업을 통해 단어 수준과 문장 수준의 문맥을 모두 이해하는 강력한 언어 모델이 될 수 있었습니다. 이러한 양방향 학습 방식은 이전 모델들이 가졌던 한계를 극복하는 혁신적인 접근법 입니다.
 
 
 
------
-
- 
 
 **3. BERT 기술 설명(용어, 훈련 데이터, 성능, 그리고 다른 모델과의 비교)![ref2]**
 - **Pre-training**
@@ -4776,7 +4754,6 @@ BERT-Large가 BERT-Base보다 더 많은 인코더 레이어와 더 큰 임베�
   - [MASK] **토큰**: 마스크 언어 모델링에서 단어를 가리는 데 사용됩니다.
 
 
- 
 
 **1) Fine-tuning과 하위 작업![ref2]**
 - **fine-tuning**: pre-training된 BERT 모델은 특정 하위 작업(downstream tasks)에 맞춰 fine-tuning 됩니다.
@@ -4785,7 +4762,6 @@ BERT-Large가 BERT-Base보다 더 많은 인코더 레이어와 더 큰 임베�
   - **자연어 추론(Natural Language Inference, NLI)**: 두 문장 간의 논리적 관계(함의, 모순, 중립)를 파악하는 작업입니다.
 
 
- 
 
 **2) BERT의 토큰 임베딩과 구조적 특징**
 ![ref7][](https://blogger.googleusercontent.com/img/a/AVvXsEinowuo8b6Lkl4P9_sCf6lXvB689gmdh_wNoDTVmVWYtD6h7WA-Q1fxQizMQmGuWlDQ-uWw3ZdPVPMh44BPt-v_iQKpBEdvmwxq5Xv970todL8Ejtc12CJ52k7ZQdQTnOPpXuEiPtdqq-f02Xun23XXFMfIOpaxI08r8m0DTT4LZc-IeewRUqvnhKaArxFg)
@@ -4806,7 +4782,6 @@ BERT-Large가 BERT-Base보다 더 많은 인코더 레이어와 더 큰 임베�
   1. **위치 임베딩(Position Embeddings)**: 문장 내에서 토큰의 순서 정보를 나타내는 벡터입니다. 이 세 가지 임베딩이 합쳐져 모델의 입력으로 사용됩니다.
 
 
- 
 
 **3) 훈련 데이터 및 성능 평가![ref2]**
 - **Pre-training 데이터:** BERT는 BookCorpus(8억 단어)와 위키피디아(25억 단어)를 포함한 방대한 양의 텍스트 데이터로 사전 훈련되었습니다.
@@ -4815,7 +4790,6 @@ BERT-Large가 BERT-Base보다 더 많은 인코더 레이어와 더 큰 임베�
   - 특히 **BERT Large** 모델은 **MNLI(Multi-Genre Natural Language Inference)** 데이터셋에서 86.7%의 정확도를 기록하여, OpenAI GPT(82.1%)보다 훨씬 뛰어난 성능을 보였습니다.
 
 
- 
 
 **4) BERT 모델의 구조와 다른 모델과의 비교![ref2]**
 - **모델 구조 탐색**: BERT 모델의 최적 구조를 찾기 위해 여러 조합을 시도했습니다. 인코더의 개수(L), 임베딩 차원(H), 어텐션 헤드의 수(A)를 다양하게 바꾸며 실험했습니다.
@@ -4828,12 +4802,6 @@ BERT-Large가 BERT-Base보다 더 많은 인코더 레이어와 더 큰 임베�
 
 
 
-
-
------
-
- 
-
 **4. BERT의 핵심 구성 요소![ref2]**
 - BERT가 트랜스포머의 인코더를 활용하여 어떻게 **입력 임베딩**을 구성하고, 여러 **인코더 스택**을 통해 문맥을 학습하며, 최종적으로 **분류 헤드**를 이용해 특정 작업을 수행하는지에 대한 세부적인 과정입니다.
 
@@ -4845,29 +4813,16 @@ BERT-Large가 BERT-Base보다 더 많은 인코더 레이어와 더 큰 임베�
 **\
 \
 
- 
-
-
- 
-
 
 ![](Aspose.Words.e45a31d5-45a9-4228-a7e7-3034abe31d6d.135.png)[](https://blogger.googleusercontent.com/img/a/AVvXsEh5khDt7ddjYwK8VUrxsumqV5FL0koA9BMr04BRjsWqkmLwnBZhQEAg3_gXg6qW9pGqumzHgToEG44cJmqKXMv0edImrBeU2y5y4V8YYtLV-M1Uv3Kcb7AruomZ-Ud2DWlp0oMwTgSTOBK-crxqBbmoCdlIP68dSi9VYpQVRYNp_9FSupPMqvDB1uy89G58)
 **\
 \
 
- 
 
 
- 
 
 
- 
 
-
- 
-
-
- 
 
 **1) BERT 모델 아키텍처![ref2]**
 - **트랜스포머의 구조:** 트랜스포머는 크게 인코더(Encoder)와 디코더(Decoder)로 구성됩니다.
@@ -4875,7 +4830,6 @@ BERT-Large가 BERT-Base보다 더 많은 인코더 레이어와 더 큰 임베�
   - **GPT** 모델은 주로 **디코더(Decoder)** 부분을 사용하여 단방향으로 텍스트를 생성합니다.
 
 
- 
 
 **2) BERT의 핵심 구성 요소![ref2]**
 BERT 모델은 입력 데이터를 처리하고 최종 결과를 도출하기 위해 여러 층의 구성 요소를 사용합니다.
@@ -4887,7 +4841,6 @@ BERT 모델은 입력 데이터를 처리하고 최종 결과를 도출하기 �
 - **세그먼트 임베딩:** 문장이 여러 개일 경우 각 문장을 구분하는 임베딩입니다.
 - **위치 임베딩:** 토큰의 순서 정보를 알려주는 임베딩입니다. 대본에서는 이 임베딩이 훈련 과정에서 학습되는 "학습 가능한(learnable)" 임베딩이라고 강조합니다.
 - 이 세 가지 임베딩을 합쳐서 최종 입력 벡터를 생성하고, 이 벡터는 인코더 스택으로 전달됩니다.
- 
 
 **인코더 스택 (Encoder Stack)![ref2]**
 - BERT는 여러 개의 인코더를 **층층이 쌓아(stack)** 만듭니다.
@@ -4910,7 +4863,6 @@ BERT 모델은 입력 데이터를 처리하고 최종 결과를 도출하기 �
 - **값(Value):** 문장 내의 모든 다른 단어가 지닌 실제 정보를 나타내는 벡터입니다.
 
 각 어텐션 헤드는 쿼리 벡터와 모든 키 벡터 간의 **유사도**를 계산합니다.. 유사도가 높을수록 더 큰 가중치를 부여하고, 이 가중치를 해당 키와 연결된 값 벡터에 곱하고, 이 과정으로 현재 단어가 문장 내의 다른 어떤 단어에 집중해야 할지 결정합니다.
- 
 
 **분류 헤드 (Classification Head)![ref2]**
 - 인코더 스택의 마지막 출력은 특정 작업에 맞게 변환되어야 합니다. 이 역할을 하는 것이 **분류 헤드**입니다.
@@ -4920,12 +4872,8 @@ BERT 모델은 입력 데이터를 처리하고 최종 결과를 도출하기 �
 
 
 
------
-
- 
 
 **5. BERT 모델 입력 임베딩(Input Embedding)![ref2]**
- 
 
 **1) BERT의 입력 토큰화 ![ref2]**
 BERT는 입력 문장을 단순히 단어 단위로 나누지 않고, **WordPiece 토큰화**를 사용합니다.
@@ -4933,11 +4881,9 @@ BERT는 입력 문장을 단순히 단어 단위로 나누지 않고, **WordPiec
 - **목적:** WordPiece 토큰화는 제한된 어휘 크기(BERT의 경우 3만 개)를 효율적으로 관리하기 위해 고안되었습니다.
 - **작동 방식:** playing과 같은 단어는 play와 ####ing으로 분리됩니다. play는 흔히 사용되는 단어(접두사)이므로 독립된 토큰으로, ####ing는 뒤에 붙는 형태(접미사)이므로 #### 기호와 함께 별도의 토큰으로 처리됩니다.
 - **효과:** 이 방식은 희귀하거나 처음 보는 단어라도 이미 학습된 토큰의 조합으로 표현할 수 있게 해주어, 사전에 포함되지 않은 단어(Out-Of-Vocabulary, OOV) 문제를 해결하고 모델의 크기를 줄이는 데 기여합니다
- 
 
 **WordPiece 토큰화**
 단어를 의미 있는 작은 단위로 쪼개어, 처음 보는 단어도 학습된 조각들의 조합으로 처리할 수 있게 해줍니다. 예를 들어, 'unbelievable'이라는 단어를 'un'과 'believe', 'able'로 분리하여 OOV 문제를 완화합니다.
- 
 
 **2) 입력 임베딩의 구성 요소![ref2]**
 BERT의 최종 입력 임베딩은 세 가지 임베딩을 합쳐서 만들어집니다.
@@ -4956,7 +4902,6 @@ BERT의 최종 입력 임베딩은 세 가지 임베딩을 합쳐서 만들어�
   - 이 임베딩은 트랜스포머 모델이 순서 정보를 처리할 수 있도록 돕습니다.
 
 
- 
 
 **3) 최종 입력 벡터의 계산![ref2]**
 - 위의 세 가지 임베딩(토큰 임베딩, 세그먼트 임베딩, 위치 임베딩)을 모두 **더하여** 최종 입력 벡터를 만듭니다.
@@ -4984,12 +4929,8 @@ BERT의 최종 입력 임베딩은 세 가지 임베딩을 합쳐서 만들어�
 
 
 
------
-
- 
 
 **6. BERT의 출력 및 Pre-training![ref2]**
- 
 
 **1) BERT의 출력 처리 과정**
 ![](Aspose.Words.e45a31d5-45a9-4228-a7e7-3034abe31d6d.140.png)[](https://blogger.googleusercontent.com/img/a/AVvXsEhgnLmyEy1R2IzmbwJpw5d3l-k4Ls97vKNvMAcnR4uxAOZWXYnUFHUq9feeFPcRmAsxrmegXynQUchdE104wYOtoEohxAE-A2dAiEL8f9dtM_jEZ9U54wjPgqDURGM97dEp5srszeZxpGRy-gmSDst1TCXpwzrYoMQ3yTjFDm5nh0Oq-sZJmcqBIqXLOppJ)
@@ -5009,7 +4950,6 @@ BERT의 최종 입력 임베딩은 세 가지 임베딩을 합쳐서 만들어�
    1. **NSP(다음 문장 예측)의 경우:** [CLS] 토큰에 해당하는 컨텍스트 벡터가 분류 헤드로 전달됩니다. 이 헤드는 두 문장이 서로 이어지는지 여부를 예측하기 위해 **두 개의 뉴런**을 사용하며, 이진 분류(binary classification)를 수행합니다.
 
 
- 
 
 **2) BERT의 Pre-training![ref2]**
 BERT의 사전 훈련은 두 가지 과제로 구성되며, 각각 다른 손실 함수를 사용합니다.
@@ -5028,25 +4968,13 @@ BERT의 사전 훈련은 두 가지 과제로 구성되며, 각각 다른 손실
 
 
 
-
-
-
-
-
-
 - **손실 함수:** [MASK] 토큰에 대한 예측과 실제 정답 단어 간의 차이를 계산하기 위해 교차 엔트로피 손실(Cross-Entropy Loss)을 사용합니다. 모델은 3만 개의 어휘 중 정답을 찾아야 하므로, 3만 차원의 출력에 대해 손실을 계산합니다.
-
-
-
 - **다음 문장 예측 (NSP)**
 - **목표:** 두 문장(A와 B)이 연속되는 관계인지 예측하는 것.
 - **과정:**
   - 입력 문장은 [CLS]와 [SEP] 토큰으로 구분되어 모델에 전달됩니다.
   - [CLS] 토큰의 최종 컨텍스트 벡터가 분류 헤드로 전달됩니다.
   - 이 헤드는 두 문장이 연속될 확률과 연속되지 않을 확률을 예측합니다.
-
-
-
 ![image-20250807-071551.png]
 
 - **BERT의 손실 함수**
@@ -5058,17 +4986,12 @@ BERT의 사전 훈련은 두 가지 과제로 구성되며, 각각 다른 손실
 
 
 
------
-
- 
 
 **7. BERT Fine-tuning![ref2]**
 BERT의 fine-tuning은 pre-training된 모델을 특정 하위 작업(downstream tasks)에 맞춰 재훈련하는 과정입니다. 이 과정을 통해 모델은 pre-training으로 습득한 일반적인 언어 능력을 바탕으로, 특정 작업에 특화된 성능을 발휘하게 됩니다.
- 
 
 **fine-tuning**
 **사전 학습된 모델의 가중치를 초기값**으로 사용하고, **소량의 레이블이 있는 데이터**로 모델을 추가로 학습시킵니다. 이 과정에서 모델의 맨 위에 특정 작업에 맞는 출력 레이어(예: 분류기)를 추가하고, 전체 모델의 가중치를 미세하게 조정합니다.
- 
 
 **1) BERT fine-tuning 작동 원리**
 ![](Aspose.Words.e45a31d5-45a9-4228-a7e7-3034abe31d6d.144.png)[](https://blogger.googleusercontent.com/img/a/AVvXsEgaTv6KJuIGKyZZAdgU5DX8lWnFsEBOBQG5fZ55NUbCc2hXzhU-Frbk_qbtGgdDYK_P3k-WqhT4DtFaGn9tlXE8xQpB60zTjsi8G5CGF9mj7VfxhwOTQotm1KkgLXSeqLxn3sl2HV2twYf5GBNeT_XnT6bSPrRdOlambD3EXMyOWdNleLAIqsbV8ytl81wP)
@@ -5103,7 +5026,6 @@ fine-tuning은 pre-training된 BERT 모델에 작업별로 특화된 신경망 �
 - **가중치 업데이트**: 계산된 손실을 바탕으로 역전파를 통해 BERT 모델의 가중치를 업데이트합니다. 이때, 사전 훈련 과정에서 학습된 가중치가 크게 변경되지 않도록 학습률을 낮게 설정하는 것이 일반적입니다.
 
 
- 
 
 **2) 다양한 다운스트림 작업**
 다운스트림
@@ -5118,7 +5040,6 @@ BERT는 fine-tuning을 통해 다음과 같은 다양한 자연어 처리(NLP) �
 - **토큰 분류(Token Classification)**: 문장 내 각 단어에 라벨을 부여하는 작업입니다. 개체명 인식(Named Entity Recognition, NER)이 대표적이며, 각 토큰의 컨텍스트 벡터를 사용하여 해당 토큰의 품사나 개체명을 예측합니다.
 
 
- 
 
 **3) 성능 평가와 벤치마크![ref2]**
 BERT 모델은 미세 조정 후 성능을 평가하기 위해 다양한 **벤치마크**를 사용합니다.
@@ -5130,69 +5051,70 @@ BERT 모델은 미세 조정 후 성능을 평가하기 위해 다양한 **벤�
 
 \*\*트랜스포머(Transformer)와 BERT(Bidirectional Encoder Representations from Transformers)\*\*는 구조적으로 연결되어 있지만, BERT는 트랜스포머 위에 중요한 연구적 기여(contribution)를 더해 대규모 자연어 처리 성능을 크게 끌어올렸습니다.
 
------
- 
+
+
 
 **🔑 BERT의 주요 컨트리뷰션 (Transformer 대비)**
- 
 
 **1. 트랜스포머 인코더(Encoder) 전용 사용**
 - Transformer(2017)는 **Encoder-Decoder** 구조를 제안했지만,
 - BERT(2018)는 **Encoder 블록만 깊게 쌓아** 언어 이해(Language Understanding)에 특화된 모델을 설계함.
 - 즉, 기계번역 같은 생성 태스크가 아니라 \*\*텍스트 이해(NLU)\*\*에 집중.
------
- 
+
+
 
 **2. 양방향(Bidirectional) 문맥 학습**
 - Transformer는 Self-Attention을 통해 문맥을 양방향으로 고려할 수 있는 구조를 이미 제공했음.
 - 하지만 기존 Language Model(예: GPT-1)은 **좌→우 단방향**만 학습했음.
 - \*\*BERT는 Masked Language Modeling(MLM)\*\*을 도입하여 **좌우 문맥을 동시에 활용하는 진짜 양방향 학습**을 가능하게 함.
 - 이로써 "I went to the \_\_\_ to buy some milk" 같은 문장에서 앞뒤 문맥 모두 활용 가능.
------
- 
+
+
 
 **3. Masked Language Modeling (MLM)**
 - 입력 토큰의 일부(15%)를 [MASK]로 가리고, 이를 맞추도록 학습.
 - 이를 통해 **양방향 문맥을 통한 깊은 의미 표현 학습**이 가능해짐.
 - Transformer 원 논문에는 없던 **새로운 pre-training 목표**를 제안한 것.
------
- 
+
+
 
 **4. Next Sentence Prediction (NSP)**
 - 두 문장이 연속되는지 여부를 예측하는 태스크 추가.
 - **문장 간 관계 이해**(sentence-pair tasks: NLI, QA 등)에 강력한 효과.
 - 후속 연구에서는 NSP의 효과에 논란이 있었지만, 당시에는 큰 차별점이었음.
------
- 
+
+
 
 **5. 대규모 Pre-training + Fine-tuning 패러다임 확립**
 - 대규모 코퍼스(BooksCorpus + Wikipedia)에서 **사전학습(pre-training)** 후,
 - 각 다운스트림 태스크에 맞게 **파인튜닝(fine-tuning)**.
 - 이는 이후 GPT, RoBERTa, T5 등 모든 LLM 발전의 토대가 됨.
------
- 
+
+
 
 **6. 표준 벤치마크에서 혁신적 성과**
 - GLUE, SQuAD, SWAG 등 주요 NLP 벤치마크에서 당시 최고 성능 달성.
 - "사전학습 + 파인튜닝" 접근법을 **사실상 NLP 표준**으로 만듦.
------
- 
+
+
 
 **📌 정리**
 - **Transformer**: Attention 기반 일반 아키텍처 (Encoder + Decoder) 제안.
 - **BERT**: 그중 **Encoder만 활용**, **MLM + NSP 학습 목표** 추가, **대규모 Pre-training → Fine-tuning 패러다임** 정립.
 - 결과적으로 \*\*NLP 이해(Task-specific 모델 학습을 대체)\*\*하는 **범용 언어 표현 모델**로 자리잡음.
------
+
+
 👉 요약하면,\
 **트랜스포머가 “구조”를 열었다면, BERT는 “훈련 방법과 활용 패러다임”을 정립했다**고 보는 게 정확합니다.
 
------
+
+
 혹시 제가 \*\*BERT 논문의 주요 실험 결과(GLUE, SQuAD 점수 변화)\*\*까지 정리해드릴까요?
 
 정리해보면:
 
------
- 
+
+
 
 **🔹 Transformer (2017, *Attention is All You Need*)**
 - **원래 목적**: 기계번역(translation) → "Sequence-to-Sequence" 문제를 더 잘 풀기 위해 제안됨.
@@ -5201,8 +5123,8 @@ BERT 모델은 미세 조정 후 성능을 평가하기 위해 다양한 **벤�
   - 처음 Transformer 논문에서는 **“사전학습(pre-training) + 파인튜닝(fine-tuning)” 구조가 아니었음**.
   - 대신 번역 데이터(평행 코퍼스)를 가지고 **end-to-end supervised 학습**을 함.
   - 즉, 영어–프랑스어, 영어–독일어 데이터에 대해 바로 학습.
------
- 
+
+
 
 **🔹 BERT (2018, *Bidirectional Encoder Representations from Transformers*)**
 - **새로운 패러다임 제안**: 
@@ -5212,25 +5134,26 @@ BERT 모델은 미세 조정 후 성능을 평가하기 위해 다양한 **벤�
 - **혁신**: 
   - Transformer 구조(특히 Encoder)를 가져왔지만,
   - **훈련 패러다임** 자체를 바꿔서 “한 번의 대규모 pre-training → 다양한 downstream fine-tuning” 흐름을 확립.
------
- 
+
+
 
 **🔑 결론**
 - **Transformer 논문**: 새로운 네트워크 구조(Attention, Encoder-Decoder)를 제안했지만, supervised 학습에 초점.
 - **BERT 논문**: Transformer Encoder를 활용하면서, **사전학습(pre-training) + 파인튜닝(fine-tuning) 패러다임**을 NLP 표준으로 확립.
------
+
+
 👉 즉, **Transformer는 모델 아키텍처 혁신**, **BERT는 학습 패러다임 혁신**이라고 정리할 수 있습니다.
 
------
+
+
 혹시 원하시면 제가 **BERT 이전의 GPT-1(2018)과 비교**해서, "왜 BERT가 진짜 pre-training + fine-tuning 흐름을 대세로 만들었는지"까지 설명드릴까요?
 
 BERT 이후 등장한 대표적인 변형 모델들을 시간순으로 정리하면, 각 모델이 **BERT의 한계**를 어떻게 극복했는지가 잘 드러납니다.
 
------
- 
+
+
 
 **📌 시간순 정리: BERT 후속 모델들의 컨트리뷰션**
- 
 
 **1. SpanBERT (2019)**
 - **한계 해결 대상**: BERT의 [MASK] 토큰 예측이 개별 단어 단위로만 이루어짐 → 구, 구문 단위(span-level) 의미 파악이 부족.
@@ -5238,8 +5161,8 @@ BERT 이후 등장한 대표적인 변형 모델들을 시간순으로 정리하
   - **Span Masking**: 연속된 토큰(span)을 가려놓고 이를 복원하도록 학습.
   - **Span Boundary Objective (SBO)**: 마스킹된 구간을 양 옆 경계 토큰으로부터 예측하도록 설계.
   - → 개체명 인식(NER), 관계 추출(Relation Extraction) 등 **구간 단위 언어 이해 태스크에서 성능 개선**.
------
- 
+
+
 
 **2. RoBERTa (2019, Facebook AI)**
 - **한계 해결 대상**: BERT 학습 세팅(데이터 크기, 배치 크기, 학습 단계 수, NSP 사용 여부)이 최적이 아님.
@@ -5249,8 +5172,8 @@ BERT 이후 등장한 대표적인 변형 모델들을 시간순으로 정리하
   - **Dynamic Masking** 도입 → 한 문장을 학습할 때마다 다른 mask를 적용 (BERT는 고정).
   - **더 오래, 더 큰 배치로 학습**.
   - → \*\*“Scale matters”\*\*를 입증하며 BERT보다 훨씬 강력한 baseline 모델로 자리잡음.
------
- 
+
+
 
 **3. ELECTRA (2020, Google Research)**
 - **한계 해결 대상**: BERT의 MLM은 입력 토큰의 15%만 학습에 기여 → 데이터와 연산 낭비.
@@ -5260,8 +5183,8 @@ BERT 이후 등장한 대표적인 변형 모델들을 시간순으로 정리하
     - Discriminator가 “이 토큰이 원래 것인지, 바뀐 것인지” 판별.
   - 모든 토큰에서 학습 신호를 얻음 → 훨씬 효율적인 pre-training.
   - → **같은 연산량 대비 BERT·RoBERTa보다 훨씬 뛰어난 성능** (특히 중소형 모델에서 강력).
------
- 
+
+
 
 **🕒 연대기 요약**
 
@@ -5271,7 +5194,8 @@ BERT 이후 등장한 대표적인 변형 모델들을 시간순으로 정리하
 |**RoBERTa**|2019|대규모 데이터·더 긴 학습, NSP 제거, dynamic masking|BERT 학습 세팅 비효율|
 |**ELECTRA**|2020|Replaced Token Detection, 효율적 학습|MLM의 낮은 학습 효율 (15%만 사용)|
 
------
+
+
 👉 정리하면,
 
 - **SpanBERT**는 “학습 단위 개선(span)”
@@ -5280,8 +5204,6 @@ BERT 이후 등장한 대표적인 변형 모델들을 시간순으로 정리하
 
 이렇게 각자 BERT의 다른 한계를 보완한 진화형 모델이라고 보시면 됩니다.
 
------
-
 
 
 
@@ -5289,14 +5211,11 @@ BERT 이후 등장한 대표적인 변형 모델들을 시간순으로 정리하
 
 
 
-
-
- 
-
 **===============================**
- 
 
-**📌 6. Knowledge Distillation for BERT - DistilBERT, MobileBERT and TinyBERT** 
+**📌 6. Knowledge Distillation for BERT - DistilBERT, MobileBERT and TinyBERT**
+
+
 [ 관련 자료 링크 ]
 
 - DistillBERT
@@ -5312,7 +5231,6 @@ BERT 이후 등장한 대표적인 변형 모델들을 시간순으로 정리하
   - <https://littlefoxdiary.tistory.com/64>
 
 [ 예상 문제 ]
- 
 
 **1️⃣ 객관식 문제**
 **문제 1:** 다음 중 Knowledge Distillation(KD)의 목적과 가장 거리가 먼 것은?\
@@ -5327,7 +5245,8 @@ D. 배포 효율성 개선
 Knowledge Distillation의 핵심 목적은 **작은 모델이 큰 모델의 성능을 최대한 유지하면서 작고 빠르게 동작하도록 하는 것**입니다.\
 따라서 파라미터 수를 증가시키는 것(C)은 KD의 목적과 거리가 있습니다.
 
------
+
+
 **문제 2:** DistilBERT와 BERT-base의 구조적 차이로 올바른 것은?\
 A. DistilBERT는 12개의 레이어를 가지며 hidden size를 768로 유지\
 B. DistilBERT는 레이어 수를 6으로 줄이고 hidden size를 줄임\
@@ -5340,7 +5259,8 @@ D. DistilBERT는 attention head 수를 늘려 성능 향상
 DistilBERT는 \*\*BERT-base의 절반 레이어(6층)와 줄어든 hidden size(312~768)\*\*를 가지도록 경량화했습니다.\
 FFN 구조와 attention head 수는 기본적으로 감소된 크기에 맞춰 조정되며, 기존 BERT-base와 동일하지 않습니다.
 
------
+
+
 **문제 3:** MobileBERT가 일반 BERT-large 대신 IB-BERT를 Teacher로 사용하는 이유로 적절한 것은?\
 A. IB-BERT가 작은 hidden size와 bottleneck 구조로 Student와 dimension이 맞음\
 B. IB-BERT는 BERT-base보다 파라미터가 많아서 성능이 좋음\
@@ -5354,8 +5274,8 @@ MobileBERT Student는 hidden size가 작고 layer-wise distillation이 필요합
 BERT-large와 바로 매핑하면 layer, hidden size가 맞지 않아 학습이 어렵습니다.\
 따라서 **IB-BERT를 intermediate Teacher로 사용**하여 Student와 dimension을 맞춘 후 distillation을 수행합니다.
 
------
- 
+
+
 
 **2️⃣ 단답형 문제**
 **문제 4:** TinyBERT의 학습에서 사용되는 두 단계 학습법(two-stage distillation)의 이름을 쓰시오.
@@ -5365,7 +5285,8 @@ BERT-large와 바로 매핑하면 layer, hidden size가 맞지 않아 학습이 
 **이유:**\
 TinyBERT는 **Teacher로부터 일반 언어 지식을 전달하는 단계**와 **특정 NLP 작업에 맞춘 지식을 전달하는 단계**를 분리하여 두 단계로 학습합니다.
 
------
+
+
 **문제 5:** Knowledge Distillation에서 Soft Cross-Entropy Loss를 사용하는 이유를 간단히 서술하시오.
 
 **정답:** Teacher 모델의 soft logits를 Student가 모방하도록 하여, **클래스 간 유사성**을 학습하게 하기 위해 사용함.
@@ -5373,8 +5294,8 @@ TinyBERT는 **Teacher로부터 일반 언어 지식을 전달하는 단계**와 
 **이유:**\
 Hard label만 학습하면 정답 클래스 정보만 반영되지만, **soft label을 사용하면 Teacher의 분류 확률 분포를 학습**할 수 있어, Student가 클래스 간 미묘한 관계까지 학습할 수 있습니다.
 
------
- 
+
+
 
 **3️⃣ 서술형 문제**
 **문제 6:** TinyBERT, DistilBERT, MobileBERT의 공통점과 차이점을 3~4문장으로 설명하시오.
@@ -5389,7 +5310,8 @@ TinyBERT는 **두 단계(distillation + task-specific distillation) 학습**으�
 공통점: 세 모델 모두 **Knowledge Distillation으로 BERT 지식을 압축**\
 차이점: 구조(레이어 수, hidden size, bottleneck)와 학습 전략(일반 vs. 작업별 distillation)이 서로 다르며, 환경에 맞게 최적화됨
 
------
+
+
 **문제 7:** Knowledge Distillation에서 Hidden State Loss와 Attention Loss가 각각 담당하는 역할을 설명하시오.
 
 **정답 예시:**
@@ -5427,82 +5349,69 @@ Hidden State Loss는 내부 feature alignment, Attention Loss는 token dependenc
 - DistillBERT는 BERT 모델에 비해서 40% 작고, 60% 빠르며, 97% 정확도를 보임
 
 [ 추가 개념 ]
- 
 
 **1️⃣ Knowledge Distillation (KD)**
- 
 
 **🔹 개념**
 - **큰 모델(Teacher)의 지식**을 작은 모델(Student)이 모방하도록 학습시키는 방법
 - Student는 Teacher의 **출력 logits, hidden state, attention map** 등을 학습하여 성능을 압축함
- 
 
 **🔹 특징**
 - 모델 구조는 바뀔 수 있지만, 작은 Student가 Teacher 수준의 성능 근접 가능
 - Soft label과 다양한 내부 표현(hidden, attention) 학습 가능
- 
 
 **🔹 장점**
 - 작은 모델도 Teacher와 유사한 성능 달성 가능
 - 모델 구조 변경 자유도가 높음
 - 다양한 NLP/ML 작업에 적용 가능
- 
 
 **🔹 단점**
 - Teacher 학습 및 distillation 과정 필요 → 학습 비용 존재
 - 압축률은 Student 구조 설계에 의존
------
- 
+
+
 
 **2️⃣ Pruning**
- 
 
 **🔹 개념**
 - **불필요한 가중치(weight)나 뉴런(neuron)을 제거**하여 모델을 경량화
 - 대표적으로 **magnitude-based pruning**: 작은 가중치 제거
- 
 
 **🔹 특징**
 - 구조는 대부분 유지, 단순히 일부 파라미터 제거
 - Sparsity(희소성) 기반, 연산량과 메모리 감소
- 
 
 **🔹 장점**
 - 학습된 모델 그대로 적용 가능
 - 메모리 사용량과 연산량 감소
 - 하드웨어 지원 시 실제 추론 속도 향상 가능
- 
 
 **🔹 단점**
 - 지나치게 pruning하면 성능 급락
 - Sparse 연산 지원이 없는 환경에서는 속도 향상 제한적
------
- 
+
+
 
 **3️⃣ Quantization**
- 
 
 **🔹 개념**
 - **모델 파라미터와 연산을 낮은 비트 정밀도(bit-width)로 변환**
 - 예: 32-bit float → 8-bit integer
- 
 
 **🔹 특징**
 - 메모리 사용량 절감 및 연산량 감소
 - INT8, INT4 quantization 등 다양한 수준 존재
- 
 
 **🔹 장점**
 - 메모리 사용량 크게 감소
 - 저전력, 모바일, 엣지 디바이스에 최적화
 - 일부 하드웨어에서 연산 속도 향상
- 
 
 **🔹 단점**
 - 정밀도 감소로 성능 저하 가능
 - 일부 layer/연산은 quantization 어려움 (예: softmax)
------
- 
+
+
 
 **4️⃣ 비교 분석**
 
@@ -5516,14 +5425,15 @@ Hidden State Loss는 내부 feature alignment, Attention Loss는 token dependenc
 |적용 환경|모든 NLP/ML 작업|이미 학습된 모델|모바일/엣지, 저전력 장치|
 |압축률|Student 설계에 따라 유연|보통 30~80% sparsity|2~4배 정도 메모리 감소|
 
------
- 
+
+
 
 **🔹 요약**
 - **Knowledge Distillation** → 구조 변경과 성능 유지가 가능, 학습 기반
 - **Pruning** → 모델 크기와 연산량 줄임, 구조 대부분 유지, 성능 저하 가능
 - **Quantization** → 메모리와 연산량 최적화, 저전력 환경에 적합, 성능 저하 가능
------
+
+
 
 강의 개요
 
@@ -5662,9 +5572,6 @@ Hidden State Loss는 내부 feature alignment, Attention Loss는 token dependenc
 |Input embedding|768|312|Student 구조에 맞춰 축소|
 |목적|범용 NLP pre-training|Lightweight Student, 모바일/엣지 환경 최적화|연산량 줄이면서 성능 유지|
 
-
-
-
 7. TinyBERT의 학습 전략과 성능 (Two-stage distillation)
 - **두 단계 학습법**
   - 일반 증류(General Distillation): 큰 BERT에서 일반적 지식을 전달
@@ -5704,19 +5611,17 @@ Hidden State Loss는 내부 feature alignment, Attention Loss는 token dependenc
 - 이들 모델은 **속도, 크기, 성능의 균형**을 맞추기 위해 다양한 구조와 학습 방법을 사용하며, 자원이 제한된 환경에서도 활용 가능하게 설계됨.
 - **지식 증류는** 이들 모델의 핵심 기술로, 다양한 레이어와 표현을 모방하는 손실 함수를 통해 학습됨.
 
- 
 
 **===============================**
- 
 
-**📌 10. Fine Tuning Vision Transformer (ViT) for Indian Foods Classification** 
- 
+**📌 10. Fine Tuning Vision Transformer (ViT) for Indian Foods Classification**
+
+
 
 **ViT란?**
 트랜스포머 인코더 블록으로만 구성된 구조
 
 An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale - ICLR 2021
- 
 
 **Recall**
 NLP 트랜스포머는 문장을 토큰화 시킨 이후 Input Embedding과 Positional Encoding을 거쳐 인코더에 넣어줌
@@ -5726,7 +5631,6 @@ NLP 트랜스포머는 문장을 토큰화 시킨 이후 Input Embedding과 Posi
 ![](Aspose.Words.e45a31d5-45a9-4228-a7e7-3034abe31d6d.161.png)[](https://blogger.googleusercontent.com/img/a/AVvXsEgkR9mV2pEVL6IjHmS59C0JrqBxbNJ4jNhhLTJ3IajsNrzirELBSa0f43mAe2VPoLS651gh5pual-jlorq8Xwx61j_PFElHAjuZXtqq9zvyVdLDrL6g0LmbRWYxIM9OJBxuTPdUdWDtAmhFlw9t60yTN6-tHpSFrytQa1ziSpu4mnyQnAjCtuj9RNX_usAG)
 
 ![](Aspose.Words.e45a31d5-45a9-4228-a7e7-3034abe31d6d.162.png)[](https://blogger.googleusercontent.com/img/a/AVvXsEiZe-7y9E_6TxFJkhgxBGL_lHBUvbSLGTbevAUlXE4hxYPDRaimyuLWw5GCgNYoYMW9ma-K_sa6tB_PrE0X9-_hN1kcGBquCcKHZtueiCMgHISkajmbClbFpaAt7XuPv8oJMFEVhepSwVPA_wfSc-nkmFxHgqgO4j3tIQ5z8qAyxkfjLvU_Wh8b_c6PPl0y)
- 
 
 **그럼 ViT는?**
 이미지를 “문장처럼” 만들어 사용
@@ -5738,10 +5642,10 @@ NLP 트랜스포머는 문장을 토큰화 시킨 이후 Input Embedding과 Posi
 아래 그림은 4x4x2 크기의 이미지를 2x2크기의 패치로 나눈 것
 
 ![](Aspose.Words.e45a31d5-45a9-4228-a7e7-3034abe31d6d.164.png)[](https://blogger.googleusercontent.com/img/a/AVvXsEiw9ceVswTA_im4K3AVkdhS4-z2RZVXBl0iNo0apKv-BdkWmTPZMyej-J8wFZNRA4GO1kcLnEkdIbzQZxitPS3Xkd2n2As4i5134f0BPJEFqEUk-jtEne3umww6Wf26ExufnK_VV4DLwQlLkJdDtXevZQjicUSHzWc--ZAKsZ4MrY49RrY__OYA9ztH8Cwj)
- 
 
 **NLP 트랜스포머와의 차이점**
-` `- NLP 트랜스포머
+`
+`- NLP 트랜스포머
 
 \- 입력 데이터: 토큰(단어/서브워드 시퀀스)
 
@@ -5752,7 +5656,6 @@ NLP 트랜스포머는 문장을 토큰화 시킨 이후 Input Embedding과 Posi
 \- 입력 데이터: 이미지
 
 \- 전처리 방식: 이미지를 작은 크기의 패치로 나눈 후 각 패치를 나열하여 임베딩 레이어에 투영 -> 각 패치의 d\_model 차원 벡터 생성
- 
 
 **ViT는 이미지 분류를 위한 모델**
 분류를 어떻게? → BERT와 마찬가지로 CLS 토큰 활용
@@ -5774,13 +5677,11 @@ BERT의 사전학습 Objective 중 하나: NSP(Next Sentence Prediction)
 ViT의 CLS 토큰도 마찬가지로 패치 시퀀스의 맨 앞에 붙이고 CLS 토큰 벡터의 hidden state를 Classification Head에 통과시켜 분류
 
 ![](Aspose.Words.e45a31d5-45a9-4228-a7e7-3034abe31d6d.167.png)[](https://blogger.googleusercontent.com/img/a/AVvXsEitN---qd_DHUyw8hZrJBTCi2IiOqwJh2Ig6G2-TayvpaFw0BWYYbKklBFv1GJwvf_pR7A-qYeOjovINYAGrctYuLomgeq1F3fcMTyDLkVAe4tug994ZCHU088v4WhUPkCT2CJxZXiU73GpHFifZFGAAi4mHLGYF2JdRmga41x2Z_RP3lUsGi3QTBLoDedp)
- 
 
 **어떻게 ViT가 나왔는가?**
 NLP에서의 성공: 2017년 트랜스포머가 번역 및 언어모델링등에서 CNN과 RNN의 성능을 뛰어 넘음
 
 “텍스트는 토큰 시퀀스로 잘 처리하는데, 이미지를 패치 단위 시퀀스로 바꾸면 CNN 없이도 처리 가능하지 않을까?”
- 
 
 **초기 시도와 문제점**
 소규모 이미지 데이터셋만 사용했더니 성능이 안 나옴
@@ -5790,7 +5691,6 @@ NLP에서의 성공: 2017년 트랜스포머가 번역 및 언어모델링등에
 적은 데이터로 일반화에 어려움
 
 1. CNN은 구조 자체에 이미지 친화적 inductive bias가 있어 작은 데이터로 학습 가능
- 
 
 **돌파구**
 충분한 양의 데이터셋을 확보하여 ViT를 대규모로 사전학습 진행
@@ -5800,13 +5700,12 @@ NLP에서의 성공: 2017년 트랜스포머가 번역 및 언어모델링등에
 결과: ResNet등의 모델들(CNN-based)을 능가하는 성능을 달성
 
 핵심: 데이터가 충분히 크면 inductive bias가 부족해도 학습할 수 있다.
- 
 
 **Inductive bias란?**
 모델이 데이터가 충분히 주어지지 않아도 일반화를 잘 하게 만들어주는 사전 지식이나 가정
 
-` `- 구조적으로 갖는 편항
- 
+`
+`- 구조적으로 갖는 편항
 
 **예시) 이미지 데이터의 특성: 인접 픽셀 간의 지역성(locality)가 존재**
 이미지 데이터에 대한 CNN의 Inductive bias
@@ -5821,13 +5720,11 @@ NLP에서의 성공: 2017년 트랜스포머가 번역 및 언어모델링등에
 
 - self-attention 연산은 모든 위치 쌍을 동등하게 취급 → 특별히 근처 픽셀끼리 관련이 있다라는 가정이 없음
 - CNN이 구조적으로 갖는 inductive bias가 거의 없기 때문에 대규모 데이터로 학습하여 bias를 만들어야 함
- 
 
 **ViT가 가지는 이점**
 \- 모델 크기에 따라 성능이 더 잘 스케일링 → CNN보다 데이터/파라미터 증가에 따라 성능이 더 빠르게 상승
 
 \- 멀티모달 확장 용이: NLP 트랜스포머와 구조가 같아 cross-modal 모델(CLIP, Flamingo 등)에 쉽게 적용
- 
 
 **ViT의 디테일**
 사전학습 → 미세조정: 사전학습된 MLP head는 버리고, 미세조정 데이터셋에 맞춘 MLP head를 새로 초기화해 붙임 (사전학습 데이터셋과 미세조정 데이터셋의 클래스 수 차이)
@@ -5838,7 +5735,6 @@ NLP에서의 성공: 2017년 트랜스포머가 번역 및 언어모델링등에
 
 \
 
- 
 
 **왜 더 좋냐?**
 CNN은 커널이 국소 정보만 추출하기 때문에, 멀리 떨어진 두 픽셀이 상호작용하려면 여러 층을 거쳐야함.
@@ -5851,10 +5747,8 @@ CNN은 커널이 국소 정보만 추출하기 때문에, 멀리 떨어진 두 �
 하지만 국소적으로 집중하는 CNN과 다르게 ViT는 self-attention을 통해 하나의 레이어에서도 멀리 있는 픽셀에 attention 가능
 
 ![](Aspose.Words.e45a31d5-45a9-4228-a7e7-3034abe31d6d.171.png)[](https://blogger.googleusercontent.com/img/a/AVvXsEgq0bARM9_VPoGBUC950LDY8L_pDPg_SxWWzxm327DwD9VbY2PTJoowsci8_jTXEGNxIn9BlohspoW5evSJN6M_YXCrz-jYBClyYGfmg0LJBMLxQWUc-Gs9ixlqzMshoVW56STWeWcrVmxu7DlrfZhXJ5WcPfBZJUu-FOPTtUbXlqhRRztmceqqgDYLVLl-)
- 
 
 **===============================**
- 
 
 **📌 11. Fine Tuning LLM on Custom Dataset**
 Phi-2 & Phi-3
@@ -5892,7 +5786,6 @@ LLM Fine-Tuning
 - Few-Shot Tuning
 - Prompt Tuning
 
- 
 
 **Langauge Modelling**
 - 이전 단어를 바탕으로 문장의 다음 단어를 예측하는 작업

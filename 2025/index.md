@@ -1478,7 +1478,7 @@ ML Test Score는 구글의 머신러닝 프로젝트 경험에서 발전된 엄�
 **===============================**<br>
 **📌 Lecture 5: Deployment**
 <https://fullstackdeeplearning.com/course/2022/lecture-5-deployment/>
-**Introduction![ref2]**<br>
+**Introduction!**<br>
 ![image-20250725-002701.png]
 ![](Aspose.Words.e45a31d5-45a9-4228-a7e7-3034abe31d6d.004.png)[](https://blogger.googleusercontent.com/img/a/AVvXsEjqUIHXB0jRzqezKBbPN_wLgUIAoXXWHYUAGnxiXFnrX4-whub8xJpnnHRqJDHQkJzD8GV0P5m7iOo0-u5Xu109NncImNzFdbk7sAR1LotjVHdTHEizY9k590k3N-htQh7Tzm1Cu5p303xrapJbNNw3uQzFsbaETxw4GNG6n4QsD5MQg6JZ7yTvUj-UOirH)
 \
@@ -1497,7 +1497,7 @@ ML Test Score는 구글의 머신러닝 프로젝트 경험에서 발전된 엄�
 1. 필요 시 엣지로 이동 고려하기
    1. 실시간 반응이 중요한 경우(예: 모바일, IoT), 모델을 사용자가 가까운 위치(엣지)로 옮깁니다.
 
-**1 - Build a Prototype To Interact With![ref2]**<br>
+**1 - Build a Prototype To Interact With!**<br>
 
 |항목|요점|
 |---|---|
@@ -1521,7 +1521,7 @@ ML Test Score는 구글의 머신러닝 프로젝트 경험에서 발전된 엄�
 |**단점**|확장성/성능 제한, 서버 과부하 위험|초기 설정 복잡, 별도 인프라 필요|디바이스 사양 제한, 배포 어려움|
 |**적합한 상황**|소규모 서비스, 프로토타입|대규모 서비스, 다중 사용자 대응|오프라인 환경, 실시간 반응 필요 시|
 
-**1.1 Model-in-service![ref2]**<br>
+**1.1 Model-in-service!**<br>
 애플리케이션 구조는 머신러닝 모델을 어떤 방식으로 포함하느냐에 따라 여러 방식이 존재합니다.\
 초기에 언급한 **프로토타입 접근법은 "Model-in-Service" 방식**에 해당합니다.\
 즉, **웹 서버 내부에 모델을 함께 포함하여 배포**하는 구조입니다.
@@ -1531,8 +1531,8 @@ ML Test Score는 구글의 머신러닝 프로젝트 경험에서 발전된 엄�
 |---|---|
 |1. **복잡한 애플리케이션에서도 기존 인프라를 그대로 재사용**할 수 있습니다.2. 모델 개발자는 새로운 시스템을 처음부터 따로 세팅할 필요 없이,<br>   기존 웹 서버 환경에서 모델을 쉽게 테스트할 수 있습니다.3. "model-in-service"는 **복잡한 구조 없이 빠르게 통합하고 실험할 수 있는 실용적인 방식**|1. **웹 서버와 모델 언어가 다를 수 있음**&emsp;o 예: 웹 서버는 Node.js인데, 모델은 Python으로 되어 있다면 통합이 까다롭습니다.2. **모델이 서버 코드보다 더 자주 바뀜**&emsp;o 모델 개발 초기에 특히 그러하며,&emsp;o 매번 모델을 업데이트할 때마다 전체 애플리케이션을 **재배포해야 하는 부담**이 생깁니다.3. **모델이 커질수록 서버 자원을 많이 사용**&emsp;o 대용량 모델을 웹 서버에 탑재하면,&emsp;o 그 모델이 **웹 서버의 CPU, RAM을 잠식**하여<br>&emsp;  모델과 무관한 사용자에게도 **느린 응답**을 유발할 수 있습니다.4. **웹 서버는 ML 작업에 최적화되어 있지 않음**&emsp;o 대부분의 웹 서버는 **GPU가 없고**,&emsp;o ML 추론에 필요한 **병렬 처리나 메모리 처리 능력이 부족**합니다.5. **모델과 애플리케이션의 확장(스케일링) 특성이 다름**&emsp;o 애플리케이션은 하루 10만 건, 모델은 1만 건 등의 차이가 있을 수 있음&emsp;o 그런데 같이 묶여 있으면 **개별적으로 확장하거나 줄일 수 없음**|
 
-**2 - Separate Your Model From Your UI![ref2]**<br>
-**2.1 - Batch Prediction![ref2]**<br>
+**2 - Separate Your Model From Your UI!**<br>
+**2.1 - Batch Prediction!**<br>
 - **Batch Prediction(배치예측)**은, 여러 입력 데이터를 **한 번에 묶어서** 처리하는 방식
 - 실시간 예측(online/inference API 호출)과 대비되는 방식
 ![](Aspose.Words.e45a31d5-45a9-4228-a7e7-3034abe31d6d.007.png)[](https://blogger.googleusercontent.com/img/a/AVvXsEjBD8qwBzBoSaL3f0XZQnMJuHJLiUqMHXbe_KxR-2ITu8Wxc1ekEXBIbMfkiUQWpZ-CXJ9PdJ12F-hkUz_s1U_jbBgaGOs7bUAsDT9ojtZBj50Htpl5_OovlW8cEsxvmiYcq7Mw3UJqvJJcXjX2wf7FIEzBOnluPrPAFPAwYkoOWcq2ZKPk5mV3-9A4qT-R)
@@ -1542,7 +1542,7 @@ ML Test Score는 구글의 머신러닝 프로젝트 경험에서 발전된 엄�
 데이터를 다시 처리하고, 모델을 로딩하고, 예측을 수행한 뒤, **그 결과를 데이터베이스에 저장 함**
 → DAG(Directed Acyclic Graph, 유향 비순환 그래프) 기반의 데이터 작업 워크플로우임.\
 -> **Dagster**, **Airflow**, **Prefect** 같은 도구들이 이 문제를 해결하기 위해 설계
-#### **DAG (Directed Acyclic Graph)란?![ref2]**<br>
+#### **DAG (Directed Acyclic Graph)란?!**<br>
 - 작업(Task) 간의 **의존 관계를 방향성 있는 그래프로 표현**하는 구조
 - 반복(순환)이 없는 구조 → 예: A → B → C
 - ML 파이프라인이나 ETL 작업을 자동화할 때 많이 사용됨
@@ -1559,7 +1559,7 @@ ML Test Score는 구글의 머신러닝 프로젝트 경험에서 발전된 엄�
 |---|---|
 |1. **신뢰성 (Dependability)**<br>   모델에 버그가 있어도 **웹 애플리케이션 전체가 크래시될 가능성이 낮습니다.**2. **확장성 (Scalability)**<br>   모델에 **적합한 하드웨어를 선택해서 따로 확장**할 수 있습니다.3. **유연성 (Flexibility)**<br>   **하나의 모델을 여러 애플리케이션에서 재사용**하기가 쉽습니다.|1. **네트워크 지연 (Latency)**<br>   서버나 클라이언트가 모델과 통신할 때 **네트워크 호출이 추가**되어,<br>   애플리케이션에 **지연 시간이 생길 수 있습니다.**2. **인프라 복잡성 (Infrastructure complexity)**<br>   **별도의 모델 서비스를 직접 호스팅 및 운영**해야 하므로,**인프라 관리 부담이 증가**합니다.|
 
-**2.2.1 Model-as-service를 구축하기 위한 핵심 구성 요소![ref2]**<br>
+**2.2.1 Model-as-service를 구축하기 위한 핵심 구성 요소!**<br>
 이러한 단점들이 있음에도 불구하고, Model-as-a-Service 패턴은 대부분의 ML 기반 제품에 가장 적절한 선택지(sweet spot)입니다.\
 왜냐하면, **복잡한 실제 활용 사례에서는 모델과 애플리케이션을 독립적으로 확장할 수 있는 능력**이 반드시 필요하기 때문입니다. 우리는 이 다음 단계에서 **모델 서비스를 구축하기 위한 핵심 구성 요소**들을 함께 다룰 것입니다:
 - REST API 설계
@@ -1568,7 +1568,7 @@ ML Test Score는 구글의 머신러닝 프로젝트 경험에서 발전된 엄�
 - 수평 확장 (horizontal scaling)
 - 롤아웃 전략 (rollout)
 - 관리형 배포 옵션들 (managed options)
-**2.2.2 REST APIs![ref2]**<br>
+**2.2.2 REST APIs!**<br>
 **REST API**는 표준 형식으로 구성된 HTTP 요청(canonically-formatted HTTP requests)에 대한 \*\*예측 결과(response)\*\*를 반환하는 방식으로 작동합니다.
 여러분이 인프라에 호스팅한 모델 서비스와 상호작용하기 위한 다른 **대안 프로토콜**도 있습니다. 예를 들면:
 - **gRPC**: TensorFlow Serving에서 사용됨.
@@ -1580,7 +1580,7 @@ ML Test Score는 구글의 머신러닝 프로젝트 경험에서 발전된 엄�
 |Google Cloud|"instances" 리스트|TensorFlow Serving 등에서 사용|
 |Azure|"data" 리스트|모델에 따라 구조 유동적|
 |AWS Sagemaker|"instances"지만 구조 다름|자체 JSON 포맷 필요|
-**2.2.3 Dependency Management![ref2]**<br>
+**2.2.3 Dependency Management!**<br>
 - 모델 구성 요소 : 코드 + 가중치 + 라이브러리 의존성
 - 문제점: 개발 환경과 서버 간의 불일치 발생 가능
 **의존성(Dependencies)을 관리하는 전략은 두 가지**가 있습니다:
@@ -1596,7 +1596,7 @@ ML Test Score는 구글의 머신러닝 프로젝트 경험에서 발전된 엄�
 |⚠️ 단점 ②|**모델 외부 로직(피처 엔지니어링 등)은 포함되지 않음**|
 **두번째 전체 추론 프로그램(inference program)을 컨테이너로 감싸서 제한하는 방법**\
 → Docker와 같은 컨테이너 기술을 사용하면, 코드, 모델, 패키지 버전, OS 환경까지 모두 고정된 상태로 배포 가능해짐
-**2.2.4 Performance Optimization(성능 최적화)![ref2]**<br>
+**2.2.4 Performance Optimization(성능 최적화)!**<br>
 모델 추론(inference)을 **더 빠르고 효율적으로 만들기 위해**는 다음과 같은 최적화 기법들을 고려 해야 합
 1. **GPU 활용 (GPU acceleration)**
    1. 모델을 훈련했던 것과 같은 하드웨어(GPU)에서 추론을 수행하면 일관성이 있고 속도가 빠름
@@ -1634,7 +1634,7 @@ ML Test Score는 구글의 머신러닝 프로젝트 경험에서 발전된 엄�
       1. **TensorRT**
       1. **Ray Serve**
       1. **NVIDIA Triton**
-**2.2.5 Horizontal Scaling![ref2]**<br>
+**2.2.5 Horizontal Scaling!**<br>
 - 수천 ~ 수백만 사용자 요청에 대응할 때, 고가용성(HA)이 필요할 때
 - 여러 서버에 동일한 모델 복제본을 띄우고, 트래픽을 분산시켜 확장하는 방식 인 수평 확장 (Horizontal Scaling)을 사용함
 - 각 서버는 동일한 모델 서비스의 복사본을 가지고 있고, 로드 밸런서(load balancer)라는 도구가 요청을 각 서버에 **고르게 분산**시킵니다.
@@ -1644,8 +1644,8 @@ ML Test Score는 구글의 머신러닝 프로젝트 경험에서 발전된 엄�
 - "horizontal scaling" vs. vertical scaling
   → 수직 확장(더 좋은 서버로 교체)은 물리적 한계가 있음
   → 수평 확장은 더 일반적이고 클라우드에 적합한 방식
-![ref2]
-**2.2.5 Model Rollouts![ref2]**<br>
+!
+**2.2.5 Model Rollouts!**<br>
 Rollouts 이란?
 - ML 서비스를 관리하고 업데이트하는 방법
 효과적으로 모델을 업데이트하기 위해서는 다음과 같은 기능들이 필요
@@ -1658,7 +1658,7 @@ Rollouts 이란?
 1. 모델 파이프라인 배포(Deploy pipelines of models):\
    전체 모델이 아니라, 모델 전처리–예측–후처리 등의 파이프라인 흐름 전체를 배포하고 싶을 수 있습니다.
 이러한 기능을 갖추는 것은 상당한 인프라스트럭처 역량이 필요한 도전 과제이며, 이 과정은 이 강좌의 범위를 넘어섭니다.
-**2.2.6 Managed Options![ref2]**<br>
+**2.2.6 Managed Options!**<br>
 모든 주요 클라우드 제공업체들은 모델 배포를 위한 매니지드 서비스 옵션을 제공 하고 있고, BentoML이나 Banana 같은 여러 스타트업들도 솔루션을 제공하고 있습니다.
 - Amazon SageMaker 추천함
   - 장점: 주요 모델에 대한 wrapper 제공함
@@ -1667,7 +1667,7 @@ Rollouts 이란?
 \
 
 ![image-20250725-030248.png]**<br>3 - Move to the Edge?**
-![ref2]
+!
 **3 - Move to the Edge?**
 웹 서비스 대신 모델을 엣지(Edge) 또는 디바이스 내에 직접 배포해야 할 경우
 - 인터넷 연결이 불안정한 사용자를 대상으로 할 때
@@ -1685,7 +1685,7 @@ Rollouts 이란?
 |---|---|
 |1. **지연 시간(latency) 최소화**<br>   → 네트워크를 거치지 않고 **로컬 디바이스에서 직접 추론(inference)** 하므로 훨씬 빠릅니다.2. **무료로 확장되는 효과 (Scales "for free")**<br>   → 사용자의 디바이스에서 추론하므로, 서버를 늘릴 필요 없이 **사용자 수가 늘어나도 별도의 인프라 부담이 없습니다.**3. **웹 서비스를 운영하지 않아도 됨**<br>   → 서버 관리, 배포, 보안 같은 **백엔드 복잡도**를 걱정할 필요가 없습니다.|1. **하드웨어·소프트웨어 자원이 제한적**<br>   → 엣지 디바이스(예: 스마트폰, 차량, IoT 기기)는 **GPU 부족, 낮은 메모리/연산력** 등으로 인해 복잡한 모델 실행이 어렵습니다.2. **모델 업데이트가 어렵다**<br>   → 모델이 사용자의 디바이스에 배포되므로, **개발자가 직접 업데이트를 강제할 수 없고, 유저가 수동으로 해야 하는 경우도 많습니다.**|
 
-**3.1 Frameworks![ref2]**<br>
+**3.1 Frameworks!**<br>
 Picking the right framework to do edge deployment depends both on how you train your model and what the target device you want to deploy it on is.
 
 |**프레임워크**|**주요 용도 / 타겟 기기**|**특징 및 설명**|
@@ -1698,12 +1698,12 @@ Picking the right framework to do edge deployment depends both on how you train 
 |TensorFlow.js|웹 브라우저 상에서 추론|JavaScript 기반, 서버 없이 웹에서 ML 실행|
 |Apache TVM|디바이스/프레임워크 무관 범용 최적화 도구|다양한 환경에 배포 가능. TVM은 컴파일러 스택 형태|
 
-**3.2 Efficiency![ref2]**<br>
+**3.2 Efficiency!**<br>
 - 모델의 크기가 크면 엣지 디바이스에 배포해도 실행할 수 없음
 - 따라서 엣지 배포를 위해서는 모델 효율성이 매우 중요함
 - 이전에 모델 효율성을 높이는 방법으로 양자화(Quantization)와 지식 증류(Distillation)을 언급합.
 - 추가 적으로 엣지 환경에서 더 잘 작동하도록 특별히 설계된 신경망 구조(Network Architecture)\*\*도 존재함, 대표 적인 예가  MobileNets, DistillBERT 라고 언급
-**3.3 Mindset![ref2]**<br>
+**3.3 Mindset!**<br>
 엣지(Edge) 배포를 고려할 때 가져야 할 핵심적인 마인드셋
 1\. 아키텍처보다 "엣지 요구사항"이 먼저다
 - 고성능 모델을 먼저 선택했다가 엣지 디바이스에 올릴 수 없어 낭패 보는 경우가 많음.
@@ -2663,7 +2663,7 @@ LLM 연구의 핵심적인 발견은 \*\*"모델의 크기(파라미터 수)와 
 |Other Applications|[Codex](https://www.google.com/search?ved=1t:260882&q=Codex+AI+code+generation&bbid=6610095277986266443&bpid=230142984664126080), Semantic Search, Toolformer|코드 생성, 검색, 도구 연동 등|
 |CLIP & Image Gen|CLIP, [DALL·E](https://www.google.com/search?ved=1t:260882&q=DALL%C2%B7E+image+generation&bbid=6610095277986266443&bpid=230142984664126080), Diffusion|이미지-텍스트 정렬 및 생성|
 
-**4. Prompt Engineering (프롬프트 설계)![ref2]**<br>
+**4. Prompt Engineering (프롬프트 설계)!**<br>
 AI 모델의 약한 부분을 더 잘 이해하고 쓰기 위한 방법이 프롬프트 엔지니어링
 ![image-20250729-061050.png]
 a![image-20250729-061253.png]
@@ -2680,33 +2680,33 @@ TO-BE: 문자열 거꾸로 쓰기 성공
   2. 긴 지시문 구성, CSV 생성, 코드 작성 요령 등 format trick도 소개됨.\
   3. Prompt injection 공격 위험성도 경고됨.
 
-**4.1 Tokenization (토크나이제이션)![ref2]**<br>
+**4.1 Tokenization (토크나이제이션)!**<br>
 - 텍스트를 모델이 이해할 수 있는 단위인 토큰(token)으로 나누는 과정\
   GPT-3는 글자를 직접 보지 않고, **Byte Pair Encoding (BPE)** 방식을 사용하여 토큰 단위로 텍스트를 처리.
 - 예: "unbelievable" → ["un", "bel", "iev", "able"]
-**주요 문제점![ref2]**<br>
+**주요 문제점!**<br>
 - **문자 단위 작업에 약함** \
   예: "apple"을 거꾸로 출력하라고 해도 글자 단위로 처리하지 못해 실패 가능성이 높음
 - **띄어쓰기 적고 조사 많은 언어에 취약 (ex. 한국어)** \
   예: "갔어요" 같은 단어가 하나의 토큰으로 처리되어 내부 분해나 조작이 어려움
-**4.2 Scratch-pad (스크래치패드)![ref2]**<br>
+**4.2 Scratch-pad (스크래치패드)!**<br>
 GPT가 **논리적 추론 과정을 따라가도록 유도하는 프롬프트 전략**, 중간 계산 과정이나 사고 흐름을 프롬프트에 직접 명시함으로써 **정답률을 크게 향상**.
-**왜 사용하는가?![ref2]**<br>
+**왜 사용하는가?!**<br>
 - GPT는 복잡한 추론이나 계산 문제에 약함
 - 사람이 푸는 방식처럼 **"생각의 흐름(CoT, Chain-of-Thought)"을 유도하면** 더 나은 결과를 도출함
-**예시![ref2]**<br>
+**예시!**<br>
 Q: What is 23 × 17?\
 A: Let’s think step by step.\
 Step 1: 20 × 17 = 340\
 Step 2: 3 × 17 = 51\
 Step 3: 340 + 51 = 391\
 Answer: 391
-**효과![ref2]**<br>
+**효과!**<br>
 - 단순히 Answer: 391이라고만 지시하는 경우보다 정확도가 훨씬 높아짐
 - 대표적인 **Chain-of-Thought Prompting** 기법의 예시로 활용됨
 
-**4.3 프롬프트 엔지니어링의 주요 전략![ref2]**<br>
-**4.3.1. “Let’s think step by step” – Chain-of-Thought 유도![ref2]**<br>
+**4.3 프롬프트 엔지니어링의 주요 전략!**<br>
+**4.3.1. “Let’s think step by step” – Chain-of-Thought 유도!**<br>
 가장 대표적인 프롬프트 설계 기법,\
 “Let’s think step by step.”이라는 단 한 문장을 프롬프트에 추가하는 것만으로도, 모델은 문제를 **단계적으로 사고하고 계산**하게 됨.
 예를 들어, 수학 문제에서 단순히 Answer:만 요청하면 낮은 정확도를 보이지만, Let’s think step by step.을 추가하면 중간 계산을 수행하며 정확도가 크게 향상됩니다.
@@ -2718,7 +2718,7 @@ Answer: 391
 ![](Aspose.Words.e45a31d5-45a9-4228-a7e7-3034abe31d6d.055.png)[](https://blogger.googleusercontent.com/img/a/AVvXsEh93tkwyb2ZG8_nI0OPyuc0wNI7bhcHOATn8MfVRqROHVZdNN14asKSbQrbgc6tT3hptcyfPWL5S4EQyEHSdRDqmqmX908u9CQNxmEJjJ-UdlRJwtdr88iyzY8r15Qt628KVoYE8HZzjwLGAkspUhjh79QQcKnuK46LqRNM8LK80k4Hm-6-B5i70DEZhpAB)
 \
 
-**4.3.2. 긴 지시문(Long Instructions)이 효과적![ref2]**<br>
+**4.3.2. 긴 지시문(Long Instructions)이 효과적!**<br>
 GPT 계열 모델은 긴 문맥(Context Window)에 강점을 가지며, 매우 구체적이고 긴 지시문일수록 더 정확하고 의도에 부합하는 응답을 생성합니다.
 예: “너는 친절하고 논리적인 조수야. 질문을 받으면 먼저 정의를 설명한 후 단계별로 사고하여 답을 도출해.” 와 같이 상세하게 역할과 형식을 지시
 짧고 추상적인 지시보다, **역할(Role), 구조, 표현 방식**을 모두 포함하는 지시문이 효과적
@@ -2730,7 +2730,7 @@ GPT 계열 모델은 긴 문맥(Context Window)에 강점을 가지며, 매우 �
 입력/출력 모두 명확히 정의해줌으로써, 모델이 **의도대로 코드를 작성하고 데이터까지 생성**함.
 ![](Aspose.Words.e45a31d5-45a9-4228-a7e7-3034abe31d6d.057.png)[](https://blogger.googleusercontent.com/img/a/AVvXsEgBKP6p7SnASvZnvEJvKLWf8Wh7aQxbzvjFZ1jQRmHycU59Ca0QDIeC3xfqaOI30Y_O-RFwkM-ZsnM3FJ7TLMPqKfc70zwgTAddaKhnuopARB0Ik5An9-WRWQsTB5JfNTOmnQ6DofGpJpsYFoWbCJZ3KHGMjEBf461EOEU4AWpunC9GQ5GhcJdOaa6v6FK1)
 
-**4.3.3. Formatting Trick – 형식 구조 유도![ref2]**<br>
+**4.3.3. Formatting Trick – 형식 구조 유도!**<br>
 모델은 패턴을 학습하기 때문에, 출력 형식을 의도적으로 제시하면 그 포맷에 맞는 출력을 반복하려는 경향이 있습니다. 이를 이용하여 CSV, JSON, 코드, 리스트 등의 포맷을 강제로 유도할 수 있습니다.
 Input: Apple, Red → Output: Fruit \
 Input: Dog, Brown → Output: Animal 
@@ -2740,7 +2740,7 @@ Input: Dog, Brown → Output: Animal
 ![](Aspose.Words.e45a31d5-45a9-4228-a7e7-3034abe31d6d.059.png)[](https://blogger.googleusercontent.com/img/a/AVvXsEjEj3wmFyzYCr5w2qhHMJ631_DoP1GFEUaWQqfurViToK3k_mLiLOfgyEJfJIFPr3Xdd8y-9zEe8EaqT3NOKSazZexuks0v9Uubvm0wRPS0S1syaRqfZ2tUOv38Bf3RbIsY-Ew0eZkFm_J2oSmWs_ZXJgufmBQQRfE0d1_a126xW06GbkRguQifhk3VPDI8)
 \
 
-**4.3.4. Possession & Pwnage – 프롬프트 공격 위험![ref2]**<br>
+**4.3.4. Possession & Pwnage – 프롬프트 공격 위험!**<br>
 GPT 모델은 매우 순종적인 구조이기 때문에, 사용자가 입력에 **악의적인 명령**이나 **지시 무력화** 문장을 포함하면 시스템 프롬프트를 덮어쓸 수 있습니다.
 이를 **Prompt Injection** (또는 Model Possession)이라 부릅니다.
 - 예:\
@@ -2753,7 +2753,7 @@ GPT 모델은 매우 순종적인 구조이기 때문에, 사용자가 입력에
 ![](Aspose.Words.e45a31d5-45a9-4228-a7e7-3034abe31d6d.061.png)[](https://blogger.googleusercontent.com/img/a/AVvXsEgZRW8S_I98x5YzO8G3WeFZvbeoo1ZhsdGVcqdgmGwCylDIRcl_qs_ejlNxfJJRjrLtO6DfgXDVKDoxjAJY2HKwMQRr5q_PrGJguRZQfr4Hw4erQKKQ79HpEqc2L0VP2J_S9gqxOVH9bdwGKUk4m-KUC3oQvCc32gbmwofjWxMvZBUhAjg3mX-y26B2RGQn)
 \
 
-**4.3.5. Prompt 설계 도구들 (다만 GPT-3에는 제한적)![ref2]**<br>
+**4.3.5. Prompt 설계 도구들 (다만 GPT-3에는 제한적)!**<br>
 일부 오픈소스 도구들이 다양한 태스크별로 프롬프트 템플릿을 구성할 수 있게 해줌. 대표적인 예로 다음 두 가지가 있음.
 1. [**PromptSource**](https://www.google.com/search?ved=1t:260882&q=PromptSource+tool&bbid=6610095277986266443&bpid=230142984664126080)
    1. BigScience 프로젝트에서 만든 도구 [	GitHub - bigscience-workshop/promptsource: Toolkit for creating, sharing and using natural language prompts.](https://github.com/bigscience-workshop/promptsource)
@@ -2763,7 +2763,7 @@ GPT 모델은 매우 순종적인 구조이기 때문에, 사용자가 입력에
    1. 직접 모델 튜닝 및 실험에 적합
 다만 이들 도구는 **학습자나 연구자** 중심의 툴이며, GPT-3나 GPT-4 API를 호출하는 일반적인 상황에서는 직접 프롬프트를 설계하는 것이 여전히 더 효과적이라 이야기함.
 
-**5. Other Applications (기타 응용)![ref2]**<br>
+**5. Other Applications (기타 응용)!**<br>
 파운데이션 모델은 Code , Semantic Search, Going Cross-Modal 등 다양한 분야에 응용 될 수 있음.
 
 - **핵심 키워드**: Code Generation, [AlphaCode](https://www.google.com/search?ved=1t:260882&q=AlphaCode+AI&bbid=6610095277986266443&bpid=230142984664126080), Codex, [GitHub Copilot](https://www.google.com/search?ved=1t:260882&q=GitHub+Copilot&bbid=6610095277986266443&bpid=230142984664126080), Semantic Search, Toolformer, ReAct, Retrieval-Augmented Models, Cross-Modal
@@ -2772,8 +2772,8 @@ GPT 모델은 매우 순종적인 구조이기 때문에, 사용자가 입력에
   - **의미 검색**: 문장/문서 벡터 변환 후 유사도 기반 검색 구현 (FAISS 등).
   - **툴 사용**: 모델이 계산기, API, DB 호출 등 도구를 사용하는 ReAct, Toolformer 방식.
 
-**5.1 Code![ref2]**<br>
-**5.1.1. AlphaCode (DeepMind) – 대규모 트랜스포머 기반 코드 생성![ref2]**<br>
+**5.1 Code!**<br>
+**5.1.1. AlphaCode (DeepMind) – 대규모 트랜스포머 기반 코드 생성!**<br>
 - 매개변수 400억 개(40B)의 **Transformer 모델**을 사용
 - **GitHub에 존재하는 모든 코드**로 사전학습(pretraining)
 - **Codeforces 대회**에서 평균 이상의 성적 달성
@@ -2786,7 +2786,7 @@ GPT 모델은 매우 순종적인 구조이기 때문에, 사용자가 입력에
 **\
 \
 
-**5.1.1.1. Filtering generated outputs (출력 필터링)![ref2]**<br>
+**5.1.1.1. Filtering generated outputs (출력 필터링)!**<br>
 - 모델 출력이 항상 정확하지 않기 때문에, **검증 및 필터링 절차**가 중요
 - 방법:
   - 별도의 모델을 이용한 filtering
@@ -2795,7 +2795,7 @@ GPT 모델은 매우 순종적인 구조이기 때문에, 사용자가 입력에
 ![image-20250729-082631.png][image-20250729-061630.png]
 ![](Aspose.Words.e45a31d5-45a9-4228-a7e7-3034abe31d6d.063.png)[](https://blogger.googleusercontent.com/img/a/AVvXsEjUDOr3Siar8byPVOtmzhlwyZXwxoPOUwOdq4WViuWHbP5XN3WpSr8uWiBU6uZi7FkSY11W6FxpVHuKJu1lXnAw_YrvkTz3JcU0WF_Zt3TAVOiaZh4q73ktORt6sqPIEs1FpAa24RTKNseumolxugcOl8LDeLdUEUROBgmTy5_Bq-mr_1lxSJJyjTa34skl)
 
-**5.1.1.2. Self-Supervised Fine-Tuning 사례: 스스로 문제 만들기![ref2]**<br>
+**5.1.1.2. Self-Supervised Fine-Tuning 사례: 스스로 문제 만들기!**<br>
 - 최근 논문에서는:
   - LLM이 스스로 학습 문제(puzzle)를 생성해
   - 다시 **그 문제를 푸는 방식으로 성능 향상**
@@ -2806,21 +2806,21 @@ GPT 모델은 매우 순종적인 구조이기 때문에, 사용자가 입력에
 **\
 \
 
-**5.1.1.3 실제 제품화 사례![ref2]**<br>
+**5.1.1.3 실제 제품화 사례!**<br>
 - **GitHub Copilot**
   - 코드 자동완성, 함수 생성, 설명 등 다양한 개발자 워크플로우 지원
 - **Replit's Codegen Tool**
   - 비슷한 기능을 웹 기반 IDE에서도 구현
 
-**5.2 Semantic Search![ref2]**<br>
+**5.2 Semantic Search!**<br>
 사용자 쿼리(Query)와 문서(Document)를 같은 임베딩 공간(embedding space)에 매핑한 후, **의미적 유사도**를 비교하여 관련 정보를 검색하는 방법
-**5.2.1. Semantic Search 의 구현![ref2]**<br>
+**5.2.1. Semantic Search 의 구현!**<br>
 기존의 문제점: 고차원 벡터 연산의 확장성 한계
 - 임베딩은 보통 512차원 이상의 Dense float vector로 표현됨
 - 이러한 벡터를 수만~수백만 개 저장하고, 매번 실시간으로 코사인 유사도(cos(θ) | 1= 유사, -1= 다름, 0= 관련없음) 계산을 하면\
   → 계산량(computation)과 메모리 사용량(memory)이 급증
 - 일반적 탐색 방법으론 속도와 비용이 비효율적
-**전용 벡터 검색 라이브러리 활용![ref2]**<br>
+**전용 벡터 검색 라이브러리 활용!**<br>
 - **FAISS (Facebook AI Similarity Search)**
 \- Facebook에서 개발한 고속 벡터 검색 라이브러리
 \- 다양한 인덱싱 기법 (IVF, PQ, HNSW 등)을 통해 빠른 근사 유사도 검색 (Approximate Nearest Neighbor, ANN) 지원
@@ -2898,8 +2898,8 @@ Milvus, Qdrant, Weaviate, Pinecone 등도 벡터 검색 엔진으로 활용 가�
 - 여러 레이어가 겹치지 않고 계층 구조로 되어 있어,
 - 전체적으로 보면 평균 경로 길이가 log log N으로 **아주 효율적**이 된다.
 
-**5.3 Going cross-modal![ref2]**<br>
-**5.3.1 Flamingo![ref2]**<br>
+**5.3 Going cross-modal!**<br>
+**5.3.1 Flamingo!**<br>
 Flamingo는 이미지와 텍스트를 동시에 이해하는 모델이고, Perceiver Resampler는 이미지라는 그림을 문장처럼 읽을 수 있게 바꿔주는 번역기.
 
 |키워드|설명|
@@ -2914,19 +2914,19 @@ Flamingo는 이미지와 텍스트를 동시에 이해하는 모델이고, Perce
 ![](Aspose.Words.e45a31d5-45a9-4228-a7e7-3034abe31d6d.072.png)[](https://blogger.googleusercontent.com/img/a/AVvXsEgAtLVAmqObF0GA0xqgJ662_5Dnn9Aj2ryPdLax0ivTM7PW-uewTHbYgLyWk10ULhzaBsFPdk2SVA3bnc0EXWlL2YZsC-7sx6qgA6P7kxnPITgjZ-hT6UYVcNk-oqBW9uARC8OBzBNhL0dDoxTMhwQJ74tAWM_9TiftQkgsZ9Kn7t5uIvY1km6U7IqmtQa7)
 \
 
-**5.3.2 Socratic Models![ref2]**<br>
+**5.3.2 Socratic Models!**<br>
 여러 개의 대형 모델을 언어 프롬프트로 조합하여 새로운 작업을 수행하도록함.
 ![image-20250729-101859.png]
 ![](Aspose.Words.e45a31d5-45a9-4228-a7e7-3034abe31d6d.074.png)[](https://blogger.googleusercontent.com/img/a/AVvXsEhalBSwjpJIO3i_fCczevGvdn0yoXkTeYOVFIgZTWevXazztME_h58hHe2cAxUlV-OKjGuyPrPPvgd71S1YBo9FHd2MweetEeEnOsi2CgSIf8rZ0b5y7GATfenrWJeS-rEPifr_GpBMFsb7EuGUnOP8F1IXpv9Vci8fbcQhpczc5W9qIhRGrZJOiERFw97a)
 **\
 \
 
-**5.3.3 Foundation Models![ref2]**<br>
+**5.3.3 Foundation Models!**<br>
 ![image-20250729-102212.png]
 ![](Aspose.Words.e45a31d5-45a9-4228-a7e7-3034abe31d6d.076.png)[](https://blogger.googleusercontent.com/img/a/AVvXsEhoFakbmXLOOO_ieTQhf_6XY-FGkzrs2kZB7tV1V7sPdfS24gIEOOxYBZyyqX9o8YWG85PxxndFQjw2JckLBhp-Vv9_YYGRhePjwp14W5HO0jGevS0df0HPQ7CQdPSbp5KMs9Z8KE7kKE0UCBGOegu3V-LH3ra6xUTxH9oN5cf_H6PiYWTfPQ6KPjTIQX2j)
 \
 LLM은 언어에 국한되지 않고 이미지, 코드, 분자까지 다룬다. 그래서 Stanford는 “Foundation Model”이란 더 포괄적인 이름을 사용한다고 함. 단순하게는 “Large Neural Networks”라고 부를 수도 있지만, 이는 범위가 너무 넓어 실제 사용엔 불편하다고 함.
-**6. CLIP and Image Generation (멀티모달 & 이미지 생성)![ref2]**<br>
+**6. CLIP and Image Generation (멀티모달 & 이미지 생성)!**<br>
 
 - **핵심 키워드**: CLIP, Contrastive Learning, Zero-shot Classification, Image Captioning, DALL·E, Stable Diffusion, Flamingo, Text-to-Image, Diffusion Models
 - **설명**:
@@ -2934,14 +2934,14 @@ LLM은 언어에 국한되지 않고 이미지, 코드, 분자까지 다룬다. 
   - **이미지 생성 모델**: DALL·E, Stable Diffusion 등의 확산모델 기반으로 텍스트 입력 → 이미지 생성.
   - **Flamingo**: vision + language 결합한 멀티모달 QA 시스템.
 
-**6.1 CLIP![ref2]**<br>
+**6.1 CLIP!**<br>
 **텍스트로 이미지 검색**
 예: "고양이가 털뭉치를 가지고 노는 장면" → 가장 유사한 이미지를 찾아냄
 **이미지에 대한 설명 선택**
 이미지에 맞는 설명 문장을 고를 수 있음
 **Zero-shot 분류**
 카테고리 이름(예: "개", "고양이")만 제공하면, 분류기가 없어도 해당 카테고리에 맞는 이미지를 분류할 수 있음.
-**6.1.1 CLIP 모델 개요 (OpenAI, 2021)![ref2]**<br>
+**6.1.1 CLIP 모델 개요 (OpenAI, 2021)!**<br>
 - **CLIP (Contrastive Language–Image Pretraining)** 은 텍스트와 이미지를 **같은 임베딩 공간**에 매핑하는 모델
 - **텍스트**는 Transformer로, **이미지**는 ResNet 또는 Vision Transformer로 인코딩
 - **대조 학습(Contrastive Learning)**을 통해 텍스트-이미지 쌍을 **코사인 유사도**로 정렬
@@ -2949,7 +2949,7 @@ LLM은 언어에 국한되지 않고 이미지, 코드, 분자까지 다룬다. 
 \
 
 ![image-20250730-064416.png][image-20250729-061630.png]
-**6.1.2 CLIP Training![ref2]**<br>
+**6.1.2 CLIP Training!**<br>
 - **데이터**: 인터넷에서 수집한 **4억 개의 이미지-텍스트 쌍** 사용
 - **구조**:
   - **텍스트 인코더**: Transformer 기반
@@ -2963,7 +2963,7 @@ LLM은 언어에 국한되지 않고 이미지, 코드, 분자까지 다룬다. 
   - 이 이미지 임베딩과 텍스트 임베딩을 **서로 가깝게**
 - negative pair
   - "a photo of a cat" 같은 텍스트는 강아지 이미지와 **멀게**
-**6.1.2 CLIP Inference![ref2]**<br>
+**6.1.2 CLIP Inference!**<br>
 CLIP은 학습 시점에 특정 task(예: 개/고양이 분류)를 몰라도, **다양한 작업에 일반적으로 쓸 수 있는 임베딩**을 만들어냄.
 그래서 새로운 데이터셋을 만났을 때도 CLIP은 "Zero-shot"이나 "Linear probe"로 활용됨.
 - **Linear Probe 방식**
@@ -2981,7 +2981,7 @@ CLIP은 학습 시점에 특정 task(예: 개/고양이 분류)를 몰라도, **
     - 주어진 이미지와 라벨들의 **코사인 유사도**를 계산해서\
       → 가장 유사한 라벨을 선택
 
-**6.1.3 CLIP Open-source![ref2]**<br>
+**6.1.3 CLIP Open-source!**<br>
 CLIP은 이미지 → 임베딩, 텍스트 → 임베딩 구조입니다. 즉, 직접적으로 텍스트 → 이미지 또는 이미지 → 텍스트 변환을 하지 않습니다.
 대신 두 모달리티 간 임베딩 공간 상에서 유사도를 계산하여 관련성을 파악합니다.
 - **OpenAI가 CLIP 모델 전체 공개[**	GitHub - openai/CLIP: CLIP (Contrastive Language-Image Pretraining), Predict the most relevant text snippet given an image](https://github.com/openai/CLIP)**
@@ -2991,12 +2991,12 @@ CLIP은 이미지 → 임베딩, 텍스트 → 임베딩 구조입니다. 즉, �
   - 커뮤니티에서 CLIP을 다시 학습(re-train)한 버전입니다.
   - **LAION 데이터셋**(거대 이미지-텍스트 페어 데이터)으로 재학습해서 더 크고 성능이 좋은 모델을 배포함.
   - 일부 OpenCLIP 모델은 오리지널 CLIP보다 성능이 더 좋음.
-**6.1.4 Cross-modal search![ref2]**<br>
+**6.1.4 Cross-modal search!**<br>
 ![image-20250730-080915.png][image-20250729-061630.png]
 ![](Aspose.Words.e45a31d5-45a9-4228-a7e7-3034abe31d6d.078.png)[](https://blogger.googleusercontent.com/img/a/AVvXsEg4iuAxaOxjnqBkGFx7zY3TwnanBreY0UWwNGPBz22tC61dKoEZ6uDt-MMb4lV7bHNbcq-9cvfcGX-JXxzHJAWj4NhcZF2ZR-QwhtG7b5lUWWf2hP5cbZH0yGxOuIUemnlDdDuUBuVT_c2LIALE2JzkOuuPhvRHDn2c4PnIGbqqjPrWaZ3BImzsGaniNKRC)
 CLIP은 이미지와 텍스트를 공통 임베딩 공간(shared embedding space)에 매핑하기 때문에,\
 텍스트로 이미지를 검색하거나, 이미지로 텍스트를 검색할 수 있다.
-**6.1.5 CLIP Image Captioning (image → text)![ref2]**<br>
+**6.1.5 CLIP Image Captioning (image → text)!**<br>
 - ClipCap: CLIP Prefix for Image Captioning 논문에서 설명:
   - CLIP으로 이미지 임베딩 생성
   - 중간 Transformer가 이를 처리
@@ -3005,7 +3005,7 @@ CLIP은 이미지와 텍스트를 공통 임베딩 공간(shared embedding space
 \
 
 ![image-20250730-064811.png][image-20250729-061630.png]
-**6.1.6 CLIP Image Generation (text → image)![ref2]**<br>
+**6.1.6 CLIP Image Generation (text → image)!**<br>
 - Hierarchical Text-Conditional Image Generation with CLIP Latents 논문에서의 설명:
   - CLIP 임베딩을 기반으로 다른 생성 모델(n DALL-E 2’s case)이 활용 **(예: [**unCLIP**](https://www.google.com/search?ved=1t:260882&q=unCLIP+image+generation&bbid=6610095277986266443&bpid=230142984664126080) 방식 - text를 입력으로 image생성)**
 ![image-20250730-081525.png]
@@ -3024,7 +3024,7 @@ CLIP은 이미지와 텍스트를 공통 임베딩 공간(shared embedding space
 - 학습 데이터
   - DALL·E 2에서 사용된 정확한 **학습 데이터셋은 비공개**, 따라서 "Unclear training data"라고 명시됨.
 
-**6.2 Diffusion models![ref2]**<br>
+**6.2 Diffusion models!**<br>
 ![image-20250730-051522.png]
 ![](Aspose.Words.e45a31d5-45a9-4228-a7e7-3034abe31d6d.083.png)[](https://blogger.googleusercontent.com/img/a/AVvXsEgFKqVEUR0UWOyl9T5tc3tnuwAI9tRGBF-WMDoisH1eRJy68cfl_8EZtZwxdGLjcV9lKQJj7_uoOYYnX2X7jdgezEypcLBF99MA35fNzn326IGNQ64KAxaiEROc5VPWW7Ga1J-jvSiW-ns46Q-4pkwtXUOo0duT4SBXWzEL3aPfNbKw3SMWbkEaG81Gujjw)
 Diffusion Model
@@ -3033,7 +3033,7 @@ Diffusion Model
 - F**o**rward Diffusion - N**o**ising
 - R**e**verse Diffusion - D**e**noising
 DALL·E 2는 **텍스트로부터 이미지를 생성**하는 모델인데, 그 과정에서 **CLIP 임베딩 공간**과 **디퓨전 모델**을 연결하는 **prior 모델**이 중요한 역할을 합니다.
-**작동 순서![ref2]**<br>
+**작동 순서!**<br>
 1. **텍스트 입력 → CLIP 텍스트 임베딩**
    1. 예: "해변에 있는 빨간 큐브"
    1. 이 문장을 **CLIP의 텍스트 인코더**에 넣으면 고차원 임베딩 벡터가 생성됨 (텍스트 표현 벡터)
@@ -3070,7 +3070,7 @@ Application: unCLIP of images
 ![image-20250730-095855.png]
 ![](Aspose.Words.e45a31d5-45a9-4228-a7e7-3034abe31d6d.092.png)[](https://blogger.googleusercontent.com/img/a/AVvXsEg00w-RkHqKsEbpD50V7QUBrkjuZEIEUCKQY2jtHf3e7L0evk0wULJgKRk_sD2gUyb5gckgeJPSYJv1KlYgvNlyqLwWwB95ByV9Nu2owbbSAHzUcYRyQrChogfVvRHZTLOheQy03Y3kFJ9Q2ITlNbPHWaULfXKuW7Clt01E4D5hc4U-_SSuIPfo3xBIU-zx)
 Application: unCLIP both text and images
-**6.2.1 Imagen and Parti![ref2]**<br>
+**6.2.1 Imagen and Parti!**<br>
 → **구글은 DALL·E 2 이후 곧바로 Imagen과 Parti라는 모델을 발표했습니다.**
 - **Imagen**: 텍스트 → 이미지 생성 모델로, 높은 이미지 품질로 주목받음.
 - **Parti**: 또 다른 텍스트 기반 이미지 생성 모델이지만 **디퓨전 대신 다른 방식([**VQGAN**](https://www.google.com/search?ved=1t:260882&q=define+VQGAN&bbid=6610095277986266443&bpid=230142984664126080))** 사용.
@@ -3085,7 +3085,7 @@ Application: unCLIP both text and images
 **Parti 구조**
 **6.2.2 StableDiffusion (추가설명) - Latent Diffusion 이 public open됨**
 ![](Aspose.Words.e45a31d5-45a9-4228-a7e7-3034abe31d6d.095.png)[](https://blogger.googleusercontent.com/img/a/AVvXsEj-Qj8FqjSl4-bPKl0_Rdge8EIXQ1ArOtN5pc8WcOodHi2Nk4NacZGQhAfBjMLJoruaaGlO-XyNzCqF7NCDr7iMTGqXUkPvEFRedqza-ShZNoBdWpus3HTJDUTDilHvM2f9FIs2OFEjwA_NYlLfij_2Q0rNNUA4kBs37ToqdVg9uJM-UpdBstycIBGKulm0)
-![ref2]
+!
 ![image-20250730-061705.png]
 **"Latent Diffusion" model: diffuse in lower-dimensional latent space, then decode back into pixel space**\
 → **"Latent Diffusion 모델: 저차원의 잠재(latent) 공간에서 디퓨전을 수행한 뒤, 이를 다시 픽셀 공간으로 복원합니다."**
@@ -3392,25 +3392,25 @@ FNN은 트랜스포머의 각 인코더·디코더 블록에서 **어텐션 뒤*
       1. **BERT Large**: 24개의 인코더, 3.4억 개의 매개변수. 더 크고 복잡한 모델로, 더 뛰어난 성능을 보입니다.
 
 **1. BERT 소개** 
-![ref2]
-**BERT (Bidirectional Encoder Representations from Transformers)란?![ref2]**<br>
+!
+**BERT (Bidirectional Encoder Representations from Transformers)란?!**<br>
 **BERT**는 2018년 구글 AI 팀이 발표한 **양방향(다중directional) Transformer 인코더 기반 Pre-training 언어 모델** 입니다.\
 가장 큰 특징은 **문맥 전체를 동시에 바라보며** 토큰 표현을 학습한다는 점이며, 이를 통해 자연어 이해(NLU) 전반에 뛰어난 성능을 보입니다.
 
-**1) BERT의 핵심 개념과 등장 배경![ref2]**<br>
+**1) BERT의 핵심 개념과 등장 배경!**<br>
 - **양방향 트랜스포머 인코더**: BERT는 **트랜스포머(Transformer)의 인코더 부분만을 사용**하여 만들어진 모델입니다. 가장 큰 특징은 양방향(Bidirectional)으로 문맥을 학습한다는 점입니다. 이는 문장 내 특정 단어의 의미를 파악할 때, 그 단어의 앞과 뒤에 있는 모든 단어의 정보를 동시에 고려한다는 것을 의미합니다.
 - **기존 모델의 한계 극복**
   - **ELMo**: 왼쪽에서 오른쪽, 오른쪽에서 왼쪽으로 각각 학습된 두 개의 단방향 모델을 결합하는 '반(半)양방향' 방식을 사용했습니다.
   - **GPT**: 왼쪽에서 오른쪽으로만 학습하는 '단방향' 모델이었습니다. BERT는 이러한 한계를 극복하고 진정한 양방향 학습을 구현함으로써 더 정확한 언어 이해가 가능해졌습니다.
 
-**2) BERT의 두 가지 Pre-training 작업![ref2]**<br>
+**2) BERT의 두 가지 Pre-training 작업!**<br>
 BERT는 일반적인 언어 이해 능력을 습득하기 위해 두 가지 핵심적인 pre-training 작업을 수행합니다.
 - **마스크 언어 모델링(MLM; Masked Language Modeling)**: 문장에서 일부 단어를 무작위로 가린 후(마스크 처리), 가려진 단어가 무엇인지 예측하도록 모델을 훈련합니다. 이 과정을 통해 BERT는 문장의 맥락을 깊이 이해하게 됩니다.
   - **예시**: "나는 [MASK]를 좋아해"라는 문장이 주어지면, 모델은 문맥을 파악하여 [MASK]에 들어갈 가장 적절한 단어(예: '사과', '축구')를 예측합니다.
 - **다음 문장 예측(NSP; Next Sentence Prediction)**: 두 개의 문장이 주어졌을 때, 두 문장이 이어지는 관계인지 아닌지를 예측하도록 훈련합니다. 이를 통해 문장 간의 논리적, 의미적 관계를 파악하는 능력을 기르게 됩니다.
   - **예시**: "나는 밥을 먹었다. 그는 잠을 잤다"라는 두 문장이 이어지지 않는다는 것을 모델이 학습합니다.
 
-**3) 언어 모델의 역할![ref2]**<br>
+**3) 언어 모델의 역할!**<br>
 - **확률 모델**: 다음 단어가 무엇일지 예측하는 확률 모델입니다.
 - **PDF(Probability Distribution Function)**: 모델은 어휘집에 있는 모든 단어에 대해 확률을 계산하고, 가장 확률이 높은 단어를 선택하여 문장을 생성합니다.
   - **예시**: "상하이는 [MASK]의 도시이다"라는 문장에서, 모델은 '중국' 토큰에 가장 높은 확률을 부여하고 이를 선택합니다.
@@ -3435,14 +3435,14 @@ BERT는 일반적인 언어 이해 능력을 습득하기 위해 두 가지 핵�
 **1) 트랜스포머의 인코더와 디코더**
 ![](Aspose.Words.e45a31d5-45a9-4228-a7e7-3034abe31d6d.123.png)[](https://blogger.googleusercontent.com/img/a/AVvXsEioIqAm_xKVZ4t9S4jZe_0UibKTjzxo34_tpdmln2M3_DLco8i6fzmHrM4HdZie-c71ln6fD6zjC0GUqwutawIduorw8wVqRidgqUeCzko5Xb6Cytm4XKVUzhyqS1a1rKI-Z4q_bJrpoQ_XWD4IUGr4FmXK4Jr64ckO4HVwbcHUTfnL0pM1cYkT7VZwexnp)
 \
-**![ref2]**<br>
+**!**<br>
 ![image-20250807-052404.png]
 - **트랜스포머의 구조**: 트랜스포머는 인코더(Encoder)와 디코더(Decoder)로 구성됩니다. 인코더는 입력 문장의 정보를 파악하고, 디코더는 인코더가 파악한 정보를 바탕으로 새로운 문장을 생성합니다.
 - **BERT와 GPT의 차이**:
   - **BERT**는 텍스트를 이해하는 데 초점을 맞춰 **인코더 부분만** 사용합니다.
   - **GPT**는 텍스트를 생성하는 데 초점을 맞춰 **디코더 부분만** 사용합니다.
 
-**2) BERT의 두 가지 pre-training 작업![ref2]**<br>
+**2) BERT의 두 가지 pre-training 작업!**<br>
 BERT는 일반적인 언어 이해 능력을 습득하기 위해 두 가지 핵심적인 pre-training 작업인 **MLM**과 **NSP**를 사용합니다.
 ![image-20250807-070202.png]
 **대규모 훈련 데이터**
@@ -3452,7 +3452,7 @@ BookCorpus(8억 단어)와 위키피디아(25억 단어)는 바로 위에서 설
 \
 
 
-**- MLM (Masked Language Modeling)![ref2]**<br>
+**- MLM (Masked Language Modeling)!**<br>
 - **목적**: 문장 내 단어의 문맥을 이해하는 것입니다.
 - **작동 방식**: 문장의 일부 단어를 [MASK] 토큰으로 가린 후, 모델이 가려진 단어를 예측하도록 훈련합니다. 이 과정에서 BERT는 단어의 양방향 문맥을 모두 고려하여 정답을 찾습니다.
 ![image-20250807-070410.png]
@@ -3465,14 +3465,14 @@ BookCorpus(8억 단어)와 위키피디아(25억 단어)는 바로 위에서 설
 **\
 \
 
-**- NSP (Next Sentence Prediction)![ref2]**<br>
+**- NSP (Next Sentence Prediction)!**<br>
 - **목적**: 두 문장 간의 관계를 파악하는 것입니다.
 - **작동 방식**: 두 문장을 주고 이들이 논리적으로 이어지는 관계인지("참") 아닌지("거짓")를 예측하도록 모델을 훈련합니다. 이 작업을 통해 BERT는 문장 단위의 문맥 이해 능력을 기르게 됩니다.
   - **예시**: "국회의원들은 자신들이 역사의 옳은 편에 서 있다고 믿었다. 그래서 그들은 법을 바꿨다." 이 두 문장은 논리적으로 이어지므로 모델은 "참"으로 예측합니다. 반면, "토끼가 당근을 먹은 거예요." 같은 문장은 앞 문장과 관련이 없으므로 "거짓"으로 예측합니다.
 BERT는 **MLM**과 **NSP**라는 두 가지 pre-training 작업을 통해 단어 수준과 문장 수준의 문맥을 모두 이해하는 강력한 언어 모델이 될 수 있었습니다. 이러한 양방향 학습 방식은 이전 모델들이 가졌던 한계를 극복하는 혁신적인 접근법 입니다.
 
 
-**3. BERT 기술 설명(용어, 훈련 데이터, 성능, 그리고 다른 모델과의 비교)![ref2]**<br>
+**3. BERT 기술 설명(용어, 훈련 데이터, 성능, 그리고 다른 모델과의 비교)!**<br>
 - **Pre-training**
   - **마스크 언어 모델링 (Masked Language Modeling, MLM):**
     - 문장의 단어 일부(약 15%)를 [MASK] 토큰으로 가리고, 모델이 가려진 단어를 예측하도록 훈련합니다.
@@ -3495,7 +3495,7 @@ BERT-Large가 BERT-Base보다 더 많은 인코더 레이어와 더 큰 임베�
   - [SEP] **토큰**: 두 문장을 구분하는 역할을 합니다.
   - [MASK] **토큰**: 마스크 언어 모델링에서 단어를 가리는 데 사용됩니다.
 
-**1) Fine-tuning과 하위 작업![ref2]**<br>
+**1) Fine-tuning과 하위 작업!**<br>
 - **fine-tuning**: pre-training된 BERT 모델은 특정 하위 작업(downstream tasks)에 맞춰 fine-tuning 됩니다.
 - **하위 작업의 예시**:
   - **질의응답(QA)**
@@ -3505,7 +3505,7 @@ BERT-Large가 BERT-Base보다 더 많은 인코더 레이어와 더 큰 임베�
 ![ref7][](https://blogger.googleusercontent.com/img/a/AVvXsEinowuo8b6Lkl4P9_sCf6lXvB689gmdh_wNoDTVmVWYtD6h7WA-Q1fxQizMQmGuWlDQ-uWw3ZdPVPMh44BPt-v_iQKpBEdvmwxq5Xv970todL8Ejtc12CJ52k7ZQdQTnOPpXuEiPtdqq-f02Xun23XXFMfIOpaxI08r8m0DTT4LZc-IeewRUqvnhKaArxFg)
 \
 \
-**![ref2]**<br>
+**!**<br>
 ![image-20250807-070957.png]
 - **특수 토큰**: BERT는 문장을 처리하기 위해 수 토큰을 사용합니다.
   - [CLS] **(Classification)**: 항상 문장의 맨 앞에 위치하며, 문장 전체의 정보를 담는 역할을 합니다. 주로 분류(Classification) 작업에 사용됩니다.
@@ -3516,13 +3516,13 @@ BERT-Large가 BERT-Base보다 더 많은 인코더 레이어와 더 큰 임베�
   1. **세그먼트 임베딩(Segment Embeddings)**: 토큰이 문장 A에 속하는지, 문장 B에 속하는지를 구분하는 벡터입니다.
   1. **위치 임베딩(Position Embeddings)**: 문장 내에서 토큰의 순서 정보를 나타내는 벡터입니다. 이 세 가지 임베딩이 합쳐져 모델의 입력으로 사용됩니다.
 
-**3) 훈련 데이터 및 성능 평가![ref2]**<br>
+**3) 훈련 데이터 및 성능 평가!**<br>
 - **Pre-training 데이터:** BERT는 BookCorpus(8억 단어)와 위키피디아(25억 단어)를 포함한 방대한 양의 텍스트 데이터로 사전 훈련되었습니다.
 - **훈련 시간:** 사전 훈련에는 TPU(Tensor Processing Unit)를 사용하여 오랜 시간이 소요되지만, fine-tunning은 **TPU나 GPU**에서 몇 시간 안에 빠르게 완료될 수 있습니다.
 - **성능 평가**: BERT는 **GLUE(General Language Understanding Evaluation)** 벤치마크를 통해 성능을 평가받았습니다.
   - 특히 **BERT Large** 모델은 **MNLI(Multi-Genre Natural Language Inference)** 데이터셋에서 86.7%의 정확도를 기록하여, OpenAI GPT(82.1%)보다 훨씬 뛰어난 성능을 보였습니다.
 
-**4) BERT 모델의 구조와 다른 모델과의 비교![ref2]**<br>
+**4) BERT 모델의 구조와 다른 모델과의 비교!**<br>
 - **모델 구조 탐색**: BERT 모델의 최적 구조를 찾기 위해 여러 조합을 시도했습니다. 인코더의 개수(L), 임베딩 차원(H), 어텐션 헤드의 수(A)를 다양하게 바꾸며 실험했습니다.
   - 실험 결과, 인코더와 어텐션 헤드의 수를 늘릴수록 정확도가 향상되지만, 계산 복잡성 때문에 무한정 늘릴 수는 없다는 것을 발견했습니다.
   - 최종적으로 BERT Base(L=12,H=768,A=12)와 **BERT Large(L=24,H=1024,A=16)** 모델이 채택되었습니다.
@@ -3531,7 +3531,7 @@ BERT-Large가 BERT-Base보다 더 많은 인코더 레이어와 더 큰 임베�
   - **GPT**: 오른쪽 맥락(오른쪽→왼쪽)만 고려하는 단방향 모델입니다. 미래의 문맥을 예측할 수 없습니다.
   - **BERT**: **진정한 양방향(Bidirectional)** 모델입니다. 특정 단어를 예측할 때 앞뒤의 모든 단어 맥락을 동시에 고려하기 때문에 정확도가 높습니다. 이것이 BERT의 가장 큰 특징이자 성능 향상의 핵심입니다. 이러한 구조 덕분에 BERT는 훨씬 더 정확한 문맥 이해를 할 수 있습니다.
 
-**4. BERT의 핵심 구성 요소![ref2]**<br>
+**4. BERT의 핵심 구성 요소!**<br>
 - BERT가 트랜스포머의 인코더를 활용하여 어떻게 **입력 임베딩**을 구성하고, 여러 **인코더 스택**을 통해 문맥을 학습하며, 최종적으로 **분류 헤드**를 이용해 특정 작업을 수행하는지에 대한 세부적인 과정입니다.
 ![image-20250807-070712.png]
 ![image-20250807-070858.png][image-20250807-070410.png]
@@ -3545,12 +3545,12 @@ BERT-Large가 BERT-Base보다 더 많은 인코더 레이어와 더 큰 임베�
 
 
 
-**1) BERT 모델 아키텍처![ref2]**<br>
+**1) BERT 모델 아키텍처!**<br>
 - **트랜스포머의 구조:** 트랜스포머는 크게 인코더(Encoder)와 디코더(Decoder)로 구성됩니다.
   - **BERT**는 이 중 **인코더(Encoder)** 부분만을 사용하여 양방향 문맥을 학습합니다.
   - **GPT** 모델은 주로 **디코더(Decoder)** 부분을 사용하여 단방향으로 텍스트를 생성합니다.
 
-**2) BERT의 핵심 구성 요소![ref2]**<br>
+**2) BERT의 핵심 구성 요소!**<br>
 BERT 모델은 입력 데이터를 처리하고 최종 결과를 도출하기 위해 여러 층의 구성 요소를 사용합니다.
 **입력 임베딩 (Input Embeddings)**
 - BERT의 입력은 단순히 단어가 아닌, 세 가지 임베딩을 합친 것입니다.
@@ -3558,7 +3558,7 @@ BERT 모델은 입력 데이터를 처리하고 최종 결과를 도출하기 �
 - **세그먼트 임베딩:** 문장이 여러 개일 경우 각 문장을 구분하는 임베딩입니다.
 - **위치 임베딩:** 토큰의 순서 정보를 알려주는 임베딩입니다. 대본에서는 이 임베딩이 훈련 과정에서 학습되는 "학습 가능한(learnable)" 임베딩이라고 강조합니다.
 - 이 세 가지 임베딩을 합쳐서 최종 입력 벡터를 생성하고, 이 벡터는 인코더 스택으로 전달됩니다.
-**인코더 스택 (Encoder Stack)![ref2]**<br>
+**인코더 스택 (Encoder Stack)!**<br>
 - BERT는 여러 개의 인코더를 **층층이 쌓아(stack)** 만듭니다.
 - **BERT Base** 모델은 **12개**의 인코더를, **BERT Large** 모델은 **24개**의 인코더를 사용합니다.
 - 각 인코더는 **멀티-헤드 어텐션(Multi-Head Attention)** 메커니즘을 포함하고 있습니다. **BERT Base**는 12개의 어텐션 헤드를, **BERT Large**는 16개의 어텐션 헤드를 사용합니다.
@@ -3572,22 +3572,22 @@ BERT 모델은 입력 데이터를 처리하고 최종 결과를 도출하기 �
 - **키(Key):** 문장 내의 모든 다른 단어를 나타내는 벡터. "너는 나와 어떤 관련이 있는가?"라는 질문에 대한 답변입니다..
 - **값(Value):** 문장 내의 모든 다른 단어가 지닌 실제 정보를 나타내는 벡터입니다.
 각 어텐션 헤드는 쿼리 벡터와 모든 키 벡터 간의 **유사도**를 계산합니다.. 유사도가 높을수록 더 큰 가중치를 부여하고, 이 가중치를 해당 키와 연결된 값 벡터에 곱하고, 이 과정으로 현재 단어가 문장 내의 다른 어떤 단어에 집중해야 할지 결정합니다.
-**분류 헤드 (Classification Head)![ref2]**<br>
+**분류 헤드 (Classification Head)!**<br>
 - 인코더 스택의 마지막 출력은 특정 작업에 맞게 변환되어야 합니다. 이 역할을 하는 것이 **분류 헤드**입니다.
 - **분류(Classification) 작업:** 문장 전체의 의미를 파악하는 작업(예: 감성 분석)의 경우, [CLS] 토큰의 최종 출력에 분류 헤드를 연결하여 결과를 얻습니다.
 - **토큰 분류(Token Classification) 작업:** 개별 토큰에 대한 의미를 파악하는 작업(예: 개체명 인식)의 경우, 각 토큰의 출력에 분류 헤드를 연결합니다.
 - **소프트맥스(Softmax) 함수:** 분류 헤드는 보통 소프트맥스 활성화 함수를 사용하여 각 클래스에 대한 **확률 분포**를 출력합니다. 예를 들어, 3개의 클래스가 있다면 3개의 뉴런이 확률을 계산합니다.
 
 
-**5. BERT 모델 입력 임베딩(Input Embedding)![ref2]**<br>
-**1) BERT의 입력 토큰화 ![ref2]**<br>
+**5. BERT 모델 입력 임베딩(Input Embedding)!**<br>
+**1) BERT의 입력 토큰화 !**<br>
 BERT는 입력 문장을 단순히 단어 단위로 나누지 않고, **WordPiece 토큰화**를 사용합니다.
 - **목적:** WordPiece 토큰화는 제한된 어휘 크기(BERT의 경우 3만 개)를 효율적으로 관리하기 위해 고안되었습니다.
 - **작동 방식:** playing과 같은 단어는 play와 ####ing으로 분리됩니다. play는 흔히 사용되는 단어(접두사)이므로 독립된 토큰으로, ####ing는 뒤에 붙는 형태(접미사)이므로 #### 기호와 함께 별도의 토큰으로 처리됩니다.
 - **효과:** 이 방식은 희귀하거나 처음 보는 단어라도 이미 학습된 토큰의 조합으로 표현할 수 있게 해주어, 사전에 포함되지 않은 단어(Out-Of-Vocabulary, OOV) 문제를 해결하고 모델의 크기를 줄이는 데 기여합니다
 **WordPiece 토큰화**
 단어를 의미 있는 작은 단위로 쪼개어, 처음 보는 단어도 학습된 조각들의 조합으로 처리할 수 있게 해줍니다. 예를 들어, 'unbelievable'이라는 단어를 'un'과 'believe', 'able'로 분리하여 OOV 문제를 완화합니다.
-**2) 입력 임베딩의 구성 요소![ref2]**<br>
+**2) 입력 임베딩의 구성 요소!**<br>
 BERT의 최종 입력 임베딩은 세 가지 임베딩을 합쳐서 만들어집니다.
 - **토큰 임베딩 (Token Embeddings):**
   - 각 토큰([CLS], my, dog, is, cute, [SEP], he, play, ####ing, [SEP])에 대한 고유한 벡터 표현입니다.
@@ -3602,7 +3602,7 @@ BERT의 최종 입력 임베딩은 세 가지 임베딩을 합쳐서 만들어�
   - [CLS]는 0, my는 1, dog는 2와 같이 각 토큰에 고유한 위치 ID가 부여되며, 이에 상응하는 임베딩 벡터가 학습됩니다.
   - 이 임베딩은 트랜스포머 모델이 순서 정보를 처리할 수 있도록 돕습니다.
 
-**3) 최종 입력 벡터의 계산![ref2]**<br>
+**3) 최종 입력 벡터의 계산!**<br>
 - 위의 세 가지 임베딩(토큰 임베딩, 세그먼트 임베딩, 위치 임베딩)을 모두 **더하여** 최종 입력 벡터를 만듭니다.
 - 이 모든 임베딩의 차원은 모델 차원(BERT Base는 768, BERT Large는 1024)과 동일합니다.
 - 이렇게 생성된 최종 입력 벡터는 BERT의 인코더 스택으로 전달되어 본격적인 학습 및 예측 과정에 사용됩니다.
@@ -3622,12 +3622,12 @@ BERT의 최종 입력 임베딩은 세 가지 임베딩을 합쳐서 만들어�
    1. 각 임베딩의 차원(크기)은 **BERT Base**의 경우 768, **BERT Large**의 경우 1024로 고정됩니다.
 
 
-**6. BERT의 출력 및 Pre-training![ref2]**<br>
+**6. BERT의 출력 및 Pre-training!**<br>
 **1) BERT의 출력 처리 과정**
 ![](Aspose.Words.e45a31d5-45a9-4228-a7e7-3034abe31d6d.140.png)[](https://blogger.googleusercontent.com/img/a/AVvXsEhgnLmyEy1R2IzmbwJpw5d3l-k4Ls97vKNvMAcnR4uxAOZWXYnUFHUq9feeFPcRmAsxrmegXynQUchdE104wYOtoEohxAE-A2dAiEL8f9dtM_jEZ9U54wjPgqDURGM97dEp5srszeZxpGRy-gmSDst1TCXpwzrYoMQ3yTjFDm5nh0Oq-sZJmcqBIqXLOppJ)
 \
 \
-**![ref2]**<br>
+**!**<br>
 ![image-20250807-071353.png]
 입력 문장이 BERT 모델의 인코더 스택을 통과하면, 각 토큰에 대한 컨텍스트 벡터(context vector)가 생성됩니다. 이 컨텍스트 벡터는 문장 전체의 맥락 정보가 담긴 고차원의 벡터입니다.
 1. **입력 처리:** 먼저 문장(My dog is cute. He likes playing.)은 **WordPiece 토큰화**를 거칩니다. 이 토큰들에 **토큰, 세그먼트, 위치 임베딩**을 더해 최종 입력 벡터를 만듭니다.
@@ -3636,7 +3636,7 @@ BERT의 최종 입력 임베딩은 세 가지 임베딩을 합쳐서 만들어�
    1. **MLM(마스크 언어 모델링)의 경우:** [MASK] 토큰에 해당하는 컨텍스트 벡터가 분류 헤드(Classification Head)로 전달됩니다. 이 헤드는 **소프트맥스 함수**를 사용하여 3만 개의 사전 어휘 중 어떤 단어가 가장 적절한지 확률 분포를 예측합니다. 가장 높은 확률의 단어를 최종 출력으로 선택합니다.
    1. **NSP(다음 문장 예측)의 경우:** [CLS] 토큰에 해당하는 컨텍스트 벡터가 분류 헤드로 전달됩니다. 이 헤드는 두 문장이 서로 이어지는지 여부를 예측하기 위해 **두 개의 뉴런**을 사용하며, 이진 분류(binary classification)를 수행합니다.
 
-**2) BERT의 Pre-training![ref2]**<br>
+**2) BERT의 Pre-training!**<br>
 BERT의 사전 훈련은 두 가지 과제로 구성되며, 각각 다른 손실 함수를 사용합니다.
 - **마스크 언어 모델링 (MLM)**
 - **목표:** 문맥을 통해 가려진 단어를 예측하는 것.
@@ -3664,7 +3664,7 @@ BERT의 사전 훈련은 두 가지 과제로 구성되며, 각각 다른 손실
 이 두 손실 함수를 통해 BERT는 문장의 의미(MLM)와 문장 간의 관계(NSP)를 동시에 학습하며, 모델의 가중치를 효율적으로 업데이트합니다.
 
 
-**7. BERT Fine-tuning![ref2]**<br>
+**7. BERT Fine-tuning!**<br>
 BERT의 fine-tuning은 pre-training된 모델을 특정 하위 작업(downstream tasks)에 맞춰 재훈련하는 과정입니다. 이 과정을 통해 모델은 pre-training으로 습득한 일반적인 언어 능력을 바탕으로, 특정 작업에 특화된 성능을 발휘하게 됩니다.
 **fine-tuning**
 **사전 학습된 모델의 가중치를 초기값**으로 사용하고, **소량의 레이블이 있는 데이터**로 모델을 추가로 학습시킵니다. 이 과정에서 모델의 맨 위에 특정 작업에 맞는 출력 레이어(예: 분류기)를 추가하고, 전체 모델의 가중치를 미세하게 조정합니다.
@@ -3675,7 +3675,7 @@ BERT의 fine-tuning은 pre-training된 모델을 특정 하위 작업(downstream
 [](https://blogger.googleusercontent.com/img/a/AVvXsEjPc9rxHAgO6QoHIaQ7ZoGno5Fysylzi6wOXY0Yk6znXOtZYKWxbk4HbzAAthT4VqLASS3u88_wvFcHFsvN-QUutgbjFgttKwMZtWdrv_5DKuXKFHOcnvRArPW1I7fLEf0I3K3xf0DxyyQlCamwj4WQRzipKtCqP_HzwXwQuWQZmED4ecXgx1xVBD17Sy84)![](Aspose.Words.e45a31d5-45a9-4228-a7e7-3034abe31d6d.146.png)[](https://blogger.googleusercontent.com/img/a/AVvXsEh9wF0aCUA_s-NDNue3eGS2wByxrcaeQal39eJu4ugsCjB6PFbHN0qqcO7qtnaGkk9NQZABCw2BdwgLwaBx0mhSabrWnyd_oF4tzlqrp4XX1lXdcUFkbn35MfR8Qo3_aWBZ1szowzNdwRwTmvwizgLbhxOHB6I2riwJ_I2oDPKqhyGPJvQsnkQK48hkmMSe)
 \
 \
-**![ref2]**<br>
+**!**<br>
 ![image-20250807-072620.png]
 ![ref6][](https://blogger.googleusercontent.com/img/a/AVvXsEiGJARyDkSVN8fmqpmJ5TfXlx8sl9QFS2WmxjqrEKgpxJ0R0xYXbx88XXlqH7e3JE6bmxXM8z2Q2e9vhKcApDWaziMUtgDFwwB4URnHlRBGQtgW3zDg8afk4Fy-E1pXyF3bB_octGE1M_H-k2vWYvZsbIG23hUyvedqpMprhA1ASO-CR-8voIcP3Ez7Fbtu)
 \
@@ -3698,7 +3698,7 @@ BERT는 fine-tuning을 통해 다음과 같은 다양한 자연어 처리(NLP) �
 - **질문 응답(Question Answering)**: 주어진 질문과 문단에서 정답의 **시작 토큰과 끝 토큰**을 예측합니다. 각 토큰에 대한 분류 헤드를 적용하여 해당 토큰이 정답의 시작이거나 끝일 확률을 계산합니다.
 - **토큰 분류(Token Classification)**: 문장 내 각 단어에 라벨을 부여하는 작업입니다. 개체명 인식(Named Entity Recognition, NER)이 대표적이며, 각 토큰의 컨텍스트 벡터를 사용하여 해당 토큰의 품사나 개체명을 예측합니다.
 
-**3) 성능 평가와 벤치마크![ref2]**<br>
+**3) 성능 평가와 벤치마크!**<br>
 BERT 모델은 미세 조정 후 성능을 평가하기 위해 다양한 **벤치마크**를 사용합니다.
 - **GLUE(General Language Understanding Evaluation)**: 다양한 NLP 작업 데이터셋(MNLI, QQP, QNLI 등)으로 구성된 벤치마크입니다. BERT는 GLUE 벤치마크에서 기존 모델들을 능가하는 우수한 성능을 보였습니다.
 - **SQuAD(Stanford Question Answering Dataset)**: 질문-응답 작업에 특화된 데이터셋입니다.
@@ -4335,7 +4335,7 @@ QLoRA는 원래 모델 weight를 4bit 양자화(FP32 → 4bit) 해서 GPU 메모
   - 자원 여유 → Adapter
   - 중간 규모 모델 (7B ~ 13B) + 빠른 학습 → LoRA
   - 초거대 모델 (33B 이상) + 제한된 GPU 자원 → QLoRA
-[ref2]: Aspose.Words.e45a31d5-45a9-4228-a7e7-3034abe31d6d.002.png
+: Aspose.Words.e45a31d5-45a9-4228-a7e7-3034abe31d6d.002.png
 [image-20250725-002701.png]: Aspose.Words.e45a31d5-45a9-4228-a7e7-3034abe31d6d.003.png
 [image-20250725-030248.png]: Aspose.Words.e45a31d5-45a9-4228-a7e7-3034abe31d6d.011.png
 [image-20250725-031528.png]: Aspose.Words.e45a31d5-45a9-4228-a7e7-3034abe31d6d.013.png

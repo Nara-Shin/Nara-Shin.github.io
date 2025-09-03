@@ -50,9 +50,9 @@ SGD (Stochastic Gradient Descent):** 전체 데이터 대신 미니배치로 기
 [**Adam**](https://www.google.com/search?ved=1t:260882&q=Adam+optimizer&bbid=6610095277986266443&bpid=230142984664126080):** Momentum + Adagrad 장점 결합 → 가장 널리 사용되는 옵티마이저<br>**-
 역전파(Backpropagation):** 순전파에서 값 저장 → 역전파에서 연쇄법칙으로 기울기 계산 (자동 미분 활용)<br>**-
 아키텍처 고려:** Fully connected는 일반적 구조, ConvNet은 시각 정보 처리 강점, RNN은 시퀀스 데이터 처리 적합<br>**-
-[**GPU**](https://www.google.com/search?ved=1t:260882&q=GPU+%EB%94%A5%EB%9F%AC%EB%8B%9D&bbid=6610095277986266443&bpid=230142984664126080)와 딥러닝 붐:** 2013년 이후 CUDA·GPU 병렬처리 덕분에 급성장. 대부분 연산은 행렬 곱셈 기반|
-|---|
-|<br>**[딥러닝 기본 개요]<br>인공신경망(Neural Networks)**|
+[**GPU**](https://www.google.com/search?ved=1t:260882&q=GPU+%EB%94%A5%EB%9F%AC%EB%8B%9D&bbid=6610095277986266443&bpid=230142984664126080)와 딥러닝 붐:** 2013년 이후 CUDA·GPU 병렬처리 덕분에 급성장. 대부분 연산은 행렬 곱셈 기반
+
+<br>**[딥러닝 기본 개요]<br>인공신경망(Neural Networks)**
 - **영감**: 생물학적 뉴런
   - 입력값 (x0, x1, x2, ...) → 가중치 (w0, w1, w2, ...)와 곱해짐→ 편향(바이어스) 더함(∑(wi \* xi) + b) → **활성화 함수** 통과 → 출력
 - **목적**: 복잡한 함수를 근사해 데이터 기반 의사결정 자동화
@@ -352,22 +352,13 @@ Head 2 (Supervised): 소량 라벨 데이터로 학습 (예: 감성 분석 등)
 
 
 **✅ 마무리 요약**
-|`
- 
-`🎯 목표|**라벨 없이 학습**할 수 있는 표현(Representation) 학습|
+
+|🎯 목표|**라벨 없이 학습**할 수 있는 표현(Representation) 학습|
 |---|---|
-|`
- 
-`🔍 주요 기법|Noisy Student, GPT, BERT, [SimCLR](https://www.google.com/search?ved=1t:260882&q=SimCLR&bbid=6610095277986266443&bpid=230142984664126080), [MoCo](https://www.google.com/search?ved=1t:260882&q=MoCo&bbid=6610095277986266443&bpid=230142984664126080) 등|
-|`
- 
-`⚡ 패러다임 전환|“Supervised가 전부다” → “Unsupervised에서 출발, fine-tuning으로 완성”|
-|`
- 
-`📊 실용화|NLP는 완전히 전환 완료, Vision은 확산 중|
-|`
- 
-`📌 학습 방식|예측, 재구성, 대조적 학습, 회전 등 다양한 과제 활용|
+|🔍 주요 기법|Noisy Student, GPT, BERT, [SimCLR](https://www.google.com/search?ved=1t:260882&q=SimCLR&bbid=6610095277986266443&bpid=230142984664126080), [MoCo](https://www.google.com/search?ved=1t:260882&q=MoCo&bbid=6610095277986266443&bpid=230142984664126080) 등|
+|⚡ 패러다임 전환|“Supervised가 전부다” → “Unsupervised에서 출발, fine-tuning으로 완성”|
+|📊 실용화|NLP는 완전히 전환 완료, Vision은 확산 중|
+| 📌 학습 방식|예측, 재구성, 대조적 학습, 회전 등 다양한 과제 활용|
 
 **[Reinforcement Learning]**<br>
 
@@ -377,6 +368,7 @@ Head 2 (Supervised): 소량 라벨 데이터로 학습 (예: 감성 분석 등)
 - 일반적인 딥러닝은 **패턴 인식기**(pattern recognizer)로 작동
 - 하지만 \*\*강화학습(RL)\*\*은 \*\*에이전트(agent)\*\*가 되어 **세계를 변화시키고**, 그 변화로부터 다시 학습하는 **순환 구조**
 **핵심 구성요소**
+
 |Agent|환경과 상호작용하는 AI 시스템|
 |---|---|
 |Environment|에이전트가 행동을 수행하는 세계|
@@ -390,7 +382,8 @@ Head 2 (Supervised): 소량 라벨 데이터로 학습 (예: 감성 분석 등)
 **2. 🎯 RL이 어려운 이유**
 **❗ 주요 도전 과제**
 |🧾
-**Credit Assignment Problem**|결과가 좋거나 나빴을 때, 그 원인이 어떤 행동 때문이었는지 파악 어려움 (ex. 파이가 맛없을 때 무엇이 잘못됐는지?)|
+**Credit Assignment Problem**|결과가 좋거나 나빴을 때, 그 원인이 어떤 행동 때문이었는지 파악 어려움 (ex. 파이가 맛없을 때 무엇이 잘못됐는지?)
+
 |---|---|
 |🌀
 **학습 불안정성(Stability)**|시행착오(trial and error) 기반이므로
@@ -1505,6 +1498,7 @@ ML Test Score는 구글의 머신러닝 프로젝트 경험에서 발전된 엄�
    1. 실시간 반응이 중요한 경우(예: 모바일, IoT), 모델을 사용자가 가까운 위치(엣지)로 옮깁니다.
 
 **1 - Build a Prototype To Interact With![ref2]**<br>
+
 |항목|요점|
 |---|---|
 |UI 도구|Gradio, Streamlit 추천 – 빠르고 쉽다|
@@ -1518,6 +1512,7 @@ ML Test Score는 구글의 머신러닝 프로젝트 경험에서 발전된 엄�
 1. model-in-service
 1. model-as-service 
 1. model-on-edge
+
 |항목|Model-in-Service|Model-as-a-Service|Model-on-Edge|
 |---|---|---|---|
 |**구조**|모델이 웹 서버에 **직접 포함**됨|모델이 **별도의 독립 서버/API**로 운영됨|모델이 **디바이스(엣지)에 내장**됨|
@@ -1531,6 +1526,7 @@ ML Test Score는 구글의 머신러닝 프로젝트 경험에서 발전된 엄�
 초기에 언급한 **프로토타입 접근법은 "Model-in-Service" 방식**에 해당합니다.\
 즉, **웹 서버 내부에 모델을 함께 포함하여 배포**하는 구조입니다.
 ![](Aspose.Words.e45a31d5-45a9-4228-a7e7-3034abe31d6d.006.png)[](https://blogger.googleusercontent.com/img/a/AVvXsEgQgS0kWhNeKWmScirmXLHW0_6554OkLkyRMImV-C7C8yqsEDccVIf-dDAUqXXS7bJ7z5b7NS2PefgEguDgeQV68yj5M9pERiWzqlxp4EcW9rTTHnn49sZ8OYz3uar1Z6QCXJZFIX6rasqr7zRM2EF3Dw3T3uY1XWf1yeUeu_RdpYswu2iDvN_rRbHIt1bd)
+
 |**장점**|**단점**|
 |---|---|
 |1. **복잡한 애플리케이션에서도 기존 인프라를 그대로 재사용**할 수 있습니다.2. 모델 개발자는 새로운 시스템을 처음부터 따로 세팅할 필요 없이,<br>   기존 웹 서버 환경에서 모델을 쉽게 테스트할 수 있습니다.3. "model-in-service"는 **복잡한 구조 없이 빠르게 통합하고 실험할 수 있는 실용적인 방식**|1. **웹 서버와 모델 언어가 다를 수 있음**&emsp;o 예: 웹 서버는 Node.js인데, 모델은 Python으로 되어 있다면 통합이 까다롭습니다.2. **모델이 서버 코드보다 더 자주 바뀜**&emsp;o 모델 개발 초기에 특히 그러하며,&emsp;o 매번 모델을 업데이트할 때마다 전체 애플리케이션을 **재배포해야 하는 부담**이 생깁니다.3. **모델이 커질수록 서버 자원을 많이 사용**&emsp;o 대용량 모델을 웹 서버에 탑재하면,&emsp;o 그 모델이 **웹 서버의 CPU, RAM을 잠식**하여<br>&emsp;  모델과 무관한 사용자에게도 **느린 응답**을 유발할 수 있습니다.4. **웹 서버는 ML 작업에 최적화되어 있지 않음**&emsp;o 대부분의 웹 서버는 **GPU가 없고**,&emsp;o ML 추론에 필요한 **병렬 처리나 메모리 처리 능력이 부족**합니다.5. **모델과 애플리케이션의 확장(스케일링) 특성이 다름**&emsp;o 애플리케이션은 하루 10만 건, 모델은 1만 건 등의 차이가 있을 수 있음&emsp;o 그런데 같이 묶여 있으면 **개별적으로 확장하거나 줄일 수 없음**|
@@ -1550,6 +1546,7 @@ ML Test Score는 구글의 머신러닝 프로젝트 경험에서 발전된 엄�
 - 작업(Task) 간의 **의존 관계를 방향성 있는 그래프로 표현**하는 구조
 - 반복(순환)이 없는 구조 → 예: A → B → C
 - ML 파이프라인이나 ETL 작업을 자동화할 때 많이 사용됨
+
 |**장점**|**단점**|
 |---|---|
 |1. **구현이 간단**<br>   이미 모델 학습 시 사용하는 \*\*배치 처리 도구(batch processing tools)\*\*를 재사용할 수 있기 때문입니다.2. **확장성(스케일링)이 뛰어남**<br>   데이터베이스는 수십 년간 이런 목적(대규모 데이터 처리)을 위해 설계되어 왔기 때문에,<br>   **큰 규모의 예측 작업에도 문제 없이 확장**할 수 있습니다.3. **검증된 패턴**<br>   겉보기에는 단순한 방식처럼 보일 수 있지만,<br>   **대규모 서비스에서도 실제로 오랫동안 사용된 안정적인 방식**입니다.<br>   믿고 사용할 수 있는 **검증된(= tried-and-true)** 예측 방식입니다.4. **예측 결과 조회가 빠름**<br>   예측값은 **애플리케이션이 바로 접근할 수 있도록** 데이터베이스에 저장되어 있기 때문에,<br>   빠르게 조회할 수 있습니다.|1. **배치 예측은 복잡한 입력 형태에는 부적합함**<br>   예를 들어, 입력값의 조합이 너무 다양해서 **모든 경우를 미리 예측하여 저장할 수 없는 경우**,<br>   이 방식은 적합하지 않습니다.2. **사용자는 최신 예측 결과(**up-to-date predictions**)를 확인 할수 없음**<br>   모델에 들어가는 입력값이 실시간으로 변화 한 다면 **하루에 한 번만 실행되는 배채 작업은** <br>   사용자에게 보여지는 예측 결과는 이미 구식(=stale)일 수 있습니다.3. **모델 자체도 stale(오래됨, 낡음)될수 있음**<br>   배치 작업이 **실패하거나 누락되었을 때**, 그 사실을 **즉시 파악하기 어려워**, 사용자는 오래된 결과를 계속 보게 될 수도 있습니다.|
@@ -1557,6 +1554,7 @@ ML Test Score는 구글의 머신러닝 프로젝트 경험에서 발전된 엄�
 **모델을 온라인에서 독립된 서비스 형태로 실행하고 백엔드나 클라이언트와 통신**함
 백엔드 또는 사용자 디바이스가 **모델 서비스에 요청(request)을 보내고**, **예측 결과(response)를 응답받는 방식**
 ![](Aspose.Words.e45a31d5-45a9-4228-a7e7-3034abe31d6d.009.png)[](https://blogger.googleusercontent.com/img/a/AVvXsEh24w0BU0WGCm2ckhmdo93CTQm4z-37-GLu8J6i9-nFGl0VfV69EVaYPmrzay_37DvVj-ts3cpkTDtz4evpd_4j-qqHzKaGRkaW8u7hhWQYQcvJVrO9OIoLHucEef8ffoxJMYbJ_kdw277eOfaKJohjUVMxQiduVz-TQcOVqPew4jRiuHxHkpW3ed44QVt7)
+
 |**장점**|**단점**|
 |---|---|
 |1. **신뢰성 (Dependability)**<br>   모델에 버그가 있어도 **웹 애플리케이션 전체가 크래시될 가능성이 낮습니다.**2. **확장성 (Scalability)**<br>   모델에 **적합한 하드웨어를 선택해서 따로 확장**할 수 있습니다.3. **유연성 (Flexibility)**<br>   **하나의 모델을 여러 애플리케이션에서 재사용**하기가 쉽습니다.|1. **네트워크 지연 (Latency)**<br>   서버나 클라이언트가 모델과 통신할 때 **네트워크 호출이 추가**되어,<br>   애플리케이션에 **지연 시간이 생길 수 있습니다.**2. **인프라 복잡성 (Infrastructure complexity)**<br>   **별도의 모델 서비스를 직접 호스팅 및 운영**해야 하므로,**인프라 관리 부담이 증가**합니다.|
@@ -1576,6 +1574,7 @@ ML Test Score는 구글의 머신러닝 프로젝트 경험에서 발전된 엄�
 - **gRPC**: TensorFlow Serving에서 사용됨.
 - **GraphQL**: 웹 개발에서는 흔하지만, **모델 서비스에는 그다지 적합하지 않음**.
 추가 적으로 ML 서비스를 위한 REST API의 표준 인터페이스가 없음.
+
 |클라우드|기대 포맷|비고|
 |---|---|---|
 |Google Cloud|"instances" 리스트|TensorFlow Serving 등에서 사용|
@@ -1588,6 +1587,7 @@ ML Test Score는 구글의 머신러닝 프로젝트 경험에서 발전된 엄�
 **첫번째 모델을 "어디서든 실행 가능한 중립적인 형식(agnostic format)"으로 저장하여, 의존성을 제한하는 방법**\
 → 특정 프레임워크나 환경에 종속되지 않는 형식으로 모델을 저장하면, 어느 환경에서든 재현 가능해짐\
 -> 예: ONNX → PyTorch, TensorFlow, scikit-learn 어디서든 실행 가능
+
 |항목|설명|
 |---|---|
 |✅ ONNX의 목표|다양한 프레임워크/언어 간 **모델 포맷 호환성** 확보|
@@ -1680,12 +1680,14 @@ Rollouts 이란?
 \
 
 ![image-20250725-031528.png]
+
 |**장점**|**단점**|
 |---|---|
 |1. **지연 시간(latency) 최소화**<br>   → 네트워크를 거치지 않고 **로컬 디바이스에서 직접 추론(inference)** 하므로 훨씬 빠릅니다.2. **무료로 확장되는 효과 (Scales "for free")**<br>   → 사용자의 디바이스에서 추론하므로, 서버를 늘릴 필요 없이 **사용자 수가 늘어나도 별도의 인프라 부담이 없습니다.**3. **웹 서비스를 운영하지 않아도 됨**<br>   → 서버 관리, 배포, 보안 같은 **백엔드 복잡도**를 걱정할 필요가 없습니다.|1. **하드웨어·소프트웨어 자원이 제한적**<br>   → 엣지 디바이스(예: 스마트폰, 차량, IoT 기기)는 **GPU 부족, 낮은 메모리/연산력** 등으로 인해 복잡한 모델 실행이 어렵습니다.2. **모델 업데이트가 어렵다**<br>   → 모델이 사용자의 디바이스에 배포되므로, **개발자가 직접 업데이트를 강제할 수 없고, 유저가 수동으로 해야 하는 경우도 많습니다.**|
 
 **3.1 Frameworks![ref2]**<br>
 Picking the right framework to do edge deployment depends both on how you train your model and what the target device you want to deploy it on is.
+
 |**프레임워크**|**주요 용도 / 타겟 기기**|**특징 및 설명**|
 |---|---|---|
 |TensorRT|NVIDIA GPU 기반 디바이스|NVIDIA의 고성능 추론 엔진으로, 속도 최적화에 탁월|
@@ -2345,6 +2347,7 @@ MBTI는 복잡한 사람의 성격을 **E/I, S/N, T/F, J/P**라는 4가지 척�
 코사인 유사도 외에 자주 사용되는 데이터 유사도(또는 거리) 측정 방법들의 차이점을 비교한 표입니다.유사도는 값이 클수록, 거리는 값이 작을수록 서로 관련성이 높다는 의미입니다.
 \
 **주요 유사도 & 거리 측정 방법 비교**
+
 |구분|코사인 유사도 (Cosine Similarity)|유클리드 거리 (Euclidean Distance)|맨해튼 거리 (Manhattan Distance)|자카드 유사도 (Jaccard Similarity)|피어슨 상관계수 (Pearson Correlation)|
 |---|---|---|---|---|---|
 |**핵심 개념**|벡터 간의 **'방향'** 유사성|두 점 사이의 **'최단 직선 거리'** 📐|격자를 따른 **'블록'** 거리 🏙️|두 집합 간의 **'공통 요소'** 비율|두 변수 간의 **'선형 관계'** 강도 📈|
@@ -2368,6 +2371,7 @@ Word2Vec의 가장 큰 한계는 **학습 당시 단어 사전에 없던 단어(
 King−Man+Woman≈Queen
 'King' 벡터에서 '남성성'이라는 속성을 빼고, '여성성'이라는 속성을 더했더니 'Queen' 벡터와 거의 같아졌다는 의미입니다. 단어의 의미가 벡터 공간에 완벽하게 녹아든 것이죠.
 단, MBTI와 중요한 차이점이 있습니다.
+
 |구분|MBTI|Word2Vec 임베딩|
 |---|---|---|
 |**차원의 의미**|사람이 설계 (외향성, 감정 등)|**해석 불가** (모델이 스스로 학습한 추상적 특징)|
@@ -2410,6 +2414,7 @@ LSTM(Long Short-Term Memory)은 RNN(순환 신경망)의 단점인 장기 의존
   정보가 단일 경로(Hidden State)를 통해 계속 곱셈 연산(행렬 곱)을 거치며 전달됩니다. 이 과정에서 기울기가 0에 가까워지거나(기울기 소실, Vanishing Gradient) 무한대로 커지는(기울기 폭발, Exploding Gradient) 문제가 발생하여 학습이 불안정해질 수 있습니다.
 - LSTM
   셀 상태(Cell State)는 거의 그대로 다음 단계로 전달되는 '컨베이어 벨트' 같은 역할을 합니다. 정보가 게이트들을 통해 곱셈이 아닌 덧셈 연산 위주로 조절되기 때문에, 기울기가 비교적 안정적으로 전달되어 기울기 소실 문제를 크게 완화하고 더 안정적인 학습이 가능합니다.
+
 |구분|RNN (순환 신경망)|LSTM (장단기 기억 신경망)|
 |---|---|---|
 |**핵심 구조**|단순한 순환 구조|셀 상태(Cell State)와 3개의 게이트 추가|
@@ -2896,6 +2901,7 @@ Milvus, Qdrant, Weaviate, Pinecone 등도 벡터 검색 엔진으로 활용 가�
 **5.3 Going cross-modal![ref2]**<br>
 **5.3.1 Flamingo![ref2]**<br>
 Flamingo는 이미지와 텍스트를 동시에 이해하는 모델이고, Perceiver Resampler는 이미지라는 그림을 문장처럼 읽을 수 있게 바꿔주는 번역기.
+
 |키워드|설명|
 |---|---|
 |**Multimodal**|여러 데이터 모달리티(예: 텍스트 + 이미지)를 함께 사용하는 AI 모델|
@@ -3097,7 +3103,6 @@ Application: unCLIP both text and images
 
 -- 참고: GAN vs. Diffusion Model 
 
---
 |항목|**GAN**(Generative Adversarial Network)|**Diffusion Model**|
 |---|---|---|
 |**개념 요약**|생성자(Generator)와 판별자(Discriminator)의 경쟁|노이즈에서 시작해 점진적으로 이미지 복원|
@@ -3110,6 +3115,7 @@ Application: unCLIP both text and images
 |**생성 시 과정**|Generator에 노이즈 벡터를 입력 → 단 1번에 이미지 출력|순수 노이즈에서 시작 → 수십~수백 단계 거쳐 이미지로 복원|
 
 추론(생성) 시 입력 비교
+
 |항목|**GAN**|**Diffusion Model**|
 |---|---|---|
 |**입력**|고정 차원의 **랜덤 노이즈 벡터** z∼N(0,1)|고차원의 **노이즈 이미지** (ex. 512×512 픽셀 노이즈)|

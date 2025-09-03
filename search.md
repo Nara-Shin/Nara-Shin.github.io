@@ -7,7 +7,7 @@ permalink: /search
 
 # 🔍 검색 전략: 문제 현상 ↔ 해결책 키워드 총정리
 
-## 1. 데이터 전처리 및 특징 공학
+#### 1. 데이터 전처리 및 특징 공학
 
 | 문제 현상 (Problem)                      | 핵심 원인 / 설명                            | 주요 해결책 / 관련 기술                                                                                                                              |
 | ------------------------------------ | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -27,7 +27,7 @@ permalink: /search
 
 ---
 
-## 2. 모델 학습 및 일반화
+#### 2. 모델 학습 및 일반화
 
 | 문제 현상                   | 원인 / 설명               | 해결책 / 기술                                                               |
 | ----------------------- | --------------------- | ---------------------------------------------------------------------- |
@@ -46,7 +46,7 @@ permalink: /search
 
 ---
 
-## 3. 모델 아키텍처 및 알고리즘
+#### 3. 모델 아키텍처 및 알고리즘
 
 | 문제 현상                    | 원인 / 설명        | 해결책 / 기술                                                                  |
 | ------------------------ | -------------- | ------------------------------------------------------------------------- |
@@ -65,7 +65,7 @@ permalink: /search
 
 ---
 
-## 4. 모델 평가 및 해석
+#### 4. 모델 평가 및 해석
 
 | 문제 현상              | 원인 / 설명      | 해결책 / 기술                                        |
 | ------------------ | ------------ | ----------------------------------------------- |
@@ -80,7 +80,7 @@ permalink: /search
 
 ---
 
-## 5. MLOps 및 대규모 모델 운영
+#### 5. MLOps 및 대규모 모델 운영
 
 | 문제 현상             | 원인 / 설명              | 해결책 / 기술                                              |
 | ----------------- | -------------------- | ----------------------------------------------------- |
@@ -98,7 +98,7 @@ permalink: /search
 
 # 🔍 AI 학습/연구용 검색 키워드 맵
 
-## 1. AI 데이터 처리 (Data Processing)
+#### 1. AI 데이터 처리 (Data Processing)
 
 * **데이터 정제 (Data Cleaning)**
 
@@ -123,7 +123,7 @@ permalink: /search
 
 ---
 
-## 2. AI 모델 개발 (Model Development)
+#### 2. AI 모델 개발 (Model Development)
 
 * **학습 패러다임**
 
@@ -154,7 +154,7 @@ permalink: /search
 
 ---
 
-## 3. 시스템 구축 및 운영 (MLOps)
+#### 3. 시스템 구축 및 운영 (MLOps)
 
 * **MLOps 파이프라인**
 
@@ -176,7 +176,7 @@ permalink: /search
 
 ---
 
-## 4. 주요 AI 기술 및 트렌드 (Trends)
+#### 4. 주요 AI 기술 및 트렌드 (Trends)
 
 * **설명가능 AI (XAI)**
 
@@ -207,7 +207,7 @@ permalink: /search
 
 ---
 
-## 1. 기본 개념 및 학습 패러다임
+#### 1. 기본 개념 및 학습 패러다임
 
 | 개념 A                       | 개념 B                          | 핵심 차이점                                     |                          |
 | -------------------------- | ----------------------------- | ------------------------------------------ | ------------------------ |
@@ -228,7 +228,7 @@ permalink: /search
 
 ---
 
-## 2. 모델 아키텍처 및 알고리즘
+#### 2. 모델 아키텍처 및 알고리즘
 
 | 개념 A                | 개념 B                         | 핵심 차이점                         |
 | ------------------- | ---------------------------- | ------------------------------ |
@@ -248,7 +248,7 @@ permalink: /search
 
 ---
 
-## 3. 활성화 함수 및 최적화
+#### 3. 활성화 함수 및 최적화
 
 | 개념 A                   | 개념 B                      | 핵심 차이점                     |
 | ---------------------- | ------------------------- | -------------------------- |
@@ -260,7 +260,7 @@ permalink: /search
 
 ---
 
-## 4. 앙상블 및 규제
+#### 4. 앙상블 및 규제
 
 | 개념 A                       | 개념 B                    | 핵심 차이점                         |
 | -------------------------- | ----------------------- | ------------------------------ |
@@ -272,7 +272,7 @@ permalink: /search
 
 ---
 
-## 5. 자연어 처리 (NLP)
+#### 5. 자연어 처리 (NLP)
 
 | 개념 A         | 개념 B                       | 핵심 차이점                   |
 | ------------ | -------------------------- | ------------------------ |
@@ -286,7 +286,7 @@ permalink: /search
 
 ---
 
-## 6. 데이터 전처리 및 평가
+#### 6. 데이터 전처리 및 평가
 
 | 개념 A                | 개념 B             | 핵심 차이점                    |
 | ------------------- | ---------------- | ------------------------- |
@@ -303,7 +303,7 @@ permalink: /search
 
 ---
 
-## 7. 모델 최적화 및 운영 (Fine-tuning & MLOps)
+#### 7. 모델 최적화 및 운영 (Fine-tuning & MLOps)
 
 | 개념 A                       | 개념 B                | 핵심 차이점                    |
 | -------------------------- | ------------------- | ------------------------- |
@@ -320,7 +320,7 @@ permalink: /search
 
 ---
 
-## 8. 설명가능 인공지능 (XAI)
+#### 8. 설명가능 인공지능 (XAI)
 
 | 개념 A                  | 개념 B                   | 핵심 차이점                         |
 | --------------------- | ---------------------- | ------------------------------ |
@@ -328,5 +328,148 @@ permalink: /search
 | **Local Explanation** | **Global Explanation** | 개별 예측 설명 vs 모델 전체 설명           |
 | **CAM**               | **Grad-CAM**           | GAP 계층 필요 vs 그래디언트 활용 (범용성 높음) |
 | **블랙박스 직접 해석**        | **Surrogate Model**    | 불가능/어려움 vs 대리 모델로 간접 해석        |
+
+
+---
+
+#### 1️⃣ 가장 많이 등장한 주제
+
+| 주제 영역                             | 출제 빈도/특징                             | 주요 키워드                                                                                                |
+| --------------------------------- | ------------------------------------ | ----------------------------------------------------------------------------------------------------- |
+| **데이터 전처리 & 정제**                  | 2020\~2024 거의 매년 등장                  | Normalization, Standardization, 이상치 제거, NaN 처리, Feature scaling, 데이터 증강(Augmentation)                 |
+| **클래스 불균형 대응**                    | 2020\~2024 반복                        | SMOTE, ADASYN, Random Oversampling/Undersampling, Focal Loss                                          |
+| **딥러닝 모델 구조 이해**                  | CNN, RNN, Transformer, LLM 관련 꾸준히 출제 | Conv2D, Pooling, Flatten, Multi-Head Attention, Positional Encoding                                   |
+| **학습 최적화 / Regularization**       | 2019\~2024 연속 출제                     | Dropout, Weight decay(L2), L1 희소성, Learning rate scheduling, Early stopping, Optimizer(Adam, RMSProp) |
+| **XAI / 모델 설명**                   | 2023\~2024                           | CAM, Grad-CAM, LIME, White-box/Black-box 비교                                                           |
+| **MLOps / 운영 및 배포**               | 2023\~2024                           | CI/CD, CT, 재학습, Online Experimentation, Model-in-service vs Model-as-service                          |
+| **데이터 드리프트 / 모델 재학습**             | 2023\~2024                           | Trigger, Shadow test, A/B test, OOD 데이터 처리                                                            |
+| **생성 모델 / Diffusion / GAN / VAE** | 2019\~2024                           | Generator/Discriminator, Diffusion model, Noise injection, Forward/Backward process                   |
+| **Transformer 기반 사전학습 NLP**       | 2020\~2024                           | GPT, RoBERTa, ELECTRA, SpanBERT, Self-supervised learning(SimCLR, BYOL)                               |
+| **평가 지표 & 모델 성능 분석**              | 2020\~2024                           | Confusion matrix, Accuracy, Precision, Recall, F1-score                                               |
+
+---
+
+#### 2️⃣ 빈도 높은 핵심 키워드 요약
+
+* **데이터 처리:** Normalization, Standardization, 이상치 제거, NaN 처리, Tokenization, Padding
+* **클래스 불균형:** SMOTE, ADASYN, Focal Loss, Oversampling/Undersampling
+* **딥러닝 구조:** CNN(Conv+Pooling+Flatten), RNN/LSTM/GRU, Transformer(MHA, Positional Encoding, FFN)
+* **학습 최적화:** Dropout, Early Stopping, LR Scheduling, Adam/Momentum/RMSProp, Regularization(L1/L2)
+* **MLOps & 운영:** CI/CD, CT, Model registry, Shadow/A-B testing, Re-training process
+* **XAI:** CAM, Grad-CAM, LIME, 화이트박스/블랙박스 모델 설명성
+* **생성 모델:** GAN, VAE, Diffusion, Noise Injection, Mixup, CutMix
+* **NLP / LLM:** GPT, RoBERTa, ELECTRA, SpanBERT, Prompting, Zero-shot learning
+* **평가 지표:** Accuracy, Recall, Precision, F1-score, Confusion matrix
+
+---
+
+#### 3️⃣ 결론: 시험 대비 포인트
+
+1. **데이터 전처리 & 증강** → 최소 2\~3문항 정도 확실히 나옴
+2. **클래스 불균형** → 증강/샘플링/손실 함수 활용
+3. **딥러닝 구조 & 학습 최적화** → CNN, RNN, Transformer, Regularization, Optimizer
+4. **MLOps + XAI** → 운영, 재학습, CI/CD, 모델 설명
+5. **생성 모델 & Self-supervised Learning** → Diffusion, GAN, VAE, SimCLR, BYOL
+6. **평가 지표** → Confusion matrix, Precision/Recall/F1-score 이해
+
+
+---
+
+#### 1️⃣ 데이터 전처리 & 정제
+
+| 주제         | 핵심 키워드                                                       | 핵심 내용                                        |
+| ---------- | ------------------------------------------------------------ | -------------------------------------------- |
+| 정규화 & 스케일링 | Normalization, Standardization                               | Min-Max → 0\~1, Z-score → 평균0, 분산1, 학습 효율 향상 |
+| 이상치/NaN 처리 | dropna(), astype(), round()                                  | 데이터 결측치 제거, 타입 변환, 소수점 처리                    |
+| 텍스트 전처리    | Tokenization, Padding, <UNK>                                 | 문장 시작/끝 표시, 패딩, 사전에 없는 단어 대체                 |
+| 데이터 증강     | Rotation, Flip, Mixup, Random Erasing, CutMix                | 이미지 다양성 증가, 과적합 방지, 소수 클래스 보강                |
+| 클래스 불균형    | SMOTE, ADASYN, Random Oversampling/Undersampling, Focal Loss | Minority 클래스 보강, Decision boundary 왜곡 방지     |
+
+---
+
+#### 2️⃣ 딥러닝 모델 구조
+
+| 모델              | 핵심 키워드                                                          | 특징/포인트                             |
+| --------------- | --------------------------------------------------------------- | ---------------------------------- |
+| CNN             | Conv2D, Pooling, Flatten, Fully Connected                       | 공간 정보 학습, 이미지 처리                   |
+| RNN             | Naive RNN, LSTM, GRU                                            | 순차 데이터 처리, 장기 의존성 문제 → LSTM/GRU 개선 |
+| Transformer     | Multi-Head Attention, Positional Encoding, Query/Key/Value, FFN | 병렬 처리 가능, NLP/멀티모달                 |
+| Self-supervised | SimCLR, BYOL, MAE, RotNet, Jigsaw                               | 레이블 없는 학습, Contrastive/Masked 학습   |
+
+---
+
+#### 3️⃣ 학습 최적화 & Regularization
+
+| 주제             | 핵심 키워드                       | 설명                            |
+| -------------- | ---------------------------- | ----------------------------- |
+| Optimizer      | SGD, Momentum, RMSProp, Adam | Gradient Descent 변형, 학습 안정화   |
+| Regularization | L1, L2, Dropout              | 과적합 방지, L1 → 희소성, L2 → 가중치 축소 |
+| Learning rate  | Scheduling, Warmup, Decay    | Loss 진동 조절, 수렴 속도 개선          |
+| Early stopping | Validation loss 기준           | 과적합 방지, 학습 조기 종료              |
+
+---
+
+#### 4️⃣ 평가 지표
+
+| 지표               | 계산식                                     | 사용 예시        |
+| ---------------- | --------------------------------------- | ------------ |
+| Accuracy         | (TP+TN)/(TP+TN+FP+FN)                   | 리뷰 감성 분류     |
+| Precision        | TP/(TP+FP)                              | 추천 시스템, 광고   |
+| Recall           | TP/(TP+FN)                              | 의료 진단, 사기 검출 |
+| F1-score         | 2·(Precision·Recall)/(Precision+Recall) | 불균형 클래스 평가   |
+| Confusion matrix | TP, FP, TN, FN                          | 모델 성능 분석     |
+
+---
+
+#### 5️⃣ 생성 모델 & Diffusion
+
+| 모델        | 핵심 키워드                                   | 특징                     |
+| --------- | ---------------------------------------- | ---------------------- |
+| GAN       | Generator, Discriminator, Minimax        | 적대적 학습, 진짜/가짜 구분       |
+| VAE       | Encoder, Decoder, Latent space           | 다양성 확보, 재구성 기반 생성      |
+| Diffusion | Forward process, Backward process, Noise | 점진적 노이즈 제거, 이미지/데이터 생성 |
+
+---
+
+#### 6️⃣ MLOps & 모델 운영
+
+| 주제                                   | 핵심 키워드                                                               | 포인트                          |
+| ------------------------------------ | -------------------------------------------------------------------- | ---------------------------- |
+| 파이프라인                                | Data processing, ML pipeline, Model registry, Online experimentation | 자동화, 재현성, 모니터링               |
+| CI/CD/CT                             | Continuous Integration/Delivery/Test                                 | 모델 업데이트, 검증, 배포 자동화          |
+| Model-in-service vs Model-as-service | 배포 방식 차이                                                             | 서버 포함 vs 클라이언트 직접 호출, 리소스 효율 |
+| 재학습                                  | Trigger, Shadow/A-B test, OOD 데이터                                    | 드리프트 감지, 모델 개선, 검증           |
+
+---
+
+#### 7️⃣ XAI (설명 가능 AI)
+
+| 주제     | 핵심 키워드                     | 특징                       |
+| ------ | -------------------------- | ------------------------ |
+| CNN 기반 | CAM, Grad-CAM, FC Layer    | 이미지 중요 영역 시각화            |
+| 모델-불문  | LIME, SHAP, Counterfactual | 블랙박스 모델 설명 가능            |
+| 비교     | White-box vs Black-box     | 내부 구조 이해 vs Surrogate 활용 |
+
+---
+
+#### 8️⃣ NLP & LLM
+
+| 주제                    | 핵심 키워드                                               | 특징                            |
+| --------------------- | ---------------------------------------------------- | ----------------------------- |
+| Transformer 기반        | Encoder/Decoder, Self-Attention, Positional Encoding | 사전학습 가능, 병렬 처리                |
+| 사전학습 모델               | GPT, RoBERTa, SpanBERT, ELECTRA                      | Pre-training → 다운스트림 활용       |
+| Zero-shot & Prompting | Label 없는 Task, Chain-of-Thought                      | 사전학습 지식 기반, 단계별 추론            |
+| 멀티모달                  | VILBERT, VisualBERT                                  | 텍스트 + 이미지 통합 학습, Co-attention |
+
+---
+
+##### ✅ 시험 대비 전략
+
+1. **데이터 전처리 & 증강** → 최소 2\~3문항 출제
+2. **클래스 불균형** → 증강/샘플링/손실 함수
+3. **딥러닝 구조 & 학습 최적화** → CNN, RNN, Transformer, Regularization
+4. **MLOps + XAI** → 운영, 재학습, CI/CD, 모델 설명
+5. **생성 모델 / Self-supervised / Diffusion** → 개념 + 특징
+6. **평가 지표** → Confusion matrix, Precision/Recall/F1 이해
 
 ---

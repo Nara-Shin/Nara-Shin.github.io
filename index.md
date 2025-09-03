@@ -9,6 +9,7 @@ permalink: /
 - [2025](/2025) 
 - [search key words](/search)
 - [transformer](/transformer)
+- [diffusion](/diffusion)
 - [cnn](/cnn)
 - [xai](/xai)
 - [matrix](/matrix)

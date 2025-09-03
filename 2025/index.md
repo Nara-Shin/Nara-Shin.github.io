@@ -13,7 +13,7 @@ permalink: /2025
 - [인프라1](https://yeong-dong-ra.tistory.com/3)
 - [인프라2](https://yeong-dong-ra.tistory.com/4)
 
-**목차**
+**목차**<br>
 **[FSDL\_2021]**<br>
 📌 Lecture 1: DL Fundamentals<br>
 📌 Lecture 12: Research Directions<br>
@@ -30,7 +30,7 @@ permalink: /2025
 📌 11. Fine Tuning LLM on Custom Dataset<br>
 
 
-**[FSDL\_2021]**<br>
+### **[FSDL\_2021]**<br>
 ### **📌 Lecture 1: DL Fundamentals**
 <https://youtu.be/fGxWfEuUu0w>
 <https://fullstackdeeplearning.com/spring2021/lecture-1/>
@@ -968,7 +968,7 @@ MDP는 다음의 다섯 요소로 구성됩니다:
 |🌍 기대 효과|실험 비용 절감, 디자인 혁신, 과학적 통찰 확보|
 
 
-**[FSDL\_2022]**<br>
+### **[FSDL\_2022]**<br>
 ### **📌 Lecture 3: Troubleshooting & Testing**
 **1 Testing software**
 키 포인트
@@ -3164,7 +3164,7 @@ noise = torch.randn(1, 3, 512, 512) *#### 고해상도 노이즈 이미지* **fo
 
 
 
-**[Udemy]**<br>
+### **[Udemy]**<br>
 ### **📌 3. Transformers Architectures and Basic LLM Concepts**
 
 <https://ktspace.atlassian.net/wiki/spaces/AITechLab/pages/402401965>

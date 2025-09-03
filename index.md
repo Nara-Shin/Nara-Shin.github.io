@@ -6,18 +6,10 @@ permalink: /
 
 # 안녕하세요! 👋
 
-블로그에 오신 것을 환영합니다.
-
-## 블로그 소개
-
-이 블로그에서는 다음과 같은 내용들을 다룹니다:
-
-- 딥러닝 모델 설계 및 구현
-- 머신러닝 엔지니어링 베스트 프랙티스
-- AI 프로젝트 실전 경험
-- 최신 AI 기술 동향
-
-## 최근 게시글
-
 - [2025](/2025) 
 - [search](/search)
+- https://velog.io/@jpseo99/AI-Research-%EC%A7%81%EA%B5%B0-%EB%A9%B4%EC%A0%91-%EC%A4%80%EB%B9%84-1
+- https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning?hl=ko
+- https://www.tutorialspoint.com/compilers/online-python-compiler.htm
+- https://yeong-dong-ra.tistory.com/3
+- https://yeong-dong-ra.tistory.com/4

@@ -104,3 +104,86 @@ AI 모델을 **다차원 기준으로 평가**하는 틀
   AI 모델을 성능·신뢰성·공정성·설명가능성·효율성 기준으로 다차원 평가
 
 ---
+
+좋습니다 👍
+**Confusion Matrix(혼동 행렬)** 은 분류 문제에서 모델의 예측 결과를 정리해서 성능을 평가할 때 사용하는 표예요.
+
+---
+
+## 📊 Confusion Matrix 기본 구조
+
+이진 분류(binary classification) 문제(예: 스팸/정상, 양성/음성)에서는 보통 이렇게 2×2 행렬로 표현됩니다:
+
+|                 | 실제 Positive         | 실제 Negative         |
+| --------------- | ------------------- | ------------------- |
+| **예측 Positive** | True Positive (TP)  | False Positive (FP) |
+| **예측 Negative** | False Negative (FN) | True Negative (TN)  |
+
+---
+
+## 📌 용어 설명
+
+* **TP (True Positive)**: 실제로 Positive인데 모델도 Positive라고 맞게 예측함
+* **TN (True Negative)**: 실제로 Negative인데 모델도 Negative라고 맞게 예측함
+* **FP (False Positive, Type I error)**: 실제는 Negative인데 모델이 Positive라고 잘못 예측 → “거짓 경보”
+* **FN (False Negative, Type II error)**: 실제는 Positive인데 모델이 Negative라고 잘못 예측 → “놓침”
+
+---
+
+## 📈 Confusion Matrix에서 구할 수 있는 주요 성능 지표
+
+1. **정확도 (Accuracy)**
+
+   $$
+   Accuracy = \frac{TP + TN}{TP + TN + FP + FN}
+   $$
+
+   전체 중 맞춘 비율
+
+2. **정밀도 (Precision)**
+
+   $$
+   Precision = \frac{TP}{TP + FP}
+   $$
+
+   모델이 Positive라고 한 것 중 실제로 Positive인 비율
+
+3. **재현율 (Recall, Sensitivity, TPR)**
+
+   $$
+   Recall = \frac{TP}{TP + FN}
+   $$
+
+   실제 Positive 중에서 모델이 Positive로 잘 잡아낸 비율
+
+4. **특이도 (Specificity, TNR)**
+
+   $$
+   Specificity = \frac{TN}{TN + FP}
+   $$
+
+   실제 Negative 중에서 Negative를 잘 맞춘 비율
+
+5. **F1 점수 (F1 Score)**
+
+   $$
+   F1 = \frac{2 \cdot Precision \cdot Recall}{Precision + Recall}
+   $$
+
+   정밀도와 재현율의 조화 평균
+
+---
+
+## ✅ 예시
+
+예를 들어, 암 진단 모델에서:
+
+* TP = 실제 암 환자이고 "암"이라고 예측
+* FN = 실제 암 환자인데 "정상"이라고 예측 → **치명적인 경우**
+* FP = 실제 정상인데 "암"이라고 예측 → 불필요한 추가 검사
+
+즉, 문제 상황에 따라 **FN을 줄이는 게 중요한지, FP를 줄이는 게 중요한지**가 다르기 때문에 단순 정확도보다 Confusion Matrix 기반 지표들을 종합적으로 보는 게 중요합니다.
+
+---
+
+혹시 제가 간단한 숫자 예시(작은 데이터셋)로 Confusion Matrix를 계산해 보여드릴까요?
